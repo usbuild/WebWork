@@ -28,3 +28,120 @@ Stack trace:
 REQUEST_URI=/blog/site/signup
 HTTP_REFERER=http://localhost/blog/site/signup
 ---
+2012/10/25 15:41:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "post"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/post
+---
+2012/10/25 15:41:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "post/index"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/index')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/post/index
+---
+2012/10/25 15:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "post/index"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/index')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/post/index
+---
+2012/10/25 15:42:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "post/index"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/index')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/post/index
+---
+2012/10/25 15:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "post/index"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/index')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/post/index
+---
+2012/10/25 15:42:24 [error] [exception.CException] exception 'CException' with message '属性 "CWebApplication.reuqest" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\base\CModule.php(106): CComponent->__get('reuqest')
+#1 D:\www\blog\protected\controllers\PostController.php(6): CModule->__get('reuqest')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(282): PostController->init()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/index')
+#4 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\blog\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/blog/post/index
+---
+2012/10/25 15:43:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "text" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('text')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('text')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/text')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/post/text
+---
+2012/10/25 15:43:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/ueditor/editor_all_main.js"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('js/ueditor/edit...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/js/ueditor/editor_all_main.js
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/25 15:43:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/ueditor/editor_all_main.js"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('js/ueditor/edit...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/js/ueditor/editor_all_main.js
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/25 15:43:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/ueditor/editor_all_main.js"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('js/ueditor/edit...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/js/ueditor/editor_all_main.js
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/25 15:44:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/ueditor/editor_all_main.js"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('js/ueditor/edit...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/js/ueditor/editor_all_main.js
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/25 15:44:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/ueditor/editor_all_main.js"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('js/ueditor/edit...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/js/ueditor/editor_all_main.js
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/25 15:48:03 [error] [exception.CException] exception 'CException' with message 'CClientScript and its behaviors do not have a method or closure named "regiesterCssFile".' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\www\blog\protected\controllers\PostController.php(8): CComponent->__call('regiesterCssFil...', Array)
+#1 D:\www\blog\protected\controllers\PostController.php(8): CClientScript->regiesterCssFile('/blog/plugins/u...')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(282): PostController->init()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/text')
+#4 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\blog\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/blog/post/text
+---

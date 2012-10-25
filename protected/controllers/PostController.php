@@ -1,9 +1,11 @@
 <?php
 
-class Post extends Controller
+class PostController extends Controller
 {
     public function init() {
-        Yii::app()->clientScript->registerScriptFile(, CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/plugins/ueditor/editor_all_min.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/plugins/ueditor/editor_config.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/plugins/ueditor/themes/default/ueditor.css');
         return parent::init();
     }
 
@@ -34,16 +36,16 @@ class Post extends Controller
 
     public function actionIndex()
     {
-        if (Yii::app()->request->isPostRequest) {
-
-        } else {
-
-        }
+//        if (Yii::app()->request->isPostRequest) {
+//
+//        } else {
+//
+//        }
     }
 
-    public function actionPostText()
+    public function actionText()
     {
-
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/post/text.js', CClientScript::POS_HEAD);
         $this->render('text', array());
     }
 }
