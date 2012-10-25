@@ -1,0 +1,30 @@
+2012/10/25 14:04:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "signin" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('signin')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('signin')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signin')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/site/signin
+---
+2012/10/25 14:11:41 [error] [exception.CException] exception 'CException' with message '属性 "SiteController.message" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\www\blog\protected\views\site\signup.php(2): CComponent->__get('message')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require('D:\www\blog\pro...')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\blog\pro...', Array, true)
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): CBaseController->renderFile('D:\www\blog\pro...', Array, true)
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): CController->renderPartial('signup', Array, true)
+#5 D:\www\blog\protected\controllers\SiteController.php(127): CController->render('signup', Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionSignUp()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('signup')
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/signup')
+#12 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\www\blog\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/blog/site/signup
+HTTP_REFERER=http://localhost/blog/site/signup
+---
