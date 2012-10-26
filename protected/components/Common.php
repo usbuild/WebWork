@@ -30,4 +30,10 @@ class Common
         return preg_match('/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/', $email) > 0;
     }
 
+    public static function getBlogs()
+    {
+        $user = User::model()->findByPk(Yii::app()->user->id);
+        return $user->blogs;
+    }
+
 }

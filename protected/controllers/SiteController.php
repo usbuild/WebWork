@@ -3,10 +3,14 @@
 class SiteController extends Controller
 {
     public $blogs;
+    public $layout = '//layouts/column2';
+    public $sidebar;
+    public $pageTitle = '我的轻博客';
 
     public function init()
     {
         parent::init();
+        $this->sidebar = $this->renderPartial('sidebar', array(), true);
     }
 
     /**
@@ -60,9 +64,8 @@ class SiteController extends Controller
     public function actionIndex()
     {
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/site/index.js', CClientScript::POS_HEAD);
-        $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
         $user = User::model()->findByPk(Yii::app()->user->id);
-        $this->render('index', array('blogs' => $blogs, 'posts' => $user->getPosts()));
+        $this->render('index', array('posts' => $user->getPosts(), 'myblog' => $user->myblog));
     }
 
     /**

@@ -61,7 +61,7 @@ class Post extends CActiveRecord
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'poster0' => array(self::BELONGS_TO, 'Blog', 'poster'),
+            'blog' => array(self::BELONGS_TO, 'Blog', 'poster'),
         );
     }
 

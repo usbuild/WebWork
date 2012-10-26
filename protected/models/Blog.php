@@ -7,10 +7,12 @@
  * @property integer $id
  * @property string $name
  * @property integer $owner
+ * @property string $avatar
  *
  * The followings are the available model relations:
  * @property User $owner0
- * @property Feed[] $feeds
+ * @property FollowBlog[] $followBlogs
+ * @property Post[] $posts
  */
 class Blog extends CActiveRecord
 {
@@ -42,10 +44,10 @@ class Blog extends CActiveRecord
 		return array(
 			array('name, owner', 'required'),
 			array('owner', 'numerical', 'integerOnly'=>true),
-			array('name', 'length', 'max'=>255),
+			array('name, avatar', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, owner', 'safe', 'on'=>'search'),
+			array('id, name, owner, avatar', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,7 +60,8 @@ class Blog extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'owner0' => array(self::BELONGS_TO, 'User', 'owner'),
-			'feeds' => array(self::HAS_MANY, 'Feed', 'poster'),
+			'followBlogs' => array(self::HAS_MANY, 'FollowBlog', 'blog_id'),
+			'posts' => array(self::HAS_MANY, 'Post', 'poster'),
 		);
 	}
 
@@ -71,6 +74,7 @@ class Blog extends CActiveRecord
 			'id' => 'ID',
 			'name' => 'Name',
 			'owner' => 'Owner',
+			'avatar' => 'Avatar',
 		);
 	}
 
@@ -88,6 +92,7 @@ class Blog extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('owner',$this->owner);
+		$criteria->compare('avatar',$this->avatar,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -10,6 +10,7 @@
  * @property string $password
  * @property string $salt
  * @property string $avatar
+ *  @property Blog $blog
  *
  * The followings are the available model relations:
  * @property Blog[] $blogs
@@ -43,6 +44,7 @@ class User extends CActiveRecord
         // will receive user inputs.
         return array(
             array('email, password, salt', 'required'),
+            array('blog', 'numerical', 'integerOnly'=>true),
             array('name, email, avatar', 'length', 'max' => 255),
             array('password, salt', 'length', 'max' => 64),
             array('email', 'email'),
@@ -61,6 +63,7 @@ class User extends CActiveRecord
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
+            'myblog' => array(self::BELONGS_TO, 'Blog', 'blog'),
             'blogs' => array(self::HAS_MANY, 'Blog', 'owner'),
             'follow_blogs' => array(self::HAS_MANY, 'FollowBlog', 'user_id'),
             'follow_tags' => array(self::HAS_MANY, 'FollowTag', 'user_id'),
@@ -79,6 +82,7 @@ class User extends CActiveRecord
             'password' => 'Password',
             'salt' => 'Salt',
             'avatar' => 'Avatar',
+            'blog' => 'Blog',
         );
     }
 
@@ -99,6 +103,7 @@ class User extends CActiveRecord
         $criteria->compare('password', $this->password, true);
         $criteria->compare('salt', $this->salt, true);
         $criteria->compare('avatar', $this->avatar, true);
+        $criteria->compare('blog',$this->blog);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
@@ -114,10 +119,11 @@ class User extends CActiveRecord
             $tags[] = CJSON::encode($tag->tag);
         }
         $criteria = new CDbCriteria();
+        $criteria->order = 'time DESC';
         if (isset($blogs))
             $criteria->compare('poster', $blogs, false, 'OR');
-        foreach($tags as $tag) {
-                $criteria->addSearchCondition('tag', $tag, true, 'OR');
+        foreach ($tags as $tag) {
+            $criteria->addSearchCondition('tag', $tag, true, 'OR');
         }
 
         if (isset($tags) || isset($posts))
