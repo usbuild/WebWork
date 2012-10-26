@@ -6,8 +6,9 @@
 class Controller extends CController
 {
     public function init() {
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/config.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerCoreScript('jquery', CClientScript::POS_HEAD);
-        return parent::init();
+        parent::init();
     }
 	/**
 	 * @var string the default layout for the controller view. Defaults to '//layouts/column1',

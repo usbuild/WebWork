@@ -145,3 +145,385 @@ Stack trace:
 #6 {main}
 REQUEST_URI=/blog/post/text
 ---
+2012/10/26 03:39:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "plugins/ueditorlang/zh-cn/zh-cn.js"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('plugins/ueditor...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/plugins/ueditorlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/26 04:27:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`feed`, CONSTRAINT `FK_POSTER` FOREIGN KEY (`poster`) REFERENCES `blog` (`id`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `feed` (`type`, `content`, `poster`, `tag`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in D:\www\blog\protected\controllers\PostController.php (51)
+in D:\www\blog\index.php (13)
+2012/10/26 04:27:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`feed`, CONSTRAINT `FK_POSTER` FOREIGN KEY (`poster`) REFERENCES `blog` (`id`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `feed` (`type`, `content`, `poster`, `tag`) VALUES (:yp0, :yp1, :yp2, :yp3)' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 D:\www\blog\protected\controllers\PostController.php(51): CActiveRecord->save()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post')
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/post
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/26 04:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "blog/create"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/create')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/blog/create
+HTTP_REFERER=http://localhost/blog/
+---
+2012/10/26 04:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "blog/create"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/create')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/blog/create
+---
+2012/10/26 04:50:30 [error] [exception.CDbException] exception 'CDbException' with message 'Table "blog" 没有名为 "ownerid" 的栏位.' in D:\src\yii-1.1.12.b600af\framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 D:\www\blog\protected\controllers\BlogController.php(40): CActiveRecord->findByAttributes(Array)
+#2 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): BlogController->actionCreate()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('create')
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/create')
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\www\blog\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog/blog/create
+HTTP_REFERER=http://localhost/blog/
+---
+2012/10/26 05:18:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`feed`, CONSTRAINT `FK_POSTER` FOREIGN KEY (`poster`) REFERENCES `blog` (`id`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `feed` (`type`, `content`, `poster`, `tag`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in D:\www\blog\protected\controllers\PostController.php (50)
+in D:\www\blog\index.php (13)
+2012/10/26 05:18:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`feed`, CONSTRAINT `FK_POSTER` FOREIGN KEY (`poster`) REFERENCES `blog` (`id`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `feed` (`type`, `content`, `poster`, `tag`) VALUES (:yp0, :yp1, :yp2, :yp3)' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 D:\www\blog\protected\controllers\PostController.php(50): CActiveRecord->save()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#16 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post')
+#17 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\www\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/post
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/26 05:18:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`feed`, CONSTRAINT `FK_POSTER` FOREIGN KEY (`poster`) REFERENCES `blog` (`id`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `feed` (`type`, `content`, `poster`, `tag`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in D:\www\blog\protected\controllers\PostController.php (50)
+in D:\www\blog\index.php (13)
+2012/10/26 05:18:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`feed`, CONSTRAINT `FK_POSTER` FOREIGN KEY (`poster`) REFERENCES `blog` (`id`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `feed` (`type`, `content`, `poster`, `tag`) VALUES (:yp0, :yp1, :yp2, :yp3)' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 D:\www\blog\protected\controllers\PostController.php(50): CActiveRecord->save()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionIndex()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#16 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post')
+#17 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\www\blog\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/blog/post
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/26 05:20:12 [error] [exception.CException] exception 'CException' with message '属性 "PostController.blog" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\www\blog\protected\controllers\filters\BlogOwnerFilter.php(20): CComponent->__get('blog')
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): BlogOwnerFilter->preFilter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post')
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/post
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/26 06:52:44 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (D:\src\yii-1.1.12.b600af\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\www\blog\protected\views\site\index.php(2): spl_autoload_call()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): SiteController->renderFile()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): SiteController->renderPartial()
+#5 D:\www\blog\protected\controllers\SiteController.php(60): SiteController->render()
+#6 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#12 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#16 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/site/index
+in D:\www\blog\protected\views\site\index.php (2)
+in D:\www\blog\protected\controllers\SiteController.php (60)
+in D:\www\blog\index.php (13)
+2012/10/26 06:54:32 [error] [php] Invalid argument supplied for foreach() (D:\www\blog\protected\views\site\index.php:1)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): SiteController->renderPartial()
+#2 D:\www\blog\protected\controllers\SiteController.php(61): SiteController->render()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/site/index
+in D:\www\blog\protected\views\site\index.php (1)
+in D:\www\blog\protected\controllers\SiteController.php (61)
+in D:\www\blog\index.php (13)
+2012/10/26 06:54:42 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (D:\src\yii-1.1.12.b600af\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\www\blog\protected\views\site\index.php(2): spl_autoload_call()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): SiteController->renderFile()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): SiteController->renderPartial()
+#5 D:\www\blog\protected\controllers\SiteController.php(61): SiteController->render()
+#6 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#12 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#16 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/site/index
+in D:\www\blog\protected\views\site\index.php (2)
+in D:\www\blog\protected\controllers\SiteController.php (61)
+in D:\www\blog\index.php (13)
+2012/10/26 06:55:05 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (D:\src\yii-1.1.12.b600af\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\www\blog\protected\views\site\index.php(5): spl_autoload_call()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): SiteController->renderFile()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): SiteController->renderPartial()
+#5 D:\www\blog\protected\controllers\SiteController.php(61): SiteController->render()
+#6 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#12 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#16 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/site/index
+in D:\www\blog\protected\views\site\index.php (5)
+in D:\www\blog\protected\controllers\SiteController.php (61)
+in D:\www\blog\index.php (13)
+2012/10/26 08:10:26 [error] [exception.CException] exception 'CException' with message '属性 "FollowBlog.name" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(144): CComponent->__get('name')
+#1 D:\www\blog\protected\views\follow\index.php(10): CActiveRecord->__get('name')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require('D:\www\blog\pro...')
+#3 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\blog\pro...', Array, true)
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): CBaseController->renderFile('D:\www\blog\pro...', Array, true)
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#6 D:\www\blog\protected\controllers\FollowController.php(41): CController->render('index', Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): FollowController->actionIndex()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#17 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('follow')
+#18 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 D:\www\blog\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/blog/follow
+HTTP_REFERER=http://localhost/blog/follow
+---
+2012/10/26 08:14:58 [error] [php] array_map() expects parameter 1 to be a valid callback, no array or string given (D:\www\blog\protected\controllers\FollowController.php:41)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): FollowController->runAction()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): FollowController->filterAccessControl()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): FollowController->runActionWithFilters()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): FollowController->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/follow
+in D:\www\blog\protected\controllers\FollowController.php (41)
+in D:\www\blog\index.php (13)
+2012/10/26 08:46:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tags' in 'where clause'. The SQL statement executed was: SELECT * FROM `post` `t` WHERE (poster=:ycp0) OR (tags=:ycp1).
+in D:\www\blog\protected\models\User.php (119)
+in D:\www\blog\protected\controllers\SiteController.php (62)
+in D:\www\blog\index.php (13)
+2012/10/26 08:46:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tags' in 'where clause'. The SQL statement executed was: SELECT * FROM `post` `t` WHERE (poster=:ycp0) OR (tags=:ycp1)' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\www\blog\protected\models\User.php(119): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\www\blog\protected\controllers\SiteController.php(62): User->getPosts()
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\www\blog\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog/
+---
+2012/10/26 08:53:13 [error] [php] Array to string conversion (D:\www\blog\protected\views\site\index.php:13)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): SiteController->renderPartial()
+#2 D:\www\blog\protected\controllers\SiteController.php(62): SiteController->render()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/
+in D:\www\blog\protected\views\site\index.php (13)
+in D:\www\blog\protected\controllers\SiteController.php (62)
+in D:\www\blog\index.php (13)
+2012/10/26 08:54:02 [error] [php] Trying to get property of non-object (D:\www\blog\protected\views\site\index.php:13)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): SiteController->renderPartial()
+#2 D:\www\blog\protected\controllers\SiteController.php(65): SiteController->render()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/
+in D:\www\blog\protected\views\site\index.php (13)
+in D:\www\blog\protected\controllers\SiteController.php (65)
+in D:\www\blog\index.php (13)
+2012/10/26 08:54:42 [error] [php] Undefined variable: blogs (D:\www\blog\protected\models\User.php:117)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/
+in D:\www\blog\protected\models\User.php (117)
+in D:\www\blog\protected\controllers\SiteController.php (65)
+in D:\www\blog\index.php (13)

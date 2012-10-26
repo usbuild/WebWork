@@ -1,26 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "feed".
+ * This is the model class for table "tag".
  *
- * The followings are the available columns in table 'feed':
- * @property string $id
- * @property integer $poster
- * @property string $content
- * @property string $type
- * @property string $time
+ * The followings are the available columns in table 'tag':
+ * @property integer $id
  * @property string $tag
- * @property string $summary
+ * @property string $post
  *
  * The followings are the available model relations:
- * @property Blog $poster0
+ * @property Post $post0
  */
-class Feed extends CActiveRecord
+class Tag extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Feed the static model class
+	 * @return Tag the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -32,7 +28,7 @@ class Feed extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'feed';
+		return 'tag';
 	}
 
 	/**
@@ -43,13 +39,12 @@ class Feed extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('time', 'required'),
-			array('poster', 'numerical', 'integerOnly'=>true),
-			array('type', 'length', 'max'=>5),
-			array('content, tag, summary', 'safe'),
+			array('tag, post', 'required'),
+			array('tag', 'length', 'max'=>255),
+			array('post', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, poster, content, type, time, tag, summary', 'safe', 'on'=>'search'),
+			array('id, tag, post', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -61,7 +56,7 @@ class Feed extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'poster0' => array(self::BELONGS_TO, 'Blog', 'poster'),
+			'post0' => array(self::BELONGS_TO, 'Post', 'post'),
 		);
 	}
 
@@ -72,12 +67,8 @@ class Feed extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'poster' => 'Poster',
-			'content' => 'Content',
-			'type' => 'Type',
-			'time' => 'Time',
 			'tag' => 'Tag',
-			'summary' => 'Summary',
+			'post' => 'Post',
 		);
 	}
 
@@ -92,13 +83,9 @@ class Feed extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id,true);
-		$criteria->compare('poster',$this->poster);
-		$criteria->compare('content',$this->content,true);
-		$criteria->compare('type',$this->type,true);
-		$criteria->compare('time',$this->time,true);
+		$criteria->compare('id',$this->id);
 		$criteria->compare('tag',$this->tag,true);
-		$criteria->compare('summary',$this->summary,true);
+		$criteria->compare('post',$this->post,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -2,6 +2,13 @@
 
 class SiteController extends Controller
 {
+    public $blogs;
+
+    public function init()
+    {
+        parent::init();
+    }
+
     /**
      * Declares class-based actions.
      */
@@ -21,13 +28,41 @@ class SiteController extends Controller
         );
     }
 
+    public function filters()
+    {
+        return array(
+            'accessControl', // perform access control for CRUD operations
+        );
+    }
+
+    public function accessRules()
+    {
+        return array(
+            array('allow', // allow all users to perform 'index' and 'view' actions
+                'actions' => array('error', 'login', 'signup'),
+                'users' => array('*'),
+            ),
+            array('allow', // allow authenticated user to perform 'create' and 'update' actions
+                'actions' => array('index', 'logout'),
+                'users' => array('@'),
+            ),
+            array('deny', // deny all users
+                'users' => array('*'),
+            ),
+        );
+    }
+
+
     /**
      * This is the default 'index' action that is invoked
      * when an action is not explicitly requested by users.
      */
     public function actionIndex()
     {
-        $this->render('index');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/site/index.js', CClientScript::POS_HEAD);
+        $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
+        $user = User::model()->findByPk(Yii::app()->user->id);
+        $this->render('index', array('blogs' => $blogs, 'posts' => $user->getPosts()));
     }
 
     /**
