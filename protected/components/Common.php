@@ -33,7 +33,9 @@ class Common
     public static function getBlogs()
     {
         $user = User::model()->findByPk(Yii::app()->user->id);
-        return $user->blogs;
+        if (!empty($user))
+            return $user->blogs;
+        return array();
     }
 
 }

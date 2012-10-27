@@ -1,25 +1,12 @@
 <div class="clearfix"></div>
-<div id="publisher" class="publisher clearfix">
-    <div class="pb-avatar"><a class="blog-avatar" href="http://usbuild.diandian.com"
-                              style="background-image:url('<?=Yii::app()->baseUrl . $myblog->avatar?>')">师乐园</a>
-        <span id="upload-avatar-when-no-avatar" uploadid="70" class="frameupload-hook"
-              style="cursor: default; text-decoration: none; ">+博客头像</span>
-    </div>
-    <div class="pb-action-holder">
-        <div class="pb-triangle"></div>
-        <div class="pb-action-shadow-top"></div>
-        <div class="pb-action" id="pb-action">
-            <ul class="clearfix">
-                <li><a class="text" href="<?=$this->createUrl('post/text');?>">文字</a></li>
-                <li><a class="photo" href="<?=$this->createUrl('post/photo');?>">图片</a></li>
-                <li><a class="music" href="<?=$this->createUrl('post/music');?>">声音</a></li>
-                <li><a class="video" href="<?=$this->createUrl('post/video');?>">影像</a></li>
-                <li><a class="link" href="<?=$this->createUrl('post/link');?>">链接</a></li>
-            </ul>
-        </div>
-        <div class="pb-action-shadow-bottom"></div>
-    </div>
-</div>
+
+<ul class="m-nav2">
+    <li class="user"><a href="#"></a></li>
+    <li><a class="text" href="<?=$this->createUrl('post/text');?>"></a></li>
+    <li><a class="photo" href="<?=$this->createUrl('post/photo');?>"></a></li>
+    <li><a class="music" href="<?=$this->createUrl('post/music');?>"></a></li>
+    <li><a class="video" href="<?=$this->createUrl('post/video');?>"></a></li>
+</ul>
 
 
 <div class="feed-zone" id="feed_zone">
