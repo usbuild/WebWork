@@ -45,12 +45,12 @@
         //,maxImageSideLength:900                    //上传图片最大允许的边长，超过会自动等比缩放,不缩放就设置一个比较大的值，更多设置在image.html中
 
         //涂鸦图片配置区
-        , scrawlUrl:URL + "php/scrawlUp.php"           //涂鸦上传地址
-        , scrawlPath:URL + "php/"                       //图片修正地址，同imagePath
+//        , scrawlUrl:URL + "php/scrawlUp.php"           //涂鸦上传地址
+//        , scrawlPath:URL + "php/"                       //图片修正地址，同imagePath
 
         //附件上传配置区
-        , fileUrl:URL + "php/fileUp.php"               //附件上传提交地址
-        , filePath:URL + "php/"                   //附件修正地址，同imagePath
+//        , fileUrl:URL + "php/fileUp.php"               //附件上传提交地址
+//        , filePath:URL + "php/"                   //附件修正地址，同imagePath
         //,fileFieldName:"upfile"                    //附件提交的表单名，若此处修改，需要在后台对应文件修改对应参数
 
         //远程抓取配置区
@@ -62,20 +62,20 @@
         //,localDomain:[]                            //本地顶级域名，当开启远程图片抓取时，除此之外的所有其它域名下的图片都将被抓取到本地
 
         //图片在线管理配置区
-        , imageManagerUrl:URL + "php/imageManager.php"       //图片在线管理的处理地址
-        , imageManagerPath:URL + "php/"                                    //图片修正地址，同imagePath
+//        , imageManagerUrl:URL + "php/imageManager.php"       //图片在线管理的处理地址
+//        , imageManagerPath:URL + "php/"                                    //图片修正地址，同imagePath
 
         //屏幕截图配置区
-        , snapscreenHost:'127.0.0.1'                                  //屏幕截图的server端文件所在的网站地址或者ip，请不要加http://
-        , snapscreenServerUrl:URL + "php/imageUp.php" //屏幕截图的server端保存程序，UEditor的范例代码为“URL +"server/upload/php/snapImgUp.php"”
-        , snapscreenPath:URL + "php/"
+//        , snapscreenHost:'127.0.0.1'                                  //屏幕截图的server端文件所在的网站地址或者ip，请不要加http://
+//        , snapscreenServerUrl:URL + "php/imageUp.php" //屏幕截图的server端保存程序，UEditor的范例代码为“URL +"server/upload/php/snapImgUp.php"”
+//        , snapscreenPath:URL + "php/"
         //,snapscreenServerPort: 80                                    //屏幕截图的server端端口
         //,snapscreenImgAlign: 'center'                                //截图的图片默认的排版方式
 
 
         //word转存配置区
-        , wordImageUrl:URL + "php/imageUp.php"             //word转存提交地址
-        , wordImagePath:URL + "php/"                       //
+//        , wordImageUrl:URL + "php/imageUp.php"             //word转存提交地址
+//        , wordImagePath:URL + "php/"                       //
         //,wordImageFieldName:"upfile"                     //word转存表单名若此处修改，需要在后台对应文件修改对应参数
 
 
