@@ -32,6 +32,7 @@
         </div>
     </div>
 </div>
+<div class="clearfix"></div>
 <div class="container">
     <?php echo $content; ?>
     <div class="clear"></div>

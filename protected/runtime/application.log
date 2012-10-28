@@ -834,3 +834,492 @@ REQUEST_URI=/WebWork/site/login
 in D:\WWW\WebWork\protected\components\Common.php (37)
 in D:\WWW\WebWork\protected\views\layouts\main.php (27)
 in D:\WWW\WebWork\protected\views\layouts\column2.php (15)
+2012/10/28 12:54:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('photo')
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/photo')
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\WWW\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/post/photo
+HTTP_REFERER=http://localhost/blog/
+---
+2012/10/28 13:04:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "plugins/ueditor/php/imageManager.php"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('plugins/ueditor...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/plugins/ueditor/php/imageManager.php?
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/28 13:04:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "plugins/ueditor/php/imageManager.php"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('plugins/ueditor...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/plugins/ueditor/php/imageManager.php?
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/28 13:33:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "plugins/ueditor/php/imageUp.php"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('plugins/ueditor...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/plugins/ueditor/php/imageUp.php
+HTTP_REFERER=http://localhost/blog/plugins/ueditor/dialogs/image/imageUploader.swf
+---
+2012/10/28 13:33:33 [error] [exception.CException] exception 'CException' with message '属性 "CWebApplication.basePaht" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\base\CModule.php(106): CComponent->__get('basePaht')
+#1 D:\WWW\blog\protected\controllers\PictureController.php(37): CModule->__get('basePaht')
+#2 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PictureController->actionUpload()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('upload')
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('picture/upload')
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\WWW\blog\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog/picture/upload
+HTTP_REFERER=http://localhost/blog/plugins/ueditor/dialogs/image/imageUploader.swf
+---
+2012/10/28 13:35:09 [error] [php] mkdir(): File exists (D:\WWW\blog\protected\components\Uploader.php:192)
+Stack trace:
+#0 D:\WWW\blog\protected\components\Uploader.php(47): Uploader->upFile()
+#1 D:\WWW\blog\protected\controllers\PictureController.php(44): Uploader->__construct()
+#2 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PictureController->actionUpload()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PictureController->runAction()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterPostOnly()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterAccessControl()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PictureController->runActionWithFilters()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PictureController->run()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/picture/upload
+in D:\WWW\blog\protected\components\Uploader.php (192)
+in D:\WWW\blog\protected\components\Uploader.php (91)
+in D:\WWW\blog\protected\components\Uploader.php (47)
+2012/10/28 13:37:43 [error] [php] mkdir(): File exists (D:\WWW\blog\protected\components\Uploader.php:192)
+Stack trace:
+#0 D:\WWW\blog\protected\components\Uploader.php(47): Uploader->upFile()
+#1 D:\WWW\blog\protected\controllers\PictureController.php(44): Uploader->__construct()
+#2 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PictureController->actionUpload()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PictureController->runAction()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterPostOnly()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterAccessControl()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PictureController->runActionWithFilters()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PictureController->run()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/picture/upload
+in D:\WWW\blog\protected\components\Uploader.php (192)
+in D:\WWW\blog\protected\components\Uploader.php (91)
+in D:\WWW\blog\protected\components\Uploader.php (47)
+2012/10/28 13:38:26 [error] [php] mkdir(): File exists (D:\WWW\blog\protected\components\Uploader.php:192)
+Stack trace:
+#0 D:\WWW\blog\protected\components\Uploader.php(47): Uploader->upFile()
+#1 D:\WWW\blog\protected\controllers\PictureController.php(44): Uploader->__construct()
+#2 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PictureController->actionUpload()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PictureController->runAction()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterPostOnly()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterAccessControl()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PictureController->runActionWithFilters()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PictureController->run()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/picture/upload
+in D:\WWW\blog\protected\components\Uploader.php (192)
+in D:\WWW\blog\protected\components\Uploader.php (91)
+in D:\WWW\blog\protected\components\Uploader.php (47)
+2012/10/28 13:41:00 [error] [php] mkdir(): File exists (D:\WWW\blog\protected\components\Uploader.php:192)
+Stack trace:
+#0 D:\WWW\blog\protected\components\Uploader.php(47): Uploader->upFile()
+#1 D:\WWW\blog\protected\controllers\PictureController.php(44): Uploader->__construct()
+#2 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PictureController->actionUpload()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PictureController->runAction()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterPostOnly()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterAccessControl()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PictureController->runActionWithFilters()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PictureController->run()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/picture/upload
+in D:\WWW\blog\protected\components\Uploader.php (192)
+in D:\WWW\blog\protected\components\Uploader.php (91)
+in D:\WWW\blog\protected\components\Uploader.php (47)
+2012/10/28 13:45:24 [error] [php] mkdir(): File exists (D:\WWW\blog\protected\components\Uploader.php:192)
+Stack trace:
+#0 D:\WWW\blog\protected\components\Uploader.php(47): Uploader->upFile()
+#1 D:\WWW\blog\protected\controllers\PictureController.php(44): Uploader->__construct()
+#2 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PictureController->actionUpload()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PictureController->runAction()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterPostOnly()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterAccessControl()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PictureController->runActionWithFilters()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PictureController->run()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/picture/upload
+in D:\WWW\blog\protected\components\Uploader.php (192)
+in D:\WWW\blog\protected\components\Uploader.php (91)
+in D:\WWW\blog\protected\components\Uploader.php (47)
+2012/10/28 13:46:17 [error] [php] mkdir(): File exists (D:\WWW\blog\protected\components\Uploader.php:193)
+Stack trace:
+#0 D:\WWW\blog\protected\components\Uploader.php(47): Uploader->upFile()
+#1 D:\WWW\blog\protected\controllers\PictureController.php(44): Uploader->__construct()
+#2 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PictureController->actionUpload()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PictureController->runAction()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterPostOnly()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterAccessControl()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PictureController->runActionWithFilters()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PictureController->run()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/picture/upload
+in D:\WWW\blog\protected\components\Uploader.php (193)
+in D:\WWW\blog\protected\components\Uploader.php (91)
+in D:\WWW\blog\protected\components\Uploader.php (47)
+2012/10/28 13:51:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:1119
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('upload')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('picture/upload')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/picture/upload
+---
+2012/10/28 13:55:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:1119
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('upload')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('picture/upload')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/picture/upload
+---
+2012/10/28 13:58:08 [error] [exception.CHttpException.404] exception 'CHttpException' in D:\WWW\blog\protected\controllers\PictureController.php:41
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PictureController->actionUpload()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('upload')
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('picture/upload')
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\WWW\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/picture/upload
+HTTP_REFERER=http://localhost/blog/plugins/ueditor/dialogs/image/imageUploader.swf
+---
+2012/10/28 13:59:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '{'url':'D:\WWW\blog\protected/../upload/20121028/13514291426910.jpg','title':'1197_403013_617454.jpg','original':'1197_403013_617454.jpg','state':'SUCCESS'}' in D:\WWW\blog\protected\controllers\PictureController.php:69
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PictureController->actionUpload()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('upload')
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('picture/upload')
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\WWW\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/picture/upload
+HTTP_REFERER=http://localhost/blog/plugins/ueditor/dialogs/image/imageUploader.swf
+---
+2012/10/28 14:01:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:1119
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('upload')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('picture/upload')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/picture/upload
+---
+2012/10/28 14:35:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "undefined" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('undefined')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('undefined')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/undefined/...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/post/undefined/upload/20121028/13514312966630.jpg
+---
+2012/10/28 14:44:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "undefined" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('undefined')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('undefined')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/undefined/...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/post/undefined/upload/20121028/13514312966630.jpg
+---
+2012/10/28 14:45:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "undefined" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('undefined')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('undefined')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/undefined/...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/post/undefined/upload//20121028/13514319008677.jpg
+---
+2012/10/28 14:45:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "plugins/ueditor//upload//20121028/1351431914907.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('plugins/ueditor...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/plugins/ueditor//upload//20121028/1351431914907.jpg
+---
+2012/10/28 14:46:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121028/13514319634807.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121028...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog//upload/20121028/13514319634807.jpg
+---
+2012/10/28 14:46:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121028/13514319634807.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121028...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog//upload/20121028/13514319634807.jpg
+---
+2012/10/28 14:46:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121028/13514319634807.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121028...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121028/13514319634807.jpg
+---
+2012/10/28 14:47:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121028/13514319634807.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121028...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog//upload/20121028/13514319634807.jpg
+---
+2012/10/28 14:47:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121028/1351432047368.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121028...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog//upload/20121028/1351432047368.jpg
+---
+2012/10/28 14:47:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121028/1351432047368.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121028...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog//upload/20121028/1351432047368.jpg
+---
+2012/10/28 14:51:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload21028/13514322913254.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload??21028/1...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload%C2%8121028/13514322913254.jpg
+---
+2012/10/28 14:51:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload、21028/13514322913254.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload???21028/...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload%E3%80%8121028/13514322913254.jpg
+---
+2012/10/28 14:51:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/21028/13514322913254.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/21028/13...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/21028/13514322913254.jpg
+---
+2012/10/28 14:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/21028/13514322913254.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/21028/13...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/21028/13514322913254.jpg
+---
+2012/10/28 14:59:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "upload" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('upload')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('upload')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/upload/201...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog//blog/upload/20121028/13514327824330.jpg
+---
+2012/10/28 15:20:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/21028/13514322913254.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/21028/13...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/21028/13514322913254.jpg
+---
+2012/10/28 15:49:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "plugins/ueditor/themes/default/jquery.tagsinput.css.css"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('plugins/ueditor...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/plugins/ueditor/themes/default/jquery.tagsinput.css.css
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/28 15:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "plugins/ueditor/themes/default/jquery.tagsinput.css.css"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('plugins/ueditor...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/plugins/ueditor/themes/default/jquery.tagsinput.css.css
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/28 15:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "js/main.js"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('js/main.js')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/js/main.js
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/28 15:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "plugins/ueditor/themes/default/jquery.tagsinput.css"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('plugins/ueditor...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/plugins/ueditor/themes/default/jquery.tagsinput.css
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/10/28 16:17:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "test" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('test')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('test')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/test')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/post/test
+---

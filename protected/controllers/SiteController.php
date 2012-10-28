@@ -2,7 +2,6 @@
 
 class SiteController extends Controller
 {
-    public $blogs;
     public $layout = '//layouts/column2';
     public $sidebar;
     public $pageTitle = '我的轻博客';

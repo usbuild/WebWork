@@ -3,13 +3,22 @@
 class PostController extends Controller
 {
     public $blog;
+    public $blogs;
+    public $layout = '//layouts/column2';
+    public $sidebar;
 
     public function init()
     {
         parent::init();
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_config.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_all_min.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqtransform/jquery.jqtransform.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/plugins/jqtransform/jqtransform.css');
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/ueditor/themes/default/ueditor.css');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/tagsinput/jquery.tagsinput.min.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/tagsinput/jquery.tagsinput.css');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/main.js', CClientScript::POS_HEAD);
+        $this->sidebar = $this->renderPartial('sidebar', array(), true);
     }
 
     public function filters()
@@ -29,7 +38,7 @@ class PostController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'text', 'image', 'link', 'refer'),
+                'actions' => array('index', 'text', 'photo', 'video', 'music'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -87,5 +96,26 @@ class PostController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/text.js', CClientScript::POS_HEAD);
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
         $this->render('text', array('blogs' => $blogs));
+    }
+
+    public function actionPhoto()
+    {
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/text.js', CClientScript::POS_HEAD);
+        $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
+        $this->render('photo', array('blogs' => $blogs));
+    }
+
+    public function actionMusic()
+    {
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/text.js', CClientScript::POS_HEAD);
+        $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
+        $this->render('music', array('blogs' => $blogs));
+    }
+
+    public function actionVideo()
+    {
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/text.js', CClientScript::POS_HEAD);
+        $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
+        $this->render('video', array('blogs' => $blogs));
     }
 }

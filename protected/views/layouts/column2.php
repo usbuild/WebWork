@@ -7,6 +7,7 @@
     <!-- content -->
 </div>
 <div class="right-side last">
+    <div class="clearfix"></div>
     <div id="sidebar">
         <?php if (isset($this->sidebar)) echo $this->sidebar;?>
     </div>

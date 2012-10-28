@@ -11,12 +11,30 @@ li {
     list-style: none;
 }
 
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 .left-side {
     width: 635px;
+    float:left;
 }
 
 .right-side {
     width: 250px;
+    float: right;
 }
 
 .container {
@@ -226,59 +244,6 @@ a.blog-avatar:active {
     background: url('../images/feed-bg-sprites.png') -600px bottom no-repeat;
 }
 
-.publisher .pb-action ul {
-    margin: 0;
-    padding: 10px 20px 5px;
-}
-
-.publisher .pb-action li {
-    float: left;
-}
-
-.publisher .pb-action li a {
-    display: block;
-    width: 100px;
-    height: 74px;
-    background: url('../images/publisher.png') no-repeat 0 0;
-    text-indent: -9999px;
-    outline: none;
-}
-
-.publisher .pb-action li a:hover {
-    background-position: 0 -74px;
-}
-
-.publisher .pb-action .music {
-    background-position: -200px 0;
-}
-
-.publisher .pb-action .music:hover {
-    background-position: -200px -74px;
-}
-
-.publisher .pb-action .photo {
-    background-position: -100px 0;
-}
-
-.publisher .pb-action .photo:hover {
-    background-position: -100px -74px;
-}
-
-.publisher .pb-action .video {
-    background-position: -300px 0;
-}
-
-.publisher .pb-action .video:hover {
-    background-position: -300px -74px;
-}
-
-.publisher .pb-action .link {
-    background-position: -400px 0;
-}
-
-.publisher .pb-action .link:hover {
-    background-position: -400px -74px;
-}
 
 .m-nav2 {
     position: relative;
