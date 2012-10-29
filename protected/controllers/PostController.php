@@ -4,7 +4,7 @@ class PostController extends Controller
 {
     public $blog;
     public $blogs;
-    public $layout = '//layouts/column2';
+    public $layout = '//layouts/post';
     public $sidebar;
 
     public function init()
@@ -15,6 +15,7 @@ class PostController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqtransform/jquery.jqtransform.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/plugins/jqtransform/jqtransform.css');
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/ueditor/themes/default/ueditor.css');
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/post.css');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/tagsinput/jquery.tagsinput.min.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/tagsinput/jquery.tagsinput.css');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/main.js', CClientScript::POS_HEAD);

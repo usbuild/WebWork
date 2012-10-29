@@ -8,8 +8,10 @@
 $(document).ready(function () {
     $('#tags').tagsInput({
         defaultText:'',
+        height:'150px',
+        width:'190px',
         removeWithBackspace:true });
-    $('button').jqTransInputButton();
+//    $('button').jqTransInputButton();
     $('input[type=submit]').jqTransInputButton();
     $('input[type=text]').jqTransInputText();
     $('select').jqTransSelect();

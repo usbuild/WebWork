@@ -1,0 +1,138 @@
+.container {
+    width: 926px;
+    padding: 0 0 2px;
+    background: url('../images/postbg.png') no-repeat 999px 999px;
+    background-position: -994px 0;
+    background-repeat: repeat-y;
+}
+
+.pb-main {
+    width: 670px;
+    padding: 0 1px;
+    float: left;
+}
+
+.pb-aside {
+    width: 254px;
+    float: right;
+}
+
+#pb_main_title {
+    border-bottom: 1px solid #E1E1E1;
+    padding: 26px 30px 16px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.pb-post-area {
+    margin-bottom: 30px;
+}
+
+#pb_post_area h3.pb-section-title {
+    color: #5C5C5C;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 25px 0 10px;
+}
+
+.g-box2 {
+    padding: 26px 30px 0;
+}
+
+.w-ttl {
+    position: relative;
+    zoom: 1;
+    font-weight: normal;
+}
+
+.w-ttl em {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+em, strong {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.w-ttl small, .w-ttl span {
+    color: #9DA5AF;
+}
+
+small {
+    font-size: 13px;
+}
+
+.w-inputxt-1 {
+    width: 594px;
+}
+
+.w-inputxt-1, .w-inputxt-2, .w-inputxt-3, .w-inputxt-4, .w-inputxt-5 {
+    font-size: 24px;
+    height: 30px;
+    padding: 7px;
+    line-height: 40px;
+    float: none;
+}
+
+.w-droplist .chkitm, .w-bbtn, .w-tag li, .w-tag li em, .w-sbtn, .w-vsbtn, .m-edtab li, .m-calendar a, .w-schbtn, .w-sbtn2, .w-sbtn2-1, .w-vbbtn, .w-vbbtn2 {
+    background: url('../images/btn24.png') no-repeat 999px 999px;
+}
+
+.w-bbtn {
+    width: 104px;
+    height: 40px;
+    background-position: 0 -50px;
+    border: 0;
+    font-size: 16px;
+    text-shadow: -1px -1px 1px white;
+    cursor: pointer;
+}
+
+.m-edtact .w-bbtn {
+    margin-left: 10px;
+}
+
+.m-edtact .w-bbtn {
+    color: #777;
+}
+
+.m-edtact .delete {
+    left: -10px;
+}
+
+.m-edtact {
+    padding-bottom: 20px;
+    position: relative;
+    zoom: 1;
+    text-align: right;
+}
+
+.w-bbtn:hover {
+    background-position: -114px -50px;
+}
+
+.m-edtact .delete {
+    position: absolute;
+    left: -5px;
+}
+
+.w-bbtn-0 {
+    background-position: 0 0;
+    color: white;
+    text-shadow: -1px -1px 0px #779E00;
+}
+
+.w-bbtn-0:hover {
+    background-position: -114px 0;
+}
+
+.m-edtact .w-bbtn-0 {
+    color: white;
+}
+
+.pb-aside {
+    margin-bottom: 20px;
+    padding: 0 0 30px;
+}
+
