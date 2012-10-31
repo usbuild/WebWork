@@ -1,13 +1,16 @@
 <div class="clearfix"></div>
 
 <div id="pb_main_title" class="clearfix">
-    <span>发布文字</span>
+    <span>发布图片</span>
 </div>
 <div class="pb-post-area">
 
     <div class="g-box2">
-        <h3 class="w-ttl"><em>标题</em> <small>(可不填)</small></h3>
-        <input maxlength="50" class="w-inputxt w-inputxt-1 ztag" type="text">
+        <div class="upload-img-box">
+            <form action="" name="file_form" id="file_form">
+                <input type="file" name="pic_file" id="pic_file"/>
+            </form>
+        </div>
     </div>
 
     <div class="g-box2">

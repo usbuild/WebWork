@@ -21,7 +21,7 @@ class PictureController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('upload'),
+                'actions' => array('upload', 'jqupload'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -47,5 +47,11 @@ class PictureController extends Controller
         $info['url'] = '/upload/' . substr($info['url'], strlen($savePath));
         $result = array('url' => $info['url'], 'title' => $title, 'original' => $info["originalName"], 'state' => $info['state']);
         echo json_encode($result);
+    }
+
+    public function actionJqUpload()
+    {
+        $savePath = Yii::app()->basePath . "/../upload/";
+        $upload_handler = new UploadHandler(array('upload_dir' => $savePath, 'upload_url' => Yii::app()->baseUrl . '/upload/'));
     }
 }

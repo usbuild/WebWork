@@ -6,8 +6,6 @@
  * To change this template use File | Settings | File Templates.
  */
 $(document).ready(function () {
-    var editor = new baidu.editor.ui.Editor();
-    editor.render("myEditor");
 
     $('#submit_text').click(function (evt) {
         var title = $('#title').val();

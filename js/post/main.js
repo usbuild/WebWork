@@ -11,8 +11,9 @@ $(document).ready(function () {
         height:'150px',
         width:'190px',
         removeWithBackspace:true });
-//    $('button').jqTransInputButton();
-    $('input[type=submit]').jqTransInputButton();
     $('input[type=text]').jqTransInputText();
     $('select').jqTransSelect();
+
+    var editor = new baidu.editor.ui.Editor();
+    editor.render("myEditor");
 });
