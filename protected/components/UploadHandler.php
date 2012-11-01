@@ -241,7 +241,7 @@ class UploadHandler
     protected function get_file_objects($iteration_method = 'get_file_object') {
         $upload_dir = $this->get_upload_path();
         if (!is_dir($upload_dir)) {
-            mkdir($upload_dir, $this->options['mkdir_mode']);
+            mkdir($upload_dir, $this->options['mkdir_mode'], true);
         }
         return array_values(array_filter(array_map(
             array($this, $iteration_method),
@@ -258,7 +258,7 @@ class UploadHandler
         if (!empty($version)) {
             $version_dir = $this->get_upload_path(null, $version);
             if (!is_dir($version_dir)) {
-                mkdir($version_dir, $this->options['mkdir_mode']);
+                mkdir($version_dir, $this->options['mkdir_mode'], true);
             }
             $new_file_path = $version_dir.'/'.$file_name;
         } else {
@@ -482,7 +482,7 @@ class UploadHandler
             $this->handle_form_data($file, $index);
             $upload_dir = $this->get_upload_path();
             if (!is_dir($upload_dir)) {
-                mkdir($upload_dir, $this->options['mkdir_mode']);
+                mkdir($upload_dir, $this->options['mkdir_mode'], true);
             }
             $file_path = $this->get_upload_path($file->name);
             $append_file = $content_range && is_file($file_path) &&

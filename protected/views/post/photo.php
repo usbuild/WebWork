@@ -6,11 +6,16 @@
 <div class="pb-post-area">
 
     <div class="g-box2">
+        <div id="img_list"></div>
         <div class="upload-img-box">
-            <form action="" name="file_form" id="file_form">
-                <input type="file" name="pic_file" id="pic_file"/>
-            </form>
+            <div type="button" id="upload_btn">上传</div>
+            <span>jpg、gif、png或bmp格式，单张图片不超过2MB，支持文件拖拽上传。</span>
+            <input id="fileupload" type="file" name="files[]" data-url="<?=$this->createUrl('picture/jqupload')?>"
+                   multiple>
         </div>
+    </div>
+    <div id="progress">
+        <div class="bar"></div>
     </div>
 
     <div class="g-box2">

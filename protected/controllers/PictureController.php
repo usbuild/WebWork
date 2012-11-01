@@ -51,7 +51,7 @@ class PictureController extends Controller
 
     public function actionJqUpload()
     {
-        $savePath = Yii::app()->basePath . "/../upload/";
-        $upload_handler = new UploadHandler(array('upload_dir' => $savePath, 'upload_url' => Yii::app()->baseUrl . '/upload/'));
+        $upload_handler = new UploadHandler(array('upload_dir' => Yii::app()->basePath . "/../upload/" . date("Ymd") . '/',
+            'upload_url' => Yii::app()->baseUrl . '/upload/' . date("Ymd") . '/'));
     }
 }
