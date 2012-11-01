@@ -141,8 +141,13 @@ small {
     width: 100%;
     height: 35px;
     background-color: #ccc;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 5px;
+}
+
+.upload-img-box-drag {
+    background-color: #777;
+    border-radius: 10px;
 }
 
 #progress .bar {
@@ -159,16 +164,15 @@ small {
     display: inline-block;
     margin-left: 20px;
     width: 100px;
-    height: 40px;
+    height: 35px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 5px;
     background: url(../images/btn24.png) 0 0;
 }
 #upload_btn:hover{
     cursor: pointer;
     background: url(../images/btn24.png) -114px 0;
 }
-
-.drop-hover{
-    background-color: red;
+.upload-img-box span{
+    margin-left: 20px;
 }

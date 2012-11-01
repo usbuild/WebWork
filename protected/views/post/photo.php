@@ -6,7 +6,7 @@
 <div class="pb-post-area">
 
     <div class="g-box2">
-        <div id="img_list"></div>
+        <ul id="img_list"></ul>
         <div class="upload-img-box">
             <div type="button" id="upload_btn">上传</div>
             <span>jpg、gif、png或bmp格式，单张图片不超过2MB，支持文件拖拽上传。</span>
