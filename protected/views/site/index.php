@@ -34,7 +34,7 @@
                     <div class="feed-basic"></div>
                 </div>
                 <div class="feed-bd no-hd-content">
-                    <h4 class="feed-title"><?=$post->content['title']?></h4>
+                    <h4 class="feed-title"><?php if ($post->type === 'text'): ?><?= $post->content['title'] ?><?php endif;?></h4>
 
                     <div class="feed-ct">
                         <div class="feed-txt-full rich-content">

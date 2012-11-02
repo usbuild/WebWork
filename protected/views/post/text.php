@@ -7,7 +7,7 @@
 
     <div class="g-box2">
         <h3 class="w-ttl"><em>标题</em> <small>(可不填)</small></h3>
-        <input maxlength="50" class="w-inputxt w-inputxt-1 ztag" type="text">
+        <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title">
     </div>
 
     <div class="g-box2">
@@ -19,7 +19,7 @@
             <input type="button" class="w-bbtn delete ztag" value="取　消">
             <input style="display:none" type="button" class="w-bbtn save ztag" value="保存草稿">
             <input type="button" class="w-bbtn preview ztag" value="预　览">
-            <input type="button" class="w-bbtn w-bbtn-0 publish ztag" value="发　布">
+            <input type="button" class="w-bbtn w-bbtn-0 publish ztag" value="发　布" id="submit">
         </div>
     </div>
 

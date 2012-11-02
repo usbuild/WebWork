@@ -50,16 +50,19 @@ class PostController extends Controller
 
     public function actionIndex()
     {
-        if (isset($_REQUEST['title']) && isset($_REQUEST['content']) && isset($_REQUEST['tags'])) {
+        if (isset($_REQUEST['title']) && isset($_REQUEST['content']) && isset($_REQUEST['tags']) && isset($_REQUEST['type'])) {
             $title = $_REQUEST['title'];
             $content = $_REQUEST['content'];
             $tags = explode(',', $_REQUEST['tags']);
-            if (strlen(trim($title)) + strlen(trim($content)) > 0) {
+            $type = $_REQUEST['type'];
+            if (($type === 'text' && strlen(trim($title)) + strlen(trim($content)) > 0)
+                || ($type === 'image' && !empty($title))
+            ) {
                 $post = new Post();
                 $post->content = array('title' => $title, 'content' => $content);
                 $post->poster = $this->blog->id;
                 $post->tag = $tags;
-                $post->type = 'text';
+                $post->type = $type;
 
                 $transaction = Yii::app()->db->beginTransaction();
                 try {
@@ -67,6 +70,7 @@ class PostController extends Controller
                     if ($post->save()) {
                         $post->refresh();
                         foreach ($tags as $tag) {
+                            if(strlen(trim($tag)) == 0) continue;
                             $tagModel = new Tag();
                             $tagModel->post = $post->id;
                             $tagModel->tag = $tag;
@@ -80,7 +84,7 @@ class PostController extends Controller
                     }
                 } catch (Exception $ex) {
                     $transaction->rollback();
-                    echo CJSON::encode(array('code' => 1, 'data' => CHtml::errorSummary($post)));
+                    echo CJSON::encode(array('code' => 1, 'data' => CHtml::errorSummary($post) . CHtml::errorSummary($tagModel)));
                 }
             } else {
                 echo CJSON::encode(array('code' => 1));

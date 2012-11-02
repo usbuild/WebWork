@@ -5,59 +5,113 @@
  * Time: 下午11:17
  */
 $(document).ready(function () {
-    jQuery.event.props.push('dataTransfer');
     var dropElement = $('.upload-img-box');
 
-    dropElement.bind('dragleave drop dragend', function (e) {
-        dropElement.removeClass('upload-img-box-drag');
+    $(document).bind('dragover', function (e) {
+        var timeout = window.dropZoneTimeout;
+        if (!timeout) {
+            $('#hover_text').removeClass('hidden');
+            $('#original_text').addClass('hidden');
+        } else {
+            clearTimeout(timeout);
+        }
+        if (dropElement.has(e.target).length > 0 || e.target == dropElement.get(0)) {
+            dropElement.addClass('upload-img-box-drag');
+        } else {
+            dropElement.removeClass('upload-img-box-drag');
+        }
+        window.dropZoneTimeout = setTimeout(function () {
+            window.dropZoneTimeout = null;
+            $('#hover_text').addClass('hidden');
+            $('#original_text').removeClass('hidden');
+            dropElement.removeClass('upload-img-box-drag');
+        }, 100);
     });
-
-
-    $(document).bind('dragenter dragover', function (e) {
+    $(document).bind('drop dragover', function (e) {
         e.preventDefault();
-        e.dataTransfer.dropEffect = "move";
-        $('.upload-img-box span').html('拖动多张图片到这里，直接上传');
-    });
-    $(document).bind('drop', function (e) {
-        e.preventDefault();
-        e.dataTransfer.dropEffect = "none";
     });
 
-    $(document).bind('dragleave', function (e) {
-        $('.upload-img-box span').html('jpg、gif、png或bmp格式，单张图片不超过2MB，支持文件拖拽上传。');
-    });
-    $('#img_list').sortable().change(function(e){
-        console.dir(e);
-    });
 
+    $('#img_list').sortable({handle:'.move', revert:'true'});
+
+    $('div.close').live('click', function () {
+        $(this).parents('li').remove();
+    });
     $('#fileupload').fileupload({
         dataType:'json',
+        add:function (e, data) {
+            $.each(data.files, function (index, file) {
+
+                file.id = Date.parse(new Date()) + parseInt(Math.random() * 1000);
+                var div = $('#proto_progress').clone().removeClass('hidden');
+                div.attr('id', file.id);
+                var img = div.find('img');
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    img.attr('src', e.target.result);
+                    img.attr('alt', file.name);
+                    img.attr('width', '60px');
+                    img.attr('height', '60px');
+                    $('#progress_box').append(div);
+                };
+                reader.readAsDataURL(file);
+
+
+            });
+            data.submit();
+        },
+
         done:function (e, data) {
-            $('#progress .bar').css('display', 'none');
             $.each(data.result, function (index, file) {
-                var li = $('<li></li>')
-                var img = $('<img/>');
+                var id = data.files[0].id;
+                $('#' + id).remove();
+
+                var template = $('#proto_box').clone().removeClass('hidden').attr('id', id);
+                var li = $('<li></li>');
+                var img = template.find('img');
                 img.attr('src', file.thumbnail_url);
+                img.data('url', file.url);
                 img.attr('alt', file.name);
-                li.append(img);
+                img.attr('width', '60px');
+                img.attr('height', '60px');
+                li.append(template);
                 $('#img_list').append(li);
             });
         },
-        progressall:function (e, data) {
+        progress:function (e, data) {
+            var id = data.files[0].id;
             var progress = parseInt(data.loaded / data.total * 100, 10);
-            $('#progress .bar').css('display', 'block');
-            $('#progress .bar').css('width', progress + '%');
+            $('#' + id).find('.value').css('width', progress + '%');
         },
         dragover:function (e, data) {
-            e.originalEvent.dataTransfer.dropEffect = "move";
-            $('.upload-img-box span').html('拖动多张图片到这里，直接上传');
             dropElement.addClass('upload-img-box-drag');
-            e.stopPropagation();
         },
-        dropZone:dropElement
+        dropZone:dropElement,
+        fail:function (e, data) {
+            alert('上传文件失败');
+        }
     });
     $('#upload_btn').click(function () {
         $('#fileupload').trigger('click');
+    });
+    $('#submit').click(function (e) {
+        var li = $('#img_list').find('li');
+        var data = [];
+        li.each(function (i, l) {
+            data.push({url:$(l).find('img').data('url'), desc:$(l).find('input').val()});
+        });
+
+        var content = window.editor.getContent();
+        var blog_id = $('#blog_id').val();
+        var tags = $('#tags').val();
+        $.post(baseUrl + 'post', {'title':data, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'image'}, function (e) {
+            var obj = json_decode(e);
+            if (obj.code == 0) {
+                window.location.reload();
+            } else {
+                alert('发表失败');
+            }
+        });
     });
 
 });

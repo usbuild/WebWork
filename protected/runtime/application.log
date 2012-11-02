@@ -1401,3 +1401,196 @@ REQUEST_URI=/blog/picture/jqupload
 in D:\WWW\blog\protected\components\UploadHandler.php (485)
 in D:\WWW\blog\protected\components\UploadHandler.php (683)
 in D:\WWW\blog\protected\components\UploadHandler.php (127)
+2012/11/02 08:11:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:11:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:12:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:12:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:12:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:14:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:15:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+---
+2012/11/02 08:16:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:16:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+HTTP_REFERER=http://localhost/blog/post/photo
+---
+2012/11/02 08:16:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/thumbnail/Chrysanthemum (17).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/thumbnail/Chrysanthemum%20%2817%29.jpg
+---
+2012/11/02 09:14:15 [error] [php] trim() expects parameter 1 to be string, array given (D:\www\blog\protected\controllers\PostController.php:57)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#2 D:\www\blog\protected\controllers\filters\BlogOwnerFilter.php(21): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): BlogOwnerFilter->preFilter()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): BlogOwnerFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterPostOnly()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post
+in D:\www\blog\protected\controllers\PostController.php (57)
+in D:\www\blog\protected\controllers\filters\BlogOwnerFilter.php (21)
+in D:\www\blog\index.php (13)
+2012/11/02 09:19:17 [error] [php] Use of undefined constant asfdaws - assumed 'asfdaws' (D:\www\blog\protected\controllers\PostController.php:86)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#1 D:\www\blog\protected\controllers\filters\BlogOwnerFilter.php(21): CFilterChain->run()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): BlogOwnerFilter->preFilter()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): BlogOwnerFilter->filter()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterPostOnly()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post
+in D:\www\blog\protected\controllers\PostController.php (86)
+in D:\www\blog\protected\controllers\filters\BlogOwnerFilter.php (21)
+in D:\www\blog\index.php (13)
+2012/11/02 09:24:29 [error] [php] Array to string conversion (D:\www\blog\protected\views\site\index.php:37)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): SiteController->renderPartial()
+#2 D:\www\blog\protected\controllers\SiteController.php(67): SiteController->render()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/
+in D:\www\blog\protected\views\site\index.php (37)
+in D:\www\blog\protected\controllers\SiteController.php (67)
+in D:\www\blog\index.php (13)
