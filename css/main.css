@@ -11,7 +11,6 @@ li {
     list-style: none;
 }
 
-
 .clearfix {
     *zoom: 1;
 }
@@ -29,7 +28,7 @@ li {
 
 .left-side {
     width: 635px;
-    float:left;
+    float: left;
 }
 
 .right-side {
@@ -53,7 +52,51 @@ a:hover {
     margin: 0;
     width: 100%;
     height: 72px;
-    background-color: #2C4762;
+    background: url('../images/header.png') repeat-x 0 -20px;
+}
+
+.link-holder {
+    padding-top: 10px;
+    height: 62px;
+
+}
+
+.link-holder li {
+    margin: 0 15px 0 10px;
+    float: left;
+    height: 62px;
+}
+
+.link-holder li a {
+    line-height: 62px;;
+    font-size: 18px;
+    color: #6F889A;
+    text-shadow: 1px 1px 2px #0B2C45;
+    /*height: 62px;*/
+    display: block;
+}
+
+.link-holder li a:hover {
+    color: white;
+}
+
+.link-holder li a.active {
+    background: url("../images/header.png") no-repeat center 51px;
+    color: white;
+}
+
+.link-holder #add_blog {
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/header2.png");
+    background-repeat: no-repeat;
+    background-position: -27px -15px;
+    line-height: 62px;
+    margin-top: 20px;
+}
+
+.link-holder #add_blog:hover {
+    background-position: -97px -15px;
 }
 
 #header {
@@ -61,12 +104,72 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     color: white;
+
 }
 
 .blog-holder, .home-holder, #logo_holder {
     float: left;
     margin: 25px;
     font-size: 20px;
+}
+
+#logo_holder {
+    display: block;
+}
+
+#logo_holder h1 {
+    line-height: 0.5;
+}
+
+#logo_holder h1 a {
+    color: #ccc;
+    text-shadow: 1px 1px 2px #002a80;
+}
+
+#logo_holder h1 a:hover {
+    color: white;
+}
+
+.opt-holder ul {
+    float: right;
+    margin-top: 10px;
+}
+
+.opt-holder li {
+    float: right;
+    margin: 0 10px 0 10px;
+}
+
+.opt-holder li a {
+    background-image: url("../images/header2.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+
+.opt-holder #discover a {
+    background-position: 0 -98px;
+}
+
+.opt-holder #discover a:hover {
+    background-position: 0 -128px;
+}
+
+.opt-holder #setting a {
+    background-position: -72px -98px;
+}
+
+.opt-holder #setting a:hover {
+    background-position: -72px -128px;
+}
+
+.opt-holder #logout a {
+    background-position: -109px -98px;
+}
+
+.opt-holder #logout a:hover {
+    background-position: -109px -128px;
 }
 
 .opt-holder {
@@ -244,7 +347,6 @@ a.blog-avatar:active {
     background: url('../images/feed-bg-sprites.png') -600px bottom no-repeat;
 }
 
-
 .m-nav2 {
     position: relative;
     z-index: 9;
@@ -271,6 +373,7 @@ a.blog-avatar:active {
     width: 110px;
     background: url('../images/nav.png') no-repeat;
 }
+
 .m-nav2 .user:hover {
     background-position: 0 -132px;
 }
