@@ -1594,3 +1594,185 @@ REQUEST_URI=/blog/
 in D:\www\blog\protected\views\site\index.php (37)
 in D:\www\blog\protected\controllers\SiteController.php (67)
 in D:\www\blog\index.php (13)
+2012/11/05 05:34:45 [error] [php] trim() expects parameter 1 to be string, array given (D:\src\yii-1.1.12.b600af\framework\web\CUrlManager.php:295)
+Stack trace:
+#0 D:\www\blog\protected\views\layouts\main.php(28): CWebApplication->createUrl()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(96): BlogController->renderInternal()
+#3 D:\src\yii-1.1.12.b600af\framework\web\widgets\CContentDecorator.php(77): BlogController->renderFile()
+#4 D:\src\yii-1.1.12.b600af\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#5 D:\src\yii-1.1.12.b600af\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(207): CContentDecorator->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(301): BlogController->endWidget()
+#8 D:\www\blog\protected\views\layouts\column2.php(16): BlogController->endContent()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(96): BlogController->renderInternal()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(785): BlogController->renderFile()
+#12 D:\www\blog\protected\controllers\BlogController.php(49): BlogController->render()
+#13 unknown(0): BlogController->actionView()
+#14 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#15 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#16 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): BlogController->runAction()
+#18 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#20 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): BlogController->filterAccessControl()
+#21 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#22 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#23 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): BlogController->runActionWithFilters()
+#24 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): BlogController->run()
+#25 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#26 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blog/view/1
+in D:\www\blog\protected\views\layouts\main.php (28)
+in D:\www\blog\protected\views\layouts\column2.php (16)
+in D:\www\blog\protected\controllers\BlogController.php (49)
+2012/11/05 09:34:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:1119
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('create')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/create')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/blog/create
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/05 10:04:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/blog/
+---
+2012/11/05 11:57:07 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (D:\src\yii-1.1.12.b600af\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\www\blog\protected\controllers\BlogController.php(77): spl_autoload_call()
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): BlogController->actionCreate()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): BlogController->runAction()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): BlogController->filterAccessControl()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): BlogController->runActionWithFilters()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): BlogController->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blog/create
+in D:\www\blog\protected\controllers\BlogController.php (77)
+in D:\www\blog\index.php (13)
+2012/11/05 11:57:14 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (D:\src\yii-1.1.12.b600af\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\www\blog\protected\controllers\BlogController.php(77): spl_autoload_call()
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): BlogController->actionCreate()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): BlogController->runAction()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): BlogController->filterAccessControl()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): BlogController->runActionWithFilters()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): BlogController->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blog/create
+in D:\www\blog\protected\controllers\BlogController.php (77)
+in D:\www\blog\index.php (13)
+2012/11/05 11:57:17 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (D:\src\yii-1.1.12.b600af\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\www\blog\protected\controllers\BlogController.php(77): spl_autoload_call()
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): BlogController->actionCreate()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): BlogController->runAction()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): BlogController->filterAccessControl()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): BlogController->runActionWithFilters()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): BlogController->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blog/create
+in D:\www\blog\protected\controllers\BlogController.php (77)
+in D:\www\blog\index.php (13)
+2012/11/05 11:58:45 [error] [php] include(Chtml.php): failed to open stream: No such file or directory (D:\src\yii-1.1.12.b600af\framework\YiiBase.php:423)
+Stack trace:
+#0 D:\www\blog\protected\controllers\BlogController.php(77): spl_autoload_call()
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): BlogController->actionCreate()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): BlogController->runAction()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): BlogController->filterAccessControl()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): BlogController->runActionWithFilters()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): BlogController->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blog/create
+in D:\www\blog\protected\controllers\BlogController.php (77)
+in D:\www\blog\index.php (13)
+2012/11/05 12:38:47 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "order".' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\www\blog\protected\controllers\BlogController.php(50): CComponent->__call('order', Array)
+#1 D:\www\blog\protected\controllers\BlogController.php(50): CDbCriteria->order('time desc')
+#2 [internal function]: BlogController->actionView('8')
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(BlogController), Array)
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(BlogController), Object(ReflectionMethod), Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/view')
+#15 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/blog/view/8
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/05 13:53:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "account" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('account')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('account')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('setting/account')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/setting/account
+HTTP_REFERER=http://localhost/blog/setting
+---
+2012/11/05 14:22:21 [error] [exception.CException] exception 'CException' with message '属性 "SettingController.clientScript" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\www\blog\protected\controllers\SettingController.php(13): CComponent->__get('clientScript')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(282): SettingController->init()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('setting/account')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/setting/account
+---

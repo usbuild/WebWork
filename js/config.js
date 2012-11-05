@@ -9,6 +9,16 @@ var baseUrl = 'http://localhost/blog/';
 var json_decode = function (e) {
     return eval('(' + e + ')');
 };
-var json_encode = function(e) {
+var json_encode = function (e) {
     return JSON.stringify(e);
-}
+};
+var setActive = function (id) {
+    $('li a.active').removeClass('active');
+    if ($('#' + id).length > 0)
+        $('#' + id).addClass('active');
+};
+$(function () {
+    if ($('#blog_id').length > 0) {
+        setActive('blog_id_' + $('#blog_id').val());
+    }
+});

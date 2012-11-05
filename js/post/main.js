@@ -16,4 +16,5 @@ $(document).ready(function () {
 
     window.editor = new baidu.editor.ui.Editor();
     window.editor.render("myEditor");
+
 });
