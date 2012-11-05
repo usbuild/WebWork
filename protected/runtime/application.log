@@ -1776,3 +1776,20 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/blog/setting/account
 ---
+2012/11/05 14:40:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:1119
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterPostOnly(Object(CFilterChain))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/
+---

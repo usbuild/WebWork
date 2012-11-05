@@ -18,7 +18,7 @@ var setActive = function (id) {
         $('#' + id).addClass('active');
 };
 $(function () {
-    if ($('#blog_id').length > 0) {
-        setActive('blog_id_' + $('#blog_id').val());
+    if ($('#blog_id_input').length > 0) {
+        setActive('blog_id_' + $('#blog_id_input').val());
     }
 });

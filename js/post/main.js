@@ -17,4 +17,13 @@ $(document).ready(function () {
     window.editor = new baidu.editor.ui.Editor();
     window.editor.render("myEditor");
 
+    function setActiveBlog() {
+        setActive('blog_id_' + $('#blog_id').val());
+    }
+
+    $('#blog_id').change(function (e) {
+        setActiveBlog();
+    });
+    setActiveBlog();
+
 });

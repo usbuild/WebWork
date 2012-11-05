@@ -5,7 +5,7 @@
     <li><a class="music" href="<?=$this->createUrl('post/music');?>" title="音乐"></a></li>
     <li><a class="video" href="<?=$this->createUrl('post/video');?>" title="视频"></a></li>
 </ul>
-<input type="hidden" value="<?=$blog->id?>" id="blog_id"/>
+<input type="hidden" value="<?=$blog->id?>" id="blog_id_input"/>
 
 
 

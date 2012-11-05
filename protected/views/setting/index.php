@@ -1,4 +1,4 @@
-<input type="hidden" value="no-value" id="blog_id">
+<input type="hidden" value="no-value" id="blog_id_input">
 <div id="setting_container">
     <div class="g-box3">
         <h2 class="w-fttl">
