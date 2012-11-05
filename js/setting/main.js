@@ -23,4 +23,17 @@ $(function () {
                 }
             });
     });
+
+    $('#file').change(function (e) {
+        var file = $('#file').get(0).files[0];
+        var reader = new FileReader();
+        var img = $('#upload_img');
+        reader.onload = function (e) {
+            img.attr('src', e.target.result);
+            img.attr('alt', file.name);
+            img.attr('width', '400px');
+            img.imgAreaSelect({ aspectRatio:'1:1', handles:true });
+        };
+        reader.readAsDataURL(file);
+    });
 });

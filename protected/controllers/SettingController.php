@@ -8,10 +8,12 @@
  */
 class SettingController extends Controller
 {
+    public $layout = "//layouts/main";
+
     public function init()
     {
         parent::init();
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/setting/main.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/setting/main.js', CClientScript::POS_END);
     }
 
     public function filters()
@@ -44,9 +46,16 @@ class SettingController extends Controller
         $this->render('index');
     }
 
-    public function actionBlog()
+    public function actionBlog($id)
     {
-
+        $this->layout = "//layouts/column2";
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/imgareaselect/jquery.imgareaselect-0.3.min.js', CClientScript::POS_HEAD);
+        if (is_numeric($id)) {
+            $blog = Blog::model()->findByPk($id);
+        } else {
+            $blog = Blog::model()->findByAttributes(array('domain'));
+        }
+        $this->render('blog', array('blog' => $blog));
     }
 
     public function actionAccount()

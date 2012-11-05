@@ -8,12 +8,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-
-: #555
-
-;
-
-    }
+    padding: 0;
+}
 
 li {
     list-style: none;
@@ -672,4 +668,24 @@ a.blog-avatar:active {
 
 .acount-link a:hover {
     color: #7594B3;
+}
+
+#blog_setting {
+    width: 926px;
+    padding: 0 0 2px;
+    background: url('../images/postbg.png') no-repeat 999px 999px;
+    background-position: -994px 0;
+    background-repeat: repeat-y;
+}
+
+#blog_setting .setting-item {
+    float: left;
+    font-size: 15px;
+    padding: 10px 10px 30px 0;
+}
+
+#blog_setting .setting-content {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
 }
