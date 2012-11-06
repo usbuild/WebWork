@@ -23,7 +23,11 @@ $(function () {
                 }
             });
     });
+    $('#upload_btn').click(function (e) {
+        $('#file').trigger('click');
+    });
 
+    var selectImg = null;
     $('#file').change(function (e) {
         var file = $('#file').get(0).files[0];
         var reader = new FileReader();
@@ -32,8 +36,53 @@ $(function () {
             img.attr('src', e.target.result);
             img.attr('alt', file.name);
             img.attr('width', '400px');
-            img.imgAreaSelect({ aspectRatio:'1:1', handles:true });
+            selectImg = img.imgAreaSelect({
+                aspectRatio:'1:1',
+                handles:true,
+                instance:true,
+                minWidth:60
+            });
+            selectionArea = null;
+//            $('.upload-img-box').css('display', 'block');
+            $('.upload-img-box').show();
         };
         reader.readAsDataURL(file);
     });
-});
+    $('#img_ok').click(function () {
+            var selection = selectImg.getSelection();
+            if (selection.width == 0) {
+                alert('请先选择区域');
+                return;
+            }
+            var form = $('#img_form').get(0);
+            var f = new FormData(form);
+            f.append('x1', selection.x1);
+            f.append('y1', selection.y1);
+            f.append('width', selection.width);
+            f.append('height', selection.height);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', baseUrl + 'picture/avatarupload');
+            xhr.send(f);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var obj = json_decode(xhr.responseText);
+                    if (obj.code == 0) {
+                        $('.blog_avatar img').attr('src', obj.data);
+                        $('.upload-img-box').hide();
+                        selectImg.cancelSelection();
+                    } else {
+                        alert('上传失败');
+                    }
+                }
+            };
+        }
+    );
+
+    $('#img_cancel').click(function () {
+        $('.upload-img-box').hide();
+        selectImg.cancelSelection();
+    });
+
+})
+;

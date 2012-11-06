@@ -442,6 +442,7 @@ a.blog-avatar:active {
 #LoginForm_username, #LoginForm_password {
     width: 250px;
     line-height: 40px;
+    height: 40px;
     border: none;
     background-color: whiteSmoke;
     text-align: center;
@@ -688,4 +689,32 @@ a.blog-avatar:active {
     float: left;
     margin-top: 10px;
     margin-left: 10px;
+}
+
+.blog_avatar img {
+    border-radius: 5px;
+}
+
+.upload-img-box {
+    z-index: 1;
+    position: relative;
+    padding: 0 10px 10px 10px;
+    display: none;
+}
+
+.upload-operation #file {
+    display: none;
+}
+
+.upload-operation {
+    position: relative;
+    top: -75px;
+    left: 75px;
+}
+
+.normal-text {
+    height: 30px;
+    border: solid 2px #ccc;
+    line-height: 30px;
+    width: 300px;
 }

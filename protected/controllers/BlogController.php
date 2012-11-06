@@ -25,7 +25,7 @@ class BlogController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create'),
+                'actions' => array('create', 'view'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -47,7 +47,7 @@ class BlogController extends Controller
 
             $criteria = new CDbCriteria();
             $criteria->compare('poster', $id);
-            $criteria->order ='time desc';
+            $criteria->order = 'time desc';
             $count = Post::model()->count($criteria);
             $pages = new CPagination($count);
             $pages->pageSize = 5;

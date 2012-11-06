@@ -49,7 +49,8 @@ class SettingController extends Controller
     public function actionBlog($id)
     {
         $this->layout = "//layouts/column2";
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/imgareaselect/jquery.imgareaselect-0.3.min.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/imgareaselect/css/imgareaselect-default.css');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/imgareaselect/scripts/jquery.imgareaselect.min.js', CClientScript::POS_HEAD);
         if (is_numeric($id)) {
             $blog = Blog::model()->findByPk($id);
         } else {
