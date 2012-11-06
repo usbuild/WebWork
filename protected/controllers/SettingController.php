@@ -48,15 +48,27 @@ class SettingController extends Controller
 
     public function actionBlog($id)
     {
-        $this->layout = "//layouts/column2";
-        Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/imgareaselect/css/imgareaselect-default.css');
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/imgareaselect/scripts/jquery.imgareaselect.min.js', CClientScript::POS_HEAD);
         if (is_numeric($id)) {
-            $blog = Blog::model()->findByPk($id);
+            $blog = Blog::model()->findByAttributes(array('id' => $id, 'owner' => Yii::app()->user->id));
         } else {
-            $blog = Blog::model()->findByAttributes(array('domain'));
+            $blog = Blog::model()->findByAttributes(array('domain' => $id, 'owner' => Yii::app()->user->id));
         }
-        $this->render('blog', array('blog' => $blog));
+
+        if (!Yii::app()->request->isPostRequest) {
+            $this->layout = "//layouts/column2";
+            Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/imgareaselect/css/imgareaselect-default.css');
+            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/imgareaselect/scripts/jquery.imgareaselect.min.js', CClientScript::POS_HEAD);
+            $this->render('blog', array('blog' => $blog));
+        } else {
+            $blog->avatar = $_REQUEST['avatar'];
+            $blog->name = $_REQUEST['name'];
+            $blog->domain = $_REQUEST['domain'];
+            if ($blog->save()) {
+                echo CJSON::encode(array('code' => 0));
+            } else {
+                echo CJSON::encode(array('code' => 1));
+            }
+        }
     }
 
     public function actionAccount()

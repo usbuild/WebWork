@@ -26,7 +26,7 @@ class PostController extends Controller
     {
         return array(
             'accessControl', // perform access control for CRUD operations
-            'postOnly + delete,index', // we only allow deletion via POST request
+            'postOnly + delete,index,getYoukuImg', // we only allow deletion via POST request
             array('application.controllers.filters.BlogOwnerFilter + index'),
         );
     }
@@ -39,7 +39,7 @@ class PostController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'text', 'photo', 'video', 'music'),
+                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getYoukuImg'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -70,7 +70,7 @@ class PostController extends Controller
                     if ($post->save()) {
                         $post->refresh();
                         foreach ($tags as $tag) {
-                            if(strlen(trim($tag)) == 0) continue;
+                            if (strlen(trim($tag)) == 0) continue;
                             $tagModel = new Tag();
                             $tagModel->post = $post->id;
                             $tagModel->tag = $tag;
@@ -108,12 +108,10 @@ class PostController extends Controller
         Yii::app()->clientScript->registerCoreScript('jquery.ui');
         Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/plugins/file-upload/css/jquery.fileupload-ui.css');
 
-
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/file-upload/js/vendor/jquery.ui.widget.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/file-upload/js/jquery.iframe-transport.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/file-upload/js/jquery.fileupload.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/photo.js', CClientScript::POS_HEAD);
-
 
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
         $this->render('photo', array('blogs' => $blogs));
@@ -121,15 +119,29 @@ class PostController extends Controller
 
     public function actionMusic()
     {
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/text.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/music.js', CClientScript::POS_HEAD);
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
         $this->render('music', array('blogs' => $blogs));
     }
 
     public function actionVideo()
     {
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/text.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/video.js', CClientScript::POS_HEAD);
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
         $this->render('video', array('blogs' => $blogs));
+    }
+
+    public function actionGetYoukuImg()
+    {
+        if (isset($_REQUEST['link'])) {
+            $id = Common::getYouKuId($_REQUEST['link']);
+            if ($id) {
+                echo CJSON::encode(array('code' => 0, 'data' => Common::getYouKuImg($id)));
+            } else {
+                echo CJSON::encode(array('code' => 1));
+            }
+        } else {
+            echo CJSON::encode(array('code' => 1));
+        }
     }
 }

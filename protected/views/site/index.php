@@ -17,12 +17,11 @@
             </a>
         </div>
 
-
         <div class="feed-content-holder pop">
             <div class="pop-triangle"></div>
             <div class="link-to-post-holder" style="display: none; ">
                 <div class="link-to-post-inner" style="background-position: 0px -135px; ">
-                    <a href="http://usbuild.diandian.com/post/2012-10-26/40041346844" target="_blank"
+                    <a href="#" target="_blank"
                        class="link-to-post" title="查看文章 - 17:26">查看文章</a>
                 </div>
             </div>
@@ -32,20 +31,57 @@
                     <div class="feed-basic"></div>
                 </div>
                 <div class="feed-bd no-hd-content">
-                    <h4 class="feed-title"><?php if ($post->type === 'text'): ?><?= $post->content['title'] ?><?php endif;?></h4>
+
+                    <?php switch ($post->type) {
+                    case 'text':
+                        ?>
+                            <h4 class="feed-title"><?=$post->content['title']?></h4>
+                            <?php break;
+                    case 'image':
+                        $i = 5;
+                        ?>
+                            <div class="feed-image">
+                                <?php foreach ($post->content['title'] as $img): ?>
+                                <div class="feed-image-item">
+                                    <p>
+                                        <?php $i--;
+                                        if ($i < 0) break;
+                                        echo '<img src="' . $img['url'] . '" alt="' . $img['desc'] . '" width="500px" />'
+                                        ?>
+                                    </p>
+                                </div>
+                                <?php endforeach;?>
+                                <span style="color: #ccc; font-size: small;">共有(<?=count($post->content['title'])?>)张</span><br><br>
+                            </div>
+
+                            <?php break;
+                    case 'music':
+                        ?>
+
+                            <?php break;
+                    case 'video':
+                        ?>
+
+                            <?php break;
+                    default:
+                        break; ?>
+
+                            <?php
+                }?>
 
                     <div class="feed-ct">
                         <div class="feed-txt-full rich-content">
-                            <div class="feed-txt-summary"><?=$post->content['content']?></div>
+                            <div
+                                class="feed-txt-summary"><?=mb_strimwidth(strip_tags($post->content['content']), 0, 200, "...");?></div>
                         </div>
                     </div>
+
                     <div class="feed-act">
-                        <a class="feed-rt" target="_blank"
-                           href="http://www.diandian.com/reblog/usbuild/426c08b0-1f4f-11e2-8136-782bcb43ae03">转载</a>
+                        <a class="feed-rt" target="_blank" href="#">转载</a>
                         <a class="feed-del">删除</a>
-                        <a href="http://www.diandian.com/edit/426c08b0-1f4f-11e2-8136-782bcb43ae03"
-                           class="feed-edit">编辑</a>
-                        <a class="feed-cmt" data-nid="426c08b0-1f4f-11e2-8136-782bcb43ae03">回应</a></div>
+                        <a href="#" class="feed-edit">编辑</a>
+                        <a class="feed-cmt" data-nid="#">回应</a>
+                    </div>
                 </div>
             </div>
             <div class="feed-container-bottom"></div>
@@ -53,5 +89,5 @@
         </div>
 
     </div>
-    <?php endforeach;?>
+    <?php endforeach; ?>
 </div>

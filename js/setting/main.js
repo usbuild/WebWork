@@ -6,6 +6,8 @@
  * To change this template use File | Settings | File Templates.
  */
 $(function () {
+    $('.container').addClass('lf-container');
+
     $('#renew_pass').submit(function (evt) {
         evt.preventDefault();
         if ($('#new_pass').val().length < 5 || $('#new_pass').val() != $('#repeat_pass').val()) {
@@ -43,7 +45,6 @@ $(function () {
                 minWidth:60
             });
             selectionArea = null;
-//            $('.upload-img-box').css('display', 'block');
             $('.upload-img-box').show();
         };
         reader.readAsDataURL(file);
@@ -68,7 +69,8 @@ $(function () {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     var obj = json_decode(xhr.responseText);
                     if (obj.code == 0) {
-                        $('.blog_avatar img').attr('src', obj.data);
+                        $('.blog_avatar img').attr('src', baseUrl + obj.data);
+                        $('.blog_avatar img').attr('data-avatar', obj.data);
                         $('.upload-img-box').hide();
                         selectImg.cancelSelection();
                     } else {
@@ -82,6 +84,22 @@ $(function () {
     $('#img_cancel').click(function () {
         $('.upload-img-box').hide();
         selectImg.cancelSelection();
+    });
+    $('input[type=submit]').click(function (e) {
+        e.preventDefault();
+        var avatar = $('.blog_avatar img').attr('data-avatar');
+        var name = $('#blog_name').val();
+        var domain = $('#blog_domain').val();
+        var id = $('#blog_id_input').val();
+        $.post(baseUrl + 'setting/blog/' + id, {'avatar':avatar, 'name':name, 'domain':domain}, function (e) {
+            var obj = json_decode(e);
+            if (obj.code == 0) {
+                alert('更新成功');
+                window.location.href = baseUrl + '/setting';
+            } else {
+                alert('更新失败');
+            }
+        });
     });
 
 })

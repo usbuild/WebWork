@@ -76,9 +76,11 @@ class PictureController extends Controller
         $new_height = $_REQUEST['height'] * $ratio;
         $new_x = $_REQUEST['x1'] * $ratio;
         $new_y = $_REQUEST['y1'] * $ratio;
+        $avatar_w = 64;
+        $avatar_h = 64;
 
 
-        $new_img = @imagecreatetruecolor($new_width, $new_height);
+        $new_img = @imagecreatetruecolor($avatar_w, $avatar_h);
         switch (strtolower(substr(strrchr($file_name, '.'), 1))) {
             case 'jpg':
             case 'jpeg':
@@ -111,16 +113,18 @@ class PictureController extends Controller
             $new_img,
             $src_img,
             0, 0, $new_x, $new_y,
-            $new_width,
-            $new_height,
+            $avatar_w,
+            $avatar_h,
             $new_width,
             $new_height
         );
+
+
         $return_path = $savePath . 'avatar-' . $file_path;
         $write_image($new_img, $return_path, $image_quality);
         @imagedestroy($src_img);
         @imagedestroy($new_img);
 
-        echo CJSON::encode(array('code' => 0, 'data' => Yii::app()->baseUrl . '/upload/avatar/avatar-' . $file_path));
+        echo CJSON::encode(array('code' => 0, 'data' => '/upload/avatar/avatar-' . $file_path));
     }
 }

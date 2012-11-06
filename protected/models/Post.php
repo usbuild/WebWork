@@ -10,7 +10,6 @@
  * @property string $type
  * @property string $time
  * @property string $tag
- * @property string $summary
  *
  * The followings are the available model relations:
  * @property Blog $poster0
@@ -46,10 +45,10 @@ class Post extends CActiveRecord
 //            array('time', 'required'),
             array('poster', 'numerical', 'integerOnly' => true),
             array('type', 'length', 'max' => 5),
-            array('content, tag, summary', 'safe'),
+            array('content, tag', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, poster, content, type, time, tag, summary', 'safe', 'on' => 'search'),
+            array('id, poster, content, type, time, tag', 'safe', 'on' => 'search'),
         );
     }
 
@@ -77,7 +76,6 @@ class Post extends CActiveRecord
             'type' => 'Type',
             'time' => 'Time',
             'tag' => 'Tag',
-            'summary' => 'Summary',
         );
     }
 
@@ -98,7 +96,6 @@ class Post extends CActiveRecord
         $criteria->compare('type', $this->type, true);
         $criteria->compare('time', $this->time, true);
         $criteria->compare('tag', $this->tag, true);
-        $criteria->compare('summary', $this->summary, true);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,

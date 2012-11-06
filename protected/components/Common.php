@@ -38,4 +38,23 @@ class Common
         return array();
     }
 
+    public static function getYouKuId($link)
+    {
+        $m = parse_url($link);
+        if ($m['host'] === 'v.youku.com') {
+            $path = $m['path'];
+            $path = substr(strrchr($path, '/'), 4, -5);
+            return $path;
+        }
+        return false;
+    }
+
+    public static function getYouKuImg($id)
+    {
+        $content = file_get_contents('http://v.youku.com/v_show/id_' . $id . '.html');
+        preg_match('/&pic=(http:\/\/\S+?)"/', $content, $matches);
+        return $matches[1];
+    }
+
+
 }

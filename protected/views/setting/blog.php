@@ -1,10 +1,9 @@
-<input type="hidden" value="<?=Yii::app()->user->model->blog?>" id="blog_id_input"/>
+<input type="hidden" value="<?=$blog->id?>" id="blog_id_input"/>
 
 <div id="blog_setting">
     <div class="g-box3">
         博客设置
     </div>
-
 
     <div class="g-box2 clearfix">
         <div class="setting-item">
@@ -12,7 +11,7 @@
         </div>
         <div class="setting-content">
             <div class="blog_avatar">
-                <img src="<?=Yii::app()->baseUrl . $blog->avatar?>" alt="<?=$blog->name?>" width="64px" height="64px"/>
+                <img src="<?=Yii::app()->baseUrl . $blog->avatar?>" alt="<?=$blog->name?>" width="64px" height="64px" data-avatar="<?=$blog->avatar?>"/>
             </div>
             <div class="upload-operation">
                 <input type="button" id="upload_btn" value="上传头像" class="button"/>
@@ -37,9 +36,23 @@
             博客名称:
         </div>
         <div class="setting-content">
-            <input type="text" class="normal-text"/>
+            <input type="text" class="normal-text" value="<?=$blog->name?>" id="blog_name"/>
         </div>
     </div>
 
+    <div class="g-box2 clearfix">
+        <div class="setting-item">
+            域名:
+        </div>
+        <div class="setting-content">
+            <input type="text" class="normal-text" value="<?=$blog->domain?>" id="blog_domain"/>
+        </div>
+    </div>
+    <div class="g-box2 clearfix">
+        <div class="setting-content">
+            <input type="button" value="取消" class="button"/>
+            <input type="submit" value="提交" class="button"/>
+        </div>
+    </div>
 
 </div>

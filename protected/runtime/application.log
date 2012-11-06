@@ -2029,3 +2029,313 @@ Stack trace:
 REQUEST_URI=/blog/picture/avatarupload
 in D:\WWW\blog\protected\controllers\PictureController.php (121)
 in D:\WWW\blog\index.php (13)
+2012/11/06 11:38:46 [error] [php] Object of class Blog could not be converted to string (D:\www\blog\protected\views\setting\blog.php:1)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): SettingController->renderFile()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): SettingController->renderPartial()
+#2 D:\www\blog\protected\controllers\SettingController.php(59): SettingController->render()
+#3 unknown(0): SettingController->actionBlog()
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SettingController->runAction()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SettingController->filterAccessControl()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SettingController->runActionWithFilters()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SettingController->run()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/setting/blog/1
+in D:\www\blog\protected\views\setting\blog.php (1)
+in D:\www\blog\protected\controllers\SettingController.php (59)
+in D:\www\blog\index.php (13)
+2012/11/06 12:12:09 [error] [exception.CException] exception 'CException' with message '属性 "CHttpRequest.isPost" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\www\blog\protected\controllers\SettingController.php(57): CComponent->__get('isPost')
+#1 [internal function]: SettingController->actionBlog('1')
+#2 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SettingController), Array)
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SettingController), Object(ReflectionMethod), Array)
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('blog')
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('setting/blog')
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/setting/blog/1
+HTTP_REFERER=http://localhost/blog/setting
+---
+2012/11/06 12:14:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "upload" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('upload')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('upload')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/upload/ava...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/blog/upload/avatar/avatar-13522004375288.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/06 12:14:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "upload" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('upload')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('upload')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/upload/ava...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/blog/upload/avatar/avatar-13522004375288.jpg
+---
+2012/11/06 12:15:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "upload" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('upload')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('upload')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/upload/ava...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/blog/upload/avatar/avatar-13522004375288.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/1
+---
+2012/11/06 14:01:26 [error] [php] substr() expects parameter 2 to be long, string given (D:\www\blog\protected\components\Common.php:46)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionVideo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/video
+in D:\www\blog\protected\components\Common.php (46)
+in D:\www\blog\protected\controllers\PostController.php (130)
+in D:\www\blog\index.php (13)
+2012/11/06 14:15:11 [error] [php] file_get_contents(http://v.youku.com/v_show/id_.html): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ (D:\www\blog\protected\components\Common.php:54)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionVideo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/video
+in D:\www\blog\protected\components\Common.php (54)
+in D:\www\blog\protected\controllers\PostController.php (131)
+in D:\www\blog\index.php (13)
+2012/11/06 14:15:30 [error] [php] preg_match(): Unknown modifier '/' (D:\www\blog\protected\components\Common.php:55)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionVideo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/video
+in D:\www\blog\protected\components\Common.php (55)
+in D:\www\blog\protected\controllers\PostController.php (131)
+in D:\www\blog\index.php (13)
+2012/11/06 14:15:38 [error] [php] preg_match(): Unknown modifier '/' (D:\www\blog\protected\components\Common.php:55)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionVideo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/video
+in D:\www\blog\protected\components\Common.php (55)
+in D:\www\blog\protected\controllers\PostController.php (131)
+in D:\www\blog\index.php (13)
+2012/11/06 14:15:51 [error] [php] preg_match(): Unknown modifier 'g' (D:\www\blog\protected\components\Common.php:55)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionVideo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/video
+in D:\www\blog\protected\components\Common.php (55)
+in D:\www\blog\protected\controllers\PostController.php (131)
+in D:\www\blog\index.php (13)
+2012/11/06 14:32:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getYoukuImg')
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getYoukuIm...')
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/post/getYoukuImg
+HTTP_REFERER=http://localhost/blog/post/video
+---
+2012/11/06 14:32:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getYoukuImg')
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getYoukuIm...')
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/post/getYoukuImg
+HTTP_REFERER=http://localhost/blog/post/video
+---
+2012/11/06 14:35:52 [error] [php] Undefined index: host (D:\www\blog\protected\components\Common.php:44)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterPostOnly()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getYoukuImg
+in D:\www\blog\protected\components\Common.php (44)
+in D:\www\blog\protected\controllers\PostController.php (137)
+in D:\www\blog\index.php (13)
+2012/11/06 14:35:52 [error] [php] Undefined index: host (D:\www\blog\protected\components\Common.php:44)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterPostOnly()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getYoukuImg
+in D:\www\blog\protected\components\Common.php (44)
+in D:\www\blog\protected\controllers\PostController.php (137)
+in D:\www\blog\index.php (13)
+2012/11/06 14:44:53 [error] [php] Undefined index: host (D:\www\blog\protected\components\Common.php:44)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterPostOnly()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getYoukuImg
+in D:\www\blog\protected\components\Common.php (44)
+in D:\www\blog\protected\controllers\PostController.php (137)
+in D:\www\blog\index.php (13)
+2012/11/06 14:44:53 [error] [php] Undefined index: host (D:\www\blog\protected\components\Common.php:44)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterPostOnly()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getYoukuImg
+in D:\www\blog\protected\components\Common.php (44)
+in D:\www\blog\protected\controllers\PostController.php (137)
+in D:\www\blog\index.php (13)
+2012/11/06 14:50:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352201059380.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352201059380.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/06 14:50:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352201059380.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352201059380.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/1
+---
