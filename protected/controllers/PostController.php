@@ -149,4 +149,5 @@ class PostController extends Controller
             echo CJSON::encode(array('code' => 1));
         }
     }
+
 }

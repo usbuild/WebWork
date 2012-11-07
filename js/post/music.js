@@ -37,7 +37,7 @@ $(function () {
                         return {
                             label:decodeURIComponent(item.song_name).replace(/\+/g, ' '),
                             artist:decodeURIComponent(item.artist_name).replace(/\+/g, ' '),
-                            data:item.song_id
+                            data:item
                         }
                     }));
                 }
@@ -49,13 +49,21 @@ $(function () {
 
     $('input#title').autocomplete({
         source:getSource(1),
-        minLength:2,
         autoFocus:true,
         focus:function (e, ui) {
             return false;
         },
         select:function (e, ui) {
-            console.dir(ui.item.data);
+            var data = ui.item.data;
+            $('#thumb_box *').remove();
+            var img = $('<img/>');
+            img.attr('src', data.album_logo);
+            var em = '<div class="embedWrap ztag"><embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed></div>';
+            var iframe = $('<iframe frameborder="0"></iframe>');
+            $('#thumb_box').append(img).append(iframe).show();
+            iframe.contents().find('body').html(em).css('width', '273px').css('height', '33px');
+
+
         },
         open:function () {
             var au = $('#auto_helper').clone().css('display', 'block');
@@ -68,7 +76,7 @@ $(function () {
     }).data("autocomplete")._renderItem = function (ul, item) {
         return $("<li>")
             .data("item.autocomplete", item)
-            .append("<a>" + item.label + "<small>  -  " + item.artist + "</small></a>")
+            .append("<a>" + item.label + "<span style='color: #ccc;'>  -  " + item.artist + "</span></a>")
             .appendTo(ul);
     };
 

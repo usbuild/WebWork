@@ -55,4 +55,5 @@ class Common
         preg_match('/&pic=(http:\/\/\S+?)"/', $content, $matches);
         return $matches[1];
     }
+
 }

@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a703a8d-d239-4036-8db1-238188e42274" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/post.css" afterPath="$PROJECT_DIR$/css/post.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/music.js" afterPath="$PROJECT_DIR$/js/post/music.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Common.php" afterPath="$PROJECT_DIR$/protected/components/Common.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/PostController.php" afterPath="$PROJECT_DIR$/protected/controllers/PostController.php" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +35,16 @@
       <file leaf-file-name="post.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="306" column="18" selection-start="4874" selection-end="4874" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="724" column="1" selection-start="13443" selection-end="13443" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -42,7 +53,7 @@
       <file leaf-file-name="music.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/post/music.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="134" selection-start="730" selection-end="730" vertical-scroll-proportion="-11.52">
+            <state line="13" column="34" selection-start="381" selection-end="381" vertical-scroll-proportion="-8.32">
               <folding />
             </state>
           </provider>
@@ -51,7 +62,7 @@
       <file leaf-file-name="music.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/post/music.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="9" selection-start="446" selection-end="446" vertical-scroll-proportion="0.1849711">
+            <state line="63" column="77" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.5655376">
               <folding>
                 <element signature="e#0#159#0" expanded="false" />
               </folding>
@@ -62,7 +73,7 @@
       <file leaf-file-name="Common.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/components/Common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="5" selection-start="798" selection-end="798" vertical-scroll-proportion="-6.84">
+            <state line="57" column="0" selection-start="1491" selection-end="1491" vertical-scroll-proportion="-21.56">
               <folding />
             </state>
           </provider>
@@ -71,7 +82,7 @@
       <file leaf-file-name="PostController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="12" selection-start="469" selection-end="469" vertical-scroll-proportion="-8.32">
+            <state line="152" column="0" selection-start="7067" selection-end="7067" vertical-scroll-proportion="-22.2">
               <folding />
             </state>
           </provider>
@@ -132,17 +143,17 @@
         <option value="$PROJECT_DIR$/protected/controllers/SettingController.php" />
         <option value="$PROJECT_DIR$/protected/views/setting/blog.php" />
         <option value="$PROJECT_DIR$/protected/controllers/PictureController.php" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/setting/main.js" />
         <option value="$PROJECT_DIR$/protected/models/Post.php" />
         <option value="$PROJECT_DIR$/protected/views/post/video.php" />
-        <option value="$PROJECT_DIR$/protected/components/Common.php" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/js/post/main.js" />
         <option value="$PROJECT_DIR$/js/post/video.js" />
-        <option value="$PROJECT_DIR$/protected/controllers/PostController.php" />
         <option value="$PROJECT_DIR$/protected/views/post/music.php" />
+        <option value="$PROJECT_DIR$/protected/components/Common.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/PostController.php" />
         <option value="$PROJECT_DIR$/css/post.css" />
+        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/post/music.js" />
       </list>
     </option>
@@ -731,11 +742,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="468" column="9" selection-start="14128" selection-end="14128" vertical-scroll-proportion="0.6496599" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="5" selection-start="2151" selection-end="2151" vertical-scroll-proportion="-0.6666667" />
@@ -788,37 +794,44 @@
         <state line="11" column="22" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/Common.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="5" selection-start="798" selection-end="798" vertical-scroll-proportion="-6.84">
+        <state line="152" column="0" selection-start="7067" selection-end="7067" vertical-scroll-proportion="-22.2">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/PostController.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/Common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="12" selection-start="469" selection-end="469" vertical-scroll-proportion="-8.32">
+        <state line="57" column="0" selection-start="1491" selection-end="1491" vertical-scroll-proportion="-21.56">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="306" column="18" selection-start="4874" selection-end="4874" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="724" column="1" selection-start="13443" selection-end="13443" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/post/music.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="134" selection-start="730" selection-end="730" vertical-scroll-proportion="-11.52">
+        <state line="13" column="34" selection-start="381" selection-end="381" vertical-scroll-proportion="-8.32">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/post/music.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="9" selection-start="446" selection-end="446" vertical-scroll-proportion="0.1849711">
+        <state line="63" column="77" selection-start="2406" selection-end="2406" vertical-scroll-proportion="0.5655376">
           <folding>
             <element signature="e#0#159#0" expanded="false" />
           </folding>
