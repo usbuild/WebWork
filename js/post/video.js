@@ -6,33 +6,40 @@
  * To change this template use File | Settings | File Templates.
  */
 $(function () {
+    var valid = false;
     $('input#title').blur(function () {
         var url = $('input#title').val();
-        $('.jqTransformInputWrapper').hide();
-        $('#thumb_box').show('slow');
+        $('input#title').hide();
+        var img = $('<img/>');
+        img.attr('src', baseUrl + 'images/loading.gif')
+            .attr('alt', '加载中').attr('width', '128px').attr('height', '96px');
+        $('#thumb_box img').remove();
+        $('#thumb_box').append(img).show();
         $.post(baseUrl + 'post/getYoukuImg', {link:url}, function (e) {
             var obj = json_decode(e);
             if (obj.code == 0) {
-                $('#thumb_box *').remove();
-                var img = $('<img/>');
-                img.attr('src', obj.data);
-                img.attr('alt', '缩略图');
-                $('#thumb_box').append(img);
+                $('#thumb_box img').attr('src', obj.data)
+                    .attr('alt', '缩略图');
+                valid = true;
             }
         });
     });
 
     $('#thumb_box').click(function () {
-        $('#thumb_box').hide('slow');
-        $('.jqTransformInputWrapper').show();
-        $('input#title').trigger('focus');
+        $('#thumb_box').hide();
+        $('input#title').show().trigger('focus');
+        valid = false;
     });
     $('#submit').click(function (evt) {
         var title = $('#title').val();
         var content = window.editor.getContent();
         var blog_id = $('#blog_id').val();
         var tags = $('#tags').val();
-        $.post(baseUrl + 'post', {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'text'}, function (e) {
+        if (!valid) {
+            alert('请输入有效的视频地址');
+            return;
+        }
+        $.post(baseUrl + 'post', {'title':$('input#title').val(), 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'video'}, function (e) {
             var obj = json_decode(e);
             if (obj.code == 0) {
                 window.location.reload();

@@ -279,3 +279,11 @@ small {
     padding: 10px;
     display: none;
 }
+
+.post-title {
+    border: solid 2px #ccc;
+}
+
+.ui-autocomplete {
+    z-index: 999 !important;
+}

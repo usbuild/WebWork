@@ -41,7 +41,7 @@ class Common
     public static function getYouKuId($link)
     {
         $m = parse_url($link);
-        if ($m['host'] === 'v.youku.com') {
+        if (isset($m['host']) && $m['host'] === 'v.youku.com') {
             $path = $m['path'];
             $path = substr(strrchr($path, '/'), 4, -5);
             return $path;
@@ -55,6 +55,4 @@ class Common
         preg_match('/&pic=(http:\/\/\S+?)"/', $content, $matches);
         return $matches[1];
     }
-
-
 }

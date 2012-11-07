@@ -10,6 +10,11 @@ class PostController extends Controller
     public function init()
     {
         parent::init();
+        Yii::app()->clientScript->registerCoreScript('jquery.ui', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerCssFile(
+            Yii::app()->clientScript->getCoreScriptUrl().
+                '/jui/css/base/jquery-ui.css'
+        );
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_config.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_all_min.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqtransform/jquery.jqtransform.js', CClientScript::POS_HEAD);
@@ -56,7 +61,7 @@ class PostController extends Controller
             $tags = explode(',', $_REQUEST['tags']);
             $type = $_REQUEST['type'];
             if (($type === 'text' && strlen(trim($title)) + strlen(trim($content)) > 0)
-                || ($type === 'image' && !empty($title))
+                || (in_array($type, array('image', 'video', 'music')) && !empty($title))
             ) {
                 $post = new Post();
                 $post->content = array('title' => $title, 'content' => $content);
