@@ -11,10 +11,10 @@ class PostController extends Controller
     {
         parent::init();
         Yii::app()->clientScript->registerCoreScript('jquery.ui', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerCssFile(
-            Yii::app()->clientScript->getCoreScriptUrl().
-                '/jui/css/base/jquery-ui.css'
-        );
+//        Yii::app()->clientScript->registerCssFile(
+//            Yii::app()->clientScript->getCoreScriptUrl().
+//                '/jui/css/base/jquery-ui.css'
+//        );
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_config.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_all_min.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqtransform/jquery.jqtransform.js', CClientScript::POS_HEAD);

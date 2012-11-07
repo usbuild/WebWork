@@ -14,9 +14,10 @@
         <div id='thumb_box'></div>
     </div>
     <div id="auto_helper" style="display: none">
-        <a href="">上一页</a>
-        <a href="">下一页</a>
-        <span id="total"></span>
+        <a href="javascript:;" id="prev_page" style="display: none;">上一页</a>
+        <a href="javascript:;" id="next_page" style="display: none;">下一页</a>
+        <span style="font-size: small;color: #ccc;" class="hint">共找到<span id="total"></span>条结果 感谢 <a href="http://xiami.com">虾米网</a> 提供搜索结果
+            </span>
     </div>
 
 
