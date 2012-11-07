@@ -10,13 +10,19 @@ $(document).ready(function () {
         var big_log = small_logo.substring(0, small_logo.length - 5) + '4.jpg';
         img.attr('src', big_log);
         img.attr('width', 164);
-        var em = '<div class="embedWrap ztag"><embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed></div>';
-        var iframe = $('<iframe frameborder="0"></iframe>');
+        var em = '<embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>';
+        var iframe = $('<iframe frameborder="0" style="top: -195px;"></iframe>');
         div.append(img).append(iframe);
-        iframe.contents().find('body').html(em).css('margin', '0');
-        iframe.data('id', data.song_id);
-        iframe.addClass('xiamiframe');
+        iframe.data('id', data.song_id)
+            .addClass('xiamiframe');
 
+        if ($.browser.mozilla) {
+            setTimeout(function () {
+                iframe.contents().find('body').html(em).css('margin', '0');
+            }, 100);
+        } else {
+            iframe.contents().find('body').html(em).css('margin', '0');
+        }
     });
 
 });

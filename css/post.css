@@ -287,8 +287,6 @@ small {
 .ui-autocomplete {
     z-index: 999 !important;
     padding-left: 0;
-    width: 550px !important;
-    left: 272px !important;
     border: solid 1px #CCC;
     box-shadow: 2px 3px 10px #CCC;
 }
@@ -296,7 +294,6 @@ small {
 .ui-menu-item {
     list-style: none;
     font-size: 14px;
-    width: 550px;
     background-color: #fafafa;
     margin: 0;
     cursor: pointer;

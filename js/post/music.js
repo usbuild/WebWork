@@ -72,6 +72,7 @@ $(function () {
             var au = $('#auto_helper').clone().css('display', 'block');
             au.find('span#total').html(list_data.total);
             $(this).autocomplete('widget').append(au);
+            $(this).autocomplete('widget').css('width', ($('#title').width() + 18 - 40) + 'px').css('left', ($('#title').offset().left + 18) + 'px');
         },
         close:function () {
 

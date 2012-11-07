@@ -700,7 +700,6 @@ a.blog-avatar:active {
     z-index: 1;
     position: relative;
     padding: 0 10px 10px 10px;
-    display: none;
 }
 
 .upload-operation #file {
@@ -730,4 +729,5 @@ a.blog-avatar:active {
     position: relative;
     top: -30px;
     left: 20px;
+    margin-left: 20px;
 }
