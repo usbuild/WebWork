@@ -8,8 +8,11 @@
 $(function () {
     var page = 1;
     var list_data = null;
-    $('input#title').change(function () {
-        page = 1;
+    $('input#title').keydown(function () {
+        if (page != 1) {
+            page = 1;
+            $('input#title').autocomplete('option', 'source', getSource(page)).autocomplete('search', $('input#title').val());
+        }
     });
 
     var getSource = function (page) {

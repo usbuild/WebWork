@@ -295,7 +295,7 @@ small {
 
 .ui-menu-item {
     list-style: none;
-    font-size: 18px;
+    font-size: 14px;
     width: 550px;
     background-color: #fafafa;
     margin: 0;
@@ -304,7 +304,7 @@ small {
 
 .ui-menu-item a {
     height: 30px;
-    padding-top: 4px;
+    padding-top: 6px;
     display: block;
     padding-left: 20px;
     color: #777;
