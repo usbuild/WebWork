@@ -25,7 +25,7 @@ $(function () {
         });
     });
 
-    $('#thumb_box').click(function () {
+    $('#close_btn').click(function () {
         $('#thumb_box').hide();
         $('input#title').show().trigger('focus');
         valid = false;

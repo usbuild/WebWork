@@ -55,15 +55,18 @@ $(function () {
         },
         select:function (e, ui) {
             var data = ui.item.data;
-            $('#thumb_box *').remove();
+            $('#thumb_box img').remove();
+            $('#thumb_box iframe').remove();
             var img = $('<img/>');
             img.attr('src', data.album_logo);
             var em = '<div class="embedWrap ztag"><embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed></div>';
             var iframe = $('<iframe frameborder="0"></iframe>');
-            $('#thumb_box').append(img).append(iframe).show();
-            iframe.contents().find('body').html(em).css('width', '273px').css('height', '33px');
-
-
+            $('#thumb_box').append(img).append(iframe);
+            iframe.contents().find('body').html(em).css('margin', '0');
+            iframe.data('id', data);
+            iframe.addClass('xiamiframe');
+            $('input#title').hide();
+            $('#thumb_box').show();
         },
         open:function () {
             var au = $('#auto_helper').clone().css('display', 'block');
@@ -90,5 +93,35 @@ $(function () {
         $('input#title').autocomplete('option', 'source', getSource(page)).autocomplete('search', $('input#title').val());
     });
 
+    $('#close_btn').click(function () {
+        $('#thumb_box').hide();
+        $('input#title').show();
+    });
 
+    $('#submit').click(function () {
+        if ($('#thumb_box').is(':visible')) {
+            var old_data = $('.xiamiframe').data('id');
+            var content = window.editor.getContent();
+            var blog_id = $('#blog_id').val();
+            var tags = $('#tags').val();
+
+            var title = {};
+            for (var i in old_data) {
+                title[i] = decodeURIComponent(old_data[i]);
+            }
+
+            $.post(baseUrl + 'post', {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'music'}, function (e) {
+                var obj = json_decode(e);
+                if (obj.code == 0) {
+                    alert('发表成功');
+
+//                    window.location.reload();
+                } else {
+                    alert('发表失败');
+                }
+            });
+        } else {
+            alert('请选择歌曲');
+        }
+    });
 });

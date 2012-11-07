@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #555;
-    font: normal 10pt 微软雅黑, Arial, Helvetica, sans-serif;
+    font: normal 10pt 微 软 雅 黑, Arial, Helvetica, sans-serif;
     background: #EFEFEF;
 }
 
@@ -722,4 +722,12 @@ a.blog-avatar:active {
 
 #blog_setting .g-box2 {
     border-bottom: solid 1px #ccc;
+}
+
+.xiamiframe {
+    width: 257px;
+    height: 33px;
+    position: relative;
+    top: -30px;
+    left: 20px;
 }

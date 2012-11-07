@@ -11,7 +11,9 @@
         </h3>
         <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title">
 
-        <div id='thumb_box'></div>
+        <div id='thumb_box'>
+            <div class="close" id="close_thumb"><a href="javascript:;" id="close_btn">x</a></div>
+        </div>
     </div>
 
     <div class="g-box2">

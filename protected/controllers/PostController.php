@@ -96,7 +96,7 @@ class PostController extends Controller
                 return;
             }
         } else {
-            echo CJSON::encode(array('code' => 1));
+            echo CJSON::encode(array('code' => 1,'data'=>$_REQUEST));
             return;
         }
     }

@@ -57,7 +57,8 @@
                         <?php break;
                     case 'music':
                         ?>
-
+                        <input type="hidden" data-song='<?=CJSON::encode($post->content['title'])?>' class="music-input"/>
+                        <br><br>
                         <?php break;
                     case 'video':
                         ?>
@@ -65,7 +66,7 @@
                                allowFullScreen="true" quality="high" width="480" height="400" align="middle"
                                allowScriptAccess="always"
                                type="application/x-shockwave-flash"></embed>
-                            <br><br>
+                        <br><br>
                         <?php break;
                     default:
                         break; ?>

@@ -288,7 +288,7 @@ small {
     z-index: 999 !important;
     padding-left: 0;
     width: 550px !important;
-    left: 310px !important;
+    left: 272px !important;
     border: solid 1px #CCC;
     box-shadow: 2px 3px 10px #CCC;
 }
@@ -312,7 +312,7 @@ small {
 }
 
 .ui-state-hover {
-    background-color: #e0ffff;
+    background-color: #c2dede;
 }
 
 #auto_helper {
@@ -331,4 +331,14 @@ small {
 
 #auto_helper a:hover {
     color: #36C;
+}
+
+#close_thumb {
+    float: right;
+}
+
+#close_btn {
+    margin-right: 15px;
+    font-size: 25px;
+    color: black;
 }
