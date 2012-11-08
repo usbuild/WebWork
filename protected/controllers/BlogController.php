@@ -25,7 +25,7 @@ class BlogController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'view'),
+                'actions' => array('create', 'view', 'info'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -104,5 +104,11 @@ class BlogController extends Controller
     public function actionCheckUse($name)
     {
 
+    }
+
+    public function actionInfo($id)
+    {
+        $blog = Blog::model()->findByAttributes($id);
+        echo CJSON::encode($blog);
     }
 }

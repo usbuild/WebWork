@@ -21,4 +21,11 @@ $(function () {
     if ($('#blog_id_input').length > 0) {
         setActive('blog_id_' + $('#blog_id_input').val());
     }
+
+    $('.feed').live('mouseenter',function () {
+        $(this).find('.link-to-post-holder').css('display', '');
+    }).live('mouseleave', function () {
+            $(this).find('.link-to-post-holder').css('display', 'none');
+        });
+    $('textarea').autosize({append: "\n"});
 });

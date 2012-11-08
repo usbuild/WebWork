@@ -61,6 +61,8 @@ class Post extends CActiveRecord
         // class name for the relations automatically generated below.
         return array(
             'blog' => array(self::BELONGS_TO, 'Blog', 'poster'),
+            'comment' => array(self::HAS_MANY, 'Comment', 'post_id'),
+            'likes' => array(self::HAS_MANY, 'Like', 'post_id'),
         );
     }
 
@@ -116,6 +118,16 @@ class Post extends CActiveRecord
             $value = CJSON::encode($value);
         }
         parent::__set($name, $value);
+    }
+
+    public function like()
+    {
+        $like = Like::model()->findAllByAttributes(array('post_id' => $this->id, 'blog_id' => Yii::app()->user->model->blog));
+        if (empty($like)) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
 

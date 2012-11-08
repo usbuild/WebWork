@@ -11,8 +11,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+ul {
+    margin: 0;
+}
+
 li {
     list-style: none;
+}
+
+textarea {
+    vertical-align: top;
+    transition: height 0.2s;
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
 }
 
 .clearfix {
@@ -282,9 +293,29 @@ a.blog-avatar:active {
     right: -2px;
     top: -3px;
     z-index: 1;
-    background: url('../images/background.png') repeat;
-    width: 25px;
-    height: 26px;
+    background-color: #EFEFEF;
+    width: 32px;
+    height: 25px;
+}
+
+.feed a.link-to-post {
+    display: block;
+    text-indent: -9999px;
+    outline: none;
+    background: url("../images/feed-icons.png") no-repeat 0 -90px;
+    width: 30px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    right: 8px;
+}
+
+.feed a, .feed a:visited, .feed a:link, .feed a:active {
+    color: #b4b4b4;
+}
+
+.feed a:hover {
+    color: #8F8F8F;
 }
 
 .feed-container-top {
@@ -791,4 +822,178 @@ a.blog-avatar:active {
     -moz-border-radius: 4px;
     border-radius: 4px;
     width: 200px;
+}
+
+.feed .feed-ct {
+    margin-bottom: 20px;;
+}
+
+.feed .feed-act {
+    float: right;
+    margin-right: 20px;
+}
+
+.feed .feed-basic {
+    margin-bottom: 10px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+.feed-bd .feed-fav {
+    background: url("../images/feed-icons.png") no-repeat scroll -59px -27px;
+    text-indent: -9999em;
+    width: 16px;
+    height: 16px;
+}
+
+.feed-bd .feed-act a {
+    margin-left: 10px;
+    float: right;
+    height: 18px;
+    line-height: 18px;
+}
+
+.feed-bd a.feed-fav:hover {
+    background-position: -59px 2px;
+    color: #8F8F8F;
+}
+
+.feed-bd a.feed-faved {
+    background-position: -88px -57px;
+    color: red;
+}
+
+.feed-bd .feed-tag {
+    float: left;
+    color: #A8B1BA;
+    width: 200px;
+    height: 22px;
+    line-height: 14px;
+    overflow: hidden;
+    display: block;
+}
+
+.feed-bd .feed-tag a {
+    float: left;
+    margin-right: 6px;
+    height: 19px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.feed-ft {
+    padding: 0 1px;
+    position: relative;
+    zoom: 1;
+    display: none;
+}
+
+.feed-ft-bottom {
+    width: 544px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border: none;
+}
+
+.feed-ft .feed-ft-triangle {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+    background: url('../images/feed-ft-triangle.png') no-repeat;
+}
+
+.feed-comment {
+    background: url('../images/feed-bg-sprites.png') -2400px 0 repeat-y;
+    margin: 0 1px;
+    padding-top: 15px;
+    position: relative;
+    clear: both;
+    border-bottom: solid 1px #ccc;
+    width: 540px;
+    padding-bottom: 20px;
+}
+
+.comment-container-bottom {
+    background: url('../images/feed-bg-sprites.png') -1799px bottom no-repeat;
+    height: 30px;
+}
+
+.slide-up {
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.feed-comment textarea {
+    width: 370px;
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    line-height: 25px;
+    border: solid 1px #ccc;
+}
+
+.cmt-submit {
+    background: url('../images/btn24.png') no-repeat 999px 999px;
+    width: 104px;
+    height: 40px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    background-position: 0 0;
+    color: white;
+    text-shadow: -1px -1px 0px #779E00;
+    float: right;
+    margin-right: 20px;
+}
+
+.cmt-submit:hover {
+    background-position: -114px 0;
+}
+
+.cmt-item {
+    display: block;
+    border-bottom: solid 1px #CCC;
+    margin-right: 20px;
+}
+
+.cmt-item-img {
+    width: 24px;
+    float: left;
+    padding: 10px 0 5px 0;
+}
+
+.cmt-item-content {
+    float: left;
+    width: 380px;
+    margin: 15px 10px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.cmt-item-delete, .cmt-item-reply {
+    float: right;
+    width: 50px;
+    margin-top: 15px;
+}
+
+.cmt-load-more {
+    cursor: pointer;
+    text-align: center;
+    background-color: #CECECE;
+    height: 30px;
+    line-height: 30px;
+    width: 500px;
+    margin: 10px auto 0 auto;
+    display: none;
+}
+
+.cmt-load-more:hover {
+    background-color: #BBB;
 }
