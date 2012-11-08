@@ -11,10 +11,6 @@ class PostController extends Controller
     {
         parent::init();
         Yii::app()->clientScript->registerCoreScript('jquery.ui', CClientScript::POS_HEAD);
-//        Yii::app()->clientScript->registerCssFile(
-//            Yii::app()->clientScript->getCoreScriptUrl().
-//                '/jui/css/base/jquery-ui.css'
-//        );
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_config.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_all_min.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqtransform/jquery.jqtransform.js', CClientScript::POS_HEAD);
@@ -44,7 +40,7 @@ class PostController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getYoukuImg'),
+                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getYoukuImg', 'repost'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -96,7 +92,7 @@ class PostController extends Controller
                 return;
             }
         } else {
-            echo CJSON::encode(array('code' => 1,'data'=>$_REQUEST));
+            echo CJSON::encode(array('code' => 1, 'data' => $_REQUEST));
             return;
         }
     }
@@ -147,6 +143,16 @@ class PostController extends Controller
             }
         } else {
             echo CJSON::encode(array('code' => 1));
+        }
+    }
+
+    public function actionRepost($id)
+    {
+        if (!Yii::app()->request->isPostRequest) {
+            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/repost.js', CClientScript::POS_HEAD);
+            $this->render('repost', array('post' => Post::model()->findByPk($id)));
+        } else {
+
         }
     }
 

@@ -15,15 +15,18 @@ class LikeController extends Controller
             $like = new Like();
             $like->post_id = $id;
             $like->blog_id = Yii::app()->user->model->blog;
-            $like->save();
+            if (!$like->save()) {
+                echo CJSON::encode(array('code' => 1, 'data' => CHtml::errorSummary($like)));
+                exit();
+            }
             $like->refresh();
         }
-        echo CJSON::encode(array('code' => 0, 'data' => $like));
+        echo CJSON::encode(array('code' => 0, 'data'=>'like'));
     }
 
     public function actionUnlike($id)
     {
-        Like::model()->deleteAllByAttributes(array(array('post_id' => $id, 'blog_id' => Yii::app()->user->model->blog)));
+        Like::model()->deleteAllByAttributes(array('post_id' => $id, 'blog_id' => Yii::app()->user->model->blog));
         echo CJSON::encode(array('code' => 0));
     }
 

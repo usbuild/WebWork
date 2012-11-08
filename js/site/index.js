@@ -124,9 +124,32 @@ $(document).ready(function () {
     $('.feed-fav').click(function () {
         var feed = $(this).parents('.feed');
         var id = feed.attr('data-id');
-        $.get(baseUrl + 'like/like/' + id, {}, function (e) {
-            alert(e);
-        });
+        var heart = $(this);
+        heart.attr('disabled', 'disabled');
+
+        if (heart.hasClass('feed-faved')) {
+            $.get(baseUrl + 'like/unlike/' + id, {}, function (e) {
+                var obj = json_decode(e);
+                if (obj.code == 0) {
+                    heart.removeClass('feed-faved').attr('title', '喜欢');
+                    feed.find('.cmt-hot-count').html(feed.find('.cmt-hot-count').html() - 1);
+                }
+                heart.attr('disabled', 'enabled');
+            });
+        } else {
+            $.get(baseUrl + 'like/like/' + id, {}, function (e) {
+                var obj = json_decode(e);
+                if (obj.code == 0) {
+                    heart.addClass('feed-faved').attr('title', '取消喜欢');
+                    feed.find('.cmt-hot-count').html(1 + parseInt(feed.find('.cmt-hot-count').html()));
+                }
+                heart.attr('disabled', 'enabled');
+
+            });
+        }
     });
+
+    $('.feed-faved').attr('title', '取消喜欢');
+    $('textarea').autosize({append: "\n"});
 
 });

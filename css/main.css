@@ -863,6 +863,11 @@ a.blog-avatar:active {
     color: red;
 }
 
+.feed-bd a.feed-faved:hover {
+    background-position: -120px -57px;;
+    color: red;
+}
+
 .feed-bd .feed-tag {
     float: left;
     color: #A8B1BA;

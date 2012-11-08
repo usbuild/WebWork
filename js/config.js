@@ -27,5 +27,4 @@ $(function () {
     }).live('mouseleave', function () {
             $(this).find('.link-to-post-holder').css('display', 'none');
         });
-    $('textarea').autosize({append: "\n"});
 });

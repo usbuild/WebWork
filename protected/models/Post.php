@@ -130,5 +130,19 @@ class Post extends CActiveRecord
         }
     }
 
+    public function commentCount()
+    {
+        $c = new CDbCriteria();
+        $c->compare('post_id', $this->id);
+        return Comment::model()->count($c);
+    }
+
+    public function hotCount()
+    {
+        $c = new CDbCriteria();
+        $c->compare('post_id', $this->id);
+        return intval(Comment::model()->count($c)) + intval(Like::model()->count($c));
+    }
+
 
 }
