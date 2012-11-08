@@ -56,15 +56,24 @@ $(function () {
         select:function (e, ui) {
             var data = ui.item.data;
             $('#thumb_box img').remove();
-            $('#thumb_box iframe').remove();
+            $('#thumb_box .xiami-container').remove();
+
             var img = $('<img/>');
-            img.attr('src', data.album_logo);
-            var em = '<div class="embedWrap ztag"><embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed></div>';
-            var iframe = $('<iframe frameborder="0"></iframe>');
-            $('#thumb_box').append(img).append(iframe);
-            iframe.contents().find('body').html(em).css('margin', '0');
-            iframe.data('id', data);
-            iframe.addClass('xiamiframe');
+            img.attr('src', data.album_logo).css('float', 'left');
+            var em = '<embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>';
+            var xiami_container = $('<div></div>');
+            xiami_container.addClass('xiami-container').data('id', data);
+            if ($.browser.webkit) {
+                var iframe;
+                iframe = $('<iframe frameborder="0" style=""></iframe>');
+                $('#thumb_box').append(img).append(xiami_container.append(iframe));
+                iframe.contents().find('body').html(em).css('margin', '0');
+                iframe.addClass('xiamiframe');
+
+            } else {
+                $('#thumb_box').append(img).append(xiami_container);
+                xiami_container.html(em);
+            }
             $('input#title').hide();
             $('#thumb_box').show();
         },
@@ -101,7 +110,7 @@ $(function () {
 
     $('#submit').click(function () {
         if ($('#thumb_box').is(':visible')) {
-            var old_data = $('.xiamiframe').data('id');
+            var old_data = $('.xiami-container').data('id');
             var content = window.editor.getContent();
             var blog_id = $('#blog_id').val();
             var tags = $('#tags').val();

@@ -107,7 +107,8 @@ $(document).ready(function () {
         $.post(baseUrl + 'post', {'title':data, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'image'}, function (e) {
             var obj = json_decode(e);
             if (obj.code == 0) {
-                window.location.reload();
+//                window.location.reload();
+                alert('发表成功');
             } else {
                 alert('发表失败');
             }

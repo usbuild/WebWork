@@ -115,6 +115,7 @@ class User extends CActiveRecord
         foreach ($this->follow_blogs as $blog_id) {
             $blogs[] = $blog_id->blog_id;
         }
+        $tags = array();
         foreach ($this->follow_tags as $tag) {
             $tags[] = CJSON::encode($tag->tag);
         }
@@ -126,7 +127,7 @@ class User extends CActiveRecord
             $criteria->addSearchCondition('tag', $tag, true, 'OR');
         }
 
-        if (isset($tags) || isset($posts))
+        if (!empty($tags) || isset($posts))
             $posts = Post::model()->findAll($criteria);
         else
             $posts = array();

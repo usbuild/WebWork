@@ -36,6 +36,7 @@ $this->pageTitle = Yii::app()->name . ' - 登录';
 
     <?php $this->endWidget(); ?>
 </div>
+<a class="button-blue right-top" href="<?=$this->createUrl('site/signup')?>">注册</a>
 </body>
 <!-- form -->
 

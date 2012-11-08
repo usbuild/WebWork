@@ -63,7 +63,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/site/index.js', CClientScript::POS_HEAD);
-        $user = User::model()->findByPk(Yii::app()->user->id);
+        $user = Yii::app()->user->model;
         $this->render('index', array('posts' => $user->getPosts(), 'myblog' => $user->myblog));
     }
 
@@ -80,29 +80,6 @@ class SiteController extends Controller
         }
     }
 
-    /**
-     * Displays the contact page
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm;
-        if (isset($_POST['ContactForm'])) {
-            $model->attributes = $_POST['ContactForm'];
-            if ($model->validate()) {
-                $name = '=?UTF-8?B?' . base64_encode($model->name) . '?=';
-                $subject = '=?UTF-8?B?' . base64_encode($model->subject) . '?=';
-                $headers = "From: $name <{$model->email}>\r\n" .
-                    "Reply-To: {$model->email}\r\n" .
-                    "MIME-Version: 1.0\r\n" .
-                    "Content-type: text/plain; charset=UTF-8";
-
-                mail(Yii::app()->params['adminEmail'], $subject, $model->body, $headers);
-                Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
-                $this->refresh();
-            }
-        }
-        $this->render('contact', array('model' => $model));
-    }
 
     /**
      * Displays the login page
@@ -153,27 +130,42 @@ class SiteController extends Controller
                         $user->salt = $salt;
                         $user->email = $email;
                         $user->name = $username;
-                        if ($user->save()) {
-                            $login = new LoginForm();
-                            $login->username = $user->email;
-                            $login->password = $password;
-                            $login->rememberMe = true;
-                            $login->login();
-                            $this->redirect(Yii::app()->homeUrl);
-                        } else {
-                            $this->render('signup', array('message' => CHtml::errorSummary($user)));
+                        $transaction = Yii::app()->db->beginTransaction();
+                        try {
+                            if ($user->save()) {
+                                $user->refresh();
+                                $blog = new Blog();
+                                $blog->owner = $user->id;
+                                if (!$blog->save()) throw new Exception(CHtml::errorSummary($blog));
+
+                                $blog->refresh();
+                                $user->blog = $blog->id;
+                                if (!$user->save()) throw new Exception(CHtml::errorSummary($user));
+                                $transaction->commit();
+                                $login = new LoginForm();
+                                $login->username = $user->email;
+                                $login->password = $password;
+                                $login->rememberMe = true;
+                                $login->login();
+                                $this->redirect(Yii::app()->homeUrl);
+                            } else {
+                                $this->renderPartial('signup', array('message' => CHtml::errorSummary($user)));
+                            }
+                        } catch (Exception $ex) {
+                            $transaction->rollback();
+                            $this->renderPartial('signup', array('message' => $ex->getMessage()));
                         }
                     } else {
-                        $this->render('signup', array('message' => '该邮箱已被占用'));
+                        $this->renderPartial('signup', array('message' => '该邮箱已被占用'));
                     }
                 } else {
-                    $this->render('signup', array('message' => '请填写完整信息'));
+                    $this->renderPartial('signup', array('message' => '请填写完整信息'));
                 }
             } else {
-                $this->render('signup', array('message' => '请填写完整信息'));
+                $this->renderPartial('signup', array('message' => '请填写完整信息'));
             }
         } else {
-            $this->render('signup');
+            $this->renderPartial('signup');
         }
     }
 

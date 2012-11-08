@@ -44,7 +44,7 @@ class Blog extends CActiveRecord
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name, owner, domain', 'required'),
+            array('owner', 'required'),
             array('owner', 'numerical', 'integerOnly' => true),
             array('domain', 'unique'),
             array('domain', 'length', 'min' => 5, 'max' => 30),
