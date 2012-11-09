@@ -158,8 +158,13 @@ class Post extends CActiveRecord
     {
         $limit = 10;
         $c = Yii::app()->db->createCommand('select * from ((select post_id,blog_id,time,1 as type from `like` where `post_id`=' . $this->id
-            . ') union (select post_id,blog_id,time,0 from comment where `post_id`=' . $this->id . ') order by time desc limit ' .$offset.','.$limit.') res left join blog on res.blog_id=blog.id');
+            . ') union (select post_id,blog_id,time,0 from comment where `post_id`=' . $this->id . ') order by time desc limit ' . $offset . ',' . $limit . ') res left join blog on res.blog_id=blog.id');
         return $c->query();
+    }
+
+    public function isMine()
+    {
+        return Blog::model()->count('id=:id AND owner=:user', array(':id' => $this->blog_id, 'user' => Yii::app()->user->id)) > 0;
     }
 
 

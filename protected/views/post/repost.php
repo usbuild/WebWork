@@ -13,17 +13,17 @@
                 <small>(可不填)</small>
             </h3>
             <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title"
-                   value="<?=$post->content['title']?>">
+                   value="<?=$post->head?>">
             <?php break;
         case 'music':
             ?>
-            <input type="hidden" data-song='<?=CJSON::encode($post->content['title'])?>'
+            <input type="hidden" data-song='<?=CJSON::encode($post->head)?>'
                    class="music-input"/>
             <?php break;
         case 'video':
             ?>
             <embed
-                    src="http://player.youku.com/player.php/sid/<?=Common::getYouKuId($post->content['title'])?>/v.swf"
+                    src="http://player.youku.com/player.php/sid/<?=Common::getYouKuId($post->head)?>/v.swf"
                     allowFullScreen="true" quality="high" width="480" height="400" align="middle"
                     allowScriptAccess="always"
                     type="application/x-shockwave-flash"></embed>
@@ -39,7 +39,7 @@
 
     <div class="g-box2">
         <h3 class="w-ttl"><em>内容</em></h3>
-        <script id="myEditor">来自：<?=CHtml::link($post->blog->name, array('blog/view'))?><br><blockquote><?=$post->content['content']?></blockquote></script>
+        <script id="myEditor">来自：<?=CHtml::link($post->blog->name, array('blog/view'))?><br><blockquote><?=$post->content?></blockquote></script>
     </div>
     <div class="g-box2">
         <div class="m-edtact">

@@ -93,15 +93,22 @@
                     </div>
 
                     <div class="feed-act">
+                        <?php if ($post->isMine()): ?>
+                        <a href="javascript:;" class="feed-delete">删除</a>
+                        <a href="<?=$this->createUrl('post/edit')?>" target="_blank" class="feed-edit">编辑</a>
+                        <a class="feed-cmt" href="javascript:;">回应(<span
+                            class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
+                        <?php else: ?>
                         <a class="feed-fav <?php if ($post->like()) echo 'feed-faved';?>" href="javascript:;"
                            title="喜欢">喜欢</a>
                         <a class="feed-rt" target="_blank"
                            href="<?=$this->createUrl('post/repost/' . $post->id)?>">转载</a>
-                        <a href="javascript:;" class="feed-edit">编辑</a>
                         <a class="feed-cmt" href="javascript:;">回应(<span
                             class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
                         <a href="javascript:;" class="feed-nt">热度(<span
                             class="cmt-hot-count"><?=$post->hotCount()?></span>)</a>
+                        <?php endif;?>
+
                     </div>
                 </div>
             </div>

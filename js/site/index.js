@@ -98,7 +98,7 @@ $(document).ready(function () {
         }
 
 
-        feed.find('.feed-ft-triangle').css('left', '393px');
+        feed.find('.feed-ft-triangle').css('left', '410px');
         feed.find('.feed-ft').animate({height:'toggle'}, 300);
         feed.find('textarea.cmt-content').get(0).focus();
         var post_id = feed.attr('data-id');
@@ -142,7 +142,7 @@ $(document).ready(function () {
             feed.find('.feed-container-bottom').toggle();
         }
 
-        feed.find('.feed-ft-triangle').css('left', '323px');
+        feed.find('.feed-ft-triangle').css('left', '353px');
         feed.find('.feed-ft').animate({height:'toggle'}, 300);
 
         var post_id = feed.attr('data-id');
