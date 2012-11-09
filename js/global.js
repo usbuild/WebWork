@@ -5,7 +5,7 @@
  * Time: 上午10:20
  * To change this template use File | Settings | File Templates.
  */
-var baseUrl = 'http://localhost/blog/';
+//var baseUrl = 'http://localhost/blog/';
 var json_decode = function (e) {
     return eval('(' + e + ')');
 };

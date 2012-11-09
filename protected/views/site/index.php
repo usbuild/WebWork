@@ -35,42 +35,42 @@
                     <?php switch ($post->type) {
                     case 'text':
                         ?>
-                        <h4 class="feed-title"><?=$post->content['title']?></h4>
-                        <?php break;
+                            <h4 class="feed-title"><?=$post->content['title']?></h4>
+                            <?php break;
                     case 'image':
                         $i = 5;
                         ?>
-                        <div class="feed-image">
-                            <?php foreach ($post->content['title'] as $img): ?>
-                            <div class="feed-image-item">
-                                <p>
-                                    <?php $i--;
-                                    if ($i < 0) break;
-                                    echo '<img src="' . $img['url'] . '" alt="' . $img['desc'] . '" width="500px" />'
-                                    ?>
-                                </p>
+                            <div class="feed-image">
+                                <?php foreach ($post->content['title'] as $img): ?>
+                                <div class="feed-image-item">
+                                    <p>
+                                        <?php $i--;
+                                        if ($i < 0) break;
+                                        echo '<img src="' . $img['url'] . '" alt="' . $img['desc'] . '" width="500px" />'
+                                        ?>
+                                    </p>
+                                </div>
+                                <?php endforeach;?>
+                                <span style="color: #ccc; font-size: small;">共有(<?=count($post->content['title'])?>
+                                    )张</span><br><br>
                             </div>
-                            <?php endforeach;?>
-                            <span style="color: #ccc; font-size: small;">共有(<?=count($post->content['title'])?>
-                                )张</span><br><br>
-                        </div>
 
-                        <?php break;
+                            <?php break;
                     case 'music':
                         ?>
-                        <input type="hidden" data-song='<?=CJSON::encode($post->content['title'])?>'
-                               class="music-input"/>
-                        <br><br>
-                        <?php break;
+                            <input type="hidden" data-song='<?=CJSON::encode($post->content['title'])?>'
+                                   class="music-input"/>
+                            <br><br>
+                            <?php break;
                     case 'video':
                         ?>
-                        <embed
+                            <embed
                                 src="http://player.youku.com/player.php/sid/<?=Common::getYouKuId($post->content['title'])?>/v.swf"
                                 allowFullScreen="true" quality="high" width="480" height="400" align="middle"
                                 allowScriptAccess="always"
                                 type="application/x-shockwave-flash"></embed>
-                        <br><br>
-                        <?php break;
+                            <br><br>
+                            <?php break;
                     default:
                         break; ?>
 
@@ -80,15 +80,15 @@
                     <div class="feed-ct">
                         <div class="feed-txt-full rich-content">
                             <div
-                                    class="feed-txt-summary"><?=mb_strimwidth(strip_tags($post->content['content']), 0, 200, "...");?></div>
+                                class="feed-txt-summary"><?=mb_strimwidth(strip_tags($post->content['content']), 0, 200, "...");?></div>
                         </div>
                     </div>
 
                     <div class="feed-tag clearfix">
-                        <a href="#" class=" ">#猜电影</a>
-                        <a href="#" class=" ">#音乐</a>
-                        <a href="#" class=" ">#电影配乐</a>
-                        <a href="#" class=" last">#电影</a>
+                        <?php foreach ($post->tag as $tag): ?>
+                        <a href="#" class=" ">#<?=$tag?></a>
+                        <?php endforeach;?>
+                        <?php if(count($post->tag)==0) echo "没有标签";?>
                     </div>
 
                     <div class="feed-act">
@@ -98,9 +98,9 @@
                            href="<?=$this->createUrl('post/repost/' . $post->id)?>">转载</a>
                         <a href="javascript:;" class="feed-edit">编辑</a>
                         <a class="feed-cmt" href="javascript:;">回应(<span
-                                class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
+                            class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
                         <a href="javascript:;" class="feed-nt">热度(<span
-                                class="cmt-hot-count"><?=$post->hotCount()?></span>)</a>
+                            class="cmt-hot-count"><?=$post->hotCount()?></span>)</a>
                     </div>
                 </div>
             </div>

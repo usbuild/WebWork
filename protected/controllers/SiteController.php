@@ -9,7 +9,7 @@ class SiteController extends Controller
     public function init()
     {
         parent::init();
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/autosize/jquery.autosize-min.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/autosize/jquery.autosize-min.js', CClientScript::POS_END);
         $this->sidebar = $this->renderPartial('sidebar', array(), true);
     }
 
@@ -63,7 +63,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/site/index.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/site/index.js', CClientScript::POS_END);
         $user = Yii::app()->user->model;
         $this->render('index', array('posts' => $user->getPosts(), 'myblog' => $user->myblog));
     }

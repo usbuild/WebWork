@@ -36,17 +36,18 @@ $(document).ready(function () {
 
 
         var content = $('<div></div>');
-        content.html(' <a>' + item.name + '</a> ' + item.content).addClass('cmt-item-content');
+        content.html(' <span class="cmt-item-name"><a>' + item.name + '</a></span> ' + item.content).addClass('cmt-item-content');
 
         var operation;
         if (item.isme) {
-            operation = $('<div><a>删除</a></div>');
+            operation = $('<div><a data-id="' + item.id + '">删除</a></div>');
             operation.addClass('cmt-item-delete')
         } else {
             operation = $('<div><a>回复</a></div>');
             operation.addClass('cmt-item-reply')
         }
-        li.append(img).append(name).append(content).append(operation);
+        li.append(img).append(content).append(operation);
+        li.data('item', item);
         return li;
     };
 
@@ -56,12 +57,11 @@ $(document).ready(function () {
         feed.find('.feed-ft-triangle').css('left', '393px');
         feed.find('.feed-ft').animate({height:'toggle'}, 300);
         feed.find('.feed-container-bottom').toggle();
-
+        feed.find('textarea.cmt-content').get(0).focus();
         var post_id = feed.attr('data-id');
         var start = 0;
         if (!feed.attr('data-cmt')) {
-            $.post(baseUrl + 'comment/fetch', {id:post_id, offset:start}, function (e) {
-                var obj = json_decode(e);
+            $.post(baseUrl + 'comment/fetch', {id:post_id, offset:start}, function (obj) {
                 var cmt_list = feed.find('.cmt-list');
                 $.each(obj, function (i, item) {
                     var li = buildList(item);
@@ -74,7 +74,7 @@ $(document).ready(function () {
                 if (obj.length == 10) {
                     feed.find('.cmt-load-more').show();
                 }
-            });
+            }, 'json');
         }
         feed.attr('data-cmt', true);
     });
@@ -94,7 +94,8 @@ $(document).ready(function () {
                 var li = buildList(obj.data);
                 li.hide();
                 feed.find('.cmt-list').prepend(li);
-                li.animate({height:'toggle'}, 500);
+                li.animate({height:'toggle'}, 300);
+                incCmt(feed);
             } else {
                 alert('发表失败');
             }
@@ -106,8 +107,7 @@ $(document).ready(function () {
         var cmt_list = feed.find('.cmt-list');
         var start = cmt_list.data('show');
         var load_more = $(this);
-        $.post(baseUrl + 'comment/fetch', {id:feed.attr('data-id'), offset:start}, function (e) {
-            var obj = json_decode(e);
+        $.post(baseUrl + 'comment/fetch', {id:feed.attr('data-id'), offset:start}, function (obj) {
             $.each(obj, function (i, item) {
                 var li = buildList(item);
                 li.hide();
@@ -119,7 +119,7 @@ $(document).ready(function () {
             if (obj.length < 10) {
                 load_more.hide();
             }
-        });
+        }, 'json');
     });
     $('.feed-fav').click(function () {
         var feed = $(this).parents('.feed');
@@ -129,27 +129,76 @@ $(document).ready(function () {
 
         if (heart.hasClass('feed-faved')) {
             $.get(baseUrl + 'like/unlike/' + id, {}, function (e) {
-                var obj = json_decode(e);
-                if (obj.code == 0) {
+                if (e.code == 0) {
                     heart.removeClass('feed-faved').attr('title', '喜欢');
-                    feed.find('.cmt-hot-count').html(feed.find('.cmt-hot-count').html() - 1);
+                    decHot(feed);
                 }
                 heart.attr('disabled', 'enabled');
-            });
+            }, 'json');
         } else {
             $.get(baseUrl + 'like/like/' + id, {}, function (e) {
-                var obj = json_decode(e);
-                if (obj.code == 0) {
+                if (e.code == 0) {
                     heart.addClass('feed-faved').attr('title', '取消喜欢');
-                    feed.find('.cmt-hot-count').html(1 + parseInt(feed.find('.cmt-hot-count').html()));
+                    incHot(feed);
                 }
                 heart.attr('disabled', 'enabled');
 
-            });
+            }, 'json');
         }
     });
+    $('.cmt-item-delete a').live('click', function () {
+        var item = $(this);
+        $.get(baseUrl + 'comment/del/' + $(this).attr('data-id'), {}, function (e) {
+            if (e.code == 0) {
+                item.parents('.cmt-item').animate({height:'toggle'}, 300);
+                decCmt(item.parents('.feed'));
+            } else {
+                alert('删除失败');
+            }
+        }, 'json');
+    });
+    $('textarea.cmt-content').live('keydown', function (e) {
+        var text = $(this);
+        if (e.keyCode == 13 && e.ctrlKey) {
+            text.next().trigger('click');
+        }
+    });
+    $('.cmt-item-reply a').live('click', function () {
+        var li = $(this).parents('li');
+        var item = li.data('item');
+        var feed = li.parents('.feed');
+        feed.find('.cmt-content').val('回复 ' + item.name + ' : ');
+        var len = feed.find('.cmt-content').val().length;
+        locateCursor(feed.find('.cmt-content').get(0), len);
+    });
+
 
     $('.feed-faved').attr('title', '取消喜欢');
-    $('textarea').autosize({append: "\n"});
+    $('textarea').autosize({append:"\n"});
+
+
+    var locateCursor = function(txtElement, pos) {
+        if (txtElement.setSelectionRange) {
+            txtElement.focus();
+            txtElement.setSelectionRange(pos, pos);
+        } else if (txtElement.createTextRange) {
+            var range = txtElement.createTextRange();
+            range.moveStart('character', pos);
+            range.select();
+        }
+    };
+    var incHot = function (feed) {
+        feed.find('.cmt-hot-count').html(parseInt(feed.find('.cmt-hot-count').html()) + 1);
+    };
+    var decHot = function (feed) {
+        feed.find('.cmt-hot-count').html(feed.find('.cmt-hot-count').html() - 1);
+    };
+    var incCmt = function (feed) {
+        feed.find('.cmt-reply-count').html(parseInt(feed.find('.cmt-reply-count').html()) + 1);
+    };
+    var decCmt = function (feed) {
+        feed.find('.cmt-reply-count').html(feed.find('.cmt-reply-count').html() - 1);
+    };
+
 
 });

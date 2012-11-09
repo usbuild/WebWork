@@ -7,7 +7,7 @@ class FollowController extends Controller
     public function init()
     {
         parent::init();
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/follow/index.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/follow/index.js', CClientScript::POS_END);
     }
 
     public function filters()

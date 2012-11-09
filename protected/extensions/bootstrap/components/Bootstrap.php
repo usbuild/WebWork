@@ -140,7 +140,7 @@ class Bootstrap extends CApplicationComponent
 	 * @param int $position the position of the JavaScript code.
 	 * @see CClientScript::registerScriptFile
 	 */
-	public function registerJS($position = CClientScript::POS_HEAD)
+	public function registerJS($position = CClientScript::POS_END)
 	{
 		/** @var CClientScript $cs */
 		$cs = Yii::app()->getClientScript();

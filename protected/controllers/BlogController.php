@@ -94,9 +94,9 @@ class BlogController extends Controller
             }
         } else {
             $this->layout = '//layouts/main';
-            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqtransform/jquery.jqtransform.js', CClientScript::POS_HEAD);
+            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqtransform/jquery.jqtransform.js', CClientScript::POS_END);
             Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/plugins/jqtransform/jqtransform.css');
-            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/blog/create.js', CClientScript::POS_HEAD);
+            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/blog/create.js', CClientScript::POS_END);
             $this->render('create');
         }
     }

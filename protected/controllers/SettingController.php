@@ -57,7 +57,7 @@ class SettingController extends Controller
         if (!Yii::app()->request->isPostRequest) {
             $this->layout = "//layouts/column2";
             Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/imgareaselect/css/imgareaselect-default.css');
-            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/imgareaselect/scripts/jquery.imgareaselect.min.js', CClientScript::POS_HEAD);
+            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/imgareaselect/scripts/jquery.imgareaselect.min.js', CClientScript::POS_END);
             $this->render('blog', array('blog' => $blog));
         } else {
             $blog->avatar = $_REQUEST['avatar'];

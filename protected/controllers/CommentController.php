@@ -22,26 +22,15 @@ class CommentController extends Controller
         }
     }
 
-    public function actionDel()
+    public function actionDel($id)
     {
-        if (isset($_REQUEST['id'])) {
-            $comment = Comment::model()->findByPk($_REQUEST['id']);
-            if (!empty($comment)) {
-                if ($comment->blog_id == Yii::app()->user->model->blog) {
-                    if ($comment->delete()) {
-                        echo CJSON::encode(array('code' => 0));
-                    } else {
-                        echo CJSON::encode(array('code' => 1, 'data' => "database error"));
-                    }
-                } else {
-                    echo CJSON::encode(array('code' => 1, 'data' => "not you comment"));
-                }
-            } else {
-                echo CJSON::encode(array('code' => 1, 'data' => "no comment"));
-            }
 
+        $result = Comment::model()->deleteAllByAttributes(array('blog_id' => Yii::app()->user->model->blog, 'id' => $id));
+
+        if ($result == 1) {
+            echo CJSON::encode(array('code' => 0));
         } else {
-            echo CJSON::encode(array('code' => 1, 'data' => "Missing Param"));
+            echo CJSON::encode(array('code' => 1, 'data' => "delete failed"));
         }
     }
 

@@ -1,1 +1,10 @@
 /*可以在这里添加你自己的css*/
+body{
+    font-family: "Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti !important;
+    word-wrap: break-word;
+}
+blockquote {
+    border-left: 4px solid gainsboro;
+    padding-left: 15px;
+    margin: 0 15px;
+}

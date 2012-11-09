@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #555;
-    font: normal 10pt 微 软 雅 黑, Arial, Helvetica, sans-serif;
+    font: normal 10pt "Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti;
     background: #EFEFEF;
 }
 
@@ -17,6 +17,11 @@ ul {
 
 li {
     list-style: none;
+}
+blockquote {
+    border-left: 4px solid gainsboro;
+    padding-left: 15px;
+    margin: 0 15px;
 }
 
 textarea {
@@ -986,6 +991,10 @@ a.blog-avatar:active {
     float: right;
     width: 50px;
     margin-top: 15px;
+}
+
+.cmt-item-delete a, .cmt-item-reply a {
+    cursor: pointer;
 }
 
 .cmt-load-more {

@@ -10,16 +10,16 @@ class PostController extends Controller
     public function init()
     {
         parent::init();
-        Yii::app()->clientScript->registerCoreScript('jquery.ui', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_config.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_all_min.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqtransform/jquery.jqtransform.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerCoreScript('jquery.ui', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_config.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_all_min.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqtransform/jquery.jqtransform.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/plugins/jqtransform/jqtransform.css');
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/ueditor/themes/default/ueditor.css');
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/post.css');
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/tagsinput/jquery.tagsinput.min.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/tagsinput/jquery.tagsinput.min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/tagsinput/jquery.tagsinput.css');
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/main.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/main.js', CClientScript::POS_END);
         $this->sidebar = $this->renderPartial('sidebar', array(), true);
     }
 
@@ -54,7 +54,10 @@ class PostController extends Controller
         if (isset($_REQUEST['title']) && isset($_REQUEST['content']) && isset($_REQUEST['tags']) && isset($_REQUEST['type'])) {
             $title = $_REQUEST['title'];
             $content = $_REQUEST['content'];
-            $tags = explode(',', $_REQUEST['tags']);
+            if (strlen($_REQUEST['tags']) == 0) $tags = array();
+            else
+                $tags = explode(',', $_REQUEST['tags']);
+
             $type = $_REQUEST['type'];
             if (($type === 'text' && strlen(trim($title)) + strlen(trim($content)) > 0)
                 || (in_array($type, array('image', 'video', 'music')) && !empty($title))
@@ -99,7 +102,7 @@ class PostController extends Controller
 
     public function actionText()
     {
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/text.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/text.js', CClientScript::POS_END);
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
         $this->render('text', array('blogs' => $blogs));
     }
@@ -109,10 +112,10 @@ class PostController extends Controller
         Yii::app()->clientScript->registerCoreScript('jquery.ui');
         Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/plugins/file-upload/css/jquery.fileupload-ui.css');
 
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/file-upload/js/vendor/jquery.ui.widget.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/file-upload/js/jquery.iframe-transport.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/file-upload/js/jquery.fileupload.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/photo.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/file-upload/js/vendor/jquery.ui.widget.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/file-upload/js/jquery.iframe-transport.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/file-upload/js/jquery.fileupload.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/photo.js', CClientScript::POS_END);
 
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
         $this->render('photo', array('blogs' => $blogs));
@@ -120,14 +123,14 @@ class PostController extends Controller
 
     public function actionMusic()
     {
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/music.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/music.js', CClientScript::POS_END);
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
         $this->render('music', array('blogs' => $blogs));
     }
 
     public function actionVideo()
     {
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/video.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/video.js', CClientScript::POS_END);
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
         $this->render('video', array('blogs' => $blogs));
     }
@@ -149,7 +152,7 @@ class PostController extends Controller
     public function actionRepost($id)
     {
         if (!Yii::app()->request->isPostRequest) {
-            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/repost.js', CClientScript::POS_HEAD);
+            Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/repost.js', CClientScript::POS_END);
             $this->render('repost', array('post' => Post::model()->findByPk($id)));
         } else {
 

@@ -6646,3 +6646,1340 @@ Stack trace:
 REQUEST_URI=/blog/upload/20121105/Desert.jpg
 HTTP_REFERER=http://localhost/blog/post/repost/23
 ---
+2012/11/09 02:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:31:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:31:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:31:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:43:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:43:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:43:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:48:56 [error] [php] Trying to get property of non-object (D:\www\blog\protected\models\User.php:130)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/
+in D:\www\blog\protected\models\User.php (130)
+in D:\www\blog\protected\controllers\SiteController.php (68)
+in D:\www\blog\index.php (13)
+2012/11/09 02:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:50:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:52:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:52:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:52:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:54:11 [error] [exception.CException] exception 'CException' with message 'CClientScript and its behaviors do not have a method or closure named "registerClientScript".' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\www\blog\protected\components\Controller.php(9): CComponent->__call('registerClientS...', Array)
+#1 D:\www\blog\protected\components\Controller.php(9): CClientScript->registerClientScript('config', 'var baseUrl = "...', 0)
+#2 D:\www\blog\protected\controllers\SiteController.php(11): Controller->init()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(282): SiteController->init()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#5 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\www\blog\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/blog/
+---
+2012/11/09 02:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:54:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:55:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:55:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:55:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:56:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:56:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:56:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 02:56:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:05:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:09:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:09:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:09:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "undefinedlang" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('undefinedlang')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('undefinedlang')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/undefinedl...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/post/undefinedlang/zh-cn/zh-cn.js
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/11/09 03:15:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:15:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:15:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:23:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:23:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:23:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:24:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:24:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:24:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:24:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:24:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:24:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:28:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:28:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:28:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:43:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:43:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:43:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:44:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:44:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:44:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:44:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:49:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:49:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:49:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:49:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:50:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:50:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:50:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:51:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:51:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:51:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:53:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:53:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:53:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:54:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:54:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 03:54:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:03:59 [error] [exception.CException] exception 'CException' with message '属性 "Post.tags" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(144): CComponent->__get('tags')
+#1 D:\www\blog\protected\models\Post.php(112): CActiveRecord->__get('tags')
+#2 D:\www\blog\protected\views\site\index.php(88): Post->__get('tags')
+#3 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require('D:\www\blog\pro...')
+#4 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\blog\pro...', Array, true)
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): CBaseController->renderFile('D:\www\blog\pro...', Array, true)
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#7 D:\www\blog\protected\controllers\SiteController.php(68): CController->render('index', Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#16 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#18 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#19 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 D:\www\blog\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/blog/
+HTTP_REFERER=http://localhost/blog/post/text
+---
+2012/11/09 04:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:04:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:08:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:08:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:08:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:08:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:08:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:09:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:09:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:09:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:09:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:09:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:09:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:12:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:12:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:28:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:28:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:28:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:28:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:28:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:28:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:29:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:29:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:29:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:33:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:33:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:33:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:36:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:37:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:38:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:38:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:39:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:39:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:39:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:39:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121105/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121105...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121105/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/09 04:39:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121102/Chrysanthemum (8).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121102...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121102/Chrysanthemum%20%288%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
