@@ -1005,9 +1005,17 @@ a.blog-avatar:active {
     line-height: 30px;
     width: 500px;
     margin: 10px auto 0 auto;
-    display: none;
 }
 
 .cmt-load-more:hover {
     background-color: #BBB;
+}
+.feed-comment textarea{
+    resize: none!important;
+}
+.feed-comment .cmt-item-reply-name{
+    margin-right: 10px;
+}
+.feed-comment .cmt-item-name{
+    margin-right: 10px;
 }

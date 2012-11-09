@@ -14,7 +14,9 @@ class CommentController extends Controller
         $comment->blog_id = Yii::app()->user->model->blog;
         if ($comment->save()) {
             $comment->refresh();
-            $result = array_merge($comment->blog->attributes, $comment->attributes);
+            $result = $comment->attributes;
+            $result['blog'] = $comment->blog;
+            $result['reply'] = $comment->reply;
             $result['isme'] = 1;
             echo CJSON::encode(array('code' => 0, 'data' => $result));
         } else {
@@ -52,8 +54,12 @@ class CommentController extends Controller
             $myblog_id = Yii::app()->user->model->blog;
             foreach ($comments as $comment) {
 
-                $result = array_merge($comment->blog->attributes, $comment->attributes);
+                $result = $comment->attributes;
                 $result['isme'] = $comment->blog->id == $myblog_id ? 1 : 0;
+                $result['blog'] = $comment->blog;
+                if (!empty($result['reply_id'])) {
+                    $result['reply'] = $comment->reply;
+                }
                 $results[] = $result;
             }
 

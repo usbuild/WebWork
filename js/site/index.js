@@ -32,11 +32,20 @@ $(document).ready(function () {
         li.addClass('cmt-item').addClass('clearfix');
 
         var img = $('<img />');
-        img.attr('src', baseUrl + item.avatar).addClass('cmt-item-img');
+        img.attr('src', baseUrl + item.blog.avatar).addClass('cmt-item-img');
 
 
         var content = $('<div></div>');
-        content.html(' <span class="cmt-item-name"><a>' + item.name + '</a></span> ' + item.content).addClass('cmt-item-content');
+
+        var name = $('<span class="cmt-item-name"><a>' + item.blog.name + '</a></span>');
+        content.append(name);
+
+        if (item.reply_id != null) {
+            content.append('<span class="cmt-item-reply-name">回复 <a>' + item.reply.name + '</a> :</span>');
+        }
+        content.append(item.content);
+
+        content.addClass('cmt-item-content');
 
         var operation;
         if (item.isme) {
@@ -60,6 +69,8 @@ $(document).ready(function () {
         feed.find('textarea.cmt-content').get(0).focus();
         var post_id = feed.attr('data-id');
         var start = 0;
+        feed.find('.cmt-load-more').html('正在加载...').css('disabled', 'disabled');
+
         if (!feed.attr('data-cmt')) {
             $.post(baseUrl + 'comment/fetch', {id:post_id, offset:start}, function (obj) {
                 var cmt_list = feed.find('.cmt-list');
@@ -72,7 +83,9 @@ $(document).ready(function () {
 
                 cmt_list.data('show', obj.length);
                 if (obj.length == 10) {
-                    feed.find('.cmt-load-more').show();
+                    feed.find('.cmt-load-more').html('显示更多').css('disabled', 'enabled').show();
+                } else {
+                    feed.find('.cmt-load-more').hide();
                 }
             }, 'json');
         }
@@ -87,10 +100,17 @@ $(document).ready(function () {
 
     $('.cmt-submit').click(function () {
         var feed = $(this).parents('.feed');
-        $.post(baseUrl + 'comment/add', {'comment[post_id]':feed.attr('data-id'), 'comment[content]':feed.find('.cmt-content').val()}, function (e) {
-            var obj = json_decode(e);
+        var content = feed.find('.cmt-content');
+        var post_data;
+        if (content.data('reply') && content.val().indexOf(content.data('reply')) == 0) {
+            post_data = {'comment[post_id]':feed.attr('data-id'), 'comment[content]':content.val().substr(content.data('reply').length), 'comment[reply_id]':content.data('reply_id')};
+        } else {
+            post_data = {'comment[post_id]':feed.attr('data-id'), 'comment[content]':content.val()};
+        }
+        $.post(baseUrl + 'comment/add', post_data, function (obj) {
             if (obj.code == 0) {
-                feed.find('.cmt-content').val('');
+                feed.find('.cmt-content').val('').css('height', '50px');
+
                 var li = buildList(obj.data);
                 li.hide();
                 feed.find('.cmt-list').prepend(li);
@@ -99,7 +119,7 @@ $(document).ready(function () {
             } else {
                 alert('发表失败');
             }
-        });
+        }, 'json');
     });
 
     $('.cmt-load-more').click(function () {
@@ -107,6 +127,7 @@ $(document).ready(function () {
         var cmt_list = feed.find('.cmt-list');
         var start = cmt_list.data('show');
         var load_more = $(this);
+        load_more.html('正在加载...').css('disabled', 'disabled');
         $.post(baseUrl + 'comment/fetch', {id:feed.attr('data-id'), offset:start}, function (obj) {
             $.each(obj, function (i, item) {
                 var li = buildList(item);
@@ -118,6 +139,8 @@ $(document).ready(function () {
             cmt_list.data('show', start + obj.length);
             if (obj.length < 10) {
                 load_more.hide();
+            } else {
+                load_more.html('显示更多').css('disabled', 'enabled');
             }
         }, 'json');
     });
@@ -167,7 +190,9 @@ $(document).ready(function () {
         var li = $(this).parents('li');
         var item = li.data('item');
         var feed = li.parents('.feed');
-        feed.find('.cmt-content').val('回复 ' + item.name + ' : ');
+        var reply_string = '回复 ' + item.blog.name + ' :';
+
+        feed.find('.cmt-content').val(reply_string + ' ').data('reply', reply_string).data('reply_id', item.blog_id);
         var len = feed.find('.cmt-content').val().length;
         locateCursor(feed.find('.cmt-content').get(0), len);
     });
@@ -177,7 +202,7 @@ $(document).ready(function () {
     $('textarea').autosize({append:"\n"});
 
 
-    var locateCursor = function(txtElement, pos) {
+    var locateCursor = function (txtElement, pos) {
         if (txtElement.setSelectionRange) {
             txtElement.focus();
             txtElement.setSelectionRange(pos, pos);
@@ -194,9 +219,11 @@ $(document).ready(function () {
         feed.find('.cmt-hot-count').html(feed.find('.cmt-hot-count').html() - 1);
     };
     var incCmt = function (feed) {
+        incHot(feed);
         feed.find('.cmt-reply-count').html(parseInt(feed.find('.cmt-reply-count').html()) + 1);
     };
     var decCmt = function (feed) {
+        decHot(feed);
         feed.find('.cmt-reply-count').html(feed.find('.cmt-reply-count').html() - 1);
     };
 

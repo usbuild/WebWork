@@ -123,7 +123,7 @@ class User extends CActiveRecord
         $criteria = new CDbCriteria();
         $criteria->order = 'time DESC';
         if (isset($blogs))
-            $criteria->compare('poster', $blogs, false, 'OR');
+            $criteria->compare('blog_id', $blogs, false, 'OR');
         foreach ($tags as $tag) {
             $criteria->addSearchCondition('tag', $tag, true, 'OR');
         }

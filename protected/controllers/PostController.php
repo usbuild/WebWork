@@ -63,8 +63,9 @@ class PostController extends Controller
                 || (in_array($type, array('image', 'video', 'music')) && !empty($title))
             ) {
                 $post = new Post();
-                $post->content = array('title' => $title, 'content' => $content);
-                $post->poster = $this->blog->id;
+                $post->head = $title;
+                $post->content = $content;
+                $post->blog_id = $this->blog->id;
                 $post->tag = $tags;
                 $post->type = $type;
 

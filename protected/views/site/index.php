@@ -35,37 +35,38 @@
                     <?php switch ($post->type) {
                     case 'text':
                         ?>
-                            <h4 class="feed-title"><?=$post->content['title']?></h4>
+                            <h4 class="feed-title"><?=$post->head?></h4>
                             <?php break;
                     case 'image':
-                        $i = 5;
+                        $i = 2; //maxshow
                         ?>
                             <div class="feed-image">
-                                <?php foreach ($post->content['title'] as $img): ?>
+                                <?php foreach ($post->head as $img): ?>
+                                <?php $i--;
+                                if ($i < 0) break;?>
                                 <div class="feed-image-item">
                                     <p>
-                                        <?php $i--;
-                                        if ($i < 0) break;
+                                        <?php
                                         echo '<img src="' . $img['url'] . '" alt="' . $img['desc'] . '" width="500px" />'
                                         ?>
                                     </p>
                                 </div>
                                 <?php endforeach;?>
-                                <span style="color: #ccc; font-size: small;">共有(<?=count($post->content['title'])?>
+                                <span style="color: #ccc; font-size: small;">共有(<?=count($post->head)?>
                                     )张</span><br><br>
                             </div>
 
                             <?php break;
                     case 'music':
                         ?>
-                            <input type="hidden" data-song='<?=CJSON::encode($post->content['title'])?>'
+                            <input type="hidden" data-song='<?=CJSON::encode($post->head)?>'
                                    class="music-input"/>
                             <br><br>
                             <?php break;
                     case 'video':
                         ?>
                             <embed
-                                src="http://player.youku.com/player.php/sid/<?=Common::getYouKuId($post->content['title'])?>/v.swf"
+                                src="http://player.youku.com/player.php/sid/<?=Common::getYouKuId($post->head)?>/v.swf"
                                 allowFullScreen="true" quality="high" width="480" height="400" align="middle"
                                 allowScriptAccess="always"
                                 type="application/x-shockwave-flash"></embed>
@@ -80,7 +81,7 @@
                     <div class="feed-ct">
                         <div class="feed-txt-full rich-content">
                             <div
-                                class="feed-txt-summary"><?=mb_strimwidth(strip_tags($post->content['content']), 0, 200, "...");?></div>
+                                class="feed-txt-summary"><?=mb_strimwidth(strip_tags($post->content), 0, 200, "...");?></div>
                         </div>
                     </div>
 
@@ -88,7 +89,7 @@
                         <?php foreach ($post->tag as $tag): ?>
                         <a href="#" class=" ">#<?=$tag?></a>
                         <?php endforeach;?>
-                        <?php if(count($post->tag)==0) echo "没有标签";?>
+                        <?php if (count($post->tag) == 0) echo "没有标签";?>
                     </div>
 
                     <div class="feed-act">

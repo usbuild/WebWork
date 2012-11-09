@@ -5,14 +5,18 @@
  *
  * The followings are the available columns in table 'post':
  * @property string $id
- * @property integer $poster
+ * @property integer $blog_id
+ * @property string $head
  * @property string $content
  * @property string $type
  * @property string $time
  * @property string $tag
  *
  * The followings are the available model relations:
- * @property Blog $poster0
+ * @property Comment[] $comments
+ * @property Like[] $likes
+ * @property Blog $blog
+ * @property Tag[] $tags
  */
 class Post extends CActiveRecord
 {
@@ -42,13 +46,13 @@ class Post extends CActiveRecord
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-//            array('time', 'required'),
-            array('poster', 'numerical', 'integerOnly' => true),
+            array('blog_id', 'required'),
+            array('blog_id', 'numerical', 'integerOnly' => true),
             array('type', 'length', 'max' => 5),
-            array('content, tag', 'safe'),
+            array('head, content, tag', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, poster, content, type, time, tag', 'safe', 'on' => 'search'),
+            array('id, blog_id, head, content, type, time, tag', 'safe', 'on' => 'search'),
         );
     }
 
@@ -60,9 +64,10 @@ class Post extends CActiveRecord
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'blog' => array(self::BELONGS_TO, 'Blog', 'poster'),
-            'comment' => array(self::HAS_MANY, 'Comment', 'post_id'),
+            'comments' => array(self::HAS_MANY, 'Comment', 'post_id'),
             'likes' => array(self::HAS_MANY, 'Like', 'post_id'),
+            'blog' => array(self::BELONGS_TO, 'Blog', 'blog_id'),
+            'tags' => array(self::HAS_MANY, 'Tag', 'post'),
         );
     }
 
@@ -73,7 +78,8 @@ class Post extends CActiveRecord
     {
         return array(
             'id' => 'ID',
-            'poster' => 'Poster',
+            'blog_id' => 'Blog',
+            'head' => 'Head',
             'content' => 'Content',
             'type' => 'Type',
             'time' => 'Time',
@@ -93,7 +99,8 @@ class Post extends CActiveRecord
         $criteria = new CDbCriteria;
 
         $criteria->compare('id', $this->id, true);
-        $criteria->compare('poster', $this->poster);
+        $criteria->compare('blog_id', $this->blog_id);
+        $criteria->compare('head', $this->head, true);
         $criteria->compare('content', $this->content, true);
         $criteria->compare('type', $this->type, true);
         $criteria->compare('time', $this->time, true);
@@ -106,10 +113,13 @@ class Post extends CActiveRecord
 
     public function __get($name)
     {
-        if ($name == 'content' || $name == 'tag')
-            return CJSON::decode(parent::__get($name));
-        else
+        if ($name == 'head' || $name == 'tag') {
+            $result = CJSON::decode(parent::__get($name));
+            if (is_null($result)) return parent::__get($name);
+            return $result;
+        } else {
             return parent::__get($name);
+        }
     }
 
     public function __set($name, $value)

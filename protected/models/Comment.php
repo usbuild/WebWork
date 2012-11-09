@@ -6,11 +6,13 @@
  * The followings are the available columns in table 'comment':
  * @property string $id
  * @property integer $blog_id
+ * @property integer $reply_id
  * @property string $content
  * @property string $post_id
  * @property string $time
  *
  * The followings are the available model relations:
+ * @property Blog $reply
  * @property Blog $blog
  * @property Post $post
  */
@@ -43,12 +45,12 @@ class Comment extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('blog_id, content, post_id', 'required'),
-			array('blog_id', 'numerical', 'integerOnly'=>true),
+			array('blog_id, reply_id', 'numerical', 'integerOnly'=>true),
 			array('content', 'length', 'max'=>255),
 			array('post_id', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, blog_id, content, post_id, time', 'safe', 'on'=>'search'),
+			array('id, blog_id, reply_id, content, post_id, time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,6 +62,7 @@ class Comment extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'reply' => array(self::BELONGS_TO, 'Blog', 'reply_id'),
 			'blog' => array(self::BELONGS_TO, 'Blog', 'blog_id'),
 			'post' => array(self::BELONGS_TO, 'Post', 'post_id'),
 		);
@@ -73,6 +76,7 @@ class Comment extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'blog_id' => 'Blog',
+			'reply_id' => 'Reply',
 			'content' => 'Content',
 			'post_id' => 'Post',
 			'time' => 'Time',
@@ -92,6 +96,7 @@ class Comment extends CActiveRecord
 
 		$criteria->compare('id',$this->id,true);
 		$criteria->compare('blog_id',$this->blog_id);
+		$criteria->compare('reply_id',$this->reply_id);
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('post_id',$this->post_id,true);
 		$criteria->compare('time',$this->time,true);
