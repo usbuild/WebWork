@@ -95,7 +95,8 @@
                     <div class="feed-act">
                         <?php if ($post->isMine()): ?>
                         <a href="javascript:;" class="feed-delete">删除</a>
-                        <a href="<?=$this->createUrl('post/edit')?>" target="_blank" class="feed-edit">编辑</a>
+                        <a href="<?=$this->createUrl('post/edit/' . $post->id)?>" target="_blank"
+                           class="feed-edit">编辑</a>
                         <a class="feed-cmt" href="javascript:;">回应(<span
                             class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
                         <?php else: ?>

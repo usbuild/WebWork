@@ -27,7 +27,7 @@ class PostController extends Controller
     {
         return array(
             'accessControl', // perform access control for CRUD operations
-            'postOnly + delete,index,getYoukuImg', // we only allow deletion via POST request
+            'postOnly + index,getYoukuImg',
             array('application.controllers.filters.BlogOwnerFilter + index'),
         );
     }
@@ -40,7 +40,7 @@ class PostController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getYoukuImg', 'repost'),
+                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getYoukuImg', 'delete', 'repost', 'edit'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -64,10 +64,21 @@ class PostController extends Controller
             ) {
                 $post = new Post();
                 $post->head = $title;
-                $post->content = $content;
                 $post->blog_id = $this->blog->id;
-                $post->tag = $tags;
                 $post->type = $type;
+
+                if (isset($_REQUEST['id'])) {
+                    $old_post = Post::model()->findByPk($_REQUEST['id']);
+                    if (!empty($old_post)) {
+                        $post = $old_post;
+                    }
+                }
+                if ($post->type === 'text') {
+                    $post->head = $title;
+                }
+
+                $post->content = $content;
+                $post->tag = $tags;
 
                 $transaction = Yii::app()->db->beginTransaction();
                 try {
@@ -105,6 +116,14 @@ class PostController extends Controller
     {
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/text.js', CClientScript::POS_END);
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
+
+        if (isset($_REQUEST['id'])) {
+            $post = Post::model()->findByPk($_REQUEST['id']);
+            if (!empty($post) && $post->isMine() && $post->type == "text") {
+                $this->render('text', array('blogs' => $blogs, 'post' => $post));
+                return;
+            }
+        }
         $this->render('text', array('blogs' => $blogs));
     }
 
@@ -119,6 +138,13 @@ class PostController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/photo.js', CClientScript::POS_END);
 
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
+        if (isset($_REQUEST['id'])) {
+            $post = Post::model()->findByPk($_REQUEST['id']);
+            if (!empty($post) && $post->isMine() && $post->type == "image") {
+                $this->render('photo', array('blogs' => $blogs, 'post' => $post));
+                return;
+            }
+        }
         $this->render('photo', array('blogs' => $blogs));
     }
 
@@ -126,6 +152,13 @@ class PostController extends Controller
     {
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/music.js', CClientScript::POS_END);
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
+        if (isset($_REQUEST['id'])) {
+            $post = Post::model()->findByPk($_REQUEST['id']);
+            if (!empty($post) && $post->isMine() && $post->type == "music") {
+                $this->render('music', array('blogs' => $blogs, 'post' => $post));
+                return;
+            }
+        }
         $this->render('music', array('blogs' => $blogs));
     }
 
@@ -133,6 +166,13 @@ class PostController extends Controller
     {
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/video.js', CClientScript::POS_END);
         $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
+        if (isset($_REQUEST['id'])) {
+            $post = Post::model()->findByPk($_REQUEST['id']);
+            if (!empty($post) && $post->isMine() && $post->type == "video") {
+                $this->render('video', array('blogs' => $blogs, 'post' => $post));
+                return;
+            }
+        }
         $this->render('video', array('blogs' => $blogs));
     }
 
@@ -175,5 +215,39 @@ class PostController extends Controller
         }
     }
 
+    public function actionDelete($id)
+    {
+        $post = Post::model()->findByAttributes(array('id' => $id));
+        if ($post->isMine()) {
+            if ($post->delete()) {
+                echo CJSON::encode(array('code' => 0));
+            } else {
+                echo CJSON::encode(array('code' => 1, 'data' => 'delete failed'));
+            }
+        } else {
+            echo CJSON::encode(array('code' => 1, 'data' => 'not your post'));
+        }
+    }
+
+    public function actionEdit($id)
+    {
+        $post = Post::model()->findByPk($id);
+        if (!empty($post) && $post->isMine()) {
+            switch ($post->type) {
+                case 'text':
+                    $this->redirect(array('post/text', 'id' => $id));
+                    break;
+                case 'image':
+                    $this->redirect(array('post/photo', 'id' => $id));
+                    break;
+                case 'video':
+                    $this->redirect(array('post/video', 'id' => $id));
+                    break;
+                case 'repost':
+                    $this->redirect(array('post/repost', 'id' => $id));
+                    break;
+            }
+        }
+    }
 
 }

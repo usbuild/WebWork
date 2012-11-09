@@ -301,6 +301,22 @@ $(document).ready(function () {
     });
 
 
+    $('.feed-delete').live('click', function (e) {
+        var feed = $(this).parents('.feed');
+        if (confirm('您确定要删除?')) {
+            $.post(baseUrl + 'post/delete/' + feed.attr('data-id'), function (e) {
+                if (e.code == 0) {
+                    feed.animate({height:0}, function () {
+                        feed.remove();
+                    });
+                } else {
+                    alert('删除失败');
+                }
+            }, 'json');
+        }
+    });
+
+
     $('.feed-faved').attr('title', '取消喜欢');
     $('textarea').autosize({append:"\n"});
 
