@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: #555;
-    font: normal 10pt "Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti;
+    font: normal 10pt "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;
     background: #EFEFEF;
 }
 
@@ -18,6 +18,7 @@ ul {
 li {
     list-style: none;
 }
+
 blockquote {
     border-left: 4px solid gainsboro;
     padding-left: 15px;
@@ -918,7 +919,7 @@ a.blog-avatar:active {
     background: url('../images/feed-ft-triangle.png') no-repeat;
 }
 
-.feed-comment {
+.feed-comment, .feed-notes {
     background: url('../images/feed-bg-sprites.png') -2400px 0 repeat-y;
     margin: 0 1px;
     padding-top: 15px;
@@ -966,19 +967,19 @@ a.blog-avatar:active {
     background-position: -114px 0;
 }
 
-.cmt-item {
+.cmt-item, .nt-item {
     display: block;
     border-bottom: solid 1px #CCC;
     margin-right: 20px;
 }
 
-.cmt-item-img {
+.cmt-item-img, .nt-item-img {
     width: 24px;
     float: left;
     padding: 10px 0 5px 0;
 }
 
-.cmt-item-content {
+.cmt-item-content, .nt-item-content {
     float: left;
     width: 380px;
     margin: 15px 10px;
@@ -997,7 +998,7 @@ a.blog-avatar:active {
     cursor: pointer;
 }
 
-.cmt-load-more {
+.cmt-load-more, .nt-load-more {
     cursor: pointer;
     text-align: center;
     background-color: #CECECE;
@@ -1007,15 +1008,22 @@ a.blog-avatar:active {
     margin: 10px auto 0 auto;
 }
 
-.cmt-load-more:hover {
+.cmt-load-more:hover, .nt-load-more:hover {
     background-color: #BBB;
 }
-.feed-comment textarea{
-    resize: none!important;
+
+.feed-comment textarea {
+    resize: none !important;
 }
-.feed-comment .cmt-item-reply-name{
+
+.cmt-item-reply-name {
     margin-right: 10px;
 }
-.feed-comment .cmt-item-name{
+
+.cmt-item-name, .nt-item-name {
     margin-right: 10px;
+}
+
+.feed-fold-container {
+    display: none;
 }

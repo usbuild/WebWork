@@ -109,6 +109,7 @@
             <div class="feed-ft J_FeedFooter">
                 <div class="feed-ft-bottom"></div>
                 <div class="feed-ft-triangle J_FeedFooterTriangle"></div>
+
                 <div class="feed-fold-container comment">
 
                     <div class="feed-comment">
@@ -125,8 +126,18 @@
                     </div>
 
                 </div>
+                <div class="feed-fold-container notes">
+                    <div class="feed-notes">
+                        <ul class="nt-list"></ul>
+                        <div class="nt-load-more">显示更多</div>
+                    </div>
+                </div>
+
                 <div class="comment-container-bottom"><a href="javascript:;" class="slide-up">收起</a></div>
+
+
             </div>
+
 
             <div class="feed-container-bottom"></div>
 

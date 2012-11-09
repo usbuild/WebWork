@@ -36,7 +36,7 @@ class PostController extends Controller
     {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('view'),
+                'actions' => array('view', 'fetchHots'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -159,5 +159,21 @@ class PostController extends Controller
 
         }
     }
+
+    public function actionFetchHots()
+    {
+        if (isset($_REQUEST['id']) && isset($_REQUEST['offset']) && is_numeric($_REQUEST['offset'])) {
+            $post = Post::model()->findByPk($_REQUEST['id']);
+            if (empty($post)) {
+                echo CJSON::encode(array());
+                return;
+            }
+            $result = $post->getHots($_REQUEST['offset']);
+            echo CJSON::encode($result->readAll());
+        } else {
+            echo CJSON::encode(array());
+        }
+    }
+
 
 }

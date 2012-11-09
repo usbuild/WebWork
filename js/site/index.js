@@ -27,7 +27,7 @@ $(document).ready(function () {
         }
     });
 
-    var buildList = function (item) {
+    var buildCmtList = function (item) {
         var li = $('<li></li>');
         li.addClass('cmt-item').addClass('clearfix');
 
@@ -60,28 +60,62 @@ $(document).ready(function () {
         return li;
     };
 
+    var buildNtList = function (item) {
+        var li = $('<li></li>');
+        li.addClass('nt-item').addClass('clearfix');
+        var img = $('<img/>');
+        var content = $('<div></div>');
+        img.attr('src', baseUrl + item.avatar).addClass('nt-item-img');
+
+        var name = $('<span class="nt-item-name"><a>' + item.name + '</a></span>');
+        content.append(name);
+        if (item.type == 1) {
+            content.append('喜欢此文章');
+        } else if (item.type == 0) {
+            content.append('评论了此文章');
+        } else {
+            content.append('转载了此文章');
+        }
+        content.addClass('nt-item-content');
+        li.append(img).append(content);
+        li.data('item', item);
+        return li;
+    };
+
     $('.feed-cmt').click(function () {
 
         var feed = $(this).parents('.feed');
+        if (feed.find('.notes').is(':visible')) {
+            feed.find('.feed-ft').animate({height:'toggle'}, 300);
+            setTimeout(function () {
+                feed.find('.notes').hide();
+                feed.find('.comment').show();
+            }, 300)
+        } else {
+            feed.find('.notes').hide();
+            feed.find('.comment').show();
+            feed.find('.feed-container-bottom').toggle();
+        }
+
+
         feed.find('.feed-ft-triangle').css('left', '393px');
         feed.find('.feed-ft').animate({height:'toggle'}, 300);
-        feed.find('.feed-container-bottom').toggle();
         feed.find('textarea.cmt-content').get(0).focus();
         var post_id = feed.attr('data-id');
         var start = 0;
-        feed.find('.cmt-load-more').html('正在加载...').css('disabled', 'disabled');
 
         if (!feed.attr('data-cmt')) {
+            feed.find('.cmt-load-more').html('正在加载...').css('disabled', 'disabled');
             $.post(baseUrl + 'comment/fetch', {id:post_id, offset:start}, function (obj) {
                 var cmt_list = feed.find('.cmt-list');
                 $.each(obj, function (i, item) {
-                    var li = buildList(item);
+                    var li = buildCmtList(item);
                     li.hide();
                     cmt_list.append(li);
                     li.animate({height:'toggle'}, 100);
                 });
 
-                cmt_list.data('show', obj.length);
+                cmt_list.data('show-cmt', obj.length);
                 if (obj.length == 10) {
                     feed.find('.cmt-load-more').html('显示更多').css('disabled', 'enabled').show();
                 } else {
@@ -90,6 +124,50 @@ $(document).ready(function () {
             }, 'json');
         }
         feed.attr('data-cmt', true);
+    });
+
+
+    $('.feed-nt').click(function () {
+        var feed = $(this).parents('.feed');
+        if (feed.find('.comment').is(':visible')) {
+            feed.find('.feed-ft').animate({height:'toggle'}, 300);
+            setTimeout(function () {
+                feed.find('.notes').show();
+                feed.find('.comment').hide();
+            }, 300)
+
+        } else {
+            feed.find('.notes').show();
+            feed.find('.comment').hide();
+            feed.find('.feed-container-bottom').toggle();
+        }
+
+        feed.find('.feed-ft-triangle').css('left', '323px');
+        feed.find('.feed-ft').animate({height:'toggle'}, 300);
+
+        var post_id = feed.attr('data-id');
+        var start = 0;
+        if (!feed.attr('data-nt')) {
+            feed.find('.nt-load-more').html('正在加载...').css('disabled', 'disabled');
+            $.post(baseUrl + 'post/fetchHots', {id:post_id, offset:start}, function (obj) {
+                var nt_list = feed.find('.nt-list');
+                $.each(obj, function (i, item) {
+                    var li = buildNtList(item);
+                    li.hide();
+                    nt_list.append(li);
+                    li.animate({height:'toggle'}, 100);
+                });
+
+                nt_list.data('show-nt', obj.length);
+                if (obj.length == 10) {
+                    feed.find('.nt-load-more').html('显示更多').css('disabled', 'enabled').show();
+                } else {
+                    feed.find('.nt-load-more').hide();
+                }
+            }, 'json');
+        }
+        feed.attr('data-nt', true);
+
     });
 
     $('.slide-up').click(function () {
@@ -111,7 +189,7 @@ $(document).ready(function () {
             if (obj.code == 0) {
                 feed.find('.cmt-content').val('').css('height', '50px');
 
-                var li = buildList(obj.data);
+                var li = buildCmtList(obj.data);
                 li.hide();
                 feed.find('.cmt-list').prepend(li);
                 li.animate({height:'toggle'}, 300);
@@ -125,18 +203,18 @@ $(document).ready(function () {
     $('.cmt-load-more').click(function () {
         var feed = $(this).parents('.feed');
         var cmt_list = feed.find('.cmt-list');
-        var start = cmt_list.data('show');
+        var start = cmt_list.data('show-cmt');
         var load_more = $(this);
         load_more.html('正在加载...').css('disabled', 'disabled');
         $.post(baseUrl + 'comment/fetch', {id:feed.attr('data-id'), offset:start}, function (obj) {
             $.each(obj, function (i, item) {
-                var li = buildList(item);
+                var li = buildCmtList(item);
                 li.hide();
                 cmt_list.append(li);
                 li.animate({height:'toggle'}, 100);
             });
 
-            cmt_list.data('show', start + obj.length);
+            cmt_list.data('show-cmt', start + obj.length);
             if (obj.length < 10) {
                 load_more.hide();
             } else {
@@ -144,6 +222,31 @@ $(document).ready(function () {
             }
         }, 'json');
     });
+
+    $('.nt-load-more').click(function () {
+        var feed = $(this).parents('.feed');
+        var nt_list = feed.find('.nt-list');
+        var start = nt_list.data('show-nt');
+        var load_more = $(this);
+        load_more.html('正在加载...').css('disabled', 'disabled');
+        $.post(baseUrl + 'post/fetchHots', {id:feed.attr('data-id'), offset:start}, function (obj) {
+            $.each(obj, function (i, item) {
+                var li = buildNtList(item);
+                li.hide();
+                nt_list.append(li);
+                li.animate({height:'toggle'}, 100);
+            });
+
+            nt_list.data('show-nt', start + obj.length);
+            if (obj.length < 10) {
+                load_more.hide();
+            } else {
+                load_more.html('显示更多').css('disabled', 'enabled');
+            }
+        }, 'json');
+    });
+
+
     $('.feed-fav').click(function () {
         var feed = $(this).parents('.feed');
         var id = feed.attr('data-id');
