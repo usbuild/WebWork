@@ -77,15 +77,31 @@ class BlogController extends Controller
                         echo CJSON::encode(array('code' => 1, 'data' => '该域名已被占用'));
                         exit();
                     }
+
+
                     $blog = new Blog();
                     $blog->name = $name;
                     $blog->domain = $domain;
                     $blog->owner = Yii::app()->user->id;
-                    if ($blog->save()) {
+
+                    $transaction = Yii::app()->db->beginTransaction();
+                    try {
+                        if (!$blog->save()) throw new Exception(CHtml::errorSummary($blog));
+                        $blog->refresh();
+
+                        $follow_blog = new FollowBlog();
+                        $follow_blog->user_id = Yii::app()->user->id;
+                        $follow_blog->blog_id = $blog->id;
+                        if (!$follow_blog->save()) throw new Exception(CHtml::errorSummary($follow_blog));
+                        $transaction->commit();
+
                         echo CJSON::encode(array('code' => 0, 'data' => $blog));
-                    } else {
-                        echo CJSON::encode(array('code' => 1, 'data' => CHtml::errorSummary($blog)));
+
+                    } catch (Exception $ex) {
+                        $transaction->rollback();
+                        echo CJSON::encode(array('code' => 1, 'data' => $ex->getMessage()));
                     }
+
                 } else {
                     echo CJSON::encode(array('code' => 1, 'data' => '博客名或域名不能为空'));
                 }

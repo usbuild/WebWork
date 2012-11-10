@@ -34,7 +34,7 @@
                         <?php if ($post->type == 'repost'): ?>
                         转载自 <?= $post->repost->blog->name ?>
                         <?php else: ?>
-                        <?= $blog->owner0->name ?>
+                        <?= $blog->name ?>
                         <?php endif;?>
                     </div>
                 </div>

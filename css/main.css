@@ -615,7 +615,8 @@ a.blog-avatar:active {
 }
 
 #new_blog_div input[type=text], #account_box input[type=password] {
-    line-height: 2.5;
+    line-height: 35px;
+    height: 35px;
     border: solid 2px #CCC;
     width: 350px;
     font-size: 15px;

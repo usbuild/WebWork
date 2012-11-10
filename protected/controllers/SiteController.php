@@ -140,8 +140,13 @@ class SiteController extends Controller
                                 $blog = new Blog();
                                 $blog->owner = $user->id;
                                 if (!$blog->save()) throw new Exception(CHtml::errorSummary($blog));
-
                                 $blog->refresh();
+
+                                $follow_blog = new FollowBlog();
+                                $follow_blog->user_id = $user->id;
+                                $follow_blog->blog_id = $blog->id;
+                                if (!$follow_blog->save()) throw new Exception(CHtml::errorSummary($follow_blog));
+
                                 $user->blog = $blog->id;
                                 if (!$user->save()) throw new Exception(CHtml::errorSummary($user));
                                 $transaction->commit();
