@@ -8554,3 +8554,74 @@ Stack trace:
 REQUEST_URI=/blog/blog/view/9
 HTTP_REFERER=http://localhost/blog/
 ---
+2012/11/09 14:18:55 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'poster' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `post` `t` WHERE poster=:ycp0.
+in D:\www\blog\protected\controllers\BlogController.php (51)
+in D:\www\blog\index.php (13)
+2012/11/09 14:18:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'poster' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `post` `t` WHERE poster=:ycp0' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 D:\www\blog\protected\controllers\BlogController.php(51): CActiveRecord->count(Object(CDbCriteria))
+#3 [internal function]: BlogController->actionView('1')
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(BlogController), Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(BlogController), Object(ReflectionMethod), Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/view')
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\www\blog\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog/blog/view/1
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 02:58:02 [error] [php] Array to string conversion (D:\www\blog\protected\views\post\music.php:17)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): PostController->renderFile()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): PostController->renderPartial()
+#2 D:\www\blog\protected\controllers\PostController.php(158): PostController->render()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionMusic()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/music/39
+in D:\www\blog\protected\views\post\music.php (17)
+in D:\www\blog\protected\controllers\PostController.php (158)
+in D:\www\blog\index.php (13)
+2012/11/10 03:49:44 [error] [php] Trying to get property of non-object (D:\www\blog\protected\views\post\photo.php:17)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): PostController->renderFile()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): PostController->renderPartial()
+#2 D:\www\blog\protected\controllers\PostController.php(140): PostController->render()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionPhoto()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/photo/32
+in D:\www\blog\protected\views\post\photo.php (17)
+in D:\www\blog\protected\controllers\PostController.php (140)
+in D:\www\blog\index.php (13)

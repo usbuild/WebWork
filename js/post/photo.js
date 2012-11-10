@@ -6,6 +6,15 @@
  */
 $(document).ready(function () {
     var dropElement = $('.upload-img-box');
+    var data_post = null;
+    if ($('[data-post]').length > 0) {
+        data_post = json_decode($('[data-post]').attr('data-post'));
+        var tag = json_decode(data_post.tag);
+        $('#blog_id').attr('disabled', 'disabled');
+        $.each(tag, function (i, t) {
+            $('#tags').addTag(t);
+        });
+    }
 
     $(document).bind('dragover', function (e) {
         var timeout = window.dropZoneTimeout;
@@ -70,7 +79,7 @@ $(document).ready(function () {
                 var li = $('<li></li>');
                 var img = template.find('img');
                 img.attr('src', file.thumbnail_url);
-                img.data('url', file.url);
+                img.attr('data-url', file.url);
                 img.attr('alt', file.name);
                 img.attr('width', '60px');
                 img.attr('height', '60px');
@@ -98,21 +107,22 @@ $(document).ready(function () {
         var li = $('#img_list').find('li');
         var data = [];
         li.each(function (i, l) {
-            data.push({url:$(l).find('img').data('url'), desc:$(l).find('input').val()});
+            data.push({url:$(l).find('img').attr('data-url'), desc:$(l).find('input').val()});
         });
-
         var content = window.editor.getContent();
         var blog_id = $('#blog_id').val();
         var tags = $('#tags').val();
-        $.post(baseUrl + 'post', {'title':data, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'image'}, function (e) {
-            var obj = json_decode(e);
+        var post_data = {'title':data, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'image'};
+        if (data_post != null) {
+            post_data['id'] = data_post['id'];
+        }
+        $.post(baseUrl + 'post', post_data, function (obj) {
             if (obj.code == 0) {
-//                window.location.reload();
-                alert('发表成功');
+                window.location.href = baseUrl;
             } else {
                 alert('发表失败');
             }
-        });
+        }, 'json');
     });
 
 });

@@ -1,12 +1,38 @@
 <div class="clearfix"></div>
-
+<?php if (isset($post)): ?>
+<input type="hidden" data-post='<?=CJSON::encode($post)?>'/>
+<?php endif; ?>
 <div id="pb_main_title" class="clearfix">
     <span>发布图片</span>
 </div>
 <div class="pb-post-area">
 
     <div class="g-box2">
-        <ul id="img_list"></ul>
+        <ul id="img_list">
+
+            <?php if (isset($post)): ?>
+
+            <?php foreach ($post->head as $item): ?>
+                <li>
+                    <div class="photoList ztag">
+                        <div id="" class="clearfix photoItem" opacityvalue="100" style="">
+                            <div class="img"><img class="ztag" src="<?=$item['url']?>" width="60" height="60"
+                                                  data-url="<?=$item['url']?>"/>
+                            </div>
+                            <div class="info">
+                                <label class="desc" style="">描述：<input maxlength="500" type="text" class="txt"
+                                                                       value="<?=$item['desc']?>"><span></span></label>
+                            </div>
+                            <div class="pimg move"></div>
+                            <div class="pimg close"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <?php endforeach; ?>
+            <?php endif;?>
+
+        </ul>
         <div id="progress_box">
             <div class="progress-bar hidden" id="proto_progress">
                 <div class="img"><img class="ztag" src=""
@@ -20,7 +46,7 @@
 
         <div class="photoList ztag hidden" id="proto_box">
             <div id="" class="clearfix photoItem" opacityvalue="100" style="">
-                <div class="img"><img class="ztag" src="">
+                <div class="img"><img class="ztag" src=""/>
                 </div>
                 <div class="info">
                     <label class="desc" style="">描述：<input maxlength="500" type="text" class="txt"
@@ -42,13 +68,10 @@
 
     <div class="g-box2">
         <h3 class="w-ttl"><em>内容</em></h3>
-        <script id="myEditor"></script>
+        <textarea id="myEditor"><?php if (isset($post)) echo $post->content;?></textarea>
     </div>
     <div class="g-box2">
         <div class="m-edtact">
-            <input type="button" class="w-bbtn delete ztag" value="取　消">
-            <input style="display:none" type="button" class="w-bbtn save ztag" value="保存草稿">
-            <input type="button" class="w-bbtn preview ztag" value="预　览">
             <input type="button" class="w-bbtn w-bbtn-0 publish ztag" value="发　布" id="submit">
         </div>
     </div>

@@ -39,7 +39,7 @@
 
     <div class="g-box2">
         <h3 class="w-ttl"><em>内容</em></h3>
-        <script id="myEditor">来自：<?=CHtml::link($post->blog->name, array('blog/view'))?><br><blockquote><?=$post->content?></blockquote></script>
+        <textarea id="myEditor">来自：<?=CHtml::link($post->blog->name, array('blog/view'))?><br><blockquote><?=$post->content?></blockquote></textarea>
     </div>
     <div class="g-box2">
         <div class="m-edtact">

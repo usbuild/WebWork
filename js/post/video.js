@@ -7,7 +7,9 @@
  */
 $(function () {
     var valid = false;
-    $('input#title').blur(function () {
+    var data_post = null;
+
+    var setVideo = function () {
         var url = $('input#title').val();
         $('input#title').hide();
         var img = $('<img/>');
@@ -23,6 +25,23 @@ $(function () {
                 valid = true;
             }
         });
+    };
+
+
+    if ($('[data-post]').length > 0) {
+        data_post = json_decode($('[data-post]').attr('data-post'));
+        var tag = json_decode(data_post.tag);
+        $('#blog_id').attr('disabled', 'disabled');
+        $.each(tag, function (i, t) {
+            $('#tags').addTag(t);
+        });
+        $('#title').val(data_post.head);
+        setVideo();
+    }
+
+
+    $('input#title').blur(function () {
+        setVideo();
     });
 
     $('#close_btn').click(function () {
@@ -39,13 +58,16 @@ $(function () {
             alert('请输入有效的视频地址');
             return;
         }
-        $.post(baseUrl + 'post', {'title':$('input#title').val(), 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'video'}, function (e) {
-            var obj = json_decode(e);
+        var post_data = {'title':$('input#title').val(), 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'video'};
+        if (data_post != null) {
+            post_data['id'] = data_post.id;
+        }
+        $.post(baseUrl + 'post', post_data, function (obj) {
             if (obj.code == 0) {
-                window.location.reload();
+                window.location.href = baseUrl;
             } else {
                 alert('发表失败');
             }
-        });
+        }, 'json');
     });
 });

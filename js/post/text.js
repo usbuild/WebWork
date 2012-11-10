@@ -28,14 +28,13 @@ $(document).ready(function () {
             post_data['id'] = data.id;
         }
 
-        $.post(baseUrl + 'post', post_data, function (e) {
-            var obj = json_decode(e);
+        $.post(baseUrl + 'post', post_data, function (obj) {
             if (obj.code == 0) {
                 window.location.href = baseUrl;
             } else {
                 alert('发表失败');
             }
-        });
+        }, 'json');
     });
 
 

@@ -8,6 +8,46 @@
 $(function () {
     var page = 1;
     var list_data = null;
+    var data_post = null;
+
+
+    var setMusic = function (data) {
+        $('#thumb_box img').remove();
+        $('#thumb_box .xiami-container').remove();
+        $('#title').val(data.song_name);
+        var img = $('<img/>');
+        img.attr('src', data.album_logo).css('float', 'left');
+        var em = '<embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>';
+        var xiami_container = $('<div></div>');
+        xiami_container.addClass('xiami-container').data('id', data);
+        if ($.browser.webkit) {
+            var iframe;
+            iframe = $('<iframe frameborder="0" style=""></iframe>');
+            $('#thumb_box').append(img).append(xiami_container.append(iframe));
+            iframe.contents().find('body').html(em).css('margin', '0');
+            iframe.addClass('xiamiframe');
+
+        } else {
+            $('#thumb_box').append(img).append(xiami_container);
+            xiami_container.html(em);
+        }
+        $('input#title').hide();
+        $('#thumb_box').show();
+    };
+
+
+    if ($('[data-post]').length > 0) {
+        data_post = json_decode($('[data-post]').attr('data-post'));
+        var tag = json_decode(data_post.tag);
+        $('#blog_id').attr('disabled', 'disabled');
+        $.each(tag, function (i, t) {
+            $('#tags').addTag(t);
+        });
+        setMusic(json_decode(data_post.head));
+
+    }
+
+
     $('input#title').keydown(function () {
         if (page != 1) {
             page = 1;
@@ -46,7 +86,6 @@ $(function () {
         };
     };
 
-
     $('input#title').autocomplete({
         source:getSource(1),
         autoFocus:true,
@@ -55,27 +94,7 @@ $(function () {
         },
         select:function (e, ui) {
             var data = ui.item.data;
-            $('#thumb_box img').remove();
-            $('#thumb_box .xiami-container').remove();
-
-            var img = $('<img/>');
-            img.attr('src', data.album_logo).css('float', 'left');
-            var em = '<embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>';
-            var xiami_container = $('<div></div>');
-            xiami_container.addClass('xiami-container').data('id', data);
-            if ($.browser.webkit) {
-                var iframe;
-                iframe = $('<iframe frameborder="0" style=""></iframe>');
-                $('#thumb_box').append(img).append(xiami_container.append(iframe));
-                iframe.contents().find('body').html(em).css('margin', '0');
-                iframe.addClass('xiamiframe');
-
-            } else {
-                $('#thumb_box').append(img).append(xiami_container);
-                xiami_container.html(em);
-            }
-            $('input#title').hide();
-            $('#thumb_box').show();
+            setMusic(data);
         },
         open:function () {
             var au = $('#auto_helper').clone().css('display', 'block');
@@ -119,17 +138,18 @@ $(function () {
             for (var i in old_data) {
                 title[i] = decodeURIComponent(old_data[i]);
             }
+            var post_data = {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'music'};
+            if (data_post != null) {
+                post_data['id'] = data_post['id'];
+            }
 
-            $.post(baseUrl + 'post', {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'music'}, function (e) {
-                var obj = json_decode(e);
+            $.post(baseUrl + 'post', post_data, function (obj) {
                 if (obj.code == 0) {
-                    alert('发表成功');
-
-//                    window.location.reload();
+                    window.location.href = baseUrl;
                 } else {
                     alert('发表失败');
                 }
-            });
+            }, 'json');
         } else {
             alert('请选择歌曲');
         }

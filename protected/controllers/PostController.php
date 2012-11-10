@@ -63,7 +63,6 @@ class PostController extends Controller
                 || (in_array($type, array('image', 'video', 'music')) && !empty($title))
             ) {
                 $post = new Post();
-                $post->head = $title;
                 $post->blog_id = $this->blog->id;
                 $post->type = $type;
 
@@ -73,10 +72,7 @@ class PostController extends Controller
                         $post = $old_post;
                     }
                 }
-                if ($post->type === 'text') {
-                    $post->head = $title;
-                }
-
+                $post->head = $title;
                 $post->content = $content;
                 $post->tag = $tags;
 
@@ -239,6 +235,9 @@ class PostController extends Controller
                     break;
                 case 'image':
                     $this->redirect(array('post/photo', 'id' => $id));
+                    break;
+                case 'music':
+                    $this->redirect(array('post/music', 'id' => $id));
                     break;
                 case 'video':
                     $this->redirect(array('post/video', 'id' => $id));
