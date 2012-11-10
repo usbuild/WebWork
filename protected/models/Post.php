@@ -139,7 +139,10 @@ class Post extends CActiveRecord
 
     public function like()
     {
-        $like = Like::model()->findAllByAttributes(array('post_id' => $this->id, 'blog_id' => Yii::app()->user->model->blog));
+        if ($this->repost_id === null)
+            $like = Like::model()->findAllByAttributes(array('post_id' => $this->id, 'blog_id' => Yii::app()->user->model->blog));
+        else
+            $like = Like::model()->findAllByAttributes(array('post_id' => $this->repost_id, 'blog_id' => Yii::app()->user->model->blog));
         if (empty($like)) {
             return false;
         } else {
@@ -158,30 +161,28 @@ class Post extends CActiveRecord
     {
         $c = new CDbCriteria();
         $c->compare('post_id', $this->id);
-        return intval(Comment::model()->count($c)) + intval(Like::model()->count($c));
+        return intval(Comment::model()->count($c)) + intval(Like::model()->count($c)) + intval(Post::model()->countByAttributes(array('repost_id' => $this->id)));
     }
 
     public function getHots($offset)
     {
         $limit = 10;
-        $c = Yii::app()->db->createCommand('select * from ((select post_id,blog_id,time,1 as type from `like` where `post_id`=' . $this->id
-            . ') union (select post_id,blog_id,time,0 from comment where `post_id`=' . $this->id . ') order by time desc limit ' . $offset . ',' . $limit . ') res left join blog on res.blog_id=blog.id');
+        if ($this->repost_id === null) {
+            $c = Yii::app()->db->createCommand('select * from ((select post_id,blog_id,time,1 as type from `like` where `post_id`=' . $this->id
+                . ') union (select post_id,blog_id,time,0 from comment where `post_id`=' . $this->id .
+                ') union (select id, blog_id, time,2 from post where `repost_id` =' . $this->id .
+                ') order by time desc limit ' . $offset . ',' . $limit . ') res left join blog on res.blog_id=blog.id');
+        } else {
+            $c = Yii::app()->db->createCommand('select * from ((select post_id,blog_id,time,1 as type from `like` where `post_id`=' . $this->repost_id
+                . ') union (select post_id,blog_id,time,0 from comment where `post_id`=' . $this->id . ' OR `post_id`=' . $this->repost_id .
+                ') union (select id, blog_id, time,2 from post where `repost_id` =' . $this->repost_id .
+                ') order by time desc limit ' . $offset . ',' . $limit . ') res left join blog on res.blog_id=blog.id');
+        }
         return $c->query();
     }
 
     public function isMine()
     {
         return Blog::model()->count('id=:id AND owner=:user', array(':id' => $this->blog_id, 'user' => Yii::app()->user->id)) > 0;
-    }
-
-    public function original()
-    {
-        $post = $this;
-        while ($post->type == 'repost') {
-            $post = $post->repost;
-            if (empty($post)) return null;
-        }
-        if ($post == $this) return array();
-        return $post;
     }
 }

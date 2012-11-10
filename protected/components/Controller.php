@@ -8,8 +8,8 @@ class Controller extends CController
     public function init() {
         Yii::app()->clientScript->registerScript('config', 'var baseUrl = "'.Yii::app()->baseUrl.'/";', CClientScript::POS_HEAD);
 
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/global.js', CClientScript::POS_HEAD);
-        Yii::app()->clientScript->registerCoreScript('jquery', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/global.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerCoreScript('jquery', CClientScript::POS_HEAD);
         parent::init();
     }
 	/**

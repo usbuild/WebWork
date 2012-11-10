@@ -10,10 +10,7 @@ $(document).ready(function () {
 
         var img = $('<img />');
         img.attr('src', baseUrl + item.blog.avatar).addClass('cmt-item-img');
-
-
         var content = $('<div></div>');
-
         var name = $('<span class="cmt-item-name"><a>' + item.blog.name + '</a></span>');
         content.append(name);
 
@@ -21,9 +18,7 @@ $(document).ready(function () {
             content.append('<span class="cmt-item-reply-name">回复 <a>' + item.reply.name + '</a> :</span>');
         }
         content.append(item.content);
-
         content.addClass('cmt-item-content');
-
         var operation;
         if (item.isme) {
             operation = $('<div><a data-id="' + item.id + '">删除</a></div>');
@@ -59,7 +54,7 @@ $(document).ready(function () {
         return li;
     };
 
-    $('.feed-cmt').click(function () {
+    $('.feed-cmt').live('click', function () {
 
         var feed = $(this).parents('.feed');
         if (feed.find('.notes').is(':visible')) {
@@ -104,7 +99,7 @@ $(document).ready(function () {
     });
 
 
-    $('.feed-nt').click(function () {
+    $('.feed-nt').live('click', function () {
         var feed = $(this).parents('.feed');
         if (feed.find('.comment').is(':visible')) {
             feed.find('.feed-ft').animate({height:'toggle'}, 300);
@@ -147,13 +142,13 @@ $(document).ready(function () {
 
     });
 
-    $('.slide-up').click(function () {
+    $('.slide-up').live('click', function () {
         var feed = $(this).parents('.feed');
         feed.find('.feed-ft').animate({height:'toggle'}, 300);
         feed.find('.feed-container-bottom').toggle();
     });
 
-    $('.cmt-submit').click(function () {
+    $('.cmt-submit').live('click', function () {
         var feed = $(this).parents('.feed');
         var content = feed.find('.cmt-content');
         var post_data;
@@ -171,13 +166,16 @@ $(document).ready(function () {
                 feed.find('.cmt-list').prepend(li);
                 li.animate({height:'toggle'}, 300);
                 incCmt(feed);
+                $('[data-parent-id=' + feed.attr('data-id') + ']').each(function (i, feed) {
+                    incHot($(feed));
+                });
             } else {
                 alert('发表失败');
             }
         }, 'json');
     });
 
-    $('.cmt-load-more').click(function () {
+    $('.cmt-load-more').live('click', function () {
         var feed = $(this).parents('.feed');
         var cmt_list = feed.find('.cmt-list');
         var start = cmt_list.data('show-cmt');
@@ -200,7 +198,7 @@ $(document).ready(function () {
         }, 'json');
     });
 
-    $('.nt-load-more').click(function () {
+    $('.nt-load-more').live('click', function () {
         var feed = $(this).parents('.feed');
         var nt_list = feed.find('.nt-list');
         var start = nt_list.data('show-nt');
@@ -224,7 +222,7 @@ $(document).ready(function () {
     });
 
 
-    $('.feed-fav').click(function () {
+    $('.feed-fav').live('click',function () {
         var feed = $(this).parents('.feed');
         var id = feed.attr('data-id');
         var heart = $(this);
@@ -233,28 +231,48 @@ $(document).ready(function () {
         if (heart.hasClass('feed-faved')) {
             $.get(baseUrl + 'like/unlike/' + id, {}, function (e) {
                 if (e.code == 0) {
-                    heart.removeClass('feed-faved').attr('title', '喜欢');
-                    decHot(feed);
+                    if (feed.attr('data-parent-id')) {
+                        $('[data-id=' + feed.attr('data-parent-id') + ']').find('.feed-fav').trigger('inactive');
+                        $('[data-parent-id=' + feed.attr('data-parent-id') + ']').find('.feed-fav').trigger('inactive');
+                    } else {
+                        heart.trigger('inactive');
+                        $('[data-parent-id=' + feed.attr('data-id') + ']').find('.feed-fav').trigger('inactive');
+                    }
                 }
                 heart.attr('disabled', 'enabled');
             }, 'json');
         } else {
             $.get(baseUrl + 'like/like/' + id, {}, function (e) {
                 if (e.code == 0) {
-                    heart.addClass('feed-faved').attr('title', '取消喜欢');
-                    incHot(feed);
+                    if (feed.attr('data-parent-id')) {
+                        $('[data-id=' + feed.attr('data-parent-id') + ']').find('.feed-fav').trigger('active');
+                        $('[data-parent-id=' + feed.attr('data-parent-id') + ']').find('.feed-fav').trigger('active');
+                    } else {
+                        heart.trigger('active');
+                        $('[data-parent-id=' + feed.attr('data-id') + ']').find('.feed-fav').trigger('active');
+                    }
+
                 }
                 heart.attr('disabled', 'enabled');
 
             }, 'json');
         }
-    });
+    }).live('inactive',function () {
+            $(this).removeClass('feed-faved').attr('title', '喜欢');
+            decHot($(this).parents('.feed'))
+        }).live('active', function () {
+            $(this).addClass('feed-faved').attr('title', '取消喜欢');
+            incHot($(this).parents('.feed'))
+        });
     $('.cmt-item-delete a').live('click', function () {
         var item = $(this);
         $.get(baseUrl + 'comment/del/' + $(this).attr('data-id'), {}, function (e) {
             if (e.code == 0) {
                 item.parents('.cmt-item').animate({height:'toggle'}, 300);
                 decCmt(item.parents('.feed'));
+                $('[data-parent-id=' + item.parents('.feed').attr('data-id') + ']').each(function (i, feed) {
+                    decHot($(feed));
+                });
             } else {
                 alert('删除失败');
             }

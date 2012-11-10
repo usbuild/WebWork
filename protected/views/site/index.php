@@ -10,7 +10,8 @@
 <div class="feed-zone" id="feed_zone">
     <?php foreach ($posts as $post): ?>
     <?php $blog = $post->blog; ?>
-    <div class="feed feed-<?=$post->type?>" data-id="<?=$post->id?>">
+    <div class="feed feed-<?=$post->type?>" data-id="<?=$post->id?>"<?php if ($post->repost_id): ?>
+         data-parent-id="<?=$post->repost_id?>"<?php endif;?>>
         <div class="feed-avatar">
             <a href="<?=$this->createUrl('blog/view/' . $blog->id)?>"
                style="background-image: url('<?=Yii::app()->baseUrl . $blog->avatar?>')" class="blog-avatar">
@@ -40,7 +41,7 @@
                 <div class="feed-bd no-hd-content">
                     <?php if ($post->type == 'repost'): ?>
 
-                    <?php $repost = $post->original();
+                    <?php $repost = $post->repost;
                     if ($repost != null) {
                         $post->head = $repost->head;
                         $post->type = $repost->type;
@@ -119,22 +120,35 @@
 
                     <div class="feed-act">
                         <?php if ($post->isMine()): ?>
+
                         <a href="javascript:;" class="feed-delete">删除</a>
+
                         <a href="<?=$this->createUrl('post/edit/' . $post->id)?>" target="_blank"
                            class="feed-edit">编辑</a>
+
                         <a class="feed-cmt" href="javascript:;">回应(<span
                             class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
+
                         <a href="javascript:;" class="feed-nt">热度(<span
                             class="cmt-hot-count"><?=$data['hot_count']?></span>)</a>
+
+                        <a class="feed-fav <?php if ($post->like()) echo 'feed-faved';?>" href="javascript:;"
+                           title="喜欢" style="display: none;">喜欢</a>
+
                         <?php else: ?>
+
                         <a class="feed-fav <?php if ($post->like()) echo 'feed-faved';?>" href="javascript:;"
                            title="喜欢">喜欢</a>
+
                         <a class="feed-rt" target="_blank"
                            href="<?=$this->createUrl('post/repost/' . $post->id)?>">转载</a>
+
                         <a class="feed-cmt" href="javascript:;">回应(<span
                             class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
+
                         <a href="javascript:;" class="feed-nt">热度(<span
                             class="cmt-hot-count"><?=$data['hot_count']?></span>)</a>
+
                         <?php endif;?>
 
                     </div>

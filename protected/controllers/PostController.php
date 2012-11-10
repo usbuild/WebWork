@@ -193,7 +193,7 @@ class PostController extends Controller
 
             $repost = Post::model()->findByPk($id);
             if (isset($_REQUEST['edit'])) {
-                $this->render('repost', array('repost' => $repost->original(), 'post'=>$repost));
+                $this->render('repost', array('repost' => $repost->repost, 'post' => $repost));
                 return;
             }
 
@@ -221,7 +221,13 @@ class PostController extends Controller
 
                 $model->tag = $tag;
 
-                $model->repost_id = $id;
+                $parent = Post::model()->findByPk($id);
+                if ($parent->repost_id == null)
+                    $model->repost_id = $id;
+                else
+                    $model->repost_id = $parent->repost_id;
+                $model->head = $parent->id;
+
                 $model->type = 'repost';
                 if ($model->save()) {
                     $model->refresh();

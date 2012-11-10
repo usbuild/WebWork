@@ -10,6 +10,10 @@ class LikeController extends Controller
 {
     public function actionLike($id)
     {
+        $post = Post::model()->findByPk($id);
+        if ($post->repost_id !== null) {
+            $id = $post->repost_id;
+        }
         $like = Like::model()->findByAttributes(array('post_id' => $id, 'blog_id' => Yii::app()->user->model->blog));
         if (empty($like)) {
             $like = new Like();
@@ -21,11 +25,15 @@ class LikeController extends Controller
             }
             $like->refresh();
         }
-        echo CJSON::encode(array('code' => 0, 'data'=>'like'));
+        echo CJSON::encode(array('code' => 0, 'data' => 'like'));
     }
 
     public function actionUnlike($id)
     {
+        $post = Post::model()->findByPk($id);
+        if ($post->repost_id !== null) {
+            $id = $post->repost_id;
+        }
         Like::model()->deleteAllByAttributes(array('post_id' => $id, 'blog_id' => Yii::app()->user->model->blog));
         echo CJSON::encode(array('code' => 0));
     }
