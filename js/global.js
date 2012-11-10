@@ -43,6 +43,7 @@ var renderMusic = function (input) {
         div.append(img).append(xiami_container);
         xiami_container.html(em);
     }
+    input.remove();
 };
 $(function () {
     if ($('#blog_id_input').length > 0) {

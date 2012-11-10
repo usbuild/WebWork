@@ -21,12 +21,12 @@ $(document).ready(function () {
         },
         'afterLoad':function (elementsLoaded) {
             loaded++;
-            if ($(elementsLoaded).length < 10) {
+            if (elementsLoaded.length < 10) {
                 $('#feed_zone').stopScrollPagination();
             }
             $('#loading_more').fadeOut();
-            $(elementsLoaded).fadeInWithDelay();
-            $(elementsLoaded).find('.music-input').each(function (i, item) {
+            elementsLoaded.fadeInWithDelay();
+            elementsLoaded.find('.music-input').each(function (i, item) {
                 renderMusic($(item));
             });
         }
