@@ -1028,3 +1028,26 @@ a.blog-avatar:active {
 .feed-fold-container {
     display: none;
 }
+
+#loading_more {
+    margin: 10px 200px 50px 250px;
+    display: none;
+}
+
+.scroll-to-top, .scroll-to-top:link, .scroll-to-top:visited {
+    cursor: pointer;
+    position: fixed;
+    text-indent: -9999px;
+    display: none;
+    width: 42px;
+    height: 42px;
+    bottom: 30px;
+    left: 50%;
+    margin-left: 200px;
+    outline: none;
+    background: url("../images/feed-icons.png") no-repeat -200px -60px;
+}
+
+.scroll-to-top:active, .scroll-to-top:hover {
+    background-position: -250px -60px;
+}

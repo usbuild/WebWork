@@ -9068,3 +9068,1397 @@ Stack trace:
 REQUEST_URI=/blog/blog/view/14
 HTTP_REFERER=http://localhost/blog/blog/create
 ---
+2012/11/10 16:06:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\WWW\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/post/getposts
+---
+2012/11/10 16:06:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts
+---
+2012/11/10 16:07:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts
+---
+2012/11/10 16:07:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/0
+---
+2012/11/10 16:07:41 [error] [exception.CException] exception 'CException' with message 'PostController 无法找到请求的视图 "index".' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:879
+Stack trace:
+#0 D:\WWW\blog\protected\controllers\PostController.php(301): CController->renderPartial('index', Array)
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionGetPosts()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#12 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\WWW\blog\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/blog/post/getposts/0
+---
+2012/11/10 16:07:50 [error] [exception.CException] exception 'CException' with message 'PostController 无法找到请求的视图 "getposts".' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:879
+Stack trace:
+#0 D:\WWW\blog\protected\controllers\PostController.php(301): CController->renderPartial('getposts', Array)
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionGetPosts()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#12 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\WWW\blog\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/blog/post/getposts/0
+---
+2012/11/10 16:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/post/getposts/0
+---
+2012/11/10 16:08:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/0
+---
+2012/11/10 16:08:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/?id=0
+---
+2012/11/10 16:08:42 [error] [php] Undefined variable: offset (D:\WWW\blog\protected\controllers\PostController.php:300)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getposts/?id=0
+in D:\WWW\blog\protected\controllers\PostController.php (300)
+in D:\WWW\blog\index.php (13)
+2012/11/10 16:08:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/post/getposts/?id=0
+---
+2012/11/10 16:08:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/post/getposts/0
+---
+2012/11/10 16:12:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:16:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:17:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog//upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:17:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog//upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:18:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:23:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:27:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:27:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:29:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:29:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:29:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:29:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:29:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:29:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:29:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:29:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:29:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:29:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:30:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:33:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:33:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:33:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:33:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:33:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getposts')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getposts')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/post/getposts/
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:34:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:34:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:34:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:34:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:35:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:48:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:48:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:50:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:53:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:54:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:54:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:54:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:56:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 16:59:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:01:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:01:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:01:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:11:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:12:08 [error] [php] Use of undefined constant baseUrl - assumed 'baseUrl' (D:\WWW\blog\protected\views\site\index.php:14)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): SiteController->renderPartial()
+#2 D:\WWW\blog\protected\controllers\SiteController.php(71): SiteController->render()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/
+in D:\WWW\blog\protected\views\site\index.php (14)
+in D:\WWW\blog\protected\controllers\SiteController.php (71)
+in D:\WWW\blog\index.php (13)
+2012/11/10 17:12:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "image/loading-more.gif"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('image/loading-m...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/image/loading-more.gif
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:12:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:13:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:14:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:14:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:14:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:16:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:16:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:16:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:17:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:17:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:17:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:17:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:21:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:21:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:22:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:22:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:22:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:31:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:32:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:33:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:33:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:33:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:33:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:33:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:33:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:33:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/post/getposts?id=0
+---
+2012/11/10 17:34:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:34:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:34:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:34:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/10 17:35:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---

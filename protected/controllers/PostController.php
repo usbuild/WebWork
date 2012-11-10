@@ -40,7 +40,7 @@ class PostController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getYoukuImg', 'delete', 'repost', 'edit'),
+                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getYoukuImg', 'delete', 'repost', 'edit', 'getposts'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -293,5 +293,13 @@ class PostController extends Controller
             }
         }
     }
+
+    public function actionGetPosts()
+    {
+        $id = $_REQUEST['id'];
+        $user = Yii::app()->user->model;
+        $this->renderPartial('getposts', array('posts' => $user->getPosts($id * 10), 'myblog' => $user->myblog));
+    }
+
 
 }

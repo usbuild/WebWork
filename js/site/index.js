@@ -1,7 +1,55 @@
 $(document).ready(function () {
-    $('.music-input').each(function (i, item) {
-        var input = $(this);
-        renderMusic(input);
+    var loaded = 0;
+
+    $.fn.fadeInWithDelay = function () {
+        var delay = 0;
+        return this.each(function () {
+            $(this).delay(delay).animate({opacity:1}, 200);
+            delay += 100;
+        });
+    };
+
+    $('#feed_zone').scrollPagination({
+        'contentPage':baseUrl + 'post/getposts/',
+        'contentData':function () {
+            return {'id':loaded};
+        },
+        'scrollTarget':$(window),
+        'heightOffset':50,
+        'beforeLoad':function () {
+            $('#loading_more').fadeIn();
+        },
+        'afterLoad':function (elementsLoaded) {
+            loaded++;
+            if ($(elementsLoaded).length < 10) {
+                $('#feed_zone').stopScrollPagination();
+            }
+            $('#loading_more').fadeOut();
+            $(elementsLoaded).fadeInWithDelay();
+            $(elementsLoaded).find('.music-input').each(function (i, item) {
+                renderMusic($(item));
+            });
+        }
+    });
+
+    // code for fade in element by element
+    $.fn.fadeInWithDelay = function () {
+        var delay = 0;
+        return this.each(function () {
+            $(this).delay(delay).animate({opacity:1}, 200);
+            delay += 100;
+        });
+    };
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+            $('#back_to_top').fadeIn();
+        } else {
+            $('#back_to_top').fadeOut();
+        }
+    });
+    $('#back_to_top').click(function () {
+        window.scrollTo(0, 0);
     });
 
     var buildCmtList = function (item) {
