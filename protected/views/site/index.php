@@ -22,15 +22,39 @@
             <div class="link-to-post-holder" style="display: none; ">
                 <div class="link-to-post-inner" style="background-position: 0px -135px; ">
                     <a href="#" target="_blank"
-                       class="link-to-post" title="查看文章 - 17:26">查看文章</a>
+                       class="link-to-post" title="查看文章">查看文章</a>
                 </div>
             </div>
             <div class="feed-container-top"></div>
             <div class="pop-content clearfix">
                 <div class="feed-hd no-content">
-                    <div class="feed-basic"><?=$blog->owner0->name?></div>
+                    <div class="feed-basic">
+                        <?php $data = array();?>
+                        <?php if ($post->type == 'repost'): ?>
+                        转载自 <?= $post->repost->blog->name ?>
+                        <?php else: ?>
+                        <?= $blog->owner0->name ?>
+                        <?php endif;?>
+                    </div>
                 </div>
                 <div class="feed-bd no-hd-content">
+                    <?php if ($post->type == 'repost'): ?>
+
+                    <?php $repost = $post->original();
+                    if ($repost != null) {
+                        $post->head = $repost->head;
+                        $post->type = $repost->type;
+                        $data['hot_count'] = $repost->hotCount() + $post->hotCount();
+                    } else {
+
+                    }
+                    ?>
+                    <?php else: ?>
+                    <?php
+                    $data['hot_count'] = $post->hotCount();
+                    ?>
+
+                    <?php endif;?>
 
                     <?php switch ($post->type) {
                     case 'text':
@@ -71,6 +95,7 @@
                                 allowScriptAccess="always"
                                 type="application/x-shockwave-flash"></embed>
                             <br><br>
+
                             <?php break;
                     default:
                         break; ?>
@@ -99,6 +124,8 @@
                            class="feed-edit">编辑</a>
                         <a class="feed-cmt" href="javascript:;">回应(<span
                             class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
+                        <a href="javascript:;" class="feed-nt">热度(<span
+                            class="cmt-hot-count"><?=$data['hot_count']?></span>)</a>
                         <?php else: ?>
                         <a class="feed-fav <?php if ($post->like()) echo 'feed-faved';?>" href="javascript:;"
                            title="喜欢">喜欢</a>
@@ -107,7 +134,7 @@
                         <a class="feed-cmt" href="javascript:;">回应(<span
                             class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
                         <a href="javascript:;" class="feed-nt">热度(<span
-                            class="cmt-hot-count"><?=$post->hotCount()?></span>)</a>
+                            class="cmt-hot-count"><?=$data['hot_count']?></span>)</a>
                         <?php endif;?>
 
                     </div>

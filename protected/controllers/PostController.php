@@ -190,9 +190,48 @@ class PostController extends Controller
     {
         if (!Yii::app()->request->isPostRequest) {
             Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/repost.js', CClientScript::POS_END);
-            $this->render('repost', array('post' => Post::model()->findByPk($id)));
-        } else {
 
+            $repost = Post::model()->findByPk($id);
+            if (isset($_REQUEST['edit'])) {
+                $this->render('repost', array('repost' => $repost->original(), 'post'=>$repost));
+                return;
+            }
+
+            $this->render('repost', array('repost' => $repost));
+        } else {
+            if (isset($_REQUEST['Post'])) {
+                $post = $_REQUEST['Post'];
+
+                $model = new Post();
+                $model->blog_id = $post['blog_id'];
+
+                if (isset($post['id'])) {
+                    $model = Post::model()->findByPk($post['id']);
+                    if (!empty($model)) {
+                        unset($post['id']);
+                    } else {
+                        echo CJSON::encode(array('code' => 1, 'data' => 'no such post'));
+                        return;
+                    }
+                }
+                $model->content = $post['content'];
+
+                if (strlen($post['tag']) == 0) $tag = array();
+                else $tag = explode(',', $post['tag']);
+
+                $model->tag = $tag;
+
+                $model->repost_id = $id;
+                $model->type = 'repost';
+                if ($model->save()) {
+                    $model->refresh();
+                    echo CJSON::encode(array('code' => 0, 'data' => $model));
+                } else {
+                    echo CJSON::encode(array('code' => 1, 'data' => CHtml::errorSummary($model)));
+                }
+            } else {
+                echo CJSON::encode(array('code' => 1, 'data' => 'missing param'));
+            }
         }
     }
 
@@ -243,7 +282,7 @@ class PostController extends Controller
                     $this->redirect(array('post/video', 'id' => $id));
                     break;
                 case 'repost':
-                    $this->redirect(array('post/repost', 'id' => $id));
+                    $this->redirect(array('post/repost', 'id' => $id, 'edit' => ''));
                     break;
             }
         }

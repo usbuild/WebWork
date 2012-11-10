@@ -11,10 +11,13 @@
  * @property string $type
  * @property string $time
  * @property string $tag
+ * @property string $repost_id
  *
  * The followings are the available model relations:
  * @property Comment[] $comments
  * @property Like[] $likes
+ * @property Post $repost
+ * @property Post[] $posts
  * @property Blog $blog
  * @property Tag[] $tags
  */
@@ -48,11 +51,12 @@ class Post extends CActiveRecord
         return array(
             array('blog_id', 'required'),
             array('blog_id', 'numerical', 'integerOnly' => true),
-            array('type', 'length', 'max' => 5),
+            array('type', 'length', 'max' => 6),
+            array('repost_id', 'length', 'max' => 20),
             array('head, content, tag', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, blog_id, head, content, type, time, tag', 'safe', 'on' => 'search'),
+            array('id, blog_id, head, content, type, time, tag, repost_id', 'safe', 'on' => 'search'),
         );
     }
 
@@ -65,6 +69,7 @@ class Post extends CActiveRecord
         // class name for the relations automatically generated below.
         return array(
             'comments' => array(self::HAS_MANY, 'Comment', 'post_id'),
+            'repost' => array(self::BELONGS_TO, 'Post', 'repost_id'),
             'likes' => array(self::HAS_MANY, 'Like', 'post_id'),
             'blog' => array(self::BELONGS_TO, 'Blog', 'blog_id'),
             'tags' => array(self::HAS_MANY, 'Tag', 'post'),
@@ -84,6 +89,7 @@ class Post extends CActiveRecord
             'type' => 'Type',
             'time' => 'Time',
             'tag' => 'Tag',
+            'repost_id' => 'Repost',
         );
     }
 
@@ -105,6 +111,7 @@ class Post extends CActiveRecord
         $criteria->compare('type', $this->type, true);
         $criteria->compare('time', $this->time, true);
         $criteria->compare('tag', $this->tag, true);
+        $criteria->compare('repost_id', $this->repost_id, true);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
@@ -167,5 +174,14 @@ class Post extends CActiveRecord
         return Blog::model()->count('id=:id AND owner=:user', array(':id' => $this->blog_id, 'user' => Yii::app()->user->id)) > 0;
     }
 
-
+    public function original()
+    {
+        $post = $this;
+        while ($post->type == 'repost') {
+            $post = $post->repost;
+            if (empty($post)) return null;
+        }
+        if ($post == $this) return array();
+        return $post;
+    }
 }
