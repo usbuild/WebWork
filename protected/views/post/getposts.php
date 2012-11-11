@@ -67,8 +67,7 @@
                             </p>
                         </div>
                         <?php endforeach;?>
-                        <span style="color: #ccc; font-size: small;">共有(<?=count($post->head)?>
-                            )张</span><br><br>
+                        <span style="color: #ccc; font-size: small;">共有(<?=count($post->head)?>)张</span><br><br>
                     </div>
 
                     <?php break;

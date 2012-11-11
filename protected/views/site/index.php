@@ -12,4 +12,4 @@
 </div>
 
 <img id="loading_more" src="<?=Yii::app()->baseUrl?>/images/loading-more.gif"/>
-<div id="back_to_top" class="scroll-to-top" <?=Yii::app()->baseUrl?>/images"
+<div id="back_to_top" class="scroll-to-top"></div>

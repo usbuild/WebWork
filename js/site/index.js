@@ -192,7 +192,7 @@ $(document).ready(function () {
     $('.slide-up').live('click', function () {
         var feed = $(this).parents('.feed');
         feed.find('.feed-ft').animate({height:'toggle'}, 300);
-        feed.find('.feed-container-bottom').toggle();
+        feed.find('.feed-container-bottom').animate({height:'toggle'}, 300);
     });
 
     $('.cmt-submit').live('click', function () {
