@@ -114,7 +114,7 @@ $(document).ready(function () {
         } else {
             feed.find('.notes').hide();
             feed.find('.comment').show();
-            feed.find('.feed-container-bottom').toggle();
+            feed.find('.feed-container-bottom').animate({height:'toggle'}, 300);
         }
 
 
@@ -159,11 +159,10 @@ $(document).ready(function () {
         } else {
             feed.find('.notes').show();
             feed.find('.comment').hide();
-            feed.find('.feed-container-bottom').toggle();
+            feed.find('.feed-container-bottom').animate({height:'toggle'}, 300);
         }
-
-        feed.find('.feed-ft-triangle').css('left', '353px');
         feed.find('.feed-ft').animate({height:'toggle'}, 300);
+        feed.find('.feed-ft-triangle').css('left', '353px');
 
         var post_id = feed.attr('data-id');
         var start = 0;
