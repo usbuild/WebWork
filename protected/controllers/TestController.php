@@ -10,10 +10,7 @@ class TestController extends Controller
 {
     public function actionIndex()
     {
-        $result = Post::model()->findByPk(50)->getHots(0);
-        foreach ($result as $row) {
-            var_dump($row);
-        }
+        Common::getVideoInfo('http://bilibili.smgbb.cn/video/av391405/');
     }
 
 }

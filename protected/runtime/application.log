@@ -11831,3 +11831,294 @@ Stack trace:
 REQUEST_URI=/blog//upload/avatar/avatar-1352551220599.jpg
 HTTP_REFERER=http://localhost/blog/
 ---
+2012/11/12 15:31:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 15:44:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 15:47:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 15:48:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 15:50:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 15:52:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 15:54:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 15:55:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 15:57:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 15:57:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 15:58:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:00:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:03:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:04:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:05:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:06:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:07:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:10:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:18:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:19:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:21:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 16:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/12 17:02:29 [error] [php] preg_match(): Unknown modifier '(' (D:\WWW\blog\protected\components\Common.php:68)
+Stack trace:
+#0 D:\WWW\blog\protected\controllers\TestController.php(13): getVideoInfo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): TestController->runAction()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): TestController->runActionWithFilters()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): TestController->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/test
+in D:\WWW\blog\protected\components\Common.php (68)
+in D:\WWW\blog\protected\components\Common.php (79)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+2012/11/12 17:03:11 [error] [php] preg_match(): Unknown modifier '(' (D:\WWW\blog\protected\components\Common.php:68)
+Stack trace:
+#0 D:\WWW\blog\protected\controllers\TestController.php(13): getVideoInfo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): TestController->runAction()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): TestController->runActionWithFilters()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): TestController->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/test
+in D:\WWW\blog\protected\components\Common.php (68)
+in D:\WWW\blog\protected\components\Common.php (79)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+2012/11/12 17:13:15 [error] [php] file_get_contents():  (D:\WWW\blog\protected\components\Common.php:79)
+Stack trace:
+#0 D:\WWW\blog\protected\controllers\TestController.php(13): getVideoInfo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): TestController->runAction()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): TestController->runActionWithFilters()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): TestController->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/test
+in D:\WWW\blog\protected\components\Common.php (79)
+in D:\WWW\blog\protected\components\Common.php (94)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+2012/11/12 17:14:15 [error] [php] preg_match(): No ending delimiter '/' found (D:\WWW\blog\protected\components\Common.php:80)
+Stack trace:
+#0 D:\WWW\blog\protected\controllers\TestController.php(13): getVideoInfo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): TestController->runAction()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): TestController->runActionWithFilters()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): TestController->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/test
+in D:\WWW\blog\protected\components\Common.php (80)
+in D:\WWW\blog\protected\components\Common.php (94)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+2012/11/12 17:33:48 [error] [php] Undefined variable: curl (D:\WWW\blog\protected\components\Common.php:94)
+Stack trace:
+#0 D:\WWW\blog\protected\controllers\TestController.php(13): getVideoInfo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): TestController->runAction()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): TestController->runActionWithFilters()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): TestController->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/test
+in D:\WWW\blog\protected\components\Common.php (94)
+in D:\WWW\blog\protected\components\Common.php (79)
+in D:\WWW\blog\protected\components\Common.php (111)
