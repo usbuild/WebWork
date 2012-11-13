@@ -13090,3 +13090,192 @@ Stack trace:
 REQUEST_URI=/blog/blog/view/1
 HTTP_REFERER=http://localhost/blog/
 ---
+2012/11/13 15:31:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'isdel' in 'where clause'. The SQL statement executed was: SELECT * FROM `post` `t` WHERE ((blog_id IN (:ycp0, :ycp1)) OR (tag LIKE :ycp2)) AND (isdel=:ycp3) ORDER BY time DESC LIMIT 10.
+in D:\WWW\blog\protected\models\User.php (134)
+in D:\WWW\blog\protected\controllers\SiteController.php (71)
+in D:\WWW\blog\index.php (13)
+2012/11/13 15:31:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'isdel' in 'where clause'. The SQL statement executed was: SELECT * FROM `post` `t` WHERE ((blog_id IN (:ycp0, :ycp1)) OR (tag LIKE :ycp2)) AND (isdel=:ycp3) ORDER BY time DESC LIMIT 10' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\WWW\blog\protected\models\User.php(134): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\WWW\blog\protected\controllers\SiteController.php(71): User->getPosts()
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\WWW\blog\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog/
+---
+2012/11/13 15:32:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/13 15:32:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/blog/view/1
+---
+2012/11/13 15:32:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/blog/view/1
+---
+2012/11/13 15:32:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/13 15:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/13 16:03:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "terst"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('terst')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/terst
+---
+2012/11/13 16:03:28 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`post.isdel`=0' at line 1. The SQL statement executed was: select * from `post`,`like` where `like.post_id` = `post.id` AND `like.blog_id`= 1`post.isdel`=0.
+in D:\WWW\blog\protected\models\User.php (150)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+in D:\WWW\blog\index.php (13)
+2012/11/13 16:03:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`post.isdel`=0' at line 1. The SQL statement executed was: select * from `post`,`like` where `like.post_id` = `post.id` AND `like.blog_id`= 1`post.isdel`=0' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(372): CDbCommand->queryInternal('', 0, Array)
+#1 D:\WWW\blog\protected\models\User.php(150): CDbCommand->query()
+#2 D:\WWW\blog\protected\controllers\TestController.php(13): User->likes(0)
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('test')
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\WWW\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/test
+---
+2012/11/13 16:19:36 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "join".' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\WWW\blog\protected\models\User.php(147): CComponent->__call('join', Array)
+#1 D:\WWW\blog\protected\models\User.php(147): CDbCriteria->join('JOIN `like` ON ...')
+#2 D:\WWW\blog\protected\controllers\TestController.php(13): User->likes(0)
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('test')
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\WWW\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/test
+---
+2012/11/13 16:19:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't1.id' in 'on clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`blog_id`, `t`.`head`, `t`.`content`, `t`.`type`, `t`.`time`, `t`.`tag`, `t`.`repost_id`, `t`.`isdel` FROM `post` `t` JOIN `like` ON t1.id = like.id AND like.blog_id = 1 WHERE isdel=:ycp0 ORDER BY time DESC LIMIT 10.
+in D:\WWW\blog\protected\models\User.php (154)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+in D:\WWW\blog\index.php (13)
+2012/11/13 16:19:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't1.id' in 'on clause'. The SQL statement executed was: SELECT `t`.`id`, `t`.`blog_id`, `t`.`head`, `t`.`content`, `t`.`type`, `t`.`time`, `t`.`tag`, `t`.`repost_id`, `t`.`isdel` FROM `post` `t` JOIN `like` ON t1.id = like.id AND like.blog_id = 1 WHERE isdel=:ycp0 ORDER BY time DESC LIMIT 10' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\WWW\blog\protected\models\User.php(154): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\WWW\blog\protected\controllers\TestController.php(13): User->likes(0)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('test')
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\WWW\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/blog/test
+---
+2012/11/13 16:26:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('likeposts')
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/likeposts')
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\WWW\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/site/likeposts
+---
+2012/11/13 16:26:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/site/likeposts
+---
+2012/11/13 16:27:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getlikes')
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getlikes')
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\WWW\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/post/getlikes
+HTTP_REFERER=http://localhost/blog/site/likeposts
+---
+2012/11/13 16:30:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---

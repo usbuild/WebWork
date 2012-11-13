@@ -49,7 +49,7 @@ class SiteController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'logout'),
+                'actions' => array('index', 'logout', 'likeposts'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -68,7 +68,15 @@ class SiteController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqueryscrollpagination/scrollpagination.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
         $user = Yii::app()->user->model;
-        $this->render('index', array('posts' => $user->getPosts(), 'myblog' => $user->myblog));
+        $this->render('index', array('myblog' => $user->myblog));
+    }
+
+    public function actionLikePosts()
+    {
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqueryscrollpagination/scrollpagination.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
+        $user = Yii::app()->user->model;
+        $this->render('likeposts', array('myblog' => $user->myblog));
     }
 
     /**

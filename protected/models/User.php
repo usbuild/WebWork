@@ -137,6 +137,18 @@ class User extends CActiveRecord
         return $posts;
     }
 
+    public function likes($start)
+    {
+        $criteria = new CDbCriteria();
+        $criteria->compare('isdel', 0);
+        $criteria->join = 'JOIN `like` ON t.id = like.post_id AND like.blog_id = ' . $this->blog;
+        $criteria->limit = 10;
+        $criteria->offset = $start;
+        $criteria->order = 'time DESC';
+        return Post::model()->findAll($criteria);
+    }
+
+
     public function likeCount()
     {
         return Like::model()->countByAttributes(array('blog_id' => $this->blog));

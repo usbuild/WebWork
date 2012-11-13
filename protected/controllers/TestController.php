@@ -10,8 +10,9 @@ class TestController extends Controller
 {
     public function actionIndex()
     {
-        $post = Post::model()->findByPk(57);
-        var_dump($post->head['flashUrl']);
+        Yii::app()->user->model->likes(0);
+//        $post = Post::model()->findByPk(57);
+//        var_dump($post->head['flashUrl']);
 //        $info = VideoHelper::getVideoInfo('http://www.tudou.com/albumplay/nDZX3rQhcdk/RKwIgZ35n-c.html');
 //        var_dump(mb_detect_encoding($info['title'], 'auto'));
 //        VideoHelper::getVideoInfo('http://bilibili.smgbb.cn/video/av391405/');
