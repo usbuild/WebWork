@@ -5,7 +5,7 @@
     <li><a class="music" href="<?=$this->createUrl('post/music');?>" title="音乐"></a></li>
     <li><a class="video" href="<?=$this->createUrl('post/video');?>" title="视频"></a></li>
 </ul>
-
+<input type="hidden" id="fetch_url" value="post/getposts">
 
 <div class="feed-zone" id="feed_zone">
 

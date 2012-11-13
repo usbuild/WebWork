@@ -7,7 +7,6 @@
            style="background-image: url('<?=Yii::app()->baseUrl . $blog->avatar?>')" class="blog-avatar">
         </a>
     </div>
-
     <div class="feed-content-holder pop">
         <div class="pop-triangle"></div>
         <div class="link-to-post-holder" style="display: none; ">
@@ -51,6 +50,13 @@
                 case 'text':
                     ?>
                         <h4 class="feed-title"><?=$post->head?></h4>
+                        <?php break;
+                case 'link':
+                    ?>
+                        <h4 class="feed-title"><?=$post->head['title']?></h4>
+                        <div class="feed-link-main">
+                            <a href="<?=$post->head['link']?>"><?=$post->head['link']?></a>
+                        </div>
                         <?php break;
                 case 'image':
                     $i = 2; //maxshow

@@ -7,6 +7,10 @@ class BlogController extends Controller
     public function init()
     {
         parent::init();
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/underscore-min.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/backbone-min.js', CClientScript::POS_HEAD);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/autosize/jquery.autosize-min.js', CClientScript::POS_END);
+//        $this->sidebar = $this->renderPartial('//site/sidebar', array(), true);
     }
 
     public function filters()
@@ -25,7 +29,7 @@ class BlogController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'view', 'info'),
+                'actions' => array('create', 'view', 'info', 'getposts'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -36,25 +40,24 @@ class BlogController extends Controller
 
     public function actionView($id)
     {
-        if (is_numeric($id)) {
-            $blog = Blog::model()->findByPk($id);
-        } else {
-            $blog = Blog::model()->findByAttributes(array('domain' => $id));
-        }
-        if (empty($blog)) {
-            throw new CHttpException(404);
-        } else {
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqueryscrollpagination/scrollpagination.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
+        $user = Yii::app()->user->model;
 
-            $criteria = new CDbCriteria();
-            $criteria->compare('poster', $id);
-            $criteria->order = 'time desc';
-            $count = Post::model()->count($criteria);
-            $pages = new CPagination($count);
-            $pages->pageSize = 5;
-            $pages->applyLimit($criteria);
-            $posts = Post::model()->findAll($criteria);
-            $this->render('view', array('posts' => $posts, 'pages' => $pages, 'blog' => $blog));
-        }
+        $this->render('index', array('myblog' => $user->myblog, 'blog' => Blog::model()->findByPk($id)));
+    }
+
+    public function actionGetPosts($id)
+    {
+        $criteria = new CDbCriteria();
+        $criteria->compare('blog_id', $id);
+        $criteria->compare('isdel', 0);
+        $criteria->order = 'time DESC';
+        $criteria->limit = 10;
+        $criteria->offset = $_REQUEST['start'] * 10 - 10;
+
+        $posts = Post::model()->findAll($criteria);
+        $this->renderPartial('all', array('posts' => $posts));
     }
 
     public function actionCreate()
@@ -117,12 +120,14 @@ class BlogController extends Controller
         }
     }
 
-    public function actionCheckUse($name)
+    public
+    function actionCheckUse($name)
     {
 
     }
 
-    public function actionInfo($id)
+    public
+    function actionInfo($id)
     {
         $blog = Blog::model()->findByAttributes($id);
         echo CJSON::encode($blog);

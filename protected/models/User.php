@@ -129,10 +129,23 @@ class User extends CActiveRecord
         foreach ($tags as $tag) {
             $criteria->addSearchCondition('tag', $tag, true, 'OR');
         }
+        $criteria->compare('isdel', 0);
         if (!empty($tags) || isset($blogs)) {
             $posts = Post::model()->findAll($criteria);
         } else
             $posts = array();
         return $posts;
     }
+
+    public function likeCount()
+    {
+        return Like::model()->countByAttributes(array('blog_id' => $this->blog));
+    }
+
+    public function followBlogCount()
+    {
+        return FollowBlog::model()->countByAttributes(array('user_id' => $this->id));
+    }
+
+
 }

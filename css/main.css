@@ -1038,6 +1038,10 @@ a.blog-avatar:active {
     margin-right: 10px;
 }
 
+.cmt-list,.nt-list{
+    padding-left: 20px;
+}
+
 .feed-fold-container {
     display: none;
 }
@@ -1176,4 +1180,19 @@ a.blog-avatar:active {
 
 .m-menu .noipt .txt {
     color: #888;
+}
+
+.feed-link-main {
+    font-size: 35px;
+    margin-bottom: 15px;
+    word-break: break-all;
+}
+
+.feed-link-main a {
+    color: black !important;
+    text-decoration: underline;
+}
+
+.feed-link-main a:hover {
+    color: #878787 !important;
 }

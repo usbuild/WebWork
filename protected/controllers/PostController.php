@@ -40,7 +40,7 @@ class PostController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getVideoInfo', 'delete', 'repost', 'edit', 'getposts'),
+                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getVideoInfo', 'delete', 'repost', 'edit', 'getposts', 'link'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -60,7 +60,7 @@ class PostController extends Controller
 
             $type = $_REQUEST['type'];
             if (($type === 'text' && strlen(trim($title)) + strlen(trim($content)) > 0)
-                || (in_array($type, array('image', 'video', 'music')) && !empty($title))
+                || (in_array($type, array('image', 'video', 'music', 'link')) && !empty($title))
             ) {
                 $post = new Post();
                 $post->blog_id = $this->blog->id;
@@ -161,7 +161,7 @@ class PostController extends Controller
     public function actionVideo()
     {
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/video.js', CClientScript::POS_END);
-        $blogs = Blog::model()->findAllByAttributes(array('owner' => Yii::app()->user->id));
+        $blogs = Yii::app()->user->model->blogs;
         if (isset($_REQUEST['id'])) {
             $post = Post::model()->findByPk($_REQUEST['id']);
             if (!empty($post) && $post->isMine() && $post->type == "video") {
@@ -171,6 +171,21 @@ class PostController extends Controller
         }
         $this->render('video', array('blogs' => $blogs));
     }
+
+    public function actionLink()
+    {
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/link.js', CClientScript::POS_END);
+        $blogs = Yii::app()->user->model->blogs;
+        if (isset($_REQUEST['id'])) {
+            $post = Post::model()->findByPk($_REQUEST['id']);
+            if (!empty($post) && $post->isMine() && $post->type == 'link') {
+                $this->render('link', array('blogs' => $blogs, 'post' => $post));
+                return;
+            }
+        }
+        $this->render('link', array('blogs' => $blogs));
+    }
+
 
     public function actionGetVideoInfo()
     {
@@ -261,7 +276,7 @@ class PostController extends Controller
     {
         $post = Post::model()->findByAttributes(array('id' => $id));
         if ($post->isMine()) {
-            if ($post->delete()) {
+            if ($post->disable()) {
                 echo CJSON::encode(array('code' => 0));
             } else {
                 echo CJSON::encode(array('code' => 1, 'data' => 'delete failed'));
@@ -288,6 +303,9 @@ class PostController extends Controller
                 case 'video':
                     $this->redirect(array('post/video', 'id' => $id));
                     break;
+                case 'link':
+                    $this->redirect(array('post/link', 'id' => $id));
+                    break;
                 case 'repost':
                     $this->redirect(array('post/repost', 'id' => $id, 'edit' => ''));
                     break;
@@ -297,10 +315,9 @@ class PostController extends Controller
 
     public function actionGetPosts()
     {
-        $id = $_REQUEST['id'];
+        $start = $_REQUEST['start'];
         $user = Yii::app()->user->model;
-        $this->renderPartial('getposts', array('posts' => $user->getPosts($id * 10), 'myblog' => $user->myblog));
+        $this->renderPartial('getposts', array('posts' => $user->getPosts($start * 10), 'myblog' => $user->myblog));
     }
-
 
 }

@@ -22,7 +22,18 @@ if ($repost->type == 'repost') {
                     <small>(可不填)</small>
                 </h3>
                 <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title"
-                       value="<?=$repost->head?>">
+                       value="<?=$repost->head?>" readonly="true" disabled="disabled">
+                <?php break;
+            case 'link':?>
+                <h3 class="w-ttl"><em>标题</em>
+                </h3>
+                    <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title"
+                           value="<?=$repost->head['title']?>" readonly="true" disabled="disabled">
+<br><br>
+                        <h3 class="w-ttl"><em>链接</em>
+                        </h3>
+                    <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title"
+                           value="<?=$repost->head['link']?>" readonly="true" disabled="disabled">
                 <?php break;
         case 'music':
             ?>
