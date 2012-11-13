@@ -40,7 +40,7 @@ class PostController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getYoukuImg', 'delete', 'repost', 'edit', 'getposts'),
+                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getVideoInfo', 'delete', 'repost', 'edit', 'getposts'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -172,12 +172,12 @@ class PostController extends Controller
         $this->render('video', array('blogs' => $blogs));
     }
 
-    public function actionGetYoukuImg()
+    public function actionGetVideoInfo()
     {
         if (isset($_REQUEST['link'])) {
-            $id = Common::getYouKuId($_REQUEST['link']);
-            if ($id) {
-                echo CJSON::encode(array('code' => 0, 'data' => Common::getYouKuImg($id)));
+            $info = VideoHelper::getVideoInfo($_REQUEST['link']);
+            if ($info != null) {
+                echo CJSON::encode(array('code' => 0, 'data' => $info));
             } else {
                 echo CJSON::encode(array('code' => 1));
             }
@@ -185,6 +185,7 @@ class PostController extends Controller
             echo CJSON::encode(array('code' => 1));
         }
     }
+
 
     public function actionRepost($id)
     {

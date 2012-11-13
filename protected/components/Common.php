@@ -38,6 +38,19 @@ class Common
         return array();
     }
 
+    public static function curl_get_contents($link)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $link);
+        curl_setopt($ch, CURLOPT_ENCODING, 1);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $result = curl_exec($ch);
+        curl_close($ch);
+        return $result;
+    }
+
+
     public static function getYouKuId($link)
     {
         $m = parse_url($link);
@@ -55,46 +68,4 @@ class Common
         preg_match('/&pic=(http:\/\/\S+?)"/', $content, $matches);
         return $matches[1];
     }
-
-    public static function getYoukuInfo($m)
-    {
-        $info = array();
-        $info['type'] = 'youku';
-        $id = substr(strrchr($m['path'], '/'), 4, -5);
-        $info['id'] = $id;
-        $content = file_get_contents('http://v.youku.com/v_show/id_' . $id . '.html');
-        preg_match('/&pic=(http:\/\/\S+?)"/', $content, $matches);
-        $info['img'] = $matches[1];
-        preg_match('/name="title" content="(.+?)">/', $content, $matches);
-        $info['title'] = $matches[1];
-        return $info;
-    }
-
-    public static function getBiliInfo($m)
-    {
-        $info = array();
-        $info['type'] = 'bili';
-        $id = substr(strrchr(substr($m['path'], 0, -1), '/'), 1);
-        $info['id'] = $id;
-        $content = file_get_contents('http://bilibili.smgbb.cn/video/' . $id . '/');
-        preg_match('/href=.+/', $content, $matches);
-        var_dump($matches);
-    }
-
-    public static function getVideoInfo($link)
-    {
-        $m = parse_url($link);
-        if (isset($m['host'])) {
-            switch ($m['host']) {
-                case 'v.youku.com':
-                    var_dump(Common::getYoukuInfo($m));
-                    break;
-                case 'bilibili.smgbb.cn':
-                    Common::getBiliInfo($m);
-                    break;
-            }
-        }
-    }
-
-
 }

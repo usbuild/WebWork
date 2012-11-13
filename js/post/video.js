@@ -11,19 +11,30 @@ $(function () {
 
     var setVideo = function () {
         var url = $('input#title').val();
-        $('input#title').hide();
+        $('#title').hide();
         var img = $('<img/>');
         img.attr('src', baseUrl + 'images/loading.gif')
             .attr('alt', '加载中').attr('width', '128px').attr('height', '96px');
         $('#thumb_box img').remove();
         $('#thumb_box').append(img).show();
-        $.post(baseUrl + 'post/getYoukuImg', {link:url}, function (e) {
-            var obj = json_decode(e);
-            if (obj.code == 0) {
-                $('#thumb_box img').attr('src', obj.data)
-                    .attr('alt', '缩略图');
-                valid = true;
-            }
+        $.ajax({
+            url:baseUrl + 'post/getVideoInfo',
+            type:'POST',
+            data:{link:url},
+            success:function (e) {
+                if (e.code == 0) {
+                    $('#thumb_box img').attr('src', e.data.img)
+                        .attr('alt', '缩略图');
+                    valid = true;
+                    $('#video_info').val(json_encode(e.data));
+                }
+            },
+            error:function (e) {
+                $('#thumb_box').hide();
+                $('input#title').show().trigger('focus');
+                valid = false;
+            },
+            dataType:'json'
         });
     };
 
@@ -35,8 +46,16 @@ $(function () {
         $.each(tag, function (i, t) {
             $('#tags').addTag(t);
         });
-        $('#title').val(data_post.head);
-        setVideo();
+        $('#video_info').val(data_post.head);
+        var head = json_decode(data_post.head);
+        $('#title').val(head.originUrl);
+        $('#title').hide();
+        var img = $('<img/>');
+        $('#thumb_box').append(img).show();
+        $('#thumb_box img').attr('src', head.img)
+            .attr('alt', '缩略图');
+        valid = true;
+
     }
 
 
@@ -58,7 +77,7 @@ $(function () {
             alert('请输入有效的视频地址');
             return;
         }
-        var post_data = {'title':$('input#title').val(), 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'video'};
+        var post_data = {'title':$('#video_info').val(), 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'video'};
         if (data_post != null) {
             post_data['id'] = data_post.id;
         }

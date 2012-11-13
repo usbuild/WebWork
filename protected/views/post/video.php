@@ -6,10 +6,10 @@
     <span>发布视频</span>
 </div>
 <div class="pb-post-area">
-
     <div class="g-box2">
+        <input type="hidden" id="video_info">
         <h3 class="w-ttl"><em>视频地址</em>
-            <small>(仅支持Youku)</small>
+            <small>(支持优酷、土豆、bilibili)</small>
         </h3>
         <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title" value="">
 

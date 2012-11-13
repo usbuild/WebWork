@@ -4,12 +4,16 @@
 <?php ?>
 <?php endif; ?>
 <input type="hidden" data-repost='<?=CJSON::encode($repost)?>'/>
-
 <div id="pb_main_title" class="clearfix">
     <span>转载帖子</span>
 </div>
+<?php
+if ($repost->type == 'repost') {
+    $repost->head = $repost->repost->head;
+    $repost->type = $repost->repost->type;
+}
+?>
 <div class="pb-post-area">
-
     <div class="g-box2">
         <?php switch ($repost->type) {
         case 'text':
@@ -28,7 +32,7 @@
         case 'video':
             ?>
                 <embed
-                    src="http://player.youku.com/player.php/sid/<?=Common::getYouKuId($repost->head)?>/v.swf"
+                    src="<?=$repost->head['flashUrl']?>"
                     allowFullScreen="true" quality="high" width="480" height="400" align="middle"
                     allowScriptAccess="always"
                     type="application/x-shockwave-flash"></embed>
@@ -44,7 +48,8 @@
 
     <div class="g-box2">
         <h3 class="w-ttl"><em>内容</em></h3>
-        <textarea id="myEditor"><?php if(isset($post)):echo $post->content?><?php else:?><br>来自：<?=CHtml::link($repost->blog->name, array('blog/view'))?><br>
+        <textarea id="myEditor"><?php if (isset($post)):echo $post->content ?><?php else: ?><br>
+            来自：<?= CHtml::link($repost->blog->name, array('blog/view')) ?><br>
             <blockquote><?=$repost->content?></blockquote><?php endif;?>
         </textarea>
     </div>

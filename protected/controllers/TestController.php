@@ -10,7 +10,12 @@ class TestController extends Controller
 {
     public function actionIndex()
     {
-        Common::getVideoInfo('http://bilibili.smgbb.cn/video/av391405/');
+        $post = Post::model()->findByPk(57);
+        var_dump($post->head['flashUrl']);
+//        $info = VideoHelper::getVideoInfo('http://www.tudou.com/albumplay/nDZX3rQhcdk/RKwIgZ35n-c.html');
+//        var_dump(mb_detect_encoding($info['title'], 'auto'));
+//        VideoHelper::getVideoInfo('http://bilibili.smgbb.cn/video/av391405/');
+//        Common::getVideoInfo('http://v.youku.com/v_show/id_XNDcwNjQ4NjQ4.html');
     }
 
 }
