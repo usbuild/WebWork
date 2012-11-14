@@ -26,7 +26,7 @@ class FollowController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'newTag', 'newBlog'),
+                'actions' => array('index', 'newTag', 'follow', 'unfollow'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -66,29 +66,30 @@ class FollowController extends Controller
         }
     }
 
-    public function actionNewBlog()
+    public function actionFollow($id)
     {
-        if (isset($_REQUEST['blog_id'])) {
-            $blog_id = $_REQUEST['blog_id'];
-            if (empty($blog_id)) {
-                echo CJSON::encode(array('code' => 1, 'data' => 'Illegal Param(s)'));
-            } else {
-                $blog = Blog::model()->findByPk($blog_id);
-                if (empty($blog)) {
-                    echo CJSON::encode(array('code' => 1, 'data' => "No such blog"));
-                    exit();
-                }
-                $follow_blog = new FollowBlog();
-                $follow_blog->user_id = Yii::app()->user->id;
-                $follow_blog->blog_id = $blog_id;
-                if ($follow_blog->save()) {
-                    echo CJSON::encode(array('code' => 0, 'data' => $follow_blog));
-                } else {
-                    echo CJSON::encode(array('code' => 1, 'data' => 'DB Error'));
-                }
-            }
+        $blog = Blog::model()->findByPk($id);
+        if (empty($blog)) {
+            echo CJSON::encode(array('code' => 1, 'data' => "No such blog"));
+            exit();
+        }
+        $follow_blog = new FollowBlog();
+        $follow_blog->user_id = Yii::app()->user->id;
+        $follow_blog->blog_id = $id;
+        if ($follow_blog->save()) {
+            echo CJSON::encode(array('code' => 0, 'data' => $follow_blog));
         } else {
-            echo CJSON::encode(array('code' => 1, 'data' => 'Missing Param(s)'));
+            echo CJSON::encode(array('code' => 1, 'data' => 'DB Error'));
+        }
+    }
+
+    public function actionUnfollow($id)
+    {
+        $follow_blog = FollowBlog::model()->findByAttributes(array('user_id' => Yii::app()->user->id, 'blog_id' => $id));
+        if ($follow_blog->delete()) {
+            echo CJSON::encode(array('code' => 0, 'data' => $follow_blog));
+        } else {
+            echo CJSON::encode(array('code' => 1, 'data' => 'DB Error'));
         }
     }
 }
