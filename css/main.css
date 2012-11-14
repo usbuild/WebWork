@@ -1038,7 +1038,7 @@ a.blog-avatar:active {
     margin-right: 10px;
 }
 
-.cmt-list,.nt-list{
+.cmt-list, .nt-list {
     padding-left: 20px;
 }
 
@@ -1195,4 +1195,46 @@ a.blog-avatar:active {
 
 .feed-link-main a:hover {
     color: #878787 !important;
+}
+
+/* follow item*/
+.follow-item {
+    margin: 10px 0 0 10px;
+    border-bottom: solid 1px #ccc;
+    padding: 10px 15px;
+}
+
+.follow-item-avatar {
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+
+.follow-item-avatar img {
+    border-radius: 5px;
+}
+
+.follow-item-content {
+    margin-left: 75px;
+    margin-top: 20px;
+}
+
+.follow-item-name {
+    float: left;
+}
+
+.follow-item-name a {
+    font-size: 15px;
+    color: #888;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+}
+
+.follow-item-name a:hover {
+    color: #464545;
+}
+
+.follow-item-action {
+    float: right;
+    margin-right: 20px;
 }

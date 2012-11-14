@@ -49,7 +49,7 @@ class SiteController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'logout', 'likeposts'),
+                'actions' => array('index', 'logout', 'likeposts', 'discover', 'follow'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -189,5 +189,10 @@ class SiteController extends Controller
     public function actionDiscover()
     {
 
+    }
+
+    public function actionFollow()
+    {
+        $this->render('follow', array('follow' => Yii::app()->user->model->followBlogs()));
     }
 }

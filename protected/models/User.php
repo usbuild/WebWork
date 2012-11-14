@@ -148,6 +148,13 @@ class User extends CActiveRecord
         return Post::model()->findAll($criteria);
     }
 
+    public function followBlogs()
+    {
+        $criteria = new CDbCriteria();
+        $criteria->join = "JOIN follow_blog as f ON t.id = f.blog_id AND f.user_id = " . $this->id;
+        return Blog::model()->findAll($criteria);
+    }
+
 
     public function likeCount()
     {
