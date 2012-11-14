@@ -144,7 +144,7 @@ class User extends CActiveRecord
         $criteria->join = 'JOIN `like` ON t.id = like.post_id AND like.blog_id = ' . $this->blog;
         $criteria->limit = 10;
         $criteria->offset = $start;
-        $criteria->order = 'time DESC';
+        $criteria->order = 'like.time DESC';
         return Post::model()->findAll($criteria);
     }
 
@@ -158,7 +158,11 @@ class User extends CActiveRecord
 
     public function likeCount()
     {
-        return Like::model()->countByAttributes(array('blog_id' => $this->blog));
+        $criteria = new CDbCriteria();
+        $criteria->compare('isdel', 0);
+        $criteria->join = 'JOIN `like` ON t.id = like.post_id AND like.blog_id = ' . $this->blog;
+
+        return Post::model()->count($criteria);
     }
 
     public function followBlogCount()
