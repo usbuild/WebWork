@@ -161,7 +161,7 @@ a:hover {
 }
 
 #logo_holder h1 a:active {
-    background-position: 0 -49px;
+    background-position: 1px -49px;
 }
 
 #logo_holder h1 a:hover {
@@ -1180,6 +1180,16 @@ a.blog-avatar:active {
     background-color: white;
 }
 
+.m-menu li .tag-text-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 3px 0 3px 0;
+    line-height: 100%;
+    text-indent: 20px;
+    font-size: 18px;
+    box-shadow: inset 0 1px 5px #999;
+}
 
 .w-sel, .w-sel .selicn, .w-icn, .w-opt .opta, .w-more, .m-menu .icn, .m-menu .set, .m-ssch button, .m-ssch2 button, .w-close, .w-ii, .m-icnt .zoomi, .w-opt .opticrt, .w-more2 span, .w-tip, .w-tip .tipc, .w-close, .w-icancel, .w-iadd, .w-help, .m-filecnt .music .type, .m-filecnt .movie .type, .m-goodblog .new {
     background: url('../images/icon24.png') no-repeat 999px 999px;
@@ -1234,10 +1244,12 @@ a.blog-avatar:active {
     border: 0;
     font-size: 12px;
 }
+
 .m-menu .icn-4 {
     cursor: move;
     background-position: 0 -104px;
 }
+
 .m-menu .icn-3 {
     background-position: 0 -434px;
 }

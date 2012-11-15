@@ -22,15 +22,14 @@
     <div class="menut"></div>
     <div class="menum">
         <ul>
+            <li style="border-bottom: solid 1px #CCC;"><input type="text" id="add_new_tag" class="tag-text-input"/></li>
             <?php foreach (Yii::app()->user->model->follow_tags as $tag): ?>
-            <li><a href="<?=$this->createUrl('site/tagposts', array('tag'=>$tag->tag))?>" class="mi"><span
+
+            <li class="tag-item"><a href="<?=$this->createUrl('site/tagposts', array('tag' => $tag->tag))?>" class="mi"><span
                 class="icn icn-4"></span><span
                 class="txt"><?=$tag->tag?></span></a>
             </li>
             <?php endforeach;?>
-            <li class="noipt"><a class="mi mi-noipt" href="<?=$this->createUrl('site/discover')?>"><span
-                class=" icn icn-2"></span><span
-                class="txt">发现好内容</span></a></li>
         </ul>
     </div>
     <div class="menub"></div>

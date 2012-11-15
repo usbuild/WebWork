@@ -17,4 +17,26 @@ $(function () {
             }, 'json');
         }
     });
+    var buildTagItem = function (e) {
+        return $('<li class="tag-item"><a href="' + baseUrl + 'site/tagposts?tag=' + e + '"class="mi"><span class="icn icn-4"></span>' +
+            '<span class="txt">' + e + '</span></a>');
+    };
+
+    $('#add_new_tag').live('keydown', function (e) {
+        var new_tag = $(this);
+        if (e.keyCode == 13) {
+            $.post(baseUrl + '/follow/newtag', {tag:$(this).val()}, function (e) {
+                if (e.code == 0) {
+                    var item = buildTagItem(e.data.tag);
+                    item.hide();
+                    new_tag.parents('li').after(item);
+                    item.animate({height:'toggle'}, 200);
+                    new_tag.val('');
+                } else {
+                    alert('添加失败');
+                }
+            }, 'json');
+        }
+    });
+
 });

@@ -52,6 +52,11 @@ class FollowController extends Controller
             if (empty($tag)) {
                 echo CJSON::encode(array('code' => 1, 'data' => 'Illegal Param(s)'));
             } else {
+                $old_tag = FollowTag::model()->findByAttributes(array('tag' => $tag, 'user_id' => Yii::app()->user->id));
+                if (!empty($old_tag)) {
+                    echo CJSON::encode(array('code' => 1, 'data' => 'Already Exists'));
+                    return;
+                }
                 $follow_tag = new FollowTag();
                 $follow_tag->user_id = Yii::app()->user->id;
                 $follow_tag->tag = $tag;
