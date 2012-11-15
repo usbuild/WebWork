@@ -8,9 +8,9 @@
             <div class="follow-item-name"><a href=""><?=$blog->name?></a></div>
             <div class="follow-item-action">
                 <?php if ($blog->isFollow()): ?>
-                <a href="">取消关注</a>
+                <a href="javascript:;" id="toggle_follow" data-id="<?=$blog->id?>">取消关注</a>
                 <?php else: ?>
-                <a href="">关注</a>
+                <a href="javascript:;" id="toggle_follow" data-id="<?=$blog->id?>" data-follow="1">关注</a>
                 <?php endif;?>
             </div>
         </div>

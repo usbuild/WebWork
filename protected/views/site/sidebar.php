@@ -9,7 +9,7 @@
             </li>
             <li><a class="mi" href="<?=$this->createUrl('site/follow')?>"><span class="icn icn-1"></span><span
                     class="txt"><?=Yii::app()->user->model->followBlogCount()?>个关注的博客</span></a></li>
-            <li class="noipt"><a class="mi mi-noipt" href=""><span
+            <li class="noipt"><a class="mi mi-noipt" href="<?=$this->createUrl('site/discover')?>"><span
                     class=" icn icn-2"></span><span
                     class="txt">发现好博客</span></a></li>
         </ul>
