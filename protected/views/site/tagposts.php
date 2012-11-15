@@ -2,8 +2,6 @@
     <div class="pb-avatar">
         <a class="blog-avatar" href="#"
            style="background-image:url(<?=Yii::app()->baseurl . Yii::app()->user->model->myblog->avatar?>)">师乐园</a>
-        <span id="upload-avatar-when-no-avatar" uploadid="4" class="frameupload-hook"
-              style="cursor: default;">+博客头像</span>
     </div>
     <div class="pb-action-holder">
         <div class="pb-triangle"></div>
@@ -20,7 +18,7 @@
         <div class="pb-action-shadow-bottom"></div>
     </div>
 </div>
-<input type="hidden" id="fetch_url" value="post/getByTag">
+<input type="hidden" id="fetch_url" value="post/getByTag?tag=<?=$tag?>">
 
 <div class="feed-zone" id="feed_zone">
 

@@ -329,8 +329,14 @@ class PostController extends Controller
 
     public function actiongetByTag()
     {
-//        $start = $_REQUEST['start'];
-//        $user = Yii::app()->user->model;
-//        $this->renderPartial('getposts', array('posts' => $user->getByTag($start * 10), 'myblog' => $user->myblog));
+        $start = $_REQUEST['start'];
+        $tag = $_REQUEST['tag'];
+        $criteria = new CDbCriteria();
+        $criteria->addSearchCondition('tag', $tag, true);
+        $criteria->order = 'time DESC';
+        $criteria->offset = $start;
+        $criteria->limit = 10;
+        $user = Yii::app()->user->model;
+        $this->renderPartial('getposts', array('posts' => Post::model()->findAll($criteria), 'myblog' => $user->myblog));
     }
 }

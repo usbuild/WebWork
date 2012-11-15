@@ -82,10 +82,11 @@ class SiteController extends Controller
 
     public function actionTagPosts()
     {
+        $tag = $_REQUEST['tag'];
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqueryscrollpagination/scrollpagination.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
         $user = Yii::app()->user->model;
-        $this->render('tagposts', array('myblog' => $user->blog));
+        $this->render('tagposts', array('myblog' => $user->blog, 'tag' => $tag));
     }
 
     /**

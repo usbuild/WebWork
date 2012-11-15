@@ -13802,3 +13802,54 @@ Stack trace:
 REQUEST_URI=/blog/post/getposts/0
 in D:\WWW\blog\protected\controllers\PostController.php (318)
 in D:\WWW\blog\index.php (13)
+2012/11/15 07:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "images/nav.png"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('images/nav.png')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/images/nav.png
+HTTP_REFERER=http://localhost/blog/site/likeposts?tag=%E4%BD%A0%E5%A5%BD
+---
+2012/11/15 07:39:47 [error] [php] Undefined index: tag (D:\www\blog\protected\controllers\PostController.php:333)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getByTag?%E4%BD%A0%E5%A5%BD
+in D:\www\blog\protected\controllers\PostController.php (333)
+in D:\www\blog\index.php (13)
+2012/11/15 07:41:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 1267 Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation 'like'. The SQL statement executed was: SELECT * FROM `post` `t` WHERE tag LIKE :ycp0 ORDER BY time DESC LIMIT 10.
+in D:\www\blog\protected\controllers\PostController.php (340)
+in D:\www\blog\index.php (13)
+2012/11/15 07:41:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[HY000]: General error: 1267 Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation 'like'. The SQL statement executed was: SELECT * FROM `post` `t` WHERE tag LIKE :ycp0 ORDER BY time DESC LIMIT 10' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\www\blog\protected\controllers\PostController.php(340): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actiongetByTag()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getByTag')
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getByTag')
+#15 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/post/getByTag?tag=%E4%BD%A0%E5%A5%BD
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=%E4%BD%A0%E5%A5%BD
+---

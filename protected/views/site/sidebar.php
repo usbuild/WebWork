@@ -23,7 +23,7 @@
     <div class="menum">
         <ul>
             <?php foreach (Yii::app()->user->model->follow_tags as $tag): ?>
-            <li><a href="<?=$this->createUrl('site/likeposts')?>" class="mi"><span
+            <li><a href="<?=$this->createUrl('site/tagposts', array('tag'=>$tag->tag))?>" class="mi"><span
                 class="icn icn-4"></span><span
                 class="txt"><?=$tag->tag?></span></a>
             </li>
