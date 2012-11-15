@@ -105,4 +105,26 @@ class Blog extends CActiveRecord
             'criteria' => $criteria,
         ));
     }
+
+    public function  getHotBlog($start)
+    {
+        $criteria = new CDbCriteria();
+        $limit = 20;
+        $criteria->join = 'JOIN (select *, count(*) as sum from post group by post.blog_id order by sum desc limit ' . $start . ',' . ($start + $limit) . ') s ON t.id=s.blog_id';
+        return Blog::model()->findAll($criteria);
+    }
+
+    public function postCount()
+    {
+        $criteria = new CDbCriteria();
+        $criteria->compare('blog_id', $this->id);
+        $criteria->compare('isdel', 0);
+        return Post::model()->count($criteria);
+    }
+
+    public function isFollow()
+    {
+        return FollowBlog::model()->countByAttributes(array('blog_id' => $this->id, 'user_id' => Yii::app()->user->id));
+    }
+
 }

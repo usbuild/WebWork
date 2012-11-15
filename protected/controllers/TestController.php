@@ -10,7 +10,10 @@ class TestController extends Controller
 {
     public function actionIndex()
     {
-        Yii::app()->user->model->likes(0);
+        $model = Blog::model()->getHotBlog(0);
+        foreach ($model as $m) {
+            var_dump($m->attributes);
+        }
 //        $post = Post::model()->findByPk(57);
 //        var_dump($post->head['flashUrl']);
 //        $info = VideoHelper::getVideoInfo('http://www.tudou.com/albumplay/nDZX3rQhcdk/RKwIgZ35n-c.html');

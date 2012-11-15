@@ -188,7 +188,7 @@ class SiteController extends Controller
 
     public function actionDiscover()
     {
-
+        $this->render('discover', array('blogs' => Blog::model()->getHotBlog(0)));
     }
 
     public function actionFollow()

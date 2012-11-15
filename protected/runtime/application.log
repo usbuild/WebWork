@@ -13450,3 +13450,135 @@ Stack trace:
 REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
 HTTP_REFERER=http://localhost/blog/setting/blog/1
 ---
+2012/11/15 01:08:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20)' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` 20) .
+in D:\WWW\blog\protected\models\Blog.php (114)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+in D:\WWW\blog\index.php (13)
+2012/11/15 01:08:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20)' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` 20) ' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\WWW\blog\protected\models\Blog.php(114): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\WWW\blog\protected\controllers\TestController.php(13): Blog->getHotBlog(0)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('test')
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\WWW\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/blog/test
+---
+2012/11/15 01:09:18 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20) s ON t.id=s.blog_id' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` 20) s ON t.id=s.blog_id.
+in D:\WWW\blog\protected\models\Blog.php (114)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+in D:\WWW\blog\index.php (13)
+2012/11/15 01:09:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20) s ON t.id=s.blog_id' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` 20) s ON t.id=s.blog_id' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\WWW\blog\protected\models\Blog.php(114): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\WWW\blog\protected\controllers\TestController.php(13): Blog->getHotBlog(0)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('test')
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\WWW\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/blog/test
+---
+2012/11/15 01:10:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20) s ON t.id=s.blog_id' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` 20) s ON t.id=s.blog_id.
+in D:\WWW\blog\protected\models\Blog.php (114)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+in D:\WWW\blog\index.php (13)
+2012/11/15 01:10:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20) s ON t.id=s.blog_id' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` 20) s ON t.id=s.blog_id' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\WWW\blog\protected\models\Blog.php(114): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\WWW\blog\protected\controllers\TestController.php(13): Blog->getHotBlog(0)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('test')
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\WWW\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/blog/test
+---
+2012/11/15 01:11:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20) s ON t.id=s.blog_id' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` 20) s ON t.id=s.blog_id.
+in D:\WWW\blog\protected\models\Blog.php (114)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+in D:\WWW\blog\index.php (13)
+2012/11/15 01:11:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20) s ON t.id=s.blog_id' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` 20) s ON t.id=s.blog_id' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\WWW\blog\protected\models\Blog.php(114): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\WWW\blog\protected\controllers\TestController.php(13): Blog->getHotBlog(0)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('test')
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\WWW\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/blog/test
+---
+2012/11/15 01:12:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limits 10,20) s ON t.id=s.blog_id' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` JOIN (select *, count(*) as sum from post group by post.blog_id order by sum desc limits 10,20) s ON t.id=s.blog_id.
+in D:\WWW\blog\protected\models\Blog.php (114)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+in D:\WWW\blog\index.php (13)
+2012/11/15 01:12:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limits 10,20) s ON t.id=s.blog_id' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` JOIN (select *, count(*) as sum from post group by post.blog_id order by sum desc limits 10,20) s ON t.id=s.blog_id' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\WWW\blog\protected\models\Blog.php(114): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\WWW\blog\protected\controllers\TestController.php(13): Blog->getHotBlog(0)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('test')
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\WWW\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/blog/test
+---
+2012/11/15 01:13:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20) s ON t.id=s.blog_id' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` 20) s ON t.id=s.blog_id.
+in D:\WWW\blog\protected\models\Blog.php (114)
+in D:\WWW\blog\protected\controllers\TestController.php (13)
+in D:\WWW\blog\index.php (13)
+2012/11/15 01:13:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '20) s ON t.id=s.blog_id' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` 20) s ON t.id=s.blog_id' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\WWW\blog\protected\models\Blog.php(114): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\WWW\blog\protected\controllers\TestController.php(13): Blog->getHotBlog(0)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): TestController->actionIndex()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('')
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('test')
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\WWW\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/blog/test
+---
