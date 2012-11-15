@@ -15,6 +15,7 @@ $this->pageTitle = Yii::app()->name . ' - 登录';
 ?>
 
 <div class="form login-form-container">
+    <div class="login-logo" style="margin-left: 55px"></div>
     <?php $form = $this->beginWidget('CActiveForm', array(
     'id' => 'login-form',
     'enableClientValidation' => true,

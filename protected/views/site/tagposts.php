@@ -20,12 +20,11 @@
         <div class="pb-action-shadow-bottom"></div>
     </div>
 </div>
+<input type="hidden" id="fetch_url" value="post/getByTag">
 
-<input type="hidden" id="fetch_url" value="blog/getposts/<?=$blog->id?>">
 <div class="feed-zone" id="feed_zone">
 
 </div>
 
 <img id="loading_more" src="<?=Yii::app()->baseUrl?>/images/loading-more.gif"/>
 <div id="back_to_top" class="scroll-to-top"></div>
-<input type="hidden" value="<?=$blog->id?>" id="blog_id_input"/>

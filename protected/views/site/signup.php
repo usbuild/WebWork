@@ -11,6 +11,7 @@
 </head>
 <body id="login_page">
 <div class="login-form-container form">
+    <div class="login-logo"></div>
     <?php if (isset($message)): ?>
     <div class="message">
         <?= $message;?>

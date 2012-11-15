@@ -40,7 +40,7 @@ class PostController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getVideoInfo', 'delete', 'repost', 'edit', 'getposts', 'link', 'getlikes'),
+                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getVideoInfo', 'delete', 'repost', 'edit', 'getposts', 'link', 'getlikes', 'getByTag'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -320,10 +320,17 @@ class PostController extends Controller
         $this->renderPartial('getposts', array('posts' => $user->getPosts($start * 10), 'myblog' => $user->myblog));
     }
 
-    public function actionGetLikes(){
+    public function actionGetLikes()
+    {
         $start = $_REQUEST['start'];
         $user = Yii::app()->user->model;
         $this->renderPartial('getposts', array('posts' => $user->likes($start * 10), 'myblog' => $user->myblog));
     }
 
+    public function actiongetByTag()
+    {
+//        $start = $_REQUEST['start'];
+//        $user = Yii::app()->user->model;
+//        $this->renderPartial('getposts', array('posts' => $user->getByTag($start * 10), 'myblog' => $user->myblog));
+    }
 }

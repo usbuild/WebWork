@@ -157,11 +157,11 @@ a:hover {
     width: 180px;
     background-image: url('../images/logo.png');
     position: relative;
-    background-position: 0 -2px;
+    background-position: 0 0;
 }
 
 #logo_holder h1 a:active {
-    background-position: 0 0;
+    background-position: 0 -49px;
 }
 
 #logo_holder h1 a:hover {
@@ -417,12 +417,16 @@ a.blog-avatar:active {
     outline: none;
 }
 
+.publisher .pb-action .text:hover {
+    background-position: 0 -74px;
+}
+
 .publisher .pb-action .photo {
     background-position: -100px 0;
 }
 
 .publisher .pb-action .photo:hover {
-    background-position: -100px 274px;
+    background-position: -100px -74px;
 }
 
 .publisher .pb-action .music {
@@ -446,7 +450,7 @@ a.blog-avatar:active {
 }
 
 .publisher .pb-action .link:hover {
-    background-position: -400px -74jpx;
+    background-position: -400px -74px;
 }
 
 .pb-action-shadow-bottom {
@@ -539,7 +543,7 @@ a.blog-avatar:active {
 /*loginform*/
 
 #login_page {
-    background-color: #385774;
+    background-color: #0a5a63;
 }
 
 .login-form-container {
@@ -610,6 +614,14 @@ a.blog-avatar:active {
 #login-form {
     width: 250px;
     margin: 0 auto 0 auto;
+}
+
+.login-logo {
+    height: 40px;
+    width: 180px;
+    background-image: url('../images/logo.png');
+    margin-bottom: 20px;
+    margin-left: 30px;
 }
 
 /*loginform*/
@@ -1168,9 +1180,6 @@ a.blog-avatar:active {
     background-color: white;
 }
 
-.m-menu li.first {
-    border-radius: 5px 5px 0 0;
-}
 
 .w-sel, .w-sel .selicn, .w-icn, .w-opt .opta, .w-more, .m-menu .icn, .m-menu .set, .m-ssch button, .m-ssch2 button, .w-close, .w-ii, .m-icnt .zoomi, .w-opt .opticrt, .w-more2 span, .w-tip, .w-tip .tipc, .w-close, .w-icancel, .w-iadd, .w-help, .m-filecnt .music .type, .m-filecnt .movie .type, .m-goodblog .new {
     background: url('../images/icon24.png') no-repeat 999px 999px;
@@ -1225,7 +1234,10 @@ a.blog-avatar:active {
     border: 0;
     font-size: 12px;
 }
-
+.m-menu .icn-4 {
+    cursor: move;
+    background-position: 0 -104px;
+}
 .m-menu .icn-3 {
     background-position: 0 -434px;
 }
@@ -1297,4 +1309,8 @@ a.blog-avatar:active {
 .follow-item-action {
     float: right;
     margin-right: 20px;
+}
+
+.menu-gap {
+    height: 140px;
 }

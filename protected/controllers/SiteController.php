@@ -50,7 +50,7 @@ class SiteController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'logout', 'likeposts', 'discover', 'follow'),
+                'actions' => array('index', 'logout', 'likeposts', 'discover', 'follow', 'tagposts'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -78,6 +78,14 @@ class SiteController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
         $user = Yii::app()->user->model;
         $this->render('likeposts', array('myblog' => $user->myblog));
+    }
+
+    public function actionTagPosts()
+    {
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqueryscrollpagination/scrollpagination.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
+        $user = Yii::app()->user->model;
+        $this->render('tagposts', array('myblog' => $user->blog));
     }
 
     /**
@@ -196,4 +204,5 @@ class SiteController extends Controller
     {
         $this->render('follow', array('follow' => Yii::app()->user->model->followBlogs()));
     }
+
 }
