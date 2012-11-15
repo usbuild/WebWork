@@ -1326,3 +1326,14 @@ a.blog-avatar:active {
 .menu-gap {
     height: 140px;
 }
+
+.tag-close {
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #CCC;
+}
+
+.tag-close:hover {
+    color: #777;
+}

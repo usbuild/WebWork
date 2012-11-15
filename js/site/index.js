@@ -38,5 +38,21 @@ $(function () {
             }, 'json');
         }
     });
+    $('.tag-close').live('click', function (e) {
+        e.stopPropagation();
+        var tag = $(this).parents('a').find('.txt').html();
+        var close_span = $(this);
+        $.post(baseUrl + 'follow/deltag', {'tag':tag}, function (e) {
+            if (e.code == 0) {
+                close_span.parents('li').animate({height:'toggle'}, 200, function () {
+                    close_span.remove();
+                });
+            } else {
+
+            }
+        }, 'json');
+
+        return false;
+    });
 
 });

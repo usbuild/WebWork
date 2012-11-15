@@ -27,7 +27,7 @@
 
             <li class="tag-item"><a href="<?=$this->createUrl('site/tagposts', array('tag' => $tag->tag))?>" class="mi"><span
                 class="icn icn-4"></span><span
-                class="txt"><?=$tag->tag?></span></a>
+                class="txt"><?=$tag->tag?></span><span class="tag-close">X</span></a>
             </li>
             <?php endforeach;?>
         </ul>

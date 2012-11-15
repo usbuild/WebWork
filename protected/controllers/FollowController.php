@@ -71,6 +71,17 @@ class FollowController extends Controller
         }
     }
 
+    public function actionDelTag()
+    {
+        $result = FollowTag::model()->deleteAllByAttributes(array('user_id' => Yii::app()->user->id, 'tag' => $_REQUEST['tag']));
+        if ($result > 0) {
+            echo CJSON::encode(array('code' => 0));
+        } else {
+            echo CJSON::encode(array('code' => 1));
+        }
+    }
+
+
     public function actionFollow($id)
     {
         $blog = Blog::model()->findByPk($id);
