@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1a703a8d-d239-4036-8db1-238188e42274" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/site/index.js" afterPath="$PROJECT_DIR$/js/site/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/FollowController.php" afterPath="$PROJECT_DIR$/protected/controllers/FollowController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/discover.php" afterPath="$PROJECT_DIR$/protected/views/site/discover.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/follow.php" afterPath="$PROJECT_DIR$/protected/views/site/follow.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/sidebar.php" afterPath="$PROJECT_DIR$/protected/views/site/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,15 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="likeposts.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/site/likeposts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="56" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sidebar.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,17 +35,6 @@
               <folding>
                 <marker date="1352939135469" expanded="true" signature="503:529" placeholder="..." />
                 <marker date="1352939135469" expanded="true" signature="762:788" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="45" selection-start="5256" selection-end="5256" vertical-scroll-proportion="-11.37037">
-              <folding>
-                <marker date="1352874064617" expanded="true" signature="4701:4751" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -109,10 +85,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FollowController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FollowController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/FollowController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="51" selection-start="2474" selection-end="2474" vertical-scroll-proportion="0.17894737">
+            <state line="75" column="51" selection-start="2474" selection-end="2474" vertical-scroll-proportion="-3.7777777">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="144" column="20" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.26027396">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="61" selection-start="1075" selection-end="1075" vertical-scroll-proportion="-15.333333">
               <folding />
             </state>
           </provider>
@@ -151,14 +145,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/blog/index.php" />
         <option value="$PROJECT_DIR$/protected/views/blog/all.php" />
         <option value="$PROJECT_DIR$/js/feed.js" />
         <option value="$PROJECT_DIR$/protected/controllers/BlogController.php" />
         <option value="$PROJECT_DIR$/protected/views/site/likeposts.php" />
         <option value="$PROJECT_DIR$/protected/controllers/PostController.php" />
         <option value="$PROJECT_DIR$/protected/views/site/follow.php" />
-        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/protected/models/User.php" />
         <option value="$PROJECT_DIR$/protected/controllers/TestController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
@@ -167,6 +159,8 @@
         <option value="$PROJECT_DIR$/protected/views/site/discover.php" />
         <option value="$PROJECT_DIR$/js/site/index.js" />
         <option value="$PROJECT_DIR$/protected/controllers/FollowController.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -303,6 +297,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="post" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -656,18 +672,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1233" column="19" selection-start="23084" selection-end="23084" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/LikeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="35" selection-start="369" selection-end="369" vertical-scroll-proportion="0.44210526" />
@@ -764,7 +768,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/FollowController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="51" selection-start="2474" selection-end="2474" vertical-scroll-proportion="0.17894737">
+        <state line="75" column="51" selection-start="2474" selection-end="2474" vertical-scroll-proportion="-3.7777777">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="61" selection-start="1075" selection-end="1075" vertical-scroll-proportion="-15.333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="20" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.26027396">
           <folding />
         </state>
       </provider>

@@ -21,7 +21,7 @@
 <div id="header_holder" class="startpage">
     <div id="header" class="clearfix">
         <div id="logo_holder">
-            <h1 id="logo"><a href="<?=Yii::app()->homeUrl?>">轻博客</a></h1>
+            <h1 id="logo"><a href="<?=Yii::app()->homeUrl?>"></a></h1>
         </div>
         <div class="opt-holder">
             <ul>
