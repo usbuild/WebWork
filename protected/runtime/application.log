@@ -13786,3 +13786,19 @@ Stack trace:
 REQUEST_URI=/blog/images/logo.pn
 HTTP_REFERER=http://localhost/blog/
 ---
+2012/11/15 02:27:11 [error] [php] Undefined index: start (D:\WWW\blog\protected\controllers\PostController.php:318)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getposts/0
+in D:\WWW\blog\protected\controllers\PostController.php (318)
+in D:\WWW\blog\index.php (13)
