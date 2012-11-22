@@ -344,3 +344,91 @@ Stack trace:
 #4 {main}
 REQUEST_URI=/blog/view/post/65
 ---
+2012/11/22 07:42:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/view/post/...')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/blog/view/post/66
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/22 07:43:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:337
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/view/post/...')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/blog/view/post/66
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/22 08:11:53 [error] [php] Undefined variable: blog (D:\www\blog\protected\views\blog\writer.php:1)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): BlogController->renderFile()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): BlogController->renderPartial()
+#2 D:\www\blog\protected\controllers\BlogController.php(189): BlogController->render()
+#3 unknown(0): BlogController->actionWriter()
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): BlogController->runAction()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): BlogController->filterAccessControl()
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): BlogController->runActionWithFilters()
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): BlogController->run()
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blog/writer/1
+in D:\www\blog\protected\views\blog\writer.php (1)
+in D:\www\blog\protected\controllers\BlogController.php (189)
+in D:\www\blog\index.php (13)
+2012/11/22 08:22:46 [error] [exception.CException] exception 'CException' with message '属性 "Cowriter.myblog" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(144): CComponent->__get('myblog')
+#1 D:\www\blog\protected\views\blog\writer.php(12): CActiveRecord->__get('myblog')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require('D:\www\blog\pro...')
+#3 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\blog\pro...', Array, true)
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): CBaseController->renderFile('D:\www\blog\pro...', Array, true)
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): CController->renderPartial('writer', Array, true)
+#6 D:\www\blog\protected\controllers\BlogController.php(186): CController->render('writer', Array)
+#7 [internal function]: BlogController->actionWriter('1')
+#8 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(BlogController), Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(BlogController), Object(ReflectionMethod), Array)
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#17 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('writer')
+#19 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/writer')
+#20 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 D:\www\blog\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/blog/writer/1
+HTTP_REFERER=http://localhost/blog/blog/view/1
+---

@@ -138,10 +138,57 @@ class BlogController extends Controller
         $this->render('follow', array('follows' => $follows, 'blog' => $blog));
     }
 
-    public function actionAddWriter()
+    public function actionAddWriter($id)
     {
+        $blog = Blog::model()->findByPk($id);
+        if (empty($blog)) {
+            echo CJSON::encode(array('code' => 1, 'data' => 'no such blog'));
+            return;
+        }
+        if (!isset($_REQUEST['email'])) {
+            echo CJSON::encode(array('code' => 1, 'data' => 'missing params'));
+            return;
+        }
         $email = $_REQUEST['email'];
-//        $user = User::model()
+        $user = User::model()->findByAttributes(array('email' => $email));
+        if (empty($user)) {
+            echo CJSON::encode(array('code' => 1, 'data' => 'no such user'));
+            return;
+        }
+        if ($user->id == Yii::app()->user->id) {
+            echo CJSON::encode(array('code' => 1, 'data' => 'can not add your own'));
+            return;
+        }
+
+        $writer = Cowriter::model()->findByAttributes(array('user_id' => $user->id, 'blog_id' => $id));
+        if (!empty($writer)) {
+            echo CJSON::encode(array('code' => 1, 'data' => 'already add '));
+            return;
+        }
+        $writer = new Cowriter();
+        $writer->user_id = $user->id;
+        $writer->blog_id = $blog->id;
+        if ($writer->save()) {
+            echo CJSON::encode(array('code' => 0, 'data' => $user->myblog));
+            return;
+        } else {
+            echo CJSON::encode(array('code' => 1, 'data' => 'database error'));
+            return;
+        }
+    }
+
+    public function actionWriter($id)
+    {
+        $blog = Blog::model()->findByPk($id);
+        if (empty($blog)) {
+            throw new CHttpException(404);
+        }
+        $this->render('writer', array('blog' => $blog));
+    }
+
+    public function actionRequestPost()
+    {
+
     }
 
 }

@@ -2,10 +2,16 @@
     <div class="menut"></div>
     <div class="menum">
         <ul>
-            <li class="first"><a href="#" class="mi"><span class="txt go-blog">访问博客</span></a>
+            <li class="first"><a href="<?=$this->createUrl('view/' . $blog->id)?>" class="mi"><span class="txt go-blog">访问博客</span></a>
             </li>
-            <li class="first"><a href="<?=$this->createUrl('blog/follows/'.$blog->id)?>" class="mi"><span class="txt follow-blog"><?=$blog->followCount()?>
+            <li><a href="<?=$this->createUrl('blog/follows/' . $blog->id)?>" class="mi"><span
+                class="txt follow-blog"><?=$blog->followCount()?>
                 &nbsp;个关注</span></a>
+            </li>
+
+            <li><a href="<?=$this->createUrl('blog/writer/' . $blog->id)?>" class="mi"><span
+                class="txt follow-blog"><?=$blog->writerCount()?>
+                &nbsp;个创作者</span></a>
             </li>
             <li class="noipt"><a class="mi mi-noipt" href="<?=$this->createUrl('setting/blog/' . $blog->id)?>"><span
                 class=" icn icn-2"></span><span

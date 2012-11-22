@@ -67,6 +67,7 @@ class Blog extends CActiveRecord
             'followBlogs' => array(self::HAS_MANY, 'FollowBlog', 'blog_id'),
             'posts' => array(self::HAS_MANY, 'Post', 'poster'),
             'users' => array(self::HAS_MANY, 'User', 'blog'),
+            'writers' => array(self::HAS_MANY, 'Cowriter', 'blog_id'),
         );
     }
 
@@ -139,5 +140,11 @@ class Blog extends CActiveRecord
         return Blog::model()->findAll($criteria);
     }
 
+    public function writerCount()
+    {
+        $c = new CDbCriteria();
+        $c->compare('blog_id', $this->id);
+        return Cowriter::model()->count($c);
+    }
 
 }

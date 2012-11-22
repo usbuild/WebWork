@@ -4,8 +4,8 @@
      data-parent-id="<?=$post->repost_id?>"<?php endif;?>>
     <div class="feed-content-holder pop">
         <div class="link-to-post-holder" style="display: none; ">
-            <div class="link-to-post-inner" style="background-position: 0px -135px; ">
-                <a href="#" target="_blank"
+            <div class="link-to-post-inner" style="background-position: 0 -135px; ">
+                <a href="<?=$this->createUrl('view/post/' . $post->id)?>" target="_blank"
                    class="link-to-post" title="查看文章">查看文章</a>
             </div>
         </div>
@@ -15,7 +15,8 @@
                 <div class="feed-basic">
                     <?php $data = array();?>
                     <?php if ($post->type == 'repost'): ?>
-                    转载自 <?= $post->repost->blog->name ?>
+                    转载自 <a
+                        href="<?=$this->createUrl('view/' . $post->repost->blog->id)?>"><?= $post->repost->blog->name ?></a>
                     <?php else: ?>
                     <?= $blog->name ?>
                     <?php endif;?>

@@ -1338,6 +1338,37 @@ a.blog-avatar:active {
     color: #777;
 }
 
-.go-blog,.follow-blog {
+.go-blog, .follow-blog {
     margin-left: 20px;
+}
+
+.writer-list {
+    padding: 10px;
+}
+
+.writer-list .writer-item {
+    padding: 5px 20px;
+    padding-left: 20px;
+    -webkit-transition: padding-left 0.5s;
+    transition: padding-left 0.5s;
+    -moz-transition: padding-left 0.5s;
+}
+
+.writer-list .writer-info {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: solid 1px #CCC;
+}
+
+.writer-list .writer-item:hover {
+    padding-left: 0px;
+}
+
+.writer-list .writer-item .writer-avatar {
+
+}
+
+.writer-list .writer-item .writer-name {
+
 }
