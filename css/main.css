@@ -1337,3 +1337,7 @@ a.blog-avatar:active {
 .tag-close:hover {
     color: #777;
 }
+
+.go-blog,.follow-blog {
+    margin-left: 20px;
+}

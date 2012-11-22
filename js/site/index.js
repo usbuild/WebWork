@@ -18,7 +18,7 @@ $(function () {
         }
     });
     var buildTagItem = function (e) {
-        return $('<li class="tag-item"><a href="' + baseUrl + 'site/tagposts?tag=' + e + '"class="mi"><span class="icn icn-4"></span>' +
+        return $('<li class="tag-item"><a href="' + baseUrl + 'site/tagposts?tag=' + e + '" class="mi"><span class="icn icn-4"></span>' +
             '<span class="txt">' + e + '</span></a>');
     };
 

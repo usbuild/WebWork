@@ -127,4 +127,17 @@ class Blog extends CActiveRecord
         return FollowBlog::model()->countByAttributes(array('blog_id' => $this->id, 'user_id' => Yii::app()->user->id));
     }
 
+    public function followCount()
+    {
+        return FollowBlog::model()->countByAttributes(array('blog_id' => $this->id));
+    }
+
+    public function follows()
+    {
+        $criteria = new CDbCriteria();
+        $criteria->join = "JOIN (select u.blog from follow_blog f join user u on f.user_id = u.id where f.blog_id = " . $this->id . ") s ON t.id = s.blog";
+        return Blog::model()->findAll($criteria);
+    }
+
+
 }

@@ -3,6 +3,7 @@
 class BlogController extends Controller
 {
     public $layout = '//layouts/column2';
+    public $sidebar;
 
     public function init()
     {
@@ -10,7 +11,10 @@ class BlogController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/underscore-min.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/backbone-min.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/autosize/jquery.autosize-min.js', CClientScript::POS_END);
-//        $this->sidebar = $this->renderPartial('//site/sidebar', array(), true);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/blog/main.js', CClientScript::POS_END);
+
+        if (isset($_REQUEST['id']))
+            $this->sidebar = $this->renderPartial('sidebar', array('blog' => Blog::model()->findByPk($_REQUEST['id'])), true);
     }
 
     public function filters()
@@ -29,7 +33,7 @@ class BlogController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'view', 'info', 'getposts'),
+                'actions' => array('create', 'view', 'info', 'getposts', 'follows', 'index', 'addwriter'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -44,7 +48,7 @@ class BlogController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
         $user = Yii::app()->user->model;
 
-        $this->render('index', array('myblog' => $user->myblog, 'blog' => Blog::model()->findByPk($id)));
+        $this->render('view', array('myblog' => $user->myblog, 'blog' => Blog::model()->findByPk($id)));
     }
 
     public function actionGetPosts($id)
@@ -121,15 +125,23 @@ class BlogController extends Controller
     }
 
     public
-    function actionCheckUse($name)
-    {
-
-    }
-
-    public
     function actionInfo($id)
     {
-        $blog = Blog::model()->findByAttributes($id);
+        $blog = Blog::model()->findByPk($id);
         echo CJSON::encode($blog);
     }
+
+    public function actionFollows($id)
+    {
+        $blog = Blog::model()->findByPk($id);
+        $follows = $blog->follows();
+        $this->render('follow', array('follows' => $follows, 'blog' => $blog));
+    }
+
+    public function actionAddWriter()
+    {
+        $email = $_REQUEST['email'];
+//        $user = User::model()
+    }
+
 }

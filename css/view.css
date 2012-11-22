@@ -1,0 +1,120 @@
+a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+}
+
+a:hover {
+    color: #555;
+}
+
+.pages li {
+    list-style: none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin: 2px 5px;
+}
+
+.pages .hidden {
+    /*display: none;*/
+}
+
+.pages .selected {
+    border-bottom: solid 1px #ccc;
+}
+
+ul.pages {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.pages .first {
+
+}
+
+.pages .previous {
+
+}
+
+.pages .page {
+
+}
+
+.pages .next {
+
+}
+
+.pages .last {
+
+}
+
+.feed {
+    border-bottom: solid 1px #aaa;
+    margin: 20px;
+}
+
+.feed .feed-basic {
+    font-size: small;
+    margin-bottom: 5px;
+    color: #aaa;
+}
+
+.feed .feed-bd {
+    margin: 10px 0 5px 20px;
+}
+
+.feed .feed-ct {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #222;
+}
+
+.feed .feed-zone {
+    width: 960px;
+    margin: 10px auto;
+}
+
+.feed .feed-op {
+    font-size: small;
+}
+
+.feed .feed-time {
+    float: left;
+    margin-right: 20px;
+}
+
+.xiami-container {
+    margin-left: 200px;
+}
+
+.blog-info {
+    width: 100%;
+    height: 50px
+
+}
+
+.blog-info .avatar {
+    float: left;
+}
+
+.blog-name {
+    float: left;
+    margin-left: 500px;
+    font-size: 50px;
+}
+
+.content {
+    width: 960px;
+    margin: 20px auto;
+}
+
+.content .feed-ct {
+    margin-top: 20px;
+}
+
+.content .feed-time {
+    font-size: small;
+}
