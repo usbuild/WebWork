@@ -177,6 +177,37 @@ class BlogController extends Controller
         }
     }
 
+    public function actionDelWriter($id)
+    {
+        $blog = Blog::model()->findByPk($id);
+        if (empty($blog)) {
+            echo CJSON::encode(array('code' => 1, 'data' => 'no such blog'));
+            return;
+        }
+        if (!isset($_REQUEST['writer'])) {
+            echo CJSON::encode(array('code' => 1, 'data' => 'no such blog'));
+            return;
+        }
+        $user = User::model()->findByAttributes(array('blog' => $_REQUEST['writer']));
+        if (empty($user)) {
+            echo CJSON::encode(array('code' => 1, 'data' => 'no such user'));
+            return;
+        }
+        $writer = Cowriter::model()->findByAttributes(array('blog_id' => $id, 'user_id' => $user->id));
+        if (empty($writer)) {
+            echo CJSON::encode(array('code' => 1, 'data' => 'no such writer'));
+            return;
+        }
+        if ($writer->delete()) {
+            echo CJSON::encode(array('code' => 0));
+            return;
+        } else {
+            echo CJSON::encode(array('code' => 1, 'data' => 'database error'));
+            return;
+        }
+
+    }
+
     public function actionWriter($id)
     {
         $blog = Blog::model()->findByPk($id);
