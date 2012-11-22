@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a703a8d-d239-4036-8db1-238188e42274" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/blog/main.js" afterPath="$PROJECT_DIR$/js/blog/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/BlogController.php" afterPath="$PROJECT_DIR$/protected/controllers/BlogController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/writer.php" afterPath="$PROJECT_DIR$/protected/views/blog/writer.php" />
-    </list>
+    <list default="true" id="1a703a8d-d239-4036-8db1-238188e42274" name="Default" comment="" />
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -653,7 +647,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
