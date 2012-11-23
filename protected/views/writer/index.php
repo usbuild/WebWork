@@ -1,8 +1,9 @@
 <div class="clearfix"></div>
 <input type="hidden" data-blog='<?=CJSON::encode($blog)?>'/>
-
+<input type="hidden" id="is_request" value="<?=$request?>">
 <div id="pb_main_title" class="clearfix">
-    <span>发表在&nbsp;<?=CHtml::link($blog->name, array('view/' . $blog->id), array('target'=>'_blank'))?></span>
+    <span><?php if (!$request) echo '发表在'; else echo '投递到';?>
+        &nbsp;<?=CHtml::link($blog->name, array('view/' . $blog->id), array('target' => '_blank'))?></span>
 </div>
 <div class="pb-post-area">
     <div id="current_type">
