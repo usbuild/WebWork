@@ -5,7 +5,7 @@
  */
 class WriterController extends Controller
 {
-    public $layout = '//layouts/column2';
+    public $layout = '//layouts/post';
     public $sidebar;
     public function init(){
         parent::init();

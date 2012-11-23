@@ -1,4 +1,3 @@
-<input type="hidden" value="novalue" id="blog_id_input">
 <div id="setting_container">
     <div class="writer-blog-list">
         <?php foreach ($blog as $b): ?>

@@ -66,6 +66,9 @@ class PostController extends Controller
                 $post = new Post();
                 $post->blog_id = $this->blog->id;
                 $post->type = $type;
+                if (!$this->blog->isMine()) {
+                    $post->writer = Yii::app()->user->id;
+                }
 
                 if (isset($_REQUEST['id'])) {
                     $old_post = Post::model()->findByPk($_REQUEST['id']);
@@ -81,6 +84,7 @@ class PostController extends Controller
                 try {
 
                     if ($post->save()) {
+
                         $post->refresh();
                         foreach ($tags as $tag) {
                             if (strlen(trim($tag)) == 0) continue;
@@ -89,6 +93,8 @@ class PostController extends Controller
                             $tagModel->tag = $tag;
                             if (!$tagModel->save()) throw new CDbException("insert error");
                         }
+
+
                         $transaction->commit();
 
                         echo CJSON::encode(array('code' => 0, 'data' => $post->id));
@@ -97,7 +103,7 @@ class PostController extends Controller
                     }
                 } catch (Exception $ex) {
                     $transaction->rollback();
-                    echo CJSON::encode(array('code' => 1, 'data' => CHtml::errorSummary($post) . CHtml::errorSummary($tagModel)));
+                    echo CJSON::encode(array('code' => 1, 'data' => $ex->getMessage()));
                 }
             } else {
                 echo CJSON::encode(array('code' => 1));

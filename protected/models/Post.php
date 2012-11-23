@@ -13,6 +13,7 @@
  * @property string $tag
  * @property string $repost_id
  * @property integer $isdel
+ * @property integer $writer
  *
  * The followings are the available model relations:
  * @property Comment[] $comments
@@ -52,13 +53,14 @@ class Post extends CActiveRecord
         return array(
             array('blog_id', 'required'),
             array('isdel', 'numerical', 'integerOnly' => true),
+            array('writer', 'numerical', 'integerOnly' => true),
             array('blog_id', 'numerical', 'integerOnly' => true),
             array('type', 'length', 'max' => 6),
             array('repost_id', 'length', 'max' => 20),
             array('head, content, tag', 'safe'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
-            array('id, blog_id, head, content, type, time, tag, repost_id, isdel', 'safe', 'on' => 'search'),
+            array('id, blog_id, head, content, type, time, tag, repost_id, isdel, writer', 'safe', 'on' => 'search'),
         );
     }
 
@@ -93,6 +95,7 @@ class Post extends CActiveRecord
             'tag' => 'Tag',
             'repost_id' => 'Repost',
             'isdel' => 'isDelete',
+            'writer' => 'Writer',
         );
     }
 
@@ -116,6 +119,7 @@ class Post extends CActiveRecord
         $criteria->compare('tag', $this->tag, true);
         $criteria->compare('repost_id', $this->repost_id, true);
         $criteria->compare('isdel', $this->isdel, true);
+        $criteria->compare('writer', $this->writer, true);
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
@@ -187,7 +191,8 @@ class Post extends CActiveRecord
 
     public function isMine()
     {
-        return Blog::model()->count('id=:id AND owner=:user', array(':id' => $this->blog_id, 'user' => Yii::app()->user->id)) > 0;
+        return Blog::model()->count('id=:id AND owner=:user', array(':id' => $this->blog_id, 'user' => Yii::app()->user->id)) > 0 ||
+            $this->writer == Yii::app()->user->id;
     }
 
     public function disable()

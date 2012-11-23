@@ -17,28 +17,65 @@ $(function () {
     window.editor = new baidu.editor.ui.Editor();
     window.editor.render("myEditor");
 
+    var blog = json_decode($('[data-blog]').attr('data-blog'));
+
 
     var prepareText = function () {
-        var activeArea = $('#current_type #post_music');
+        var activeArea = $('#current_type #post_text');
         var $$ = function (x) {
             return $(x, activeArea)
         };
+
         $('#submit').unbind('click');
-        $('#submit').click(function () {
-            alert('text');
+        $('#submit').bind('click', function () {
+            var title = $$('#title').val();
+            var content = window.editor.getContent();
+            var blog_id = blog.id;
+            var tags = $('#tags').val();
+
+            var post_data = {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'text', 'write':1};
+            $.post(baseUrl + 'post', post_data, function (obj) {
+                if (obj.code == 0) {
+                    window.location.href = baseUrl;
+                } else {
+                    alert('发表失败');
+                }
+            }, 'json');
         });
     };
 
 
     var prepareMusic = function () {
-        $('#submit').unbind('click');
-        $('#submit').click(function () {
-            alert('music');
-        });
         var activeArea = $('#current_type #post_music');
         var $$ = function (x) {
             return $(x, activeArea)
         };
+
+        $('#submit').unbind('click');
+        $('#submit').bind('click', function () {
+            if ($$('#thumb_box').is(':visible')) {
+                var old_data = $('.xiami-container').data('id');
+                var content = window.editor.getContent();
+                var blog_id = blog.id;
+                var tags = $('#tags').val();
+
+                var title = {};
+                for (var i in old_data) {
+                    title[i] = decodeURIComponent(old_data[i]);
+                }
+                var post_data = {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'music', 'write':1};
+
+                $.post(baseUrl + 'post', post_data, function (obj) {
+                    if (obj.code == 0) {
+                        window.location.href = baseUrl;
+                    } else {
+                        alert('发表失败');
+                    }
+                }, 'json');
+            } else {
+                alert('请选择歌曲');
+            }
+        });
         var setMusic = function (data) {
             $$('#thumb_box img').remove();
             $$('#thumb_box .xiami-container').remove();
@@ -148,7 +185,23 @@ $(function () {
     var prepareImage = function () {
         $('#submit').unbind('click');
         $('#submit').click(function () {
-            alert('image');
+            var li = $$('#img_list').find('li');
+            var data = [];
+            li.each(function (i, l) {
+                data.push({url:$(l).find('img').attr('data-url'), desc:$(l).find('input').val()});
+            });
+            var content = window.editor.getContent();
+            var blog_id = blog.id;
+            var tags = $('#tags').val();
+            var post_data = {'title':data, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'image', 'write':1};
+
+            $.post(baseUrl + 'post', post_data, function (obj) {
+                if (obj.code == 0) {
+                    window.location.href = baseUrl;
+                } else {
+                    alert('发表失败');
+                }
+            }, 'json');
         });
         var activeArea = $('#current_type #post_image');
         var $$ = function (x) {
@@ -246,14 +299,31 @@ $(function () {
         });
     };
     var prepareVideo = function () {
-        $('#submit').unbind('click');
-        $('#submit').click(function () {
-            alert('image');
-        });
         var activeArea = $('#current_type #post_video');
         var $$ = function (x) {
             return $(x, activeArea)
         };
+        $('#submit').unbind('click');
+        $('#submit').bind('click', function () {
+            var title = $$('#title').val();
+            var content = window.editor.getContent();
+            var blog_id = blog.id;
+            var tags = $('#tags').val();
+            if (!valid) {
+                alert('请输入有效的视频地址');
+                return;
+            }
+            var post_data = {'title':$$('#video_info').val(), 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'video', 'write':1};
+            $.post(baseUrl + 'post', post_data, function (obj) {
+                if (obj.code == 0) {
+                    window.location.href = baseUrl;
+                } else {
+                    alert('发表失败');
+                }
+            }, 'json');
+
+        });
+
         var valid = false;
         var setVideo = function () {
             var url = $$('#title').val();
@@ -295,6 +365,30 @@ $(function () {
         });
     };
     var prepareLink = function () {
+        var activeArea = $('#current_type #post_link');
+        var $$ = function (x) {
+            return $(x, activeArea)
+        };
+        $('#submit').unbind('click');
+        $('#submit').bind('click', function () {
+            var content = window.editor.getContent();
+            var blog_id = blog.id;
+            var tags = $('#tags').val();
+            if ($$('#link').val().trim().length == 0) {
+                alert('链接不能为空');
+                return;
+            }
+            var title = {'title':$$('#title').val(), 'link':$$('#link').val()};
+            var post_data = {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'link', 'write':1};
+
+            $.post(baseUrl + 'post', post_data, function (obj) {
+                if (obj.code == 0) {
+                    window.location.href = baseUrl;
+                } else {
+                    $.noty({text:'发表失败'});
+                }
+            }, 'json');
+        });
     };
 
 

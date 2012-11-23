@@ -107,6 +107,11 @@ class Blog extends CActiveRecord
         ));
     }
 
+    public function isMine()
+    {
+        return $this->owner == Yii::app()->user->id;
+    }
+
     public function  getHotBlog($start)
     {
         $criteria = new CDbCriteria();
