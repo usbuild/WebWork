@@ -13,6 +13,12 @@
                 class="txt follow-blog"><?=$blog->writerCount()?>
                 &nbsp;个创作者</span></a>
             </li>
+
+            <li><a href="<?=$this->createUrl('blog/request/' . $blog->id)?>" class="mi"><span
+                class="txt follow-blog"><?=$blog->requestCount()?>
+                &nbsp;个投递</span></a>
+            </li>
+
             <li class="noipt"><a class="mi mi-noipt" href="<?=$this->createUrl('setting/blog/' . $blog->id)?>"><span
                 class=" icn icn-2"></span><span
                 class="txt">博客设置</span></a></li>

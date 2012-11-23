@@ -152,4 +152,9 @@ class Blog extends CActiveRecord
         return Cowriter::model()->count($c);
     }
 
+    public function requestCount()
+    {
+        return Request::model()->countByAttributes(array('blog_id' => $this->id));
+    }
+
 }

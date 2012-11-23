@@ -1,6 +1,12 @@
 <div class="blog-info">
     <div class="avatar"><img src="<?=Yii::app()->baseUrl . $this->blog->avatar?>" alt="头像"></div>
     <div class="blog-name"><?=$this->blog->name?></div>
+    <a href="<?=$this->createUrl('writer/request/' . $this->blog->id)?>">投递</a>
+    <?php if ($this->blog->isFollow()): ?>
+    <a href="">取消关注</a>
+    <?php else: ?>
+    <a href="">关注</a>
+    <?php endif;?>
 </div>
 <div class="clear"></div>
 

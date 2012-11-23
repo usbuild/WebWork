@@ -50,7 +50,7 @@ class SiteController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'logout', 'likeposts', 'discover', 'follow', 'tagposts'),
+                'actions' => array('index', 'logout', 'likeposts', 'discover', 'follow', 'tagposts', 'writerposts'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -86,7 +86,14 @@ class SiteController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqueryscrollpagination/scrollpagination.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
         $user = Yii::app()->user->model;
-        $this->render('tagposts', array('myblog' => $user->blog, 'tag' => $tag));
+        $this->render('tagposts', array('myblog' => $user->myblog, 'tag' => $tag));
+    }
+    public function actionWriterPosts($id)
+    {
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqueryscrollpagination/scrollpagination.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
+        $user = Yii::app()->user->model;
+        $this->render('writerposts', array('myblog' => $user->myblog, 'id' => $id));
     }
 
     /**
@@ -205,5 +212,4 @@ class SiteController extends Controller
     {
         $this->render('follow', array('follow' => Yii::app()->user->model->followBlogs()));
     }
-
 }

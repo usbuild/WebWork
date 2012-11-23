@@ -47,8 +47,9 @@ class BlogController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqueryscrollpagination/scrollpagination.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
         $user = Yii::app()->user->model;
-
-        $this->render('view', array('myblog' => $user->myblog, 'blog' => Blog::model()->findByPk($id)));
+        $blog = Blog::model()->findByPk($id);
+        $this->pageTitle = $blog->name;
+        $this->render('view', array('myblog' => $user->myblog, 'blog' => $blog));
     }
 
     public function actionGetPosts($id)

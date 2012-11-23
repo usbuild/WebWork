@@ -19,7 +19,7 @@
         <div class="pb-action-shadow-bottom"></div>
     </div>
 </div>
-<input type="hidden" id="fetch_url" value="post/getByTag?tag=<?=$tag?>">
+<input type="hidden" id="fetch_url" value="post/getByWriter?id=<?=$id?>">
 
 <div class="feed-zone" id="feed_zone">
 

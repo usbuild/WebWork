@@ -49,7 +49,7 @@ margin-top: 40px;">协作博客
             </li>
             <?php foreach (Yii::app()->user->model->writers() as $b): ?>
             <li class="tag-item" data-id="<?=$b->id?>">
-                <a href="" class="mi">
+                <a href="<?=$this->createUrl('site/writerposts/' . $b->id)?>" class="mi">
                     <span class="icn icn-4"></span>
                     <span class="txt"><?=$b->name?></span>
                     <span class="writer-close">X</span>

@@ -7,7 +7,9 @@ class WriterController extends Controller
 {
     public $layout = '//layouts/post';
     public $sidebar;
-    public function init(){
+
+    public function init()
+    {
         parent::init();
         Yii::app()->clientScript->registerCoreScript('jquery.ui', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/ueditor/editor_config.js', CClientScript::POS_END);
@@ -33,6 +35,13 @@ class WriterController extends Controller
     {
         $this->pageTitle = '协作 - 发布文章';
         $blog = Blog::model()->findByPk($id);
-        $this->render('index', array('blog' => $blog));
+        $this->render('index', array('blog' => $blog, 'request' => 0));
+    }
+
+    public function actionRequest($id)
+    {
+        $blog = Blog::model()->findByPk($id);
+        $this->pageTitle = $blog->name . ' - 投递文章';
+        $this->render('index', array('blog' => $blog, 'request' => 1));
     }
 }

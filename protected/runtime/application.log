@@ -612,3 +612,177 @@ in D:\www\blog\index.php (13)
 in D:\www\blog\protected\controllers\PostController.php (99)
 in D:\www\blog\protected\controllers\filters\BlogOwnerFilter.php (29)
 in D:\www\blog\index.php (13)
+2012/11/23 13:58:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "writer" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('writer')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('writer')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('setting/writer')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/setting/writer
+HTTP_REFERER=http://localhost/blog/setting
+---
+2012/11/23 14:01:12 [error] [exception.CException] exception 'CException' with message 'Blog and its behaviors do not have a method or closure named "requestCount".' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(226): CComponent->__call('requestCount', Array)
+#1 D:\www\blog\protected\views\blog\sidebar.php(18): CActiveRecord->__call('requestCount', Array)
+#2 D:\www\blog\protected\views\blog\sidebar.php(18): Blog->requestCount()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(127): require('D:\www\blog\pro...')
+#4 D:\src\yii-1.1.12.b600af\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\www\blog\pro...', Array, true)
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): CBaseController->renderFile('D:\www\blog\pro...', Array, true)
+#6 D:\www\blog\protected\controllers\BlogController.php(17): CController->renderPartial('sidebar', Array, true)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(282): BlogController->init()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/view')
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/blog/view/1
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/23 14:08:02 [error] [exception.CException] exception 'CException' with message '属性 "BlogController.blog" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\www\blog\protected\controllers\BlogController.php(47): CComponent->__get('blog')
+#1 [internal function]: BlogController->actionView('1')
+#2 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(BlogController), Array)
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(BlogController), Object(ReflectionMethod), Array)
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/view')
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/blog/view/1
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/23 14:25:06 [error] [php] Trying to get property of non-object (D:\www\blog\protected\views\site\tagposts.php:5)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): SiteController->renderFile()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(783): SiteController->renderPartial()
+#2 D:\www\blog\protected\controllers\SiteController.php(89): SiteController->render()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SiteController->actionTagPosts()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#14 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/site/tagposts?tag=nihao
+in D:\www\blog\protected\views\site\tagposts.php (5)
+in D:\www\blog\protected\controllers\SiteController.php (89)
+in D:\www\blog\index.php (13)
+2012/11/23 14:25:47 [error] [php] Undefined variable: tag (D:\www\blog\protected\controllers\SiteController.php:214)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): SiteController->runAction()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): SiteController->filterAccessControl()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): SiteController->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/site/writerposts/9
+in D:\www\blog\protected\controllers\SiteController.php (214)
+in D:\www\blog\index.php (13)
+2012/11/23 14:26:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "getByWriter" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('getByWriter')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getByWriter')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getByWrite...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/post/getByWriter/9
+HTTP_REFERER=http://localhost/blog/site/writerposts/9
+---
+2012/11/23 14:26:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "getByWriter" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('getByWriter')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getByWriter')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getByWrite...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/post/getByWriter/9
+HTTP_REFERER=http://localhost/blog/site/writerposts/9
+---
+2012/11/23 14:26:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "getByWriter" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('getByWriter')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getByWriter')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getByWrite...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/post/getByWriter/9
+HTTP_REFERER=http://localhost/blog/site/writerposts/9
+---
+2012/11/23 14:29:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(WebUser), '???????????????...')
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('getByWriter')
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('post/getByWrite...')
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\blog\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/blog/post/getByWriter/9
+HTTP_REFERER=http://localhost/blog/site/writerposts/9
+---
+2012/11/23 14:29:53 [error] [php] Undefined index: start (D:\www\blog\protected\controllers\PostController.php:352)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getByWriter/9
+in D:\www\blog\protected\controllers\PostController.php (352)
+in D:\www\blog\index.php (13)
+2012/11/23 14:30:29 [error] [php] Undefined index: start (D:\www\blog\protected\controllers\PostController.php:352)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getByWriter/9
+in D:\www\blog\protected\controllers\PostController.php (352)
+in D:\www\blog\index.php (13)

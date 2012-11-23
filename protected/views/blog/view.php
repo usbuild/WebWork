@@ -1,3 +1,4 @@
+<input type="hidden" value="<?=$blog->id?>" id="blog_id_input"/>
 <div id="publisher" class="publisher clearfix">
     <div class="pb-avatar">
         <a class="blog-avatar" href="#"
@@ -26,4 +27,3 @@
 
 <img id="loading_more" src="<?=Yii::app()->baseUrl?>/images/loading-more.gif"/>
 <div id="back_to_top" class="scroll-to-top"></div>
-<input type="hidden" value="<?=$blog->id?>" id="blog_id_input"/>

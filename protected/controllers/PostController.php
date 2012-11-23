@@ -41,7 +41,7 @@ class PostController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getVideoInfo', 'delete', 'repost', 'edit', 'getposts', 'link', 'getlikes', 'getByTag'),
+                'actions' => array('index', 'text', 'photo', 'video', 'music', 'getVideoInfo', 'delete', 'repost', 'edit', 'getposts', 'link', 'getlikes', 'getByTag', 'getByWriter'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -346,4 +346,19 @@ class PostController extends Controller
         $user = Yii::app()->user->model;
         $this->renderPartial('getposts', array('posts' => Post::model()->findAll($criteria), 'myblog' => $user->myblog));
     }
+
+    public function actiongetByWriter()
+    {
+        $start = $_REQUEST['start'];
+        $id = $_REQUEST['id'];
+        $criteria = new CDbCriteria();
+        $criteria->compare('blog_id', $id);
+        $criteria->compare('writer', Yii::app()->user->id);
+        $criteria->order = 'time DESC';
+        $criteria->offset = $start;
+        $criteria->limit = 10;
+        $user = Yii::app()->user->model;
+        $this->renderPartial('getposts', array('posts' => Post::model()->findAll($criteria), 'myblog' => $user->myblog));
+    }
+
 }
