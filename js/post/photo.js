@@ -5,7 +5,7 @@
  * Time: 下午11:17
  */
 $(document).ready(function () {
-    var dropElement = $('.upload-img-box');
+
     var data_post = null;
     if ($('[data-post]').length > 0) {
         data_post = json_decode($('[data-post]').attr('data-post'));
@@ -16,6 +16,7 @@ $(document).ready(function () {
         });
     }
 
+    var dropElement = $('.upload-img-box');
     $(document).bind('dragover', function (e) {
         var timeout = window.dropZoneTimeout;
         if (!timeout) {
