@@ -32,7 +32,7 @@ class SettingController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('index', 'blog', 'account', 'newPassword'),
+                'actions' => array('index', 'blog', 'account', 'newPassword', 'writer'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -102,6 +102,14 @@ class SettingController extends Controller
             echo CJSON::encode(array('code' => 1, 'data' => '缺失参数'));
             exit();
         }
+    }
+
+    public function actionWriter()
+    {
+        $this->pageTitle = "设置 - 协作设置";
+        $c = new CDbCriteria();
+        $c->join = "JOIN cowriter ON cowriter.blog_id = t.id AND cowriter.user_id=" . Yii::app()->user->id;
+        $this->render('writer', array('blog' => Blog::model()->findAll($c)));
     }
 
 }

@@ -479,3 +479,51 @@ Stack trace:
 REQUEST_URI=/blog/blog/delwriter/1
 HTTP_REFERER=http://localhost/blog/blog/writer/1
 ---
+2012/11/23 07:04:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "writer" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('writer')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('writer')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('setting/writer')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/setting/writer
+HTTP_REFERER=http://localhost/blog/setting
+---
+2012/11/23 07:16:20 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in on clause is ambiguous. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` JOIN cowriter ON cowriter.blog_id = id AND cowriter.user_id=5.
+in D:\www\blog\protected\controllers\SettingController.php (111)
+in D:\www\blog\index.php (13)
+2012/11/23 07:16:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in on clause is ambiguous. The SQL statement executed was: SELECT `t`.`id`, `t`.`domain`, `t`.`name`, `t`.`owner`, `t`.`avatar` FROM `blog` `t` JOIN cowriter ON cowriter.blog_id = id AND cowriter.user_id=5' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\www\blog\protected\controllers\SettingController.php(111): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): SettingController->actionWriter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('writer')
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('setting/writer')
+#15 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\www\blog\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/setting/writer
+HTTP_REFERER=http://localhost/blog/setting
+---
+2012/11/23 08:13:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "view" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('view')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('view')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('writer/view')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/writer/9
+HTTP_REFERER=http://localhost/blog/setting/writer
+---

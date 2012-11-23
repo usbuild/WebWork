@@ -19,6 +19,7 @@ class PostController extends Controller
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/css/post.css');
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/tagsinput/jquery.tagsinput.min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl . '/plugins/tagsinput/jquery.tagsinput.css');
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/autosize/jquery.autosize-min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/post/main.js', CClientScript::POS_END);
         $this->sidebar = $this->renderPartial('sidebar', array(), true);
     }

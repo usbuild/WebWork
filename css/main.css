@@ -1408,3 +1408,33 @@ a.blog-avatar:active {
     font-size: 20px;
     margin-right: 15px;
 }
+
+.writer-blog-item {
+    padding: 10px 20px;
+    height: 65px;
+}
+
+.writer-blog-list {
+    padding: 20px;
+}
+
+.writer-blog-avatar {
+    float: left;
+}
+
+.writer-blog-name {
+    float: left;
+    line-height: 65px;
+    margin-left: 20px;
+}
+
+.writer-blog-action {
+    float: right;
+    width: 200px;
+    height: 65px;
+    line-height: 65px;
+}
+.writer-blog-action a{
+    float: left;
+    margin-left: 20px;
+}

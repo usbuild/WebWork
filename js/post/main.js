@@ -35,8 +35,8 @@ $(document).ready(function () {
 
     $('#tags').tagsInput({
         defaultText:'',
-        height:'150px',
-        width:'190px',
+        height:'auto',
+        width:'auto',
         removeWithBackspace:true });
     $('select').jqTransSelect();
 

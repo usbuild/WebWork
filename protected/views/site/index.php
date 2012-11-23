@@ -1,3 +1,4 @@
+<input type="hidden" value="home_nav_url" id="blog_id_input">
 <div id="publisher" class="publisher clearfix">
     <div class="pb-avatar">
         <a class="blog-avatar" href="#"

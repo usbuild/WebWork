@@ -47,7 +47,9 @@ var renderMusic = function (input) {
 };
 $(function () {
     if ($('#blog_id_input').length > 0) {
-        setActive('blog_id_' + $('#blog_id_input').val());
+        if (isNaN(parseInt($('#blog_id_input'))))
+            setActive($('#blog_id_input').val());
+        else setActive('blog_id_' + $('#blog_id_input').val());
     }
 
     $('.feed').live('mouseenter',function () {

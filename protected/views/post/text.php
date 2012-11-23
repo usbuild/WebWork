@@ -1,4 +1,4 @@
-<div class="clearfix" xmlns="http://www.w3.org/1999/html"></div>
+<div class="clearfix"></div>
 <?php if (isset($post)): ?>
 <input type="hidden" data-post='<?=CJSON::encode($post)?>'/>
 <?php endif; ?>

@@ -67,6 +67,7 @@ class User extends CActiveRecord
             'blogs' => array(self::HAS_MANY, 'Blog', 'owner'),
             'follow_blogs' => array(self::HAS_MANY, 'FollowBlog', 'user_id'),
             'follow_tags' => array(self::HAS_MANY, 'FollowTag', 'user_id'),
+            'writer' => array(self::HAS_MANY, 'Cowriter', 'user_id'),
         );
     }
 
@@ -170,5 +171,9 @@ class User extends CActiveRecord
         return FollowBlog::model()->countByAttributes(array('user_id' => $this->id));
     }
 
+    public function writerCount()
+    {
+        return Cowriter::model()->countByAttributes(array('user_id' => $this->id));
+    }
 
 }

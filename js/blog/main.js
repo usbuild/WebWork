@@ -46,6 +46,7 @@ $(function () {
             if (e.code == 0) {
                 var li = buildWriter(e.data);
                 li.hide();
+                $('#add_writer_txt').val('');
                 $('.writer-list').prepend(li);
                 li.fadeIn(200);
             } else {

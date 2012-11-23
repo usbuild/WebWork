@@ -32,7 +32,7 @@
         </div>
         <div class="link-holder">
             <ul>
-                <li><a href="<?=Yii::app()->homeUrl?>" class="active" id="home_nav_url">主页</a></li>
+                <li><a href="<?=Yii::app()->homeUrl?>" id="home_nav_url">主页</a></li>
                 <?php foreach (Common::getBlogs() as $blog): ?>
                 <li><?= CHtml::link($blog->name, array('blog/view/' . $blog->id), array('id' => 'blog_id_' . $blog->id)) ?></li>
                 <?php endforeach;?>
