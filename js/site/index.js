@@ -19,7 +19,7 @@ $(function () {
     });
     var buildTagItem = function (e) {
         return $('<li class="tag-item"><a href="' + baseUrl + 'site/tagposts?tag=' + e + '" class="mi"><span class="icn icn-4"></span>' +
-            '<span class="txt">' + e + '</span></a>');
+            '<span class="txt">' + e + '</span><span class="tag-close">X</span></a>');
     };
 
     $('#add_new_tag').live('keydown', function (e) {
@@ -52,6 +52,27 @@ $(function () {
             }
         }, 'json');
 
+        return false;
+    });
+
+    $('.writer-close').live('click', function (e) {
+        e.stopPropagation();
+        var li = $(this).parents('li');
+        var id = li.attr('data-id');
+        $.post(baseUrl + 'blog/delWriter/' + id, {}, function (e) {
+            if (e.code == 0) {
+                li.remove();
+            } else {
+                alert('删除失败');
+            }
+        }, 'json');
+        return false;
+    });
+
+    $('.writer-add').live('click', function (e) {
+        e.stopPropagation();
+        var id = $(this).parents('li').attr('data-id');
+        window.open(baseUrl + 'writer/write/' + id);
         return false;
     });
 

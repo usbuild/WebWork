@@ -176,4 +176,12 @@ class User extends CActiveRecord
         return Cowriter::model()->countByAttributes(array('user_id' => $this->id));
     }
 
+    public function writers()
+    {
+        $c = new CDbCriteria();
+        $c->join = "JOIN cowriter ON cowriter.blog_id = t.id AND cowriter.user_id=" . $this->id;
+        return Blog::model()->findAll($c);
+    }
+
+
 }

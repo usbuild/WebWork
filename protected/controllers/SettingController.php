@@ -104,12 +104,4 @@ class SettingController extends Controller
         }
     }
 
-    public function actionWriter()
-    {
-        $this->pageTitle = "设置 - 协作设置";
-        $c = new CDbCriteria();
-        $c->join = "JOIN cowriter ON cowriter.blog_id = t.id AND cowriter.user_id=" . Yii::app()->user->id;
-        $this->render('writer', array('blog' => Blog::model()->findAll($c)));
-    }
-
 }

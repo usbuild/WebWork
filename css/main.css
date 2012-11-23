@@ -1135,6 +1135,7 @@ a.blog-avatar:active {
     margin-left: 200px;
     outline: none;
     background: url("../images/feed-icons.png") no-repeat -200px -60px;
+    z-index: 10;
 }
 
 .scroll-to-top:active, .scroll-to-top:hover {
@@ -1246,7 +1247,6 @@ a.blog-avatar:active {
 }
 
 .m-menu .icn-4 {
-    cursor: move;
     background-position: 0 -104px;
 }
 
@@ -1327,14 +1327,19 @@ a.blog-avatar:active {
     height: 140px;
 }
 
-.tag-close {
+.tag-close, .writer-close, .writer-add {
     float: right;
     margin-right: 20px;
-    font-size: 20px;
     color: #CCC;
 }
 
-.tag-close:hover {
+.writer-add {
+    font-size: 25px;
+    margin-top: -2px;
+
+}
+
+.tag-close:hover, .writer-close:hover, .writer-add:hover {
     color: #777;
 }
 
@@ -1434,7 +1439,8 @@ a.blog-avatar:active {
     height: 65px;
     line-height: 65px;
 }
-.writer-blog-action a{
+
+.writer-blog-action a {
     float: left;
     margin-left: 20px;
 }

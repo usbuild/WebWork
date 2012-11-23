@@ -35,5 +35,32 @@
     <div class="menub"></div>
 </div>
 
+<div class="m-menu">
+    <div class="menut"></div>
+    <div class="menum">
+        <ul>
+            <li style="border-bottom: solid 1px #CCC;
+line-height: 40px;
+padding-left: 38px;
+font-size: 16px;
+cursor: auto;
+color: #3D76BE;
+margin-top: 40px;">协作博客
+            </li>
+            <?php foreach (Yii::app()->user->model->writers() as $b): ?>
+            <li class="tag-item" data-id="<?=$b->id?>">
+                <a href="" class="mi">
+                    <span class="icn icn-4"></span>
+                    <span class="txt"><?=$b->name?></span>
+                    <span class="writer-close">X</span>
+                    <span class="writer-add">+</span>
+                </a>
+            </li>
+            <?php endforeach?>
+        </ul>
+    </div>
+    <div class="menub"></div>
+</div>
+
 
 <?php endif; ?>

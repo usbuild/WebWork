@@ -185,10 +185,10 @@ class BlogController extends Controller
             return;
         }
         if (!isset($_REQUEST['writer'])) {
-            echo CJSON::encode(array('code' => 1, 'data' => 'no such blog'));
-            return;
+            $user = Yii::app()->user->model;
+        } else {
+            $user = User::model()->findByAttributes(array('blog' => $_REQUEST['writer']));
         }
-        $user = User::model()->findByAttributes(array('blog' => $_REQUEST['writer']));
         if (empty($user)) {
             echo CJSON::encode(array('code' => 1, 'data' => 'no such user'));
             return;

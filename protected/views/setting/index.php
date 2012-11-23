@@ -20,19 +20,4 @@
         </li>
     </ul>
 
-    <ul>
-        <li>
-            <div class="g-box2 clearfix">
-                <div class="setting-item">
-                    协作设置
-                </div>
-                <div class="setting-content">
-                    <span class="user-writer-count">共&nbsp;<?=Yii::app()->user->model->writerCount()?>&nbsp;个协作的博客</span>
-
-                    <div class="acount-link"><?=CHtml::link('管理和创作>>', array('setting/writer'))?></div>
-                </div>
-            </div>
-        </li>
-    </ul>
-
 </div>
