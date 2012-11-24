@@ -37,7 +37,7 @@ if ($repost->type == 'repost') {
                 <?php break;
         case 'music':
             ?>
-                <input type="hidden" data-song='<?=CJSON::encode($repost->head)?>'
+                <input type="hidden" data-song=<?=CJSON::encode($repost->head)?>
                        class="music-input"/>
                 <?php break;
         case 'video':

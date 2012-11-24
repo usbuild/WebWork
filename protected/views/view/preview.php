@@ -38,7 +38,7 @@
                 <?php break;
         case 'music':
             ?>
-                <input type="hidden" data-song='<?=CJSON::encode($post->head)?>'
+                <input type="hidden" data-song=<?=CJSON::encode($post->head)?>
                        class="music-input"/>
                 <br><br>
                 <?php break;
