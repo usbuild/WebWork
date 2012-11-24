@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50527
 File Encoding         : 65001
 
-Date: 2012-11-23 21:32:50
+Date: 2012-11-24 20:09:14
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -193,10 +193,10 @@ CREATE TABLE `post` (
   KEY `FK_PT_BLOG` (`blog_id`),
   KEY `FK_RP_POST` (`repost_id`),
   KEY `FK_PT_WRITER` (`writer`),
-  CONSTRAINT `FK_PT_WRITER` FOREIGN KEY (`writer`) REFERENCES `cowriter` (`user_id`) ON DELETE SET NULL ON UPDATE SET NULL,
   CONSTRAINT `FK_PT_BLOG` FOREIGN KEY (`blog_id`) REFERENCES `blog` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_PT_WRITER` FOREIGN KEY (`writer`) REFERENCES `cowriter` (`user_id`) ON DELETE SET NULL ON UPDATE SET NULL,
   CONSTRAINT `FK_RP_POST` FOREIGN KEY (`repost_id`) REFERENCES `post` (`id`) ON DELETE SET NULL ON UPDATE SET NULL
-) ENGINE=InnoDB AUTO_INCREMENT=78 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of post
@@ -227,6 +227,7 @@ INSERT INTO `post` VALUES ('74', '9', '{\"song_id\":\"2073745\",\"song_name\":\"
 INSERT INTO `post` VALUES ('75', '1', 'hello', '<p>helloo<br /></p>', 'text', '2012-11-23 19:49:15', '[\"sdf\"]', null, '0', null);
 INSERT INTO `post` VALUES ('76', '9', '{\"title\":\"\\u767e\\u5ea6\",\"link\":\"http:\\/\\/baidu.com\"}', '<p>baidu link &nbsp; &nbsp;<br /></p>', 'link', '2012-11-23 20:51:45', '[\"baidu\",\"\\u5ea6\\u5a18\"]', null, '0', '5');
 INSERT INTO `post` VALUES ('77', '9', 'SDF', '<p>SDF<br /></p>', 'text', '2012-11-23 21:31:23', '[\"ASDFASD\"]', null, '0', '5');
+INSERT INTO `post` VALUES ('78', '1', '{\"song_id\":\"1770989638\",\"song_name\":\"Hello\",\"artist_id\":\"109790\",\"artist_name\":\"Hello+Venus\",\"album_id\":\"511737\",\"album_name\":\"Venus\",\"album_logo\":\"http:\\/\\/img.xiami.com\\/.\\/images\\/album\\/img90\\/109790\\/5117371336552449_1.jpg\"}', '<p>agtr<br /></p><br>感谢<a href=\"/blog/view/9\" target=\"_blank\">美女热图</a>的投递 :-)', 'music', '2012-11-24 20:08:02', '[\"srgsdfg\"]', null, '0', null);
 
 -- ----------------------------
 -- Table structure for `request`
@@ -237,7 +238,7 @@ CREATE TABLE `request` (
   `blog_id` int(11) NOT NULL,
   `head` text CHARACTER SET utf8 NOT NULL,
   `content` text,
-  `tags` text,
+  `tag` text,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `sender` int(11) NOT NULL,
   `state` enum('pass','deny','pending') NOT NULL DEFAULT 'pending',
@@ -247,11 +248,13 @@ CREATE TABLE `request` (
   KEY `FK_REQ_SENDER` (`sender`),
   CONSTRAINT `FK_REQ_BLOG` FOREIGN KEY (`blog_id`) REFERENCES `blog` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_REQ_SENDER` FOREIGN KEY (`sender`) REFERENCES `user` (`blog`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of request
 -- ----------------------------
+INSERT INTO `request` VALUES ('2', '9', 'asdf', '<p>asdfasdfa<br /></p>', '[\"awefrwaerf\"]', '2012-11-24 18:33:22', '1', 'pending', 'text');
+INSERT INTO `request` VALUES ('5', '1', '{\"song_id\":\"1770989638\",\"song_name\":\"Hello\",\"artist_id\":\"109790\",\"artist_name\":\"Hello+Venus\",\"album_id\":\"511737\",\"album_name\":\"Venus\",\"album_logo\":\"http:\\/\\/img.xiami.com\\/.\\/images\\/album\\/img90\\/109790\\/5117371336552449_1.jpg\"}', '<p>agtr<br /></p>', '[\"srgsdfg\"]', '2012-11-24 19:58:20', '9', 'pending', 'music');
 
 -- ----------------------------
 -- Table structure for `tag`
