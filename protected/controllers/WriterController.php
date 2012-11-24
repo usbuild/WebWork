@@ -56,7 +56,7 @@ class WriterController extends Controller
                     $request = new Request();
                     $request->blog_id = $id;
                     $request->type = $type;
-                    $request->head = json_encode($title);
+                    $request->head = $title;
                     $request->content = $content;
                     $request->tag = json_encode($tags);
                     $request->sender = Yii::app()->user->model->blog;

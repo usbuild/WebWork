@@ -11,7 +11,7 @@
         <div class="request-content"><?=mb_strimwidth(strip_tags($m->content), 0, 200, "...");?></div>
         <div class="request-action">
             <a class="request-remove" href="javascript:;">删除</a>
-            <a class="request-view" href="<?=$this->createUrl('blog/viewrequest/' . $m->id)?>">查看</a>
+            <a class="request-view" href="<?=$this->createUrl('view/preview/' . $m->id)?>" target="_blank">查看</a>
             <a class="request-pass" href="javascript:;">通过</a>
         </div>
     </li>

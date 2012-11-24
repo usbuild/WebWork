@@ -52,4 +52,13 @@ class ViewController extends CController
         $this->pageTitle = $blog->name;
         $this->render('post', array('post' => $post, 'comments' => $post->comments, 'blog' => $blog));
     }
+
+    public function actionPreview($id)
+    {
+        $request = Request::model()->findByPk($id);
+        $request->tag = json_decode($request->tag, true);
+        $request->head = json_decode($request->head, true);
+        $this->render('preview', array('post' => $request));
+    }
+
 }
