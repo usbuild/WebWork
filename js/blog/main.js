@@ -68,5 +68,24 @@ $(function () {
             }
         }, 'json');
     });
-
+    $('.request-remove').click(function () {
+        var item = $(this).parents('.request-item');
+        $.post(baseUrl + 'blog/delrequest/' + item.attr('data-id'), function (e) {
+            if (e.code == 0) {
+                item.remove();
+            } else {
+                alert('删除失败');
+            }
+        }, 'json');
+    });
+    $('.request-pass').click(function () {
+        var item = $(this).parents('.request-item');
+        $.post(baseUrl + 'blog/passrequest/' + item.attr('data-id'), function (e) {
+            if (e.code == 0) {
+                item.remove();
+            } else {
+                alert('操作失败');
+            }
+        }, 'json');
+    });
 });

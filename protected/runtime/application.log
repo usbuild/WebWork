@@ -786,3 +786,363 @@ Stack trace:
 REQUEST_URI=/blog/post/getByWriter/9
 in D:\www\blog\protected\controllers\PostController.php (352)
 in D:\www\blog\index.php (13)
+2012/11/24 02:34:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 02:34:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 02:35:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/site/writerposts/9
+---
+2012/11/24 06:18:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 06:18:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 06:44:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 06:44:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 06:55:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "write/request"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('write/request')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\WWW\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/write/request/9
+HTTP_REFERER=http://localhost/blog/writer/request/9
+---
+2012/11/24 07:49:43 [error] [exception.CException] exception 'CException' with message '属性 "Request.save" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(144): CComponent->__get('save')
+#1 D:\WWW\blog\protected\controllers\WriterController.php(63): CActiveRecord->__get('save')
+#2 [internal function]: WriterController->actionRequest('9')
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(WriterController), Array)
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(WriterController), Object(ReflectionMethod), Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('request')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('writer/request')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/writer/request/9
+HTTP_REFERER=http://localhost/blog/writer/request/9
+---
+2012/11/24 07:49:53 [error] [php] Array to string conversion (D:\src\yii-1.1.12.b600af\framework\db\schema\CDbColumnSchema.php:141)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(796): Request->insert()
+#1 D:\WWW\blog\protected\controllers\WriterController.php(63): Request->save()
+#2 unknown(0): WriterController->actionRequest()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): WriterController->runAction()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): WriterController->runActionWithFilters()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): WriterController->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\WWW\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/writer/request/9
+in D:\WWW\blog\protected\controllers\WriterController.php (63)
+in D:\WWW\blog\index.php (13)
+2012/11/24 07:50:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`request`, CONSTRAINT `FK_REQ_SENDER` FOREIGN KEY (`sender`) REFERENCES `user` (`blog`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `request` (`state`, `type`, `blog_id`, `head`, `content`, `tag`, `sender`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in D:\WWW\blog\protected\controllers\WriterController.php (63)
+in D:\WWW\blog\index.php (13)
+2012/11/24 07:50:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`request`, CONSTRAINT `FK_REQ_SENDER` FOREIGN KEY (`sender`) REFERENCES `user` (`blog`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `request` (`state`, `type`, `blog_id`, `head`, `content`, `tag`, `sender`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 D:\WWW\blog\protected\controllers\WriterController.php(63): CActiveRecord->save()
+#3 [internal function]: WriterController->actionRequest('9')
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(WriterController), Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(WriterController), Object(ReflectionMethod), Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('request')
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('writer/request')
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\WWW\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/blog/writer/request/9
+HTTP_REFERER=http://localhost/blog/writer/request/9
+---
+2012/11/24 11:30:04 [error] [exception.CException] exception 'CException' with message '属性 "Request.tag" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(160): CComponent->__set('tag', '["asfg"]')
+#1 D:\www\blog\protected\controllers\WriterController.php(61): CActiveRecord->__set('tag', '["asfg"]')
+#2 [internal function]: WriterController->actionRequest('9')
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(WriterController), Array)
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(WriterController), Object(ReflectionMethod), Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('request')
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('writer/request')
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\blog\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/writer/request/9
+HTTP_REFERER=http://localhost/blog/writer/request/9
+---
+2012/11/24 11:30:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`request`, CONSTRAINT `FK_REQ_SENDER` FOREIGN KEY (`sender`) REFERENCES `user` (`blog`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `request` (`state`, `type`, `blog_id`, `head`, `content`, `tag`, `sender`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in D:\www\blog\protected\controllers\WriterController.php (63)
+in D:\www\blog\index.php (13)
+2012/11/24 11:30:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`blog`.`request`, CONSTRAINT `FK_REQ_SENDER` FOREIGN KEY (`sender`) REFERENCES `user` (`blog`) ON DELETE CASCADE ON UPDATE CASCADE). The SQL statement executed was: INSERT INTO `request` (`state`, `type`, `blog_id`, `head`, `content`, `tag`, `sender`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6)' in D:\src\yii-1.1.12.b600af\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 D:\www\blog\protected\controllers\WriterController.php(63): CActiveRecord->save()
+#3 [internal function]: WriterController->actionRequest('9')
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(WriterController), Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(WriterController), Object(ReflectionMethod), Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('request')
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('writer/request')
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\blog\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/blog/writer/request/9
+HTTP_REFERER=http://localhost/blog/writer/request/9
+---
+2012/11/24 11:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 11:41:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 11:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/blog/view/1
+---
+2012/11/24 11:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "request" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('request')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('request')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/request')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/blog/request/1
+HTTP_REFERER=http://localhost/blog/blog/view/1
+---
+2012/11/24 11:42:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/blog/view/1
+---
+2012/11/24 11:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "request" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('request')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('request')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/request')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/blog/request/1
+HTTP_REFERER=http://localhost/blog/blog/view/1
+---
+2012/11/24 12:28:56 [error] [php] Trying to get property of non-object (D:\www\blog\protected\views\blog\sidebar.php:5)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): BlogController->renderFile()
+#1 D:\www\blog\protected\controllers\BlogController.php(17): BlogController->renderPartial()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(282): BlogController->init()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blog/delrequest/3
+in D:\www\blog\protected\views\blog\sidebar.php (5)
+in D:\www\blog\protected\controllers\BlogController.php (17)
+in D:\www\blog\index.php (13)
+2012/11/24 12:31:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/blog/view/1
+---
+2012/11/24 12:57:00 [error] [php] Array to string conversion (D:\src\yii-1.1.12.b600af\framework\db\schema\CDbColumnSchema.php:141)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(796): Request->insert()
+#1 D:\www\blog\protected\controllers\WriterController.php(63): Request->save()
+#2 unknown(0): WriterController->actionRequest()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): WriterController->runAction()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): WriterController->runActionWithFilters()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): WriterController->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/writer/request/1
+in D:\www\blog\protected\controllers\WriterController.php (63)
+in D:\www\blog\index.php (13)
+2012/11/24 12:57:10 [error] [php] Array to string conversion (D:\src\yii-1.1.12.b600af\framework\db\schema\CDbColumnSchema.php:141)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(796): Request->insert()
+#1 D:\www\blog\protected\controllers\WriterController.php(63): Request->save()
+#2 unknown(0): WriterController->actionRequest()
+#3 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(287): WriterController->runAction()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): WriterController->runActionWithFilters()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): WriterController->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/writer/request/1
+in D:\www\blog\protected\controllers\WriterController.php (63)
+in D:\www\blog\index.php (13)
+2012/11/24 13:02:33 [error] [exception.CException] exception 'CException' with message '属性 "Post.sender" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(160): CComponent->__set('sender', '9')
+#1 D:\www\blog\protected\models\Post.php(145): CActiveRecord->__set('sender', '9')
+#2 D:\www\blog\protected\controllers\BlogController.php(274): Post->__set('sender', '9')
+#3 [internal function]: BlogController->actionPassRequest('5')
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(BlogController), Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(BlogController), Object(ReflectionMethod), Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('passrequest')
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/passreques...')
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\www\blog\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog/blog/passrequest/5
+HTTP_REFERER=http://localhost/blog/blog/request/1
+---
+2012/11/24 13:03:12 [error] [exception.CException] exception 'CException' with message '属性 "Post.sender" 未被定义.' in D:\src\yii-1.1.12.b600af\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\db\ar\CActiveRecord.php(160): CComponent->__set('sender', '9')
+#1 D:\www\blog\protected\models\Post.php(145): CActiveRecord->__set('sender', '9')
+#2 D:\www\blog\protected\controllers\BlogController.php(277): Post->__set('sender', '9')
+#3 [internal function]: BlogController->actionPassRequest('5')
+#4 D:\src\yii-1.1.12.b600af\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(BlogController), Array)
+#5 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(BlogController), Object(ReflectionMethod), Array)
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('passrequest')
+#15 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('blog/passreques...')
+#16 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\www\blog\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/blog/blog/passrequest/5
+HTTP_REFERER=http://localhost/blog/blog/request/1
+---
+2012/11/24 13:03:16 [error] [php] Trying to get property of non-object (D:\www\blog\protected\views\blog\sidebar.php:5)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(870): BlogController->renderFile()
+#1 D:\www\blog\protected\controllers\BlogController.php(17): BlogController->renderPartial()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(282): BlogController->init()
+#3 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/blog/passrequest/5
+in D:\www\blog\protected\views\blog\sidebar.php (5)
+in D:\www\blog\protected\controllers\BlogController.php (17)
+in D:\www\blog\index.php (13)
+2012/11/24 13:08:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 13:08:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---

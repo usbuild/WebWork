@@ -52,7 +52,7 @@ class PostController extends Controller
 
     public function actionIndex()
     {
-        if (isset($_REQUEST['title']) && isset($_REQUEST['content']) && isset($_REQUEST['tags']) && isset($_REQUEST['type'])) {
+        if (isset($_REQUEST['title'], $_REQUEST['content'], $_REQUEST['tags'], $_REQUEST['type'])) {
             $title = $_REQUEST['title'];
             $content = $_REQUEST['content'];
             if (strlen($_REQUEST['tags']) == 0) $tags = array();

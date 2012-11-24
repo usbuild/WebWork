@@ -1444,3 +1444,50 @@ a.blog-avatar:active {
     float: left;
     margin-left: 20px;
 }
+
+.request-list {
+
+}
+
+.request-item {
+    padding: 10px 20px;
+    margin: 10px;
+    border: solid 1px #CCC;
+    border-radius: 5px;
+    height: 78px;
+}
+
+.request-blog-info {
+    float: left;
+    width: 70px;
+}
+
+.request-avatar {
+    margin-left: 3px;
+}
+
+.request-name {
+    text-align: center;
+}
+
+.request-content {
+    float: left;
+    margin-left: 20px;
+}
+
+.request-action {
+    height: 70px;
+    line-height: 70px;
+    float: right;
+}
+.request-action *{
+    margin-right: 20px;
+}
+
+.request-edit {
+    float: right;
+}
+
+.request-remove {
+    float: right;
+}

@@ -18,7 +18,13 @@ $(function () {
     window.editor.render("myEditor");
 
     var blog = json_decode($('[data-blog]').attr('data-blog'));
-
+    var is_request = $('#is_request').val();
+    var post_url;
+    if (is_request) {
+        post_url = baseUrl + 'writer/request/' + blog.id;
+    } else {
+        post_url = baseUrl + 'post';
+    }
 
     var prepareText = function () {
         var activeArea = $('#current_type #post_text');
@@ -34,7 +40,7 @@ $(function () {
             var tags = $('#tags').val();
 
             var post_data = {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'text', 'write':1};
-            $.post(baseUrl + 'post', post_data, function (obj) {
+            $.post(post_url, post_data, function (obj) {
                 if (obj.code == 0) {
                     window.location.href = baseUrl;
                 } else {
@@ -65,7 +71,7 @@ $(function () {
                 }
                 var post_data = {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'music', 'write':1};
 
-                $.post(baseUrl + 'post', post_data, function (obj) {
+                $.post(post_url, post_data, function (obj) {
                     if (obj.code == 0) {
                         window.location.href = baseUrl;
                     } else {
@@ -195,7 +201,7 @@ $(function () {
             var tags = $('#tags').val();
             var post_data = {'title':data, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'image', 'write':1};
 
-            $.post(baseUrl + 'post', post_data, function (obj) {
+            $.post(post_url, post_data, function (obj) {
                 if (obj.code == 0) {
                     window.location.href = baseUrl;
                 } else {
@@ -314,7 +320,7 @@ $(function () {
                 return;
             }
             var post_data = {'title':$$('#video_info').val(), 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'video', 'write':1};
-            $.post(baseUrl + 'post', post_data, function (obj) {
+            $.post(post_url, post_data, function (obj) {
                 if (obj.code == 0) {
                     window.location.href = baseUrl;
                 } else {
@@ -381,7 +387,7 @@ $(function () {
             var title = {'title':$$('#title').val(), 'link':$$('#link').val()};
             var post_data = {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'link', 'write':1};
 
-            $.post(baseUrl + 'post', post_data, function (obj) {
+            $.post(post_url, post_data, function (obj) {
                 if (obj.code == 0) {
                     window.location.href = baseUrl;
                 } else {

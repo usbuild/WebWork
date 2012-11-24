@@ -40,8 +40,40 @@ class WriterController extends Controller
 
     public function actionRequest($id)
     {
-        $blog = Blog::model()->findByPk($id);
-        $this->pageTitle = $blog->name . ' - 投递文章';
-        $this->render('index', array('blog' => $blog, 'request' => 1));
+        if (Yii::app()->request->isPostRequest) {
+
+            if (isset($_REQUEST['title'], $_REQUEST['content'], $_REQUEST['tags'], $_REQUEST['type'])) {
+                $title = $_REQUEST['title'];
+                $content = $_REQUEST['content'];
+                if (strlen($_REQUEST['tags']) == 0) $tags = array();
+                else
+                    $tags = explode(',', $_REQUEST['tags']);
+
+                $type = $_REQUEST['type'];
+                if (($type === 'text' && strlen(trim($title)) + strlen(trim($content)) > 0)
+                    || (in_array($type, array('image', 'video', 'music', 'link')) && !empty($title))
+                ) {
+                    $request = new Request();
+                    $request->blog_id = $id;
+                    $request->type = $type;
+                    $request->head = json_encode($title);
+                    $request->content = $content;
+                    $request->tag = json_encode($tags);
+                    $request->sender = Yii::app()->user->model->blog;
+                    if ($request->save()) {
+                        $request->refresh();
+                        echo CJSON::encode(array('code' => 0, 'data' => $request));
+                    } else {
+                        echo CJSON::encode(array('code' => 1, 'data' => CHtml::errorSummary($request)));
+                    }
+                }
+            }
+
+
+        } else {
+            $blog = Blog::model()->findByPk($id);
+            $this->pageTitle = $blog->name . ' - 投递文章';
+            $this->render('index', array('blog' => $blog, 'request' => 1));
+        }
     }
 }

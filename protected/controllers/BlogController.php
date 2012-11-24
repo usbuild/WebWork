@@ -13,7 +13,7 @@ class BlogController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/autosize/jquery.autosize-min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/blog/main.js', CClientScript::POS_END);
 
-        if (isset($_REQUEST['id']))
+        if (isset($_REQUEST['id']) && !Yii::app()->request->isAjaxRequest)
             $this->sidebar = $this->renderPartial('sidebar', array('blog' => Blog::model()->findByPk($_REQUEST['id'])), true);
     }
 
@@ -33,7 +33,7 @@ class BlogController extends Controller
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'view', 'info', 'getposts', 'follows', 'index', 'addwriter'),
+                'actions' => array('create', 'view', 'info', 'getposts', 'follows', 'index', 'addwriter', 'request', 'delrequest', 'passrequest'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -218,9 +218,69 @@ class BlogController extends Controller
         $this->render('writer', array('blog' => $blog));
     }
 
-    public function actionRequestPost()
+    public function actionRequest($id)
     {
+        $this->pageTitle = '接收到的投递';
+        $criteria = new CDbCriteria();
+        $criteria->condition = 'blog_id = :id';
+        $criteria->order = 'time DESC';
+        $criteria->params = array(':id' => $id);
+        $item_count = Request::model()->count($criteria);
+        $pages = new CPagination($item_count);
+        $pages->setPageSize(10);
+        $pages->applyLimit($criteria);
+        $this->render('request', array(
+            'model' => Request::model()->findAll($criteria),
+            'item_count' => $item_count,
+            'page_size' => 10,
+            'pages' => $pages,
+        ));
+    }
+
+    public function actionDelRequest($id)
+    {
+        $request = Request::model()->findByPk($id);
+        if (empty($request)) {
+            echo CJSON::encode(array('code' => 1));
+            return;
+        }
+        $blog = $request->blog;
+        if (!$blog->isMine()) {
+            echo CJSON::encode(array('code' => 1));
+            return;
+        }
+        if ($request->delete()) {
+            echo CJSON::encode(array('code' => 0));
+        } else {
+            echo CJSON::encode(array('code' => 1));
+        }
 
     }
 
+    public function actionPassRequest($id)
+    {
+        $request = Request::model()->findByPk($id);
+        if (empty($request)) {
+            echo CJSON::encode(array('code' => 1));
+            return;
+        }
+        $blog = $request->blog;
+        if (!$blog->isMine()) {
+            echo CJSON::encode(array('code' => 1));
+            return;
+        }
+        $post = new Post();
+        $post->type = $request->type;
+        $post->head = $request->head;
+        $post->content = $request->content . '<br>感谢<a href="' . $this->createUrl('view/' . $request->sender0->blog) . '" target="_blank">' . $request->sender0->myblog->name . '</a>的投递 :-)';
+        $post->tag = $request->tag;
+        $post->blog_id = $request->blog_id;
+        if ($post->save()) {
+            $post->refresh();
+            echo CJSON::encode(array('code' => 0, 'data' => $post));
+        } else {
+            echo CJSON::encode(array('code' => 1, 'data' => CHtml::errorSummary($post)));
+        }
+
+    }
 }
