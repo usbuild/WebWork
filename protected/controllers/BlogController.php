@@ -272,11 +272,12 @@ class BlogController extends Controller
         $post = new Post();
         $post->type = $request->type;
         $post->head = $request->head;
-        $post->content = $request->content . '<br>感谢<a href="' . $this->createUrl('view/' . $request->sender0->blog) . '" target="_blank">' . $request->sender0->myblog->name . '</a>的投递 :-)';
+        $post->content = $request->content . '<br>感谢&nbsp;<a href="' . $this->createUrl('view/' . $request->sender0->blog) . '" target="_blank">' . $request->sender0->myblog->name . '</a>&nbsp;的投递 :-)';
         $post->tag = $request->tag;
         $post->blog_id = $request->blog_id;
         if ($post->save()) {
             $post->refresh();
+            $request->delete();
             echo CJSON::encode(array('code' => 0, 'data' => $post));
         } else {
             echo CJSON::encode(array('code' => 1, 'data' => CHtml::errorSummary($post)));

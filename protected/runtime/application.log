@@ -1146,3 +1146,39 @@ Stack trace:
 REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
 HTTP_REFERER=http://localhost/blog/
 ---
+2012/11/24 13:24:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 13:24:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/blog/view/1
+---
+2012/11/24 13:25:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/24 13:25:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1352551220599.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1352551220599.jpg
+HTTP_REFERER=http://localhost/blog/
+---

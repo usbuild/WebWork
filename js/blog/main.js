@@ -83,6 +83,7 @@ $(function () {
         $.post(baseUrl + 'blog/passrequest/' + item.attr('data-id'), function (e) {
             if (e.code == 0) {
                 item.remove();
+                window.location.href = baseUrl;
             } else {
                 alert('操作失败');
             }
