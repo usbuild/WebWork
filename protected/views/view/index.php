@@ -105,7 +105,11 @@
             </div>
             <div class="feed-op">
                 <div class="feed-time">发表于<?=$post->time?></div>
-                <div class="feed-read"><a href="<?=$this->createUrl('view/post/' . $post->id)?>">阅读更多</a></div>
+                <div class="feed-action">
+                    <a href="<?=$this->createUrl('view/post/' . $post->id)?>">回应(<?=$post->commentCount()?>)</a>
+                    <a href="<?=$this->createUrl('view/post/' . $post->id)?>">热度(<?=$post->hotCount()?>)</a>
+                    <a href="<?=$this->createUrl('view/post/' . $post->id)?>">阅读更多</a>
+                </div>
             </div>
 
 

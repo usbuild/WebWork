@@ -76,6 +76,7 @@ ul.pages {
 .feed {
     border-bottom: solid 1px #aaa;
     margin: 20px;
+    margin-left: 40px;
 }
 
 .feed .feed-basic {
@@ -109,6 +110,10 @@ ul.pages {
 .feed .feed-time {
     float: left;
     margin-right: 20px;
+}
+
+.feed .feed-action * {
+    margin: 0 10px;
 }
 
 .xiami-container {

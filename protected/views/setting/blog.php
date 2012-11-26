@@ -50,8 +50,7 @@
     </div>
     <div class="g-box2 clearfix">
         <div class="setting-content">
-            <input type="button" value="取消" class="button"/>
-            <input type="submit" value="提交" class="button"/>
+            <input type="submit" value="保存" class="button"/>
         </div>
     </div>
 

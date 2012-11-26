@@ -51,11 +51,11 @@ $(document).ready(function () {
         var img = $('<img />');
         img.attr('src', baseUrl + item.blog.avatar).addClass('cmt-item-img');
         var content = $('<div></div>');
-        var name = $('<span class="cmt-item-name"><a>' + item.blog.name + '</a></span>');
+        var name = $('<span class="cmt-item-name"><a target="_blank" href="' + baseUrl + 'view/' + item.blog.id + '">' + item.blog.name + '</a></span>');
         content.append(name);
 
         if (item.reply_id != null) {
-            content.append('<span class="cmt-item-reply-name">回复 <a>' + item.reply.name + '</a> :</span>');
+            content.append('<span class="cmt-item-reply-name">回复 <a target="_blank" href="' + baseUrl + 'view/' + item.reply.id + '">' + item.reply.name + '</a> :</span>');
         }
         content.append(item.content);
         content.addClass('cmt-item-content');
@@ -79,7 +79,7 @@ $(document).ready(function () {
         var content = $('<div></div>');
         img.attr('src', baseUrl + item.avatar).addClass('nt-item-img');
 
-        var name = $('<span class="nt-item-name"><a>' + item.name + '</a></span>');
+        var name = $('<span class="nt-item-name"><a target="_blank" href="' + baseUrl + 'view/' + item.blog.id + '">' + item.name + '</a></span>');
         content.append(name);
         if (item.type == 1) {
             content.append('喜欢此文章');
