@@ -1,18 +1,19 @@
+<input type="hidden" value="<?=$this->blog->id?>" id="blog_id">
 <div class="blog-info">
     <div class="avatar"><img src="<?=Yii::app()->baseUrl . $this->blog->avatar?>" alt="头像"></div>
-    <div class="blog-name"><?=$this->blog->name?></div>
-    <a href="<?=$this->createUrl('writer/request/' . $this->blog->id)?>">投递</a>
+    <div class="blog-name"><a href="<?=$this->createUrl('view/' . $this->blog->id)?>"><?=$this->blog->name?></a></div>
+    <a href="<?=$this->createUrl('writer/request/' . $this->blog->id)?>" class="request-post btn">投递</a>
     <?php if ($this->blog->isFollow()): ?>
-    <a href="">取消关注</a>
+    <a href="javascript:;" class="unfollow btn">取消</a>
     <?php else: ?>
-    <a href="">关注</a>
+    <a href="javascript:;" class="follow btn">关注</a>
     <?php endif;?>
 </div>
 <div class="clear"></div>
 
 <div class="feed-zone">
     <?php foreach ($model as $post): ?>
-    <div class="feed">
+    <div class="feed clearfix">
         <div class="feed-hd no-content">
             <div class="feed-basic">
                 <?php $data = array();?>
@@ -76,7 +77,7 @@
             case 'music':
                 ?>
                     <input type="hidden" data-song=<?=CJSON::encode($post->head)?>
-                           class="music-input"/>
+                        class="music-input"/>
                     <br><br>
                     <?php break;
             case 'video':

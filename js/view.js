@@ -32,6 +32,7 @@ var renderMusic = function (input) {
     }
     input.remove();
 };
+
 var json_decode = function (e) {
     return eval('(' + e + ')');
 };
@@ -40,7 +41,31 @@ var json_encode = function (e) {
 };
 
 $(function () {
+    var blog_id = $('#blog_id').val();
     $('[data-song]').each(function (i, item) {
         renderMusic($(item));
     });
+
+    $('.follow').live('click', function (e) {
+        var btn = $(this);
+
+        $.post(baseUrl + 'follow/follow/' + blog_id, function (e) {
+            if (e.code == 0) {
+                btn.removeClass('follow').addClass('unfollow');
+                btn.html('取消');
+            }
+        }, 'json');
+    });
+    $('.unfollow').live('click', function (e) {
+        var btn = $(this);
+
+        $.post(baseUrl + 'follow/unfollow/' + blog_id, function (e) {
+            if (e.code == 0) {
+                btn.removeClass('unfollow').addClass('follow');
+                btn.html('关注');
+            }
+        }, 'json');
+    });
+
+
 });

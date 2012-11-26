@@ -11,10 +11,11 @@ class ViewController extends CController
 
     public function init()
     {
-        Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/css/view.css');
+        parent::init();
         Yii::app()->clientScript->registerScript('config', 'var baseUrl = "' . Yii::app()->baseUrl . '/";', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerCoreScript('jquery', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/view.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/css/view.css');
     }
 
     public function actionView($id)

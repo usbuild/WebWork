@@ -1494,3 +1494,25 @@ Stack trace:
 REQUEST_URI=/blog/view/%E7%BE%8E%E5%A5%B3%E7%83%AD%E5%9B%BE
 HTTP_REFERER=http://localhost/blog/site/follow
 ---
+2012/11/26 02:36:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "美女热图" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('????????????')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('????????????')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('view/??????????...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/view/%E7%BE%8E%E5%A5%B3%E7%83%AD%E5%9B%BE
+HTTP_REFERER=http://localhost/blog/site/follow
+---
+2012/11/26 02:38:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "美女热图" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('????????????')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('????????????')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('view/??????????...')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\www\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/view/%E7%BE%8E%E5%A5%B3%E7%83%AD%E5%9B%BE
+HTTP_REFERER=http://localhost/blog/site/follow
+---
