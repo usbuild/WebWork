@@ -14,7 +14,7 @@ $(function () {
         $('#title').hide();
         var img = $('<img/>');
         img.attr('src', baseUrl + 'images/loading.gif')
-            .attr('alt', '加载中').attr('width', '128px').attr('height', '96px');
+            .attr('alt', '加载中').attr('width', '128px').attr('height', '128px');
         $('#thumb_box img').remove();
         $('#thumb_box').append(img).show();
         $.ajax({

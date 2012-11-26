@@ -186,6 +186,9 @@ small {
     margin: 5px;
     margin-left: 20px;
     background: url(../images/btn24.png) 0 0;
+    line-height: 35px;
+    font-weight: bold;
+    color: white;
 }
 
 #upload_btn:hover {

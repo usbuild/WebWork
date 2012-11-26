@@ -1561,3 +1561,41 @@ Stack trace:
 REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
 HTTP_REFERER=http://localhost/blog/
 ---
+2012/11/26 13:56:14 [error] [php] Undefined offset: 1 (D:\www\blog\protected\components\VideoHelper.php:39)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionGetVideoInfo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getVideoInfo
+in D:\www\blog\protected\components\VideoHelper.php (39)
+in D:\www\blog\protected\components\VideoHelper.php (99)
+in D:\www\blog\protected\controllers\PostController.php (200)
+2012/11/26 13:56:17 [error] [php] Undefined offset: 1 (D:\www\blog\protected\components\VideoHelper.php:39)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\actions\CInlineAction.php(50): PostController->actionGetVideoInfo()
+#1 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PostController->runAction()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PostController->filterAccessControl()
+#6 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PostController->runActionWithFilters()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PostController->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/post/getVideoInfo
+in D:\www\blog\protected\components\VideoHelper.php (39)
+in D:\www\blog\protected\components\VideoHelper.php (99)
+in D:\www\blog\protected\controllers\PostController.php (200)
