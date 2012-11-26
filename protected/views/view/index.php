@@ -15,6 +15,8 @@
 <div class="feed-zone">
     <?php foreach ($model as $post): ?>
     <div class="feed clearfix">
+        <div class="hot-tile"><?=$post->commentCount()?>
+            <small><sup>o</sup></small></div>
         <div class="feed-hd no-content">
             <div class="feed-basic">
                 <?php $data = array();?>

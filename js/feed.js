@@ -79,7 +79,7 @@ $(document).ready(function () {
         var content = $('<div></div>');
         img.attr('src', baseUrl + item.avatar).addClass('nt-item-img');
 
-        var name = $('<span class="nt-item-name"><a target="_blank" href="' + baseUrl + 'view/' + item.blog.id + '">' + item.name + '</a></span>');
+        var name = $('<span class="nt-item-name"><a target="_blank" href="' + baseUrl + 'view/' + item.blog_id + '">' + item.name + '</a></span>');
         content.append(name);
         if (item.type == 1) {
             content.append('喜欢此文章');

@@ -1480,7 +1480,8 @@ a.blog-avatar:active {
     line-height: 70px;
     float: right;
 }
-.request-action *{
+
+.request-action * {
     margin-right: 20px;
 }
 

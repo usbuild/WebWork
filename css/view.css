@@ -73,6 +73,26 @@ ul.pages {
 
 }
 
+.hot-tile {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    left: -72px;
+    border: solid 1px #CE7A7A;
+    top: -21px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #CE7A7A;
+}
+
+.feed .hot-tile {
+    left: -92px;
+}
+
 .feed {
     border-bottom: solid 1px #aaa;
     margin: 20px;
@@ -103,16 +123,16 @@ ul.pages {
     background: white;
 }
 
-.feed .feed-op {
+.feed-op {
     font-size: small;
 }
 
-.feed .feed-time {
+.feed-time {
     float: left;
     margin-right: 20px;
 }
 
-.feed .feed-action * {
+.feed-action * {
     margin: 0 10px;
 }
 
@@ -189,4 +209,13 @@ ul.pages {
     width: 100%;
     text-align: center;
     margin-top: 10px;
+}
+
+.comment-area {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.comment-area textarea {
+    width: 100%;
 }

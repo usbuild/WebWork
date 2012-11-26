@@ -11,6 +11,9 @@
 </div>
 
 <div class="content">
+    <div class="hot-tile"><?=$post->commentCount()?>
+        <small><sup>o</sup></small>
+    </div>
     <div class="feed-hd no-content">
         <div class="feed-basic">
             <?php $data = array();?>
@@ -70,7 +73,7 @@
         case 'music':
             ?>
                 <input type="hidden" data-song=<?=CJSON::encode($post->head)?>
-                       class="music-input"/>
+                    class="music-input"/>
                 <br><br>
                 <?php break;
         case 'video':
@@ -97,8 +100,11 @@
         </div>
         <div class="feed-op">
             <div class="feed-time">发表于<?=$post->time?></div>
+            <div class="feed-action">
+                <a href="javascript:;">回应(<?=$post->commentCount()?>)</a>
+                <a href="javascript:;">热度(<?=$post->hotCount()?>)</a>
+            </div>
         </div>
-
     </div>
 
 </div>
