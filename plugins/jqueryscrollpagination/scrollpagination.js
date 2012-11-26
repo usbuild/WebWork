@@ -39,11 +39,11 @@
         var target = opts.scrollTarget;
         var mayLoadContent = $(target).scrollTop() + opts.heightOffset >= $(document).height() - $(target).height();
         if (mayLoadContent) {
-
-            if ($.fn.scrollPagination.contents.indexOf(opts.contentData()['id']) >= 0) {
+            console.dir(opts.contentData());
+            if ($.fn.scrollPagination.contents.indexOf(opts.contentData()['start']) >= 0) {
                 return;
             } else {
-                $.fn.scrollPagination.contents.push(opts.contentData()['id']);
+                $.fn.scrollPagination.contents.push(opts.contentData()['start']);
             }
 
 

@@ -8,6 +8,7 @@
     <?php else: ?>
     <a href="javascript:;" class="follow btn">关注</a>
     <?php endif;?>
+    <a href="<?=Yii::app()->homeUrl?>" class="back-home">回到主页</a>
 </div>
 <div class="clear"></div>
 

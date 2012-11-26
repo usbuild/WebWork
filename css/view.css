@@ -95,7 +95,7 @@ ul.pages {
     color: #222;
 }
 
-.feed-zone {
+.feed-zone, .content {
     width: 860px;
     margin: 10px auto;
     border: solid 1px #CCC;
@@ -117,7 +117,7 @@ ul.pages {
 
 .blog-info {
     width: 100px;
-    height: 140px;
+    height: 150px;
     position: fixed;
     right: 10px;
     padding: 10px 15px;
@@ -161,8 +161,9 @@ ul.pages {
 }
 
 .content {
-    width: 960px;
+    width: 860px;
     margin: 20px auto;
+    padding: 20px;
 }
 
 .content .feed-ct {
@@ -171,4 +172,16 @@ ul.pages {
 
 .content .feed-time {
     font-size: small;
+}
+
+.content .feed-op {
+    margin-top: 20px;
+}
+
+.back-home {
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }

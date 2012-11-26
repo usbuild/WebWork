@@ -1516,3 +1516,21 @@ Stack trace:
 REQUEST_URI=/blog/view/%E7%BE%8E%E5%A5%B3%E7%83%AD%E5%9B%BE
 HTTP_REFERER=http://localhost/blog/site/follow
 ---
+2012/11/26 12:14:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/11/26 12:14:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---

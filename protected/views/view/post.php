@@ -1,9 +1,14 @@
-<?php
-/**
- * User: usbuild
- * DateTime: 12-11-22  下午2:10
- */
-?>
+<input type="hidden" value="<?=$this->blog->id?>" id="blog_id">
+<div class="blog-info">
+    <div class="avatar"><img src="<?=Yii::app()->baseUrl . $this->blog->avatar?>" alt="头像"></div>
+    <div class="blog-name"><a href="<?=$this->createUrl('view/' . $this->blog->id)?>"><?=$this->blog->name?></a></div>
+    <a href="<?=$this->createUrl('writer/request/' . $this->blog->id)?>" class="request-post btn">投递</a>
+    <?php if ($this->blog->isFollow()): ?>
+    <a href="javascript:;" class="unfollow btn">取消</a>
+    <?php else: ?>
+    <a href="javascript:;" class="follow btn">关注</a>
+    <?php endif;?>
+</div>
 
 <div class="content">
     <div class="feed-hd no-content">

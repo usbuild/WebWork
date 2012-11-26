@@ -49,7 +49,7 @@ class ViewController extends CController
         if (empty($post)) {
             throw new CHttpException(404, $id);
         }
-        $blog = $post->blog;
+        $this->blog = $blog = $post->blog;
         $this->pageTitle = $blog->name;
         $this->render('post', array('post' => $post, 'comments' => $post->comments, 'blog' => $blog));
     }
