@@ -2,7 +2,8 @@
     <div class="menut"></div>
     <div class="menum">
         <ul>
-            <li class="first"><a href="<?=$this->createUrl('view/' . $blog->id)?>" class="mi"><span class="txt go-blog">访问博客</span></a>
+            <li class="first"><a href="<?=$this->createUrl('view/' . $blog->id)?>" class="mi" target="_blank"><span
+                class="txt go-blog">访问博客</span></a>
             </li>
             <li><a href="<?=$this->createUrl('blog/follows/' . $blog->id)?>" class="mi"><span
                 class="txt follow-blog"><?=$blog->followCount()?>

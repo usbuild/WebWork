@@ -10,7 +10,7 @@ return array(
     'name' => '轻博客',
 
     // preloading 'log' component
-    'preload' => array('log', 'bootstrap'),
+    'preload' => array('log'),
 
     // autoloading model and component classes
     'import' => array(
@@ -25,9 +25,6 @@ return array(
             'password' => 'pass',
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters' => array('127.0.0.1', '::1'),
-//            'generatorPaths'=>array(
-//                'bootstrap.gii',
-//            ),
         ),
     ),
 
@@ -80,15 +77,12 @@ return array(
                     */
             ),
         ),
-//        'bootstrap'=>array(
-//            'class'=>'ext.bootstrap.components.Bootstrap', // assuming you extracted bootstrap under extensions
-//        ),
     ),
     'language'=>'zh_cn',
     // application-level parameters that can be accessed
     // using Yii::app()->params['paramName']
     'params' => array(
         // this is used in contact page
-        'adminEmail' => 'webmaster@example.com',
+        'adminEmail' => 'i@lecoding.com',
     ),
 );

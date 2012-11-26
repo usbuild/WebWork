@@ -2,14 +2,128 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a703a8d-d239-4036-8db1-238188e42274" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/WriterController.php" afterPath="$PROJECT_DIR$/protected/controllers/WriterController.php" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\data\schema.mysql.sql" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\data\schema.sqlite.sql" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\data\testdrive.db" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\css\bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\css\bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\css\bootstrap-yii.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\img\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\assets\less\bootstrap-yii.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\components\Bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\BootstrapCode.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\BootstrapGenerator.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\templates\default\_form.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\templates\default\_search.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\templates\default\_view.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\templates\default\admin.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\templates\default\controller.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\templates\default\create.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\templates\default\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\templates\default\update.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\templates\default\view.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\gii\bootstrap\views\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\README.md" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-affix.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-alert.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-button.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-modal.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-popover.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-tab.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-transition.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\js\bootstrap-typeahead.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\accordion.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\close.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\code.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\forms.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\grid.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\hero-unit.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\labels-badges.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\layouts.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\modals.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\navs.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\pager.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\reset.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\responsive-1200px-min.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\responsive-767px-max.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\responsive-768px-979px.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\responsive-navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\responsive.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\sprites.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\tables.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\type.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\lib\bootstrap\less\wells.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbActiveForm.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbAlert.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbBadge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbBaseMenu.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbBreadcrumbs.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbButton.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbButtonColumn.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbButtonGroup.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbCarousel.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbCollapse.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbDataColumn.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbDetailView.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbDropdown.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbGridView.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbHeroUnit.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbLabel.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbListView.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbMenu.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbModal.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbNavbar.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbPager.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbProgress.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbScrollSpy.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbTabs.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbThumbnails.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\TbTypeahead.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\input\TbInput.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\input\TbInputInline.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\input\TbInputSearch.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\www\blog\protected\extensions\bootstrap\widgets\input\TbInputVertical.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/all.php" afterPath="$PROJECT_DIR$/protected/views/blog/all.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/post/getposts.php" afterPath="$PROJECT_DIR$/protected/views/post/getposts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/post/repost.php" afterPath="$PROJECT_DIR$/protected/views/post/repost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/index.php" afterPath="$PROJECT_DIR$/protected/views/view/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/post.php" afterPath="$PROJECT_DIR$/protected/views/view/post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/preview.php" afterPath="$PROJECT_DIR$/protected/views/view/preview.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/sidebar.php" afterPath="$PROJECT_DIR$/protected/views/blog/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/discover.php" afterPath="$PROJECT_DIR$/protected/views/site/discover.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/follow.php" afterPath="$PROJECT_DIR$/protected/views/site/follow.php" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,96 +146,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BlogController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/BlogController.php">
+      <file leaf-file-name="sidebar.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/blog/sidebar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="198" column="72" selection-start="8023" selection-end="8023" vertical-scroll-proportion="-8.68">
-              <folding>
-                <marker date="1353759898089" expanded="true" signature="10376:10757" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="request.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/blog/request.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="63" selection-start="761" selection-end="761" vertical-scroll-proportion="-8.32">
+            <state line="4" column="108" selection-start="196" selection-end="196" vertical-scroll-proportion="-2.56">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/ViewController.php">
+      <file leaf-file-name="discover.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/discover.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="37" selection-start="1949" selection-end="1949" vertical-scroll-proportion="-20.08">
+            <state line="8" column="59" selection-start="455" selection-end="455" vertical-scroll-proportion="-5.12">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/Request.php">
+      <file leaf-file-name="follow.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/follow.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="0" selection-start="2573" selection-end="2573" vertical-scroll-proportion="-7.28">
+            <state line="7" column="90" selection-start="392" selection-end="392" vertical-scroll-proportion="0.16138329">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/view/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="51" selection-start="2864" selection-end="2864" vertical-scroll-proportion="-5.72">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/view/post.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="47" selection-start="2005" selection-end="2005" vertical-scroll-proportion="-6.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/blog/all.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="86" selection-start="3358" selection-end="3358" vertical-scroll-proportion="-6.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getposts.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/post/getposts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="86" selection-start="3682" selection-end="3682" vertical-scroll-proportion="-6.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="repost.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/post/repost.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="47" selection-start="1581" selection-end="1581" vertical-scroll-proportion="-6.04">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preview.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/views/view/preview.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="37" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.33255813">
-              <folding>
-                <element signature="e#6#60#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -150,9 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/site/writerposts.php" />
-        <option value="$PROJECT_DIR$/js/writer/index.js" />
-        <option value="$PROJECT_DIR$/protected/controllers/PostController.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/protected/controllers/BlogController.php" />
         <option value="$PROJECT_DIR$/js/blog/main.js" />
@@ -166,6 +210,9 @@
         <option value="$PROJECT_DIR$/protected/views/post/repost.php" />
         <option value="$PROJECT_DIR$/protected/views/view/index.php" />
         <option value="$PROJECT_DIR$/protected/views/view/post.php" />
+        <option value="$PROJECT_DIR$/protected/views/blog/sidebar.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/discover.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/follow.php" />
       </list>
     </option>
   </component>
@@ -233,16 +280,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -553,15 +590,25 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="fileTemplates" />
     <property name="recentsLimit" value="5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -602,6 +649,13 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method>
         <option name="FtpUpload" enabled="false">
@@ -610,13 +664,6 @@
         </option>
         <option name="PhingTarget" enabled="false" />
       </method>
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method />
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="PHP Script.Uploader.php" />
@@ -657,10 +704,9 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3261745" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17144907" sideWeight="0.6738255" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17360115" sideWeight="0.6738255" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3986577" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261745" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -670,6 +716,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3261745" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
@@ -732,119 +779,115 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1483" column="23" selection-start="27108" selection-end="27108" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/blog/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="47" selection-start="3069" selection-end="3069" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/blog/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/json.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="9" selection-start="1783" selection-end="1783" vertical-scroll-proportion="0.35264483">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="27" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="27" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/WriterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="61" selection-start="3541" selection-end="3541" vertical-scroll-proportion="-22.0">
-          <folding />
-        </state>
+        <state line="61" column="61" selection-start="3541" selection-end="3541" vertical-scroll-proportion="-22.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/BlogController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="72" selection-start="8023" selection-end="8023" vertical-scroll-proportion="-8.68">
+        <state line="198" column="72" selection-start="8023" selection-end="8023" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1353759898089" expanded="true" signature="10376:10757" placeholder="..." />
+            <marker date="1353759898089" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Request.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/blog/request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="0" selection-start="2573" selection-end="2573" vertical-scroll-proportion="-7.28">
+        <state line="13" column="63" selection-start="761" selection-end="761" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ViewController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="37" selection-start="1949" selection-end="1949" vertical-scroll-proportion="-20.08">
+        <state line="58" column="37" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/blog/request.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Request.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="63" selection-start="761" selection-end="761" vertical-scroll-proportion="-8.32">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/blog/all.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="86" selection-start="3358" selection-end="3358" vertical-scroll-proportion="-6.04">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/post/getposts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="86" selection-start="3682" selection-end="3682" vertical-scroll-proportion="-6.04">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/post/repost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="47" selection-start="1581" selection-end="1581" vertical-scroll-proportion="-6.04">
+        <state line="89" column="0" selection-start="2573" selection-end="2573" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/view/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="51" selection-start="2864" selection-end="2864" vertical-scroll-proportion="-5.72">
+        <state line="77" column="51" selection-start="2864" selection-end="2864" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/view/post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="47" selection-start="2005" selection-end="2005" vertical-scroll-proportion="-6.04">
+        <state line="66" column="47" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/blog/all.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="86" selection-start="3358" selection-end="3358" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/post/getposts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="86" selection-start="3682" selection-end="3682" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/post/repost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="47" selection-start="1581" selection-end="1581" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/view/preview.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="37" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.33255813">
+        <state line="40" column="37" selection-start="1193" selection-end="1193" vertical-scroll-proportion="-22.8">
           <folding>
             <element signature="e#6#60#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/blog/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="108" selection-start="196" selection-end="196" vertical-scroll-proportion="-2.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/discover.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="59" selection-start="455" selection-end="455" vertical-scroll-proportion="-5.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/follow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="90" selection-start="392" selection-end="392" vertical-scroll-proportion="0.16138329">
+          <folding />
         </state>
       </provider>
     </entry>
