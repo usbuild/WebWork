@@ -1599,3 +1599,30 @@ REQUEST_URI=/blog/post/getVideoInfo
 in D:\www\blog\protected\components\VideoHelper.php (39)
 in D:\www\blog\protected\components\VideoHelper.php (99)
 in D:\www\blog\protected\controllers\PostController.php (200)
+2012/12/02 10:05:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Penguins (4).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Penguins%20%284%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/12/02 10:05:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2012/12/02 10:05:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121110/Koala (2).jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121110...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121110/Koala%20%282%29.jpg
+HTTP_REFERER=http://localhost/blog/
+---

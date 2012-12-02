@@ -39,7 +39,6 @@
         var target = opts.scrollTarget;
         var mayLoadContent = $(target).scrollTop() + opts.heightOffset >= $(document).height() - $(target).height();
         if (mayLoadContent) {
-            console.dir(opts.contentData());
             if ($.fn.scrollPagination.contents.indexOf(opts.contentData()['start']) >= 0) {
                 return;
             } else {

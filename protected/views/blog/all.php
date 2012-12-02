@@ -103,7 +103,7 @@
 
                 <div class="feed-tag clearfix">
                     <?php foreach ($post->tag as $tag): ?>
-                    <a href="#" class=" ">#<?=$tag?></a>
+                    <a href="<?=$this->createUrl('site/tagposts', array('tag' => $tag))?>" class=" ">#<?=$tag?></a>
                     <?php endforeach;?>
                     <?php if (count($post->tag) == 0) echo "没有标签";?>
                 </div>

@@ -339,7 +339,7 @@ class PostController extends Controller
         $start = $_REQUEST['start'];
         $tag = $_REQUEST['tag'];
         $criteria = new CDbCriteria();
-        $criteria->addSearchCondition('tag', $tag, true);
+        $criteria->addSearchCondition('tag', CJSON::encode($tag), true);
         $criteria->order = 'time DESC';
         $criteria->offset = $start;
         $criteria->limit = 10;

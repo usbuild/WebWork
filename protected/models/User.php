@@ -128,7 +128,7 @@ class User extends CActiveRecord
         if (isset($blogs))
             $criteria->compare('blog_id', $blogs, false, 'OR');
         foreach ($tags as $tag) {
-            $criteria->addSearchCondition('tag', $tag, true, 'OR');
+            $criteria->addSearchCondition('tag', CJSON::encode($tag), true, 'OR');
         }
         $criteria->compare('isdel', 0);
         if (!empty($tags) || isset($blogs)) {
