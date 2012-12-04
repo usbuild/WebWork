@@ -14,6 +14,11 @@ $(function () {
         $.each(tag, function (i, t) {
             $('#tags').addTag(t);
         });
+    } else {
+        var tag = json_decode(json_decode($('[data-repost]').attr('data-repost')).tag);
+        $.each(tag, function (i, t) {
+            $('#tags').addTag(t);
+        });
     }
 
     $('.music-input').each(function (i, item) {
@@ -30,7 +35,7 @@ $(function () {
         var post_data = {'Post[content]':content, 'Post[blog_id]':blog_id, 'Post[tag]':tags};
 
 
-        if(data_post !== null) {
+        if (data_post !== null) {
             post_data['Post[id]'] = data_post.id;
         }
 

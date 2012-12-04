@@ -20,12 +20,11 @@ $(function () {
     var blog = json_decode($('[data-blog]').attr('data-blog'));
     var is_request = $('#is_request').val();
     var post_url;
-    if (is_request) {
+    if (is_request == 1) {
         post_url = baseUrl + 'writer/request/' + blog.id;
     } else {
         post_url = baseUrl + 'post';
     }
-
     var prepareText = function () {
         var activeArea = $('#current_type #post_text');
         var $$ = function (x) {
@@ -88,7 +87,7 @@ $(function () {
             $$('#title').val(data.song_name);
             var img = $('<img/>');
             img.attr('src', data.album_logo).css('float', 'left');
-            var em = '<embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>';
+            var em = '<embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="300" height="40" wmode="transparent"></embed>';
             var xiami_container = $('<div></div>');
             xiami_container.addClass('xiami-container').data('id', data);
             if ($.browser.webkit) {

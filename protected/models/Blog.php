@@ -115,8 +115,8 @@ class Blog extends CActiveRecord
     public function  getHotBlog($start)
     {
         $criteria = new CDbCriteria();
-        $limit = 20;
-        $criteria->join = 'JOIN (select *, count(*) as sum from post group by post.blog_id order by sum desc limit ' . $start . ',' . ($start + $limit) . ') s ON t.id=s.blog_id';
+        $criteria->limit = 20;
+        $criteria->offset = $start;
         return Blog::model()->findAll($criteria);
     }
 

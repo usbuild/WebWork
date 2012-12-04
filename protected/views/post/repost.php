@@ -24,21 +24,22 @@ if ($repost->type == 'repost') {
                 <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title"
                        value="<?=$repost->head?>" readonly="true" disabled="disabled">
                 <?php break;
-            case 'link':?>
+        case 'link':
+            ?>
                 <h3 class="w-ttl"><em>标题</em>
                 </h3>
-                    <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title"
-                           value="<?=$repost->head['title']?>" readonly="true" disabled="disabled">
-<br><br>
-                        <h3 class="w-ttl"><em>链接</em>
-                        </h3>
-                    <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title"
-                           value="<?=$repost->head['link']?>" readonly="true" disabled="disabled">
+                <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title"
+                       value="<?=$repost->head['title']?>" readonly="true" disabled="disabled">
+                <br><br>
+                <h3 class="w-ttl"><em>链接</em>
+                </h3>
+                <input maxlength="50" class="w-inputxt w-inputxt-1 ztag jq-text" type="text" id="title"
+                       value="<?=$repost->head['link']?>" readonly="true" disabled="disabled">
                 <?php break;
         case 'music':
             ?>
                 <input type="hidden" data-song=<?=CJSON::encode($repost->head)?>
-                       class="music-input"/>
+                    class="music-input"/>
                 <?php break;
         case 'video':
             ?>
@@ -60,7 +61,7 @@ if ($repost->type == 'repost') {
     <div class="g-box2">
         <h3 class="w-ttl"><em>内容</em></h3>
         <textarea id="myEditor"><?php if (isset($post)):echo $post->content ?><?php else: ?><br>
-            来自：<?= CHtml::link($repost->blog->name, array('blog/view')) ?><br>
+            来自：<?= CHtml::link($repost->blog->name, array('view/' . $repost->blog->id)) ?><br>
             <blockquote><?=$repost->content?></blockquote><?php endif;?>
         </textarea>
     </div>

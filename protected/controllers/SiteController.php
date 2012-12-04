@@ -13,7 +13,8 @@ class SiteController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/backbone-min.js', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/autosize/jquery.autosize-min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/site/index.js', CClientScript::POS_END);
-        $this->sidebar = $this->renderPartial('sidebar', array(), true);
+        if (!Yii::app()->user->isGuest)
+            $this->sidebar = $this->renderPartial('sidebar', array(), true);
     }
 
     /**
@@ -88,6 +89,7 @@ class SiteController extends Controller
         $user = Yii::app()->user->model;
         $this->render('tagposts', array('myblog' => $user->myblog, 'tag' => $tag));
     }
+
     public function actionWriterPosts($id)
     {
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqueryscrollpagination/scrollpagination.js', CClientScript::POS_END);

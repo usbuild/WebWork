@@ -16,7 +16,7 @@ var renderMusic = function (input) {
     img.attr('src', big_log)
         .attr('width', 164)
         .css('float', 'left');
-    var em = '<embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>';
+    var em = '<embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="300" height="40" wmode="transparent"></embed>';
 
     var xiami_container = $('<div></div>');
     xiami_container.addClass('xiami-container');

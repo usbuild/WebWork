@@ -17,7 +17,7 @@ $(function () {
         $('#title').val(data.song_name);
         var img = $('<img/>');
         img.attr('src', data.album_logo).css('float', 'left');
-        var em = '<embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"></embed>';
+        var em = '<embed src="http://www.xiami.com/widget/0_' + data.song_id + '/singlePlayer.swf" type="application/x-shockwave-flash" width="300" height="40" wmode="transparent"></embed>';
         var xiami_container = $('<div></div>');
         xiami_container.addClass('xiami-container').data('id', data);
         if ($.browser.webkit) {
