@@ -3,8 +3,9 @@
 <div class="feed feed-<?=$post->type?>" data-id="<?=$post->id?>"<?php if ($post->repost_id): ?>
      data-parent-id="<?=$post->repost_id?>"<?php endif;?>>
     <div class="feed-avatar">
-        <a href="<?=$this->createUrl('blog/view/' . $blog->id)?>"
-           style="background-image: url('<?=Yii::app()->baseUrl . $blog->avatar?>')" class="blog-avatar">
+        <a href="<?=$this->createUrl('view/' . $blog->id)?>"
+           style="background-image: url('<?=Yii::app()->baseUrl . $blog->avatar?>')" class="blog-avatar"
+           target="_blank">
         </a>
     </div>
     <div class="feed-content-holder pop">
@@ -22,9 +23,10 @@
                     <?php $data = array();?>
                     <?php if ($post->type == 'repost'): ?>
                     转载自 <a
-                        href="<?=$this->createUrl('view/' . $post->repost->blog->id)?>"><?= $post->repost->blog->name ?></a>
+                            href="<?=$this->createUrl('view/' . $post->repost->blog->id)?>"
+                            target="_blank"><?= $post->repost->blog->name ?></a>
                     <?php else: ?>
-                    <a href="<?=$this->createUrl('view/' . $blog->id)?>"><?= $blog->name ?></a>
+                    <a href="<?=$this->createUrl('view/' . $blog->id)?>" target="_blank"><?= $blog->name ?></a>
                     <?php endif;?>
                 </div>
             </div>
@@ -50,50 +52,50 @@
                 <?php switch ($post->type) {
                 case 'text':
                     ?>
-                        <h4 class="feed-title"><?=$post->head?></h4>
-                        <?php break;
+                    <h4 class="feed-title"><?=$post->head?></h4>
+                    <?php break;
                 case 'link':
                     ?>
-                        <h4 class="feed-title"><?=$post->head['title']?></h4>
-                        <div class="feed-link-main">
-                            <a href="<?=$post->head['link']?>"><?=$post->head['link']?></a>
-                        </div>
-                        <?php break;
+                    <h4 class="feed-title"><?=$post->head['title']?></h4>
+                    <div class="feed-link-main">
+                        <a href="<?=$post->head['link']?>"><?=$post->head['link']?></a>
+                    </div>
+                    <?php break;
                 case 'image':
                     $i = 2; //maxshow
                     ?>
-                        <div class="feed-image">
-                            <?php foreach ($post->head as $img): ?>
-                            <?php $i--;
-                            if ($i < 0) break;?>
-                            <div class="feed-image-item">
-                                <p>
-                                    <?php
-                                    echo '<img src="' . $img['url'] . '" alt="' . $img['desc'] . '" width="500px" />'
-                                    ?>
-                                </p>
-                            </div>
-                            <?php endforeach;?>
-                            <span style="color: #ccc; font-size: small;">共有(<?=count($post->head)?>)张</span><br><br>
+                    <div class="feed-image">
+                        <?php foreach ($post->head as $img): ?>
+                        <?php $i--;
+                        if ($i < 0) break;?>
+                        <div class="feed-image-item">
+                            <p>
+                                <?php
+                                echo '<img src="' . $img['url'] . '" alt="' . $img['desc'] . '" width="500px" />'
+                                ?>
+                            </p>
                         </div>
+                        <?php endforeach;?>
+                        <span style="color: #ccc; font-size: small;">共有(<?=count($post->head)?>)张</span><br><br>
+                    </div>
 
-                        <?php break;
+                    <?php break;
                 case 'music':
                     ?>
                         <input type="hidden" data-song=<?=CJSON::encode($post->head)?>
-                               class="music-input"/>
+                                class="music-input"/>
                         <br><br>
                         <?php break;
                 case 'video':
                     ?>
-                        <embed
+                    <embed
                             src="<?=$post->head['flashUrl']?>"
                             allowFullScreen="true" quality="high" width="480" height="400" align="middle"
                             allowScriptAccess="always"
                             type="application/x-shockwave-flash"></embed>
-                        <br><br>
+                    <br><br>
 
-                        <?php break;
+                    <?php break;
                 default:
                     break; ?>
 
@@ -103,7 +105,7 @@
                 <div class="feed-ct">
                     <div class="feed-txt-full rich-content">
                         <div
-                            class="feed-txt-summary"><?=mb_strimwidth(strip_tags($post->content), 0, 200, "...");?></div>
+                                class="feed-txt-summary"><?=mb_strimwidth(strip_tags($post->content), 0, 200, "...");?></div>
                     </div>
                 </div>
 
@@ -123,10 +125,10 @@
                        class="feed-edit">编辑</a>
 
                     <a class="feed-cmt" href="javascript:;">回应(<span
-                        class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
+                            class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
 
                     <a href="javascript:;" class="feed-nt">热度(<span
-                        class="cmt-hot-count"><?=$data['hot_count']?></span>)</a>
+                            class="cmt-hot-count"><?=$data['hot_count']?></span>)</a>
 
                     <a class="feed-fav <?php if ($post->like()) echo 'feed-faved';?>" href="javascript:;"
                        title="喜欢" style="display: none;">喜欢</a>
@@ -140,10 +142,10 @@
                        href="<?=$this->createUrl('post/repost/' . $post->id)?>">转载</a>
 
                     <a class="feed-cmt" href="javascript:;">回应(<span
-                        class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
+                            class="cmt-reply-count"><?=$post->commentCount()?></span>)</a>
 
                     <a href="javascript:;" class="feed-nt">热度(<span
-                        class="cmt-hot-count"><?=$data['hot_count']?></span>)</a>
+                            class="cmt-hot-count"><?=$data['hot_count']?></span>)</a>
 
                     <?php endif;?>
 

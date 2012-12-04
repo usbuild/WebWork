@@ -16,7 +16,7 @@
                     <?php $data = array();?>
                     <?php if ($post->type == 'repost'): ?>
                     转载自 <a
-                        href="<?=$this->createUrl('view/' . $post->repost->blog->id)?>"><?= $post->repost->blog->name ?></a>
+                        href="<?=$this->createUrl('view/' . $post->repost->blog->id)?>" target="_blank"><?= $post->repost->blog->name ?></a>
                     <?php else: ?>
                     <?= $blog->name ?>
                     <?php endif;?>

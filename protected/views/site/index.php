@@ -1,8 +1,8 @@
 <input type="hidden" value="home_nav_url" id="blog_id_input">
 <div id="publisher" class="publisher clearfix">
     <div class="pb-avatar">
-        <a class="blog-avatar" href="#"
-           style="background-image:url(<?=Yii::app()->baseurl . $myblog->avatar?>)">师乐园</a>
+        <a class="blog-avatar" href="<?=$this->createUrl('setting/blog/' . $myblog->id) ?>"
+           style="background-image:url(<?=Yii::app()->baseurl . $myblog->avatar?>)" title="博客设置">师乐园</a>
     </div>
     <div class="pb-action-holder">
         <div class="pb-triangle"></div>
