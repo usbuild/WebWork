@@ -95,11 +95,10 @@ a:hover {
 }
 
 .link-holder li a {
-    line-height: 62px;;
+    line-height: 62px;
     font-size: 18px;
-    color: #6F889A;
-    text-shadow: 1px 1px 2px #0B2C45;
-    /*height: 62px;*/
+    color: #727272;
+    text-shadow: 1px 1px 2px black;
     display: block;
 }
 
@@ -142,7 +141,7 @@ a:hover {
 
 #logo_holder {
     display: block;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 #logo_holder h1 {
@@ -413,12 +412,17 @@ a.blog-avatar:active {
     width: 100px;
     height: 74px;
     background: url('../images/publisher.png') no-repeat 0 0;
+
+
+    transition: background-position 0.2s;
+    -moz-transition: background-position 0.2s;
+    -webkit-transition: background-position 0.2s;
     text-indent: -9999px;
     outline: none;
 }
 
 .publisher .pb-action .text:hover {
-    background-position: 0 -74px;
+    background-position: 0 -5px;
 }
 
 .publisher .pb-action .photo {
@@ -426,7 +430,7 @@ a.blog-avatar:active {
 }
 
 .publisher .pb-action .photo:hover {
-    background-position: -100px -74px;
+    background-position: -100px -5px;
 }
 
 .publisher .pb-action .music {
@@ -434,7 +438,7 @@ a.blog-avatar:active {
 }
 
 .publisher .pb-action .music:hover {
-    background-position: -200px -74px;
+    background-position: -200px -5px;
 }
 
 .publisher .pb-action .video {
@@ -442,7 +446,7 @@ a.blog-avatar:active {
 }
 
 .publisher .pb-action .video:hover {
-    background-position: -300px -74px;
+    background-position: -300px -5px;
 }
 
 .publisher .pb-action .link {
@@ -450,7 +454,7 @@ a.blog-avatar:active {
 }
 
 .publisher .pb-action .link:hover {
-    background-position: -400px -74px;
+    background-position: -400px -5px;
 }
 
 .pb-action-shadow-bottom {
