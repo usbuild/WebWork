@@ -22,7 +22,7 @@
     <div class="menut"></div>
     <div class="menum">
         <ul>
-            <li style="border-bottom: solid 1px #CCC;"><input type="text" id="add_new_tag" class="tag-text-input"/></li>
+            <li style="border-bottom: solid 1px #CCC;"><input type="text" id="add_new_tag" class="tag-text-input" title="添加标签"/></li>
             <?php foreach (Yii::app()->user->model->follow_tags as $tag): ?>
 
             <li class="tag-item"><a href="<?=$this->createUrl('site/tagposts', array('tag' => $tag->tag))?>" class="mi"><span
