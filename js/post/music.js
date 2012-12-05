@@ -147,11 +147,11 @@ $(function () {
                 if (obj.code == 0) {
                     window.location.href = baseUrl;
                 } else {
-                    alert('发表失败');
+                    apprise('发表失败');
                 }
             }, 'json');
         } else {
-            alert('请选择歌曲');
+            apprise('请选择歌曲');
         }
     });
 });

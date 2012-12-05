@@ -209,7 +209,7 @@ $(document).ready(function () {
                     incHot($(feed));
                 });
             } else {
-                alert('发表失败');
+                apprise('发表失败');
             }
         }, 'json');
     });
@@ -313,7 +313,7 @@ $(document).ready(function () {
                     decHot($(feed));
                 });
             } else {
-                alert('删除失败');
+                apprise('删除失败');
             }
         }, 'json');
     });
@@ -337,17 +337,19 @@ $(document).ready(function () {
 
     $('.feed-delete').live('click', function (e) {
         var feed = $(this).parents('.feed');
-        if (confirm('您确定要删除?')) {
-            $.post(baseUrl + 'post/delete/' + feed.attr('data-id'), function (e) {
-                if (e.code == 0) {
-                    feed.animate({height:0}, function () {
-                        feed.remove();
-                    });
-                } else {
-                    alert('删除失败');
-                }
-            }, 'json');
-        }
+        apprise("您确定要删除?", {confirm:true}, function (e) {
+            if (e) {
+                $.post(baseUrl + 'post/delete/' + feed.attr('data-id'), function (e) {
+                    if (e.code == 0) {
+                        feed.animate({height:0}, function () {
+                            feed.remove();
+                        });
+                    } else {
+                        apprise('删除失败');
+                    }
+                }, 'json');
+            }
+        });
     });
 
 

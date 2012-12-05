@@ -43,7 +43,7 @@ $(function () {
             if (e.code == 0) {
                 window.location.href = baseUrl;
             } else {
-                alert('发布失败');
+                apprise('发布失败');
             }
         }, 'json');
 

@@ -33,7 +33,7 @@ $(function () {
                     item.animate({height:'toggle'}, 200);
                     new_tag.val('');
                 } else {
-                    alert('添加失败');
+                    apprise('添加失败');
                 }
             }, 'json');
         }
@@ -63,7 +63,7 @@ $(function () {
             if (e.code == 0) {
                 li.remove();
             } else {
-                alert('删除失败');
+                apprise('删除失败');
             }
         }, 'json');
         return false;

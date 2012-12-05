@@ -52,7 +52,7 @@ $(function () {
     $('#img_ok').click(function () {
             var selection = selectImg.getSelection();
             if (selection.width == 0) {
-                alert('请先选择区域');
+                apprise('请先选择区域');
                 return;
             }
             var form = $('#img_form').get(0);
@@ -74,7 +74,7 @@ $(function () {
                         $('.upload-img-box').hide();
                         selectImg.cancelSelection();
                     } else {
-                        alert('上传失败');
+                        apprise('上传失败');
                     }
                 }
             };
@@ -94,10 +94,10 @@ $(function () {
         $.post(baseUrl + 'setting/blog/' + id, {'avatar':avatar, 'name':name, 'domain':domain}, function (e) {
             var obj = json_decode(e);
             if (obj.code == 0) {
-                alert('更新成功');
+                apprise('更新成功');
                 window.location.href = baseUrl + '/setting';
             } else {
-                alert('更新失败');
+                apprise('更新失败');
             }
         });
     });

@@ -43,7 +43,7 @@ $(function () {
                 if (obj.code == 0) {
                     window.location.href = baseUrl;
                 } else {
-                    alert('发表失败');
+                    apprise('发表失败');
                 }
             }, 'json');
         });
@@ -74,11 +74,11 @@ $(function () {
                     if (obj.code == 0) {
                         window.location.href = baseUrl;
                     } else {
-                        alert('发表失败');
+                        apprise('发表失败');
                     }
                 }, 'json');
             } else {
-                alert('请选择歌曲');
+                apprise('请选择歌曲');
             }
         });
         var setMusic = function (data) {
@@ -204,7 +204,7 @@ $(function () {
                 if (obj.code == 0) {
                     window.location.href = baseUrl;
                 } else {
-                    alert('发表失败');
+                    apprise('发表失败');
                 }
             }, 'json');
         });
@@ -296,7 +296,7 @@ $(function () {
             },
             dropZone:dropElement,
             fail:function (e, data) {
-                alert('上传文件失败');
+                apprise('上传文件失败');
             }
         });
         $$('#upload_btn').click(function () {
@@ -315,7 +315,7 @@ $(function () {
             var blog_id = blog.id;
             var tags = $('#tags').val();
             if (!valid) {
-                alert('请输入有效的视频地址');
+                apprise('请输入有效的视频地址');
                 return;
             }
             var post_data = {'title':$$('#video_info').val(), 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'video', 'write':1};
@@ -323,7 +323,7 @@ $(function () {
                 if (obj.code == 0) {
                     window.location.href = baseUrl;
                 } else {
-                    alert('发表失败');
+                    apprise('发表失败');
                 }
             }, 'json');
 
@@ -380,7 +380,7 @@ $(function () {
             var blog_id = blog.id;
             var tags = $('#tags').val();
             if ($$('#link').val().trim().length == 0) {
-                alert('链接不能为空');
+                apprise('链接不能为空');
                 return;
             }
             var title = {'title':$$('#title').val(), 'link':$$('#link').val()};
@@ -390,7 +390,7 @@ $(function () {
                 if (obj.code == 0) {
                     window.location.href = baseUrl;
                 } else {
-                    $.noty({text:'发表失败'});
+                    apprise('发表失败');
                 }
             }, 'json');
         });

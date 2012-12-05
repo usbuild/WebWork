@@ -98,7 +98,7 @@ $(document).ready(function () {
         },
         dropZone:dropElement,
         fail:function (e, data) {
-            alert('上传文件失败');
+            apprise('上传文件失败');
         }
     });
     $('#upload_btn').click(function () {
@@ -121,7 +121,7 @@ $(document).ready(function () {
             if (obj.code == 0) {
                 window.location.href = baseUrl;
             } else {
-                alert('发表失败');
+                apprise('发表失败');
             }
         }, 'json');
     });

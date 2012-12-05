@@ -46,6 +46,7 @@ var renderMusic = function (input) {
     input.remove();
 };
 $(function () {
+
     if ($('#blog_id_input').length > 0) {
         if (isNaN(parseInt($('#blog_id_input').val())))
             setActive($('#blog_id_input').val());

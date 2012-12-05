@@ -22,7 +22,7 @@ $(document).ready(function () {
         var blog_id = $('#blog_id').val();
         var tags = $('#tags').val();
         if ($('#link').val().trim().length == 0) {
-            alert('链接不能为空');
+            apprise('链接不能为空');
             return;
         }
         var title = {'title':$('#title').val(), 'link':$('#link').val()};
@@ -36,7 +36,7 @@ $(document).ready(function () {
             if (obj.code == 0) {
                 window.location.href = baseUrl;
             } else {
-                $.noty({text:'发表失败'});
+                apprise('发表失败');
             }
         }, 'json');
     });

@@ -11,9 +11,8 @@ class Controller extends CController
         Yii::app()->clientScript->registerCoreScript('jquery', CClientScript::POS_HEAD);
 
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/global.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/noty/jquery.noty.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/noty/layouts/top.js', CClientScript::POS_END);
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/noty/themes/default.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/apprise/apprise-1.5.full.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/plugins/apprise/apprise.css');
         parent::init();
     }
 

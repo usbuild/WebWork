@@ -50,7 +50,7 @@ $(function () {
                 $('.writer-list').prepend(li);
                 li.fadeIn(200);
             } else {
-                alert('添加失败');
+                apprise('添加失败');
             }
         }, 'json');
     });
@@ -64,7 +64,7 @@ $(function () {
                     info.remove();
                 });
             } else {
-                alert('删除失败');
+                apprise('删除失败');
             }
         }, 'json');
     });
@@ -74,7 +74,7 @@ $(function () {
             if (e.code == 0) {
                 item.remove();
             } else {
-                alert('删除失败');
+                apprise('删除失败');
             }
         }, 'json');
     });
@@ -85,7 +85,7 @@ $(function () {
                 item.remove();
                 window.location.href = baseUrl;
             } else {
-                alert('操作失败');
+                apprise('操作失败');
             }
         }, 'json');
     });

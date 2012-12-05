@@ -32,7 +32,7 @@ $(document).ready(function () {
             if (obj.code == 0) {
                 window.location.href = baseUrl;
             } else {
-                alert('发表失败');
+                apprise('发表失败');
             }
         }, 'json');
     });

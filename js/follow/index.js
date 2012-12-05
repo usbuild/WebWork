@@ -12,7 +12,7 @@ $(document).ready(function () {
             if (obj.code == 0) {
                 window.location.reload();
             } else {
-                alert("操作失败");
+                apprise("操作失败");
             }
         });
     });
@@ -22,7 +22,7 @@ $(document).ready(function () {
             if (obj.code == 0) {
                 window.location.reload();
             } else {
-                alert("操作失败");
+                apprise("操作失败");
             }
         });
     });

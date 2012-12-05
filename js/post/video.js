@@ -74,7 +74,7 @@ $(function () {
         var blog_id = $('#blog_id').val();
         var tags = $('#tags').val();
         if (!valid) {
-            alert('请输入有效的视频地址');
+            apprise('请输入有效的视频地址');
             return;
         }
         var post_data = {'title':$('#video_info').val(), 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'video'};
@@ -85,7 +85,7 @@ $(function () {
             if (obj.code == 0) {
                 window.location.href = baseUrl;
             } else {
-                alert('发表失败');
+                apprise('发表失败');
             }
         }, 'json');
     });
