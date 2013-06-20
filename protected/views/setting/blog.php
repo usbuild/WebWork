@@ -20,7 +20,7 @@
                     <input type="file" name="file" id="file"/>
                 </form>
             </div>
-            <div class="upload-img-box">
+            <div class="upload-img-box" style="display: none;">
                 <img src="" alt="" id="upload_img"/>
 
                 <div>

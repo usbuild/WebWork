@@ -4,22 +4,22 @@ $(document).ready(function () {
     $.fn.fadeInWithDelay = function () {
         var delay = 0;
         return this.each(function () {
-            $(this).delay(delay).animate({opacity:1}, 200);
+            $(this).delay(delay).animate({opacity: 1}, 200);
             delay += 100;
         });
     };
 
     $('#feed_zone').scrollPagination({
-        'contentPage':baseUrl + $('#fetch_url').val(),
-        'contentData':function () {
-            return {'start':loaded};
+        'contentPage': baseUrl + $('#fetch_url').val(),
+        'contentData': function () {
+            return {'start': loaded};
         },
-        'scrollTarget':$(window),
-        'heightOffset':50,
-        'beforeLoad':function () {
+        'scrollTarget': $(window),
+        'heightOffset': 50,
+        'beforeLoad': function () {
             $('#loading_more').fadeIn();
         },
-        'afterLoad':function (elementsLoaded) {
+        'afterLoad': function (elementsLoaded) {
             loaded++;
             if (elementsLoaded.length < 10) {
                 $('#feed_zone').stopScrollPagination();
@@ -98,7 +98,7 @@ $(document).ready(function () {
 
         var feed = $(this).parents('.feed');
         if (feed.find('.notes').is(':visible')) {
-            feed.find('.feed-ft').animate({height:'toggle'}, 300);
+            feed.find('.feed-ft').animate({height: 'toggle'}, 300);
             setTimeout(function () {
                 feed.find('.notes').hide();
                 feed.find('.comment').show();
@@ -106,25 +106,25 @@ $(document).ready(function () {
         } else {
             feed.find('.notes').hide();
             feed.find('.comment').show();
-            feed.find('.feed-container-bottom').animate({height:'toggle'}, 300);
+            feed.find('.feed-container-bottom').animate({height: 'toggle'}, 300);
         }
 
 
         feed.find('.feed-ft-triangle').css('left', '410px');
-        feed.find('.feed-ft').animate({height:'toggle'}, 300);
+        feed.find('.feed-ft').animate({height: 'toggle'}, 300);
         feed.find('textarea.cmt-content').get(0).focus();
         var post_id = feed.attr('data-id');
         var start = 0;
 
         if (!feed.attr('data-cmt')) {
             feed.find('.cmt-load-more').html('正在加载...').css('disabled', 'disabled');
-            $.post(baseUrl + 'comment/fetch', {id:post_id, offset:start}, function (obj) {
+            $.post(baseUrl + 'comment/fetch', {id: post_id, offset: start}, function (obj) {
                 var cmt_list = feed.find('.cmt-list');
                 $.each(obj, function (i, item) {
                     var li = buildCmtList(item);
                     li.hide();
                     cmt_list.append(li);
-                    li.animate({height:'toggle'}, 100);
+                    li.animate({height: 'toggle'}, 100);
                 });
 
                 cmt_list.data('show-cmt', obj.length);
@@ -142,7 +142,7 @@ $(document).ready(function () {
     $('.feed-nt').live('click', function () {
         var feed = $(this).parents('.feed');
         if (feed.find('.comment').is(':visible')) {
-            feed.find('.feed-ft').animate({height:'toggle'}, 300);
+            feed.find('.feed-ft').animate({height: 'toggle'}, 300);
             setTimeout(function () {
                 feed.find('.notes').show();
                 feed.find('.comment').hide();
@@ -151,22 +151,22 @@ $(document).ready(function () {
         } else {
             feed.find('.notes').show();
             feed.find('.comment').hide();
-            feed.find('.feed-container-bottom').animate({height:'toggle'}, 300);
+            feed.find('.feed-container-bottom').animate({height: 'toggle'}, 300);
         }
-        feed.find('.feed-ft').animate({height:'toggle'}, 300);
+        feed.find('.feed-ft').animate({height: 'toggle'}, 300);
         feed.find('.feed-ft-triangle').css('left', '353px');
 
         var post_id = feed.attr('data-id');
         var start = 0;
         if (!feed.attr('data-nt')) {
             feed.find('.nt-load-more').html('正在加载...').css('disabled', 'disabled');
-            $.post(baseUrl + 'post/fetchHots', {id:post_id, offset:start}, function (obj) {
+            $.post(baseUrl + 'post/fetchHots', {id: post_id, offset: start}, function (obj) {
                 var nt_list = feed.find('.nt-list');
                 $.each(obj, function (i, item) {
                     var li = buildNtList(item);
                     li.hide();
                     nt_list.append(li);
-                    li.animate({height:'toggle'}, 100);
+                    li.animate({height: 'toggle'}, 100);
                 });
 
                 nt_list.data('show-nt', obj.length);
@@ -183,8 +183,8 @@ $(document).ready(function () {
 
     $('.slide-up').live('click', function () {
         var feed = $(this).parents('.feed');
-        feed.find('.feed-ft').animate({height:'toggle'}, 300);
-        feed.find('.feed-container-bottom').animate({height:'toggle'}, 300);
+        feed.find('.feed-ft').animate({height: 'toggle'}, 300);
+        feed.find('.feed-container-bottom').animate({height: 'toggle'}, 300);
     });
 
     $('.cmt-submit').live('click', function () {
@@ -192,9 +192,9 @@ $(document).ready(function () {
         var content = feed.find('.cmt-content');
         var post_data;
         if (content.data('reply') && content.val().indexOf(content.data('reply')) == 0) {
-            post_data = {'comment[post_id]':feed.attr('data-id'), 'comment[content]':content.val().substr(content.data('reply').length), 'comment[reply_id]':content.data('reply_id')};
+            post_data = {'comment[post_id]': feed.attr('data-id'), 'comment[content]': content.val().substr(content.data('reply').length), 'comment[reply_id]': content.data('reply_id')};
         } else {
-            post_data = {'comment[post_id]':feed.attr('data-id'), 'comment[content]':content.val()};
+            post_data = {'comment[post_id]': feed.attr('data-id'), 'comment[content]': content.val()};
         }
         $.post(baseUrl + 'comment/add', post_data, function (obj) {
             if (obj.code == 0) {
@@ -203,7 +203,7 @@ $(document).ready(function () {
                 var li = buildCmtList(obj.data);
                 li.hide();
                 feed.find('.cmt-list').prepend(li);
-                li.animate({height:'toggle'}, 300);
+                li.animate({height: 'toggle'}, 300);
                 incCmt(feed);
                 $('[data-parent-id=' + feed.attr('data-id') + ']').each(function (i, feed) {
                     incHot($(feed));
@@ -220,12 +220,12 @@ $(document).ready(function () {
         var start = cmt_list.data('show-cmt');
         var load_more = $(this);
         load_more.html('正在加载...').css('disabled', 'disabled');
-        $.post(baseUrl + 'comment/fetch', {id:feed.attr('data-id'), offset:start}, function (obj) {
+        $.post(baseUrl + 'comment/fetch', {id: feed.attr('data-id'), offset: start}, function (obj) {
             $.each(obj, function (i, item) {
                 var li = buildCmtList(item);
                 li.hide();
                 cmt_list.append(li);
-                li.animate({height:'toggle'}, 100);
+                li.animate({height: 'toggle'}, 100);
             });
 
             cmt_list.data('show-cmt', start + obj.length);
@@ -243,12 +243,12 @@ $(document).ready(function () {
         var start = nt_list.data('show-nt');
         var load_more = $(this);
         load_more.html('正在加载...').css('disabled', 'disabled');
-        $.post(baseUrl + 'post/fetchHots', {id:feed.attr('data-id'), offset:start}, function (obj) {
+        $.post(baseUrl + 'post/fetchHots', {id: feed.attr('data-id'), offset: start}, function (obj) {
             $.each(obj, function (i, item) {
                 var li = buildNtList(item);
                 li.hide();
                 nt_list.append(li);
-                li.animate({height:'toggle'}, 100);
+                li.animate({height: 'toggle'}, 100);
             });
 
             nt_list.data('show-nt', start + obj.length);
@@ -307,7 +307,7 @@ $(document).ready(function () {
         var item = $(this);
         $.get(baseUrl + 'comment/del/' + $(this).attr('data-id'), {}, function (e) {
             if (e.code == 0) {
-                item.parents('.cmt-item').animate({height:'toggle'}, 300);
+                item.parents('.cmt-item').animate({height: 'toggle'}, 300);
                 decCmt(item.parents('.feed'));
                 $('[data-parent-id=' + item.parents('.feed').attr('data-id') + ']').each(function (i, feed) {
                     decHot($(feed));
@@ -337,11 +337,11 @@ $(document).ready(function () {
 
     $('.feed-delete').live('click', function (e) {
         var feed = $(this).parents('.feed');
-        apprise("您确定要删除?", {confirm:true}, function (e) {
+        apprise("您确定要删除?", {confirm: true}, function (e) {
             if (e) {
                 $.post(baseUrl + 'post/delete/' + feed.attr('data-id'), function (e) {
                     if (e.code == 0) {
-                        feed.animate({height:0}, function () {
+                        feed.animate({height: 0}, function () {
                             feed.remove();
                         });
                     } else {
@@ -354,7 +354,7 @@ $(document).ready(function () {
 
 
     $('.feed-faved').attr('title', '取消喜欢');
-    $('textarea').autosize({append:"\n"});
+    $('textarea').autosize({append: "\n"});
 
 
     var locateCursor = function (txtElement, pos) {
@@ -381,6 +381,5 @@ $(document).ready(function () {
         decHot(feed);
         feed.find('.cmt-reply-count').html(feed.find('.cmt-reply-count').html() - 1);
     };
-
 
 });

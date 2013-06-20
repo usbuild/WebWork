@@ -10,9 +10,15 @@ class Controller extends CController
         Yii::app()->clientScript->registerScript('config', 'var baseUrl = "' . Yii::app()->baseUrl . '/";', CClientScript::POS_HEAD);
         Yii::app()->clientScript->registerCoreScript('jquery', CClientScript::POS_HEAD);
 
-        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/global.js', CClientScript::POS_END);
+
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/apprise/apprise-1.5.full.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/plugins/apprise/apprise.css');
+
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/tipsy/jquery.tipsy.js', CClientScript::POS_END);
+        Yii::app()->clientScript->registerCSSFile(Yii::app()->baseUrl . '/plugins/tipsy/tipsy.css');
+
+
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/global.js', CClientScript::POS_END);
         parent::init();
     }
 

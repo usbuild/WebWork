@@ -25,9 +25,9 @@
         </div>
         <div class="opt-holder">
             <ul>
-                <li id="logout"><a href="<?=Yii::app()->createUrl('site/logout');?>" title="退出"></a></li>
-                <li id="setting"><a href="<?=Yii::app()->createUrl('setting');?>" title="设置"></a></li>
-                <li id="discover"><a href="<?=Yii::app()->createUrl('site/discover');?>" title="发现"></a></li>
+                <li id="logout" class="with-tip" data-tip="退出"><a href="<?=Yii::app()->createUrl('site/logout');?>"></a></li>
+                <li id="setting" class="with-tip" data-tip="设置"><a href="<?=Yii::app()->createUrl('setting');?>"></a></li>
+                <li id="discover" class="with-tip" data-tip="发现"><a href="<?=Yii::app()->createUrl('site/discover');?>"></a></li>
             </ul>
         </div>
         <div class="link-holder">
@@ -36,7 +36,7 @@
                 <?php foreach (Common::getBlogs() as $blog): ?>
                 <li><?= CHtml::link($blog->name, array('blog/view/' . $blog->id), array('id' => 'blog_id_' . $blog->id)) ?></li>
                 <?php endforeach;?>
-                <li><?= CHtml::link('', array('blog/create'), array('id' => "add_blog", 'title' => "再创建一个博客"))?></li>
+                <li data-tip="再创建一个博客" class="with-tip"><?= CHtml::link('', array('blog/create'), array('id' => "add_blog"))?></li>
             </ul>
         </div>
     </div>

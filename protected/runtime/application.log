@@ -1842,3 +1842,1978 @@ Stack trace:
 REQUEST_URI=/blog/blog/view
 HTTP_REFERER=http://localhost/blog/view/post/84
 ---
+2013/06/19 09:41:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 09:41:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:04:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:04:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:13:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:14:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:15:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:15:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:15:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:16:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:17:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:17:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:17:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:21:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:21:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:25:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:25:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:26:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:26:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:27:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:27:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:28:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:28:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/19 10:28:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:02:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:02:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:03:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:05:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:11:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:11:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:11:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:11:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:15:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:15:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:15:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:15:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:15:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:16:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Desert.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Desert.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/20121204/Chrysanthemum.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/20121204...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/20121204/Chrysanthemum.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:18:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:18:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:19:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:19:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:20:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:20:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:41:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 04:41:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:41:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:42:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:42:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:42:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:42:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:50:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:50:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:51:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:51:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:53:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:53:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:53:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:53:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:53:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 04:53:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 08:52:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 08:52:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 08:52:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/blog/view/16
+---
+2013/06/20 08:52:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:03:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:04:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:04:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:10:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:10:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:11:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:11:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:16:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:16:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:17:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:17:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:18:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:20:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:20:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:22:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:22:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:22:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:22:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:31:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:31:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/
+---
+2013/06/20 09:31:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:31:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:37:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:37:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:37:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:37:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:39:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:39:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:40:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:42:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:42:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:44:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:44:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:49:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:49:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:50:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:51:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:52:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:59:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:59:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:59:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:59:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:59:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:59:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:59:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 09:59:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:00:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:04:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:04:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:10:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:10:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:10:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:11:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:11:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:12:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:12:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:12:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:20:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:24:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:25:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:27:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:27:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=akb
+---
+2013/06/20 10:27:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:27:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:28:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:28:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:28:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:28:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:28:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:28:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:29:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:29:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:30:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:30:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:31:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:31:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:32:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:32:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:32:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:32:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:32:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/site/tagposts?tag=aSdf
+---
+2013/06/20 10:36:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 10:38:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 10:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 10:41:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 10:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 10:43:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 10:43:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 10:44:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 10:45:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 10:45:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "upload/avatar/avatar-1354616983131.jpg"。' in D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php:287
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('upload/avatar/a...')
+#1 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\www\blog\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/upload/avatar/avatar-1354616983131.jpg
+HTTP_REFERER=http://localhost/blog/setting/blog/16
+---
+2013/06/20 10:45:35 [error] [php] mkdir(): No such file or directory (D:\www\blog\protected\controllers\PictureController.php:63)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PictureController->runAction()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterPostOnly()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterAccessControl()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PictureController->runActionWithFilters()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PictureController->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/picture/avatarupload
+in D:\www\blog\protected\controllers\PictureController.php (63)
+in D:\www\blog\index.php (13)
+2013/06/20 10:45:42 [error] [php] mkdir(): No such file or directory (D:\www\blog\protected\controllers\PictureController.php:63)
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(134): PictureController->runAction()
+#2 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1117): CFilterChain->run()
+#3 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterPostOnly()
+#4 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\src\yii-1.1.12.b600af\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#7 D:\src\yii-1.1.12.b600af\framework\web\filters\CInlineFilter.php(59): PictureController->filterAccessControl()
+#8 D:\src\yii-1.1.12.b600af\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 D:\src\yii-1.1.12.b600af\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\src\yii-1.1.12.b600af\framework\web\CController.php(266): PictureController->runActionWithFilters()
+#11 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): PictureController->run()
+#12 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\www\blog\index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/picture/avatarupload
+in D:\www\blog\protected\controllers\PictureController.php (63)
+in D:\www\blog\index.php (13)

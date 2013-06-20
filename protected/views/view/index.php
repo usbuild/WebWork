@@ -4,7 +4,7 @@
     <div class="blog-name"><a href="<?=$this->createUrl('view/' . $this->blog->id)?>"><?=$this->blog->name?></a></div>
     <a href="<?=$this->createUrl('writer/request/' . $this->blog->id)?>" class="request-post btn">投递</a>
     <?php if ($this->blog->isFollow()): ?>
-    <a href="javascript:;" class="unfollow btn">取消</a>
+    <a href="javascript:;" class="unfollow btn">取关</a>
     <?php else: ?>
     <a href="javascript:;" class="follow btn">关注</a>
     <?php endif;?>

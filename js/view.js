@@ -52,7 +52,7 @@ $(function () {
         $.post(baseUrl + 'follow/follow/' + blog_id, function (e) {
             if (e.code == 0) {
                 btn.removeClass('follow').addClass('unfollow');
-                btn.html('取消');
+                btn.html('取关');
             }
         }, 'json');
     });

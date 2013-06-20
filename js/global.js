@@ -58,4 +58,5 @@ $(function () {
     }).live('mouseleave', function () {
             $(this).find('.link-to-post-holder').css('display', 'none');
         });
+    $(".with-tip").tipsy({live: true, gravity: $.fn.tipsy.autoNS, fade: true, title: "data-tip"});
 });

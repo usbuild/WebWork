@@ -87,7 +87,15 @@ class SiteController extends Controller
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jqueryscrollpagination/scrollpagination.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/feed.js', CClientScript::POS_END);
         $user = Yii::app()->user->model;
-        $this->render('tagposts', array('myblog' => $user->myblog, 'tag' => $tag));
+
+        $is_follow = false;
+        foreach ($user->follow_tags as $t) {
+            if ($t->tag == $tag) {
+                $is_follow = true;
+                break;
+            }
+        }
+        $this->render('tagposts', array('myblog' => $user->myblog, 'tag' => $tag, 'is_follow' => $is_follow));
     }
 
     public function actionWriterPosts($id)
