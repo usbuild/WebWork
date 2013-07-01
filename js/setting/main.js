@@ -113,7 +113,7 @@ $(function () {
                 apprise('更新成功');
                 window.location.href = baseUrl + '/setting';
             } else {
-                apprise('更新失败');
+                $(".alert").html(obj.data).show();
             }
         });
     });

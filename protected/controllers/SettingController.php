@@ -67,7 +67,7 @@ class SettingController extends Controller
             if ($blog->save()) {
                 echo CJSON::encode(array('code' => 0));
             } else {
-                echo CJSON::encode(array('code' => 1));
+                echo CJSON::encode(array('code' => 1, 'data'=>CHtml::errorSummary($blog)));
             }
         }
     }

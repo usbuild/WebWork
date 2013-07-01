@@ -2,84 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a703a8d-d239-4036-8db1-238188e42274" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/jquery.passstrength.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/view.css" afterPath="$PROJECT_DIR$/css/view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/blog/main.js" afterPath="$PROJECT_DIR$/js/blog/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/feed.js" afterPath="$PROJECT_DIR$/js/feed.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/link.js" afterPath="$PROJECT_DIR$/js/post/link.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/music.js" afterPath="$PROJECT_DIR$/js/post/music.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/photo.js" afterPath="$PROJECT_DIR$/js/post/photo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/repost.js" afterPath="$PROJECT_DIR$/js/post/repost.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/text.js" afterPath="$PROJECT_DIR$/js/post/text.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/video.js" afterPath="$PROJECT_DIR$/js/post/video.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setting/main.js" afterPath="$PROJECT_DIR$/js/setting/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/view.js" afterPath="$PROJECT_DIR$/js/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/writer/index.js" afterPath="$PROJECT_DIR$/js/writer/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/apprise/apprise-1.5.full.js" afterPath="$PROJECT_DIR$/plugins/apprise/apprise-1.5.full.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/apprise/apprise.css" afterPath="$PROJECT_DIR$/plugins/apprise/apprise.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/crumble/css/crumble.css" afterPath="$PROJECT_DIR$/plugins/crumble/css/crumble.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/crumble/js/jquery.crumble.js" afterPath="$PROJECT_DIR$/plugins/crumble/js/jquery.crumble.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/crumble/js/jquery.crumble.min.js" afterPath="$PROJECT_DIR$/plugins/crumble/js/jquery.crumble.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/crumble/js/jquery.grumble.min.js" afterPath="$PROJECT_DIR$/plugins/crumble/js/jquery.grumble.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/cors/postmessage.html" afterPath="$PROJECT_DIR$/plugins/file-upload/cors/postmessage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/cors/result.html" afterPath="$PROJECT_DIR$/plugins/file-upload/cors/result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/css/jquery.fileupload-ui-noscript.css" afterPath="$PROJECT_DIR$/plugins/file-upload/css/jquery.fileupload-ui-noscript.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/css/jquery.fileupload-ui.css" afterPath="$PROJECT_DIR$/plugins/file-upload/css/jquery.fileupload-ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/css/style.css" afterPath="$PROJECT_DIR$/plugins/file-upload/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/cors/jquery.postmessage-transport.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/cors/jquery.postmessage-transport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/cors/jquery.xdr-transport.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/cors/jquery.xdr-transport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload-fp.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload-fp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload-ui.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload-ui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/jquery.iframe-transport.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/jquery.iframe-transport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/main.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/vendor/jquery.ui.widget.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/vendor/jquery.ui.widget.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-animated.css" afterPath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-animated.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-default.css" afterPath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-deprecated.css" afterPath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-deprecated.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.imgareaselect.js" afterPath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.imgareaselect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.imgareaselect.pack.js" afterPath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.imgareaselect.pack.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/intro/intro.min.js" afterPath="$PROJECT_DIR$/plugins/intro/intro.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/jqueryscrollpagination/scrollpagination.js" afterPath="$PROJECT_DIR$/plugins/jqueryscrollpagination/scrollpagination.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/tagsinput/jquery.tagsinput.css" afterPath="$PROJECT_DIR$/plugins/tagsinput/jquery.tagsinput.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/tipsy/jquery.tipsy.js" afterPath="$PROJECT_DIR$/plugins/tipsy/jquery.tipsy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/tipsy/tipsy.css" afterPath="$PROJECT_DIR$/plugins/tipsy/tipsy.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/VideoHelper.php" afterPath="$PROJECT_DIR$/protected/components/VideoHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SettingController.php" afterPath="$PROJECT_DIR$/protected/controllers/SettingController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ViewController.php" afterPath="$PROJECT_DIR$/protected/controllers/ViewController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/WriterController.php" afterPath="$PROJECT_DIR$/protected/controllers/WriterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Cowriter.php" afterPath="$PROJECT_DIR$/protected/models/Cowriter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Request.php" afterPath="$PROJECT_DIR$/protected/models/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.1" afterPath="$PROJECT_DIR$/protected/runtime/application.log.1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/gii-1.1.12/ModelCode.php" afterPath="$PROJECT_DIR$/protected/runtime/gii-1.1.12/ModelCode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/all.php" afterPath="$PROJECT_DIR$/protected/views/blog/all.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/follow.php" afterPath="$PROJECT_DIR$/protected/views/blog/follow.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/request.php" afterPath="$PROJECT_DIR$/protected/views/blog/request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/sidebar.php" afterPath="$PROJECT_DIR$/protected/views/blog/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/view.php" afterPath="$PROJECT_DIR$/protected/views/blog/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/writer.php" afterPath="$PROJECT_DIR$/protected/views/blog/writer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/post/getposts.php" afterPath="$PROJECT_DIR$/protected/views/post/getposts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/post/link.php" afterPath="$PROJECT_DIR$/protected/views/post/link.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/setting/account.php" afterPath="$PROJECT_DIR$/protected/views/setting/account.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/discover.php" afterPath="$PROJECT_DIR$/protected/views/site/discover.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/follow.php" afterPath="$PROJECT_DIR$/protected/views/site/follow.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/likeposts.php" afterPath="$PROJECT_DIR$/protected/views/site/likeposts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/sidebar.php" afterPath="$PROJECT_DIR$/protected/views/site/sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/tagposts.php" afterPath="$PROJECT_DIR$/protected/views/site/tagposts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/writerposts.php" afterPath="$PROJECT_DIR$/protected/views/site/writerposts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/index.php" afterPath="$PROJECT_DIR$/protected/views/view/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/layout.php" afterPath="$PROJECT_DIR$/protected/views/view/layout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/post.php" afterPath="$PROJECT_DIR$/protected/views/view/post.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/preview.php" afterPath="$PROJECT_DIR$/protected/views/view/preview.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/writer/index.php" afterPath="$PROJECT_DIR$/protected/views/writer/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/writer/sidebar.php" afterPath="$PROJECT_DIR$/protected/views/writer/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/setting/blog.php" afterPath="$PROJECT_DIR$/protected/views/setting/blog.php" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,28 +45,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="feed.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/feed.js">
+      <file leaf-file-name="blog.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/setting/blog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="424" column="34" selection-start="15866" selection-end="15866" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="5" column="21" selection-start="149" selection-end="206" vertical-scroll-proportion="0.15789473">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/setting/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="27" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.63316584">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="account.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/setting/account.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="70" selection-start="757" selection-end="768" vertical-scroll-proportion="-7.7777777">
+            <state line="116" column="13" selection-start="4172" selection-end="4172" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,34 +68,7 @@
       <file leaf-file-name="SettingController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/SettingController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="138" selection-start="444" selection-end="444" vertical-scroll-proportion="-4.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/view.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="4" selection-start="1835" selection-end="2137" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/models/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="31" selection-start="4848" selection-end="4859" vertical-scroll-proportion="-6.5185184">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/PostController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="212.0">
+            <state line="69" column="87" selection-start="2611" selection-end="2611" vertical-scroll-proportion="-46.0">
               <folding />
             </state>
           </provider>
@@ -184,7 +77,7 @@
       <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="761" column="26" selection-start="14452" selection-end="14452" vertical-scroll-proportion="0.0">
+            <state line="851" column="19" selection-start="15974" selection-end="15974" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/view.js" />
         <option value="$PROJECT_DIR$/protected/views/view/index.php" />
         <option value="$PROJECT_DIR$/css/view.css" />
         <option value="$PROJECT_DIR$/protected/views/view/post.php" />
@@ -226,10 +118,11 @@
         <option value="$PROJECT_DIR$/js/post/photo.js" />
         <option value="$PROJECT_DIR$/protected/views/post/getposts.php" />
         <option value="$PROJECT_DIR$/js/feed.js" />
-        <option value="$PROJECT_DIR$/protected/controllers/SettingController.php" />
         <option value="$PROJECT_DIR$/protected/views/setting/account.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SettingController.php" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/js/setting/main.js" />
+        <option value="$PROJECT_DIR$/protected/views/setting/blog.php" />
       </list>
     </option>
   </component>
@@ -425,20 +318,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -580,7 +459,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16284074" sideWeight="0.34362417" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18787879" sideWeight="0.6750663" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14469697" sideWeight="0.6750663" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26040268" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261745" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -650,11 +529,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/post/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="373" selection-end="375" vertical-scroll-proportion="-11.52" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/post/link.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="60" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" />
@@ -667,14 +541,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="212.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-10.276481">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="31" selection-start="4848" selection-end="4859" vertical-scroll-proportion="-6.5185184">
+        <state line="151" column="31" selection-start="4848" selection-end="4859" vertical-scroll-proportion="0.30877194">
           <folding />
         </state>
       </provider>
@@ -728,38 +602,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="761" column="26" selection-start="14452" selection-end="14452" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="4" selection-start="1835" selection-end="2137" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SettingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="138" selection-start="444" selection-end="444" vertical-scroll-proportion="-4.0">
+        <state line="58" column="4" selection-start="1835" selection-end="2137" vertical-scroll-proportion="0.5856164">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/setting/account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="70" selection-start="757" selection-end="768" vertical-scroll-proportion="-7.7777777">
+        <state line="17" column="70" selection-start="757" selection-end="768" vertical-scroll-proportion="0.36842105">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/setting/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="27" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.63316584">
+        <state line="116" column="13" selection-start="4172" selection-end="4172" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SettingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="87" selection-start="2611" selection-end="2611" vertical-scroll-proportion="-46.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="851" column="19" selection-start="15974" selection-end="15974" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/setting/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="21" selection-start="149" selection-end="206" vertical-scroll-proportion="0.15789473">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
