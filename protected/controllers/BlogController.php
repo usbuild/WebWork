@@ -76,8 +76,8 @@ class BlogController extends Controller
                         echo CJSON::encode(array('code' => 1, 'data' => '域名不能全为数字'));
                         exit();
                     }
-                    if (strlen($domain) <= 3) {
-                        echo CJSON::encode(array('code' => 1, 'data' => '域名长度至少为4'));
+                    if (strlen($domain) <= 4) {
+                        echo CJSON::encode(array('code' => 1, 'data' => '域名长度至少为5'));
                         exit();
                     }
                     $blog = Blog::model()->findByAttributes(array('domain' => $domain));

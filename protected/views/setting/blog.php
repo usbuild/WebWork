@@ -3,9 +3,6 @@
 <div id="blog_setting">
     <div class="g-box3">
         博客设置
-    <div class="alert" style="display: none;margin: 20px 45px;
-width: 525px;">
-    </div>
 
     </div>
 
@@ -53,6 +50,10 @@ width: 525px;">
             <input type="text" class="normal-text" value="<?=$blog->domain?>" id="blog_domain"/>
         </div>
         <div class="domain-suffix">.lecoding.com</div>
+    </div>
+    <div class="alert" style="display: none;margin: 20px 45px;
+width: 525px;">
+
     </div>
     <div class="g-box2 clearfix">
         <div class="setting-content">
