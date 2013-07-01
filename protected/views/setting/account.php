@@ -16,6 +16,7 @@
             <div class="field">
                 <label for="repeat_pass"><h4>重复密码:</h4></label>
                 <input type="password" name="new_pass" id="repeat_pass" maxlength="30"/>
+                <span class="repeat-validate"></span>
             </div>
             <input type="submit" value="提交" class="button"/>
         </form>

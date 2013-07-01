@@ -263,7 +263,7 @@ a:hover {
 a.blog-avatar:active {
     top: 1px;
     opacity: 0.9;
-    *filter: Alpha(Opacity=90);
+    *filter: Alpha(Opacity = 90);
 }
 
 .feed {
@@ -277,8 +277,42 @@ a.blog-avatar:active {
     float: left;
     position: relative;
     width: 64px;
-    height: 64px;
-    zoom: 1;
+}
+
+.feed .feed-avatar-action {
+    display: none;
+    z-index: 20;
+    position: absolute;
+    width: 64px;
+    top: 70px;
+    border-radius: 1px;
+    float: left;
+    background-color: #000;
+    padding: 3px 0;
+    color: #ffffff;
+    font-size: 11px;
+    box-shadow: 0 1px 3px #000;
+}
+
+.feed .feed-avatar-action .triangle {
+    z-index: 21;
+    border: solid #000 6px;
+    position: absolute;
+    left: 27px;
+    top: -12px;
+    border-style: solid;
+    border-color: transparent transparent #000 transparent;
+}
+
+.feed .feed-avatar-action li {
+    display: block;
+    text-align: center;
+    padding: 4px;
+}
+
+.feed .feed-avatar-action li:hover {
+    background-color: #333;
+    cursor: pointer;
 }
 
 .publisher .pb-avatar {
@@ -680,10 +714,9 @@ a.blog-avatar:active {
     background-color: #415b76;
 }
 
-.button:active{
+.button:active {
     background-color: #2c3e50;
 }
-
 
 .error-box {
     display: none;
@@ -724,6 +757,9 @@ a.blog-avatar:active {
 
 #new_blog_div input[type=text]:focus, #account_box input[type=password]:focus {
     border: solid 2px #777;
+}
+.repeat-validate{
+    display: inline-block;
 }
 
 #new_blog_div .domain_all {

@@ -13,6 +13,7 @@ class SettingController extends Controller
     public function init()
     {
         parent::init();
+        Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/plugins/jquery.passstrength.min.js', CClientScript::POS_END);
         Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl . '/js/setting/main.js', CClientScript::POS_END);
     }
 
@@ -73,6 +74,7 @@ class SettingController extends Controller
 
     public function actionAccount()
     {
+
         $this->render('account');
     }
 

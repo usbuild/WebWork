@@ -55,7 +55,7 @@ return array(
               'connectionString' => 'mysql:host=localhost;dbname=blog',
               'emulatePrepare' => true,
               'username' => 'root',
-              'password' => '12345',
+              'password' => 'webtest',
               'charset' => 'utf8',
           ),
         'errorHandler' => array(

@@ -2,35 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a703a8d-d239-4036-8db1-238188e42274" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/crumble/images/bubble-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/crumble/css/crumble.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/crumble/css/grumble.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/intro/intro.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/intro/introjs.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/crumble/js/jquery.crumble.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/crumble/js/jquery.crumble.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/crumble/js/jquery.grumble.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/tipsy/jquery.tipsy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/tipsy/tipsy.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Controller.php" afterPath="$PROJECT_DIR$/protected/components/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/setting/blog.php" afterPath="$PROJECT_DIR$/protected/views/setting/blog.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/feed.js" afterPath="$PROJECT_DIR$/js/feed.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/jquery.passstrength.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/global.js" afterPath="$PROJECT_DIR$/js/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/site/index.js" afterPath="$PROJECT_DIR$/js/site/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/index.php" afterPath="$PROJECT_DIR$/protected/views/view/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/post.php" afterPath="$PROJECT_DIR$/protected/views/view/post.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/view.css" afterPath="$PROJECT_DIR$/css/view.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/blog/main.js" afterPath="$PROJECT_DIR$/js/blog/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/feed.js" afterPath="$PROJECT_DIR$/js/feed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/link.js" afterPath="$PROJECT_DIR$/js/post/link.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/music.js" afterPath="$PROJECT_DIR$/js/post/music.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/photo.js" afterPath="$PROJECT_DIR$/js/post/photo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/repost.js" afterPath="$PROJECT_DIR$/js/post/repost.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/text.js" afterPath="$PROJECT_DIR$/js/post/text.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/video.js" afterPath="$PROJECT_DIR$/js/post/video.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/setting/main.js" afterPath="$PROJECT_DIR$/js/setting/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/view.js" afterPath="$PROJECT_DIR$/js/view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/writer/index.js" afterPath="$PROJECT_DIR$/js/writer/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/apprise/apprise-1.5.full.js" afterPath="$PROJECT_DIR$/plugins/apprise/apprise-1.5.full.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/apprise/apprise.css" afterPath="$PROJECT_DIR$/plugins/apprise/apprise.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/crumble/css/crumble.css" afterPath="$PROJECT_DIR$/plugins/crumble/css/crumble.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/crumble/js/jquery.crumble.js" afterPath="$PROJECT_DIR$/plugins/crumble/js/jquery.crumble.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/crumble/js/jquery.crumble.min.js" afterPath="$PROJECT_DIR$/plugins/crumble/js/jquery.crumble.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/crumble/js/jquery.grumble.min.js" afterPath="$PROJECT_DIR$/plugins/crumble/js/jquery.grumble.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/cors/postmessage.html" afterPath="$PROJECT_DIR$/plugins/file-upload/cors/postmessage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/cors/result.html" afterPath="$PROJECT_DIR$/plugins/file-upload/cors/result.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/css/jquery.fileupload-ui-noscript.css" afterPath="$PROJECT_DIR$/plugins/file-upload/css/jquery.fileupload-ui-noscript.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/css/jquery.fileupload-ui.css" afterPath="$PROJECT_DIR$/plugins/file-upload/css/jquery.fileupload-ui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/css/style.css" afterPath="$PROJECT_DIR$/plugins/file-upload/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/cors/jquery.postmessage-transport.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/cors/jquery.postmessage-transport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/cors/jquery.xdr-transport.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/cors/jquery.xdr-transport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload-fp.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload-fp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload-ui.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload-ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/jquery.fileupload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/jquery.iframe-transport.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/jquery.iframe-transport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/main.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/file-upload/js/vendor/jquery.ui.widget.js" afterPath="$PROJECT_DIR$/plugins/file-upload/js/vendor/jquery.ui.widget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-animated.css" afterPath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-animated.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-default.css" afterPath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-default.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-deprecated.css" afterPath="$PROJECT_DIR$/plugins/imgareaselect/css/imgareaselect-deprecated.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.imgareaselect.js" afterPath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.imgareaselect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.imgareaselect.pack.js" afterPath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.imgareaselect.pack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/plugins/imgareaselect/scripts/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/intro/intro.min.js" afterPath="$PROJECT_DIR$/plugins/intro/intro.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/jqueryscrollpagination/scrollpagination.js" afterPath="$PROJECT_DIR$/plugins/jqueryscrollpagination/scrollpagination.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/tagsinput/jquery.tagsinput.css" afterPath="$PROJECT_DIR$/plugins/tagsinput/jquery.tagsinput.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/tipsy/jquery.tipsy.js" afterPath="$PROJECT_DIR$/plugins/tipsy/jquery.tipsy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/tipsy/tipsy.css" afterPath="$PROJECT_DIR$/plugins/tipsy/tipsy.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/VideoHelper.php" afterPath="$PROJECT_DIR$/protected/components/VideoHelper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SettingController.php" afterPath="$PROJECT_DIR$/protected/controllers/SettingController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ViewController.php" afterPath="$PROJECT_DIR$/protected/controllers/ViewController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/WriterController.php" afterPath="$PROJECT_DIR$/protected/controllers/WriterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Cowriter.php" afterPath="$PROJECT_DIR$/protected/models/Cowriter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Request.php" afterPath="$PROJECT_DIR$/protected/models/Request.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log.1" afterPath="$PROJECT_DIR$/protected/runtime/application.log.1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/gii-1.1.12/ModelCode.php" afterPath="$PROJECT_DIR$/protected/runtime/gii-1.1.12/ModelCode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/all.php" afterPath="$PROJECT_DIR$/protected/views/blog/all.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/follow.php" afterPath="$PROJECT_DIR$/protected/views/blog/follow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/request.php" afterPath="$PROJECT_DIR$/protected/views/blog/request.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/sidebar.php" afterPath="$PROJECT_DIR$/protected/views/blog/sidebar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/view.php" afterPath="$PROJECT_DIR$/protected/views/blog/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/writer.php" afterPath="$PROJECT_DIR$/protected/views/blog/writer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/post/getposts.php" afterPath="$PROJECT_DIR$/protected/views/post/getposts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/post/link.php" afterPath="$PROJECT_DIR$/protected/views/post/link.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/setting/account.php" afterPath="$PROJECT_DIR$/protected/views/setting/account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/discover.php" afterPath="$PROJECT_DIR$/protected/views/site/discover.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/follow.php" afterPath="$PROJECT_DIR$/protected/views/site/follow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/likeposts.php" afterPath="$PROJECT_DIR$/protected/views/site/likeposts.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/sidebar.php" afterPath="$PROJECT_DIR$/protected/views/site/sidebar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/tagposts.php" afterPath="$PROJECT_DIR$/protected/views/site/tagposts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/view.css" afterPath="$PROJECT_DIR$/css/view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/view.js" afterPath="$PROJECT_DIR$/js/view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/writerposts.php" afterPath="$PROJECT_DIR$/protected/views/site/writerposts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/index.php" afterPath="$PROJECT_DIR$/protected/views/view/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/layout.php" afterPath="$PROJECT_DIR$/protected/views/view/layout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/post.php" afterPath="$PROJECT_DIR$/protected/views/view/post.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/view/preview.php" afterPath="$PROJECT_DIR$/protected/views/view/preview.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/writer/index.php" afterPath="$PROJECT_DIR$/protected/views/writer/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/writer/sidebar.php" afterPath="$PROJECT_DIR$/protected/views/writer/sidebar.php" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,46 +118,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="feed.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/feed.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="424" column="34" selection-start="15866" selection-end="15866" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/setting/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="27" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.63316584">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/setting/account.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="70" selection-start="757" selection-end="768" vertical-scroll-proportion="-7.7777777">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SettingController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="138" selection-start="444" selection-end="444" vertical-scroll-proportion="-4.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="view.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="28" selection-start="1785" selection-end="1785" vertical-scroll-proportion="0.0">
+            <state line="58" column="4" selection-start="1835" selection-end="2137" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/view/index.php">
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="50" selection-start="503" selection-end="503" vertical-scroll-proportion="3.84">
+            <state line="151" column="31" selection-start="4848" selection-end="4859" vertical-scroll-proportion="-6.5185184">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/view/post.php">
+      <file leaf-file-name="PostController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="50" selection-start="503" selection-end="503" vertical-scroll-proportion="-3.84">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="212.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preview.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/views/view/preview.php">
+      <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/view.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="22" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.0">
+            <state line="761" column="26" selection-start="14452" selection-end="14452" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,30 +211,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitLogSettings">
-    <option name="myDateState">
-      <MyDateState />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/plugins/intro/intro.min.js" />
-        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/sidebar.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/protected/components/Controller.php" />
-        <option value="$PROJECT_DIR$/js/feed.js" />
-        <option value="$PROJECT_DIR$/js/global.js" />
-        <option value="$PROJECT_DIR$/js/site/index.js" />
-        <option value="$PROJECT_DIR$/protected/views/site/tagposts.php" />
-        <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/protected/views/setting/blog.php" />
         <option value="$PROJECT_DIR$/js/view.js" />
         <option value="$PROJECT_DIR$/protected/views/view/index.php" />
         <option value="$PROJECT_DIR$/css/view.css" />
         <option value="$PROJECT_DIR$/protected/views/view/post.php" />
+        <option value="$PROJECT_DIR$/js/post/text.js" />
+        <option value="$PROJECT_DIR$/js/post/repost.js" />
+        <option value="$PROJECT_DIR$/js/post/video.js" />
+        <option value="$PROJECT_DIR$/js/post/link.js" />
+        <option value="$PROJECT_DIR$/js/post/music.js" />
+        <option value="$PROJECT_DIR$/js/post/photo.js" />
+        <option value="$PROJECT_DIR$/protected/views/post/getposts.php" />
+        <option value="$PROJECT_DIR$/js/feed.js" />
+        <option value="$PROJECT_DIR$/protected/controllers/SettingController.php" />
+        <option value="$PROJECT_DIR$/protected/views/setting/account.php" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/js/setting/main.js" />
       </list>
     </option>
   </component>
@@ -175,8 +246,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="886" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -226,6 +297,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,51 +375,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="setting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -380,18 +453,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="setting" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -410,21 +491,21 @@
   </component>
   <component name="PublishConfig">
     <servers>
-      <server id="24f1028f-bd4d-485e-97cd-0c8df155d424">
+      <server id="6dddab2a-aafd-4468-9c91-0761e3a71874">
         <serverdata />
       </server>
-      <server id="93b369e9-af31-4a95-aead-9c20b2136af0">
+      <server id="f753bf5f-c3f7-4604-a094-2434c67a0c14">
         <serverdata />
       </server>
     </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WWW\blog\plugins" />
       <recent name="D:\www\blog\plugins" />
       <recent name="D:\www\blog\plugins\crumble" />
       <recent name="D:\www\blog\protected\views\site" />
       <recent name="D:\www\blog\protected\views\writer" />
-      <recent name="D:\WWW\blog\protected\views\site" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\www\blog\plugins\tipsy" />
@@ -490,26 +571,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32493368" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16284074" sideWeight="0.34362417" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18787879" sideWeight="0.6750663" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26040268" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261745" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16284074" sideWeight="0.34362417" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17456897" sideWeight="0.6750663" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261745" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32493368" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -548,14 +629,7 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -569,7 +643,6 @@
     <option name="ACTIVE_VCS_NAME" />
     <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
@@ -577,102 +650,38 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/global.js">
+    <entry file="file://$PROJECT_DIR$/js/post/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="2147" selection-end="2147" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="16" column="14" selection-start="373" selection-end="375" vertical-scroll-proportion="-11.52" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+    <entry file="file://$PROJECT_DIR$/js/post/link.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="83" selection-start="338" selection-end="338" vertical-scroll-proportion="-2.56">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/feed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="383" column="0" selection-start="14641" selection-end="14641" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="107" selection-start="3929" selection-end="3929" vertical-scroll-proportion="-14.08">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="114" selection-start="1748" selection-end="1754" vertical-scroll-proportion="0.70857143">
-          <folding>
-            <element signature="e#1131#1169#0" expanded="true" />
-            <element signature="e#2034#2176#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="14" column="60" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/tagposts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="46" selection-start="453" selection-end="453" vertical-scroll-proportion="0.20571429">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3263158" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/PostController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="651" column="22" selection-start="12209" selection-end="12209" vertical-scroll-proportion="0.21348314">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="212.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/site/index.js">
+    <entry file="file://$PROJECT_DIR$/protected/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="40" selection-start="2015" selection-end="2015" vertical-scroll-proportion="0.0">
+        <state line="151" column="31" selection-start="4848" selection-end="4859" vertical-scroll-proportion="-6.5185184">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/setting/blog.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/blog/sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="62" selection-start="831" selection-end="831" vertical-scroll-proportion="-12.36">
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/setting/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="38" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="28" selection-start="1785" selection-end="1785" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/view.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="22" selection-start="1903" selection-end="1903" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/view/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="50" selection-start="503" selection-end="503" vertical-scroll-proportion="3.84">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -684,16 +693,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/view/post.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/view/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="50" selection-start="503" selection-end="503" vertical-scroll-proportion="-3.84">
+        <state line="6" column="40" selection-start="493" selection-end="493" vertical-scroll-proportion="-4.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/view/preview.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/post/getposts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="53" selection-start="979" selection-end="979" vertical-scroll-proportion="-16.0">
+          <folding>
+            <element signature="e#376#449#0" expanded="true" />
+            <element signature="e#1181#1204#0" expanded="true" />
+            <element signature="e#1246#1285#0" expanded="true" />
+            <element signature="e#3737#3775#0" expanded="true" />
+            <element signature="e#5951#5973#0" expanded="true" />
+            <element signature="e#7212#7233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/jquery.passstrength.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/feed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="424" column="34" selection-start="15866" selection-end="15866" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="761" column="26" selection-start="14452" selection-end="14452" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="4" selection-start="1835" selection-end="2137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SettingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="138" selection-start="444" selection-end="444" vertical-scroll-proportion="-4.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/setting/account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="70" selection-start="757" selection-end="768" vertical-scroll-proportion="-7.7777777">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/setting/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="27" selection-start="1241" selection-end="1241" vertical-scroll-proportion="0.63316584">
           <folding />
         </state>
       </provider>

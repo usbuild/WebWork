@@ -12,6 +12,7 @@ $(document).ready(function () {
         data = json_decode($('[data-post]').attr('data-post'));
         var tag = json_decode(data.tag);
         $('#blog_id').attr('disabled', 'disabled');
+        $(".jqTransformSelectWrapper").css("color", "#ccc");
         $.each(tag, function (i, t) {
             $('#tags').addTag(t);
         });

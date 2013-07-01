@@ -25,6 +25,22 @@ $(function () {
                 }
             });
     });
+
+    $("#new_pass").passStrengthify({
+        levels:levels = ['很弱', '很弱', '弱', '弱', '一般',
+            '一般', '强', '很强'],
+        minimum:5,
+        labels:{
+            tooShort:'太短',
+            passwordStrength:'密码强度'
+        }});
+
+    $("[type=password]").keyup(function () {
+        if ($("#repeat_pass").val() == $("#new_pass").val())
+            $(".repeat-validate").html("密码匹配").css("color", "green");
+        else
+            $(".repeat-validate").html("密码不匹配").css("color", "red");
+    });
     $('#upload_btn').click(function (e) {
         $('#file').trigger('click');
     });
