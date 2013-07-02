@@ -94,13 +94,13 @@ function apprise(string, args, callback) {
 
 
     $('.aButtons > button').click(function () {
+        var wButton = $(this).attr("value");
         $('.appriseOverlay').fadeOut(400, function () {
             $('.appriseOverlay').remove();
         });
         $('.appriseOuter').animate({top:'-' + $('.appriseOuter').height() + 'px'}, 200, function () {
             $('.appriseOuter').remove();
             if (callback) {
-                var wButton = $(this).attr("value");
                 if (wButton == 'ok') {
                     if (args) {
                         if (args['input']) {

@@ -347,7 +347,8 @@ $(document).ready(function () {
 
     $('.feed-delete').live('click', function (e) {
         var feed = $(this).parents('.feed');
-        apprise("您确定要删除?", {confirm:true}, function (e) {
+        apprise("您确定要删除?", {verify:true}, function (e) {
+            console.dir(e);
             if (e) {
                 $.post(baseUrl + 'post/delete/' + feed.attr('data-id'), function (e) {
                     if (e.code == 0) {

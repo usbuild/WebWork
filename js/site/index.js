@@ -25,12 +25,12 @@ $(function () {
     $('#add_new_tag').live('keydown', function (e) {
         var new_tag = $(this);
         if (e.keyCode == 13) {
-            $.post(baseUrl + '/follow/newtag', {tag: $(this).val()}, function (e) {
+            $.post(baseUrl + '/follow/newtag', {tag:$(this).val()}, function (e) {
                 if (e.code == 0) {
                     var item = buildTagItem(e.data.tag);
                     item.hide();
                     new_tag.parents('li').after(item);
-                    item.animate({height: 'toggle'}, 200);
+                    item.animate({height:'toggle'}, 200);
                     new_tag.val('');
                 } else {
                     apprise('添加失败');
@@ -39,12 +39,12 @@ $(function () {
         }
     });
     $(".follow-btn").click(function () {
-        $.post(baseUrl + '/follow/newtag', {tag: $(this).data("tag")}, function (e) {
+        $.post(baseUrl + '/follow/newtag', {tag:$(this).data("tag")}, function (e) {
             if (e.code == 0) {
                 var item = buildTagItem(e.data.tag);
                 item.hide();
                 $('#add_new_tag').parents('li').after(item);
-                item.animate({height: 'toggle'}, 200);
+                item.animate({height:'toggle'}, 200);
                 $('#add_new_tag').val('');
                 $(".tag-follow").slideUp("slow");
             } else {
@@ -56,9 +56,9 @@ $(function () {
         e.stopPropagation();
         var tag = $(this).parents('a').find('.txt').html();
         var close_span = $(this);
-        $.post(baseUrl + 'follow/deltag', {'tag': tag}, function (e) {
+        $.post(baseUrl + 'follow/deltag', {'tag':tag}, function (e) {
             if (e.code == 0) {
-                close_span.parents('li').animate({height: 'toggle'}, 200, function () {
+                close_span.parents('li').animate({height:'toggle'}, 200, function () {
                     close_span.remove();
                 });
             } else {
@@ -73,13 +73,19 @@ $(function () {
         e.stopPropagation();
         var li = $(this).parents('li');
         var id = li.attr('data-id');
-        $.post(baseUrl + 'blog/delWriter/' + id, {}, function (e) {
-            if (e.code == 0) {
-                li.remove();
-            } else {
-                apprise('删除失败');
+        apprise('您确定要退出该博客的协作?', {'confirm':true}, function (r) {
+            console.dir(r);
+            if (r) {
+                $.post(baseUrl + 'blog/delWriter/' + id, {}, function (e) {
+                    if (e.code == 0) {
+                        li.remove();
+                    } else {
+                        apprise('删除失败');
+                    }
+                }, 'json');
             }
-        }, 'json');
+
+        });
         return false;
     });
 
