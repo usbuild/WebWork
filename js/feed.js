@@ -206,7 +206,13 @@ $(document).ready(function () {
         } else {
             post_data = {'comment[post_id]':feed.attr('data-id'), 'comment[content]':content.val()};
         }
+        if(/\s*/.test(post_data['comment[contnt]'])) {
+            apprise("评论内容不能为空");
+            return;
+        }
+        $(this).attr("disabled", "").text("发表中...");
         $.post(baseUrl + 'comment/add', post_data, function (obj) {
+            $('.cmt-submit').removeAttr("disabled").text("提交");
             if (obj.code == 0) {
                 feed.find('.cmt-content').val('').css('height', '50px');
 

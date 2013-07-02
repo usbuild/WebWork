@@ -14,7 +14,7 @@
                 <div class="setting-content">
                     <span class="user-email"><?=Yii::app()->user->email?></span>
 
-                    <div class="acount-link"><?=CHtml::link('修改邮箱和密码>>', array('setting/account'))?></div>
+                    <div class="acount-link"><?=CHtml::link('修改密码>>', array('setting/account'))?></div>
                 </div>
             </div>
         </li>
