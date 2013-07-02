@@ -282,9 +282,9 @@ a.blog-avatar:active {
 .feed .feed-avatar-action {
     display: none;
     z-index: 20;
-    position: absolute;
+    position: relative;
     width: 64px;
-    top: 70px;
+    top: 10px;
     border-radius: 1px;
     float: left;
     background-color: #000;
@@ -296,12 +296,14 @@ a.blog-avatar:active {
 
 .feed .feed-avatar-action .triangle {
     z-index: 21;
-    border: solid #000 6px;
-    position: absolute;
-    left: 27px;
-    top: -12px;
+    border: solid #000 8px;
+    position: relative;
+    left: 26px;
+    top: -19px;
     border-style: solid;
     border-color: transparent transparent #000 transparent;
+    width: 0px;
+    margin-bottom: -13px;
 }
 
 .feed .feed-avatar-action li {

@@ -206,7 +206,7 @@ $(document).ready(function () {
         } else {
             post_data = {'comment[post_id]':feed.attr('data-id'), 'comment[content]':content.val()};
         }
-        if(/\s*/.test(post_data['comment[contnt]'])) {
+        if (/\s*/.test(post_data['comment[contnt]'])) {
             apprise("评论内容不能为空");
             return;
         }
@@ -399,20 +399,10 @@ $(document).ready(function () {
         feed.find('.cmt-reply-count').html(feed.find('.cmt-reply-count').html() - 1);
     };
 
-    var cancel = false;
-
-    $(".feed-avatar").live('mouseover',function () {
-        if (cancel)  cancel = false;
-        else
-            $(".feed-avatar .feed-avatar-action").fadeIn();
-    }).live("mouseout", function () {
-            cancel = true;
-            setTimeout(function () {
-                if (cancel) {
-                    $(".feed-avatar .feed-avatar-action").fadeOut();
-                    cancel = false;
-                }
-            }, 500);
+    $(".feed-avatar").live('mouseenter',function () {
+        $(this).find(".feed-avatar-action").fadeIn();
+    }).live("mouseleave", function () {
+            $(this).find(".feed-avatar-action").fadeOut();
         });
 
     $(".feed-follow").live("click", function () {

@@ -61,7 +61,9 @@ $(function () {
 
 
     $('input#title').blur(function () {
-        setVideo();
+        if (/http:\/\/(v\.youku\.com|www\.bilibili\.tv|www\.tudou\.com)\/.+/.test($(this).val())) {
+            setVideo();
+        }
     });
 
     $('#close_btn').click(function () {

@@ -9,7 +9,7 @@
        target="_blank">
     </a>
 
-    <div class="feed-avatar-action">
+    <div class="feed-avatar-action clearfix">
         <div class="triangle"></div>
         <ul>
 

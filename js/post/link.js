@@ -26,6 +26,10 @@ $(document).ready(function () {
             apprise('链接不能为空');
             return;
         }
+        if (!/(http|https|ftp):\/\/[^\.]+?\..+/.test($('#link').val().trim())) {
+            apprise("链接格式非法");
+            return;
+        }
         var title = {'title':$('#title').val(), 'link':$('#link').val()};
         var post_data = {'title':title, 'content':content, 'blog_id':blog_id, 'tags':tags, 'type':'link'};
 
