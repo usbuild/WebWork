@@ -4154,3 +4154,83 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/blog/site/asdf
 ---
+2013/07/02 04:37:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "asdfasd" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('asdfasd')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('asdfasd')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/asdfasd')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/site/asdfasd
+---
+2013/07/02 04:45:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "asdfasd" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('asdfasd')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('asdfasd')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/asdfasd')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/site/asdfasd
+---
+2013/07/02 04:47:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "asdfasd" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('asdfasd')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('asdfasd')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/asdfasd')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/site/asdfasd
+---
+2013/07/02 04:48:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "asdfasd" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('asdfasd')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('asdfasd')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/asdfasd')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/site/asdfasd
+---
+2013/07/02 04:51:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "asdfasd" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('asdfasd')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('asdfasd')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/asdfasd')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/site/asdfasd
+---
+2013/07/02 04:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "asdfasd" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('asdfasd')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('asdfasd')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/asdfasd')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/site/asdfasd
+---
+2013/07/02 04:53:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "asdfasd" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('asdfasd')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('asdfasd')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/asdfasd')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/site/asdfasd
+---
+2013/07/02 04:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "asdfasd" 动作.' in D:\src\yii-1.1.12.b600af\framework\web\CController.php:484
+Stack trace:
+#0 D:\src\yii-1.1.12.b600af\framework\web\CController.php(271): CController->missingAction('asdfasd')
+#1 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(283): CController->run('asdfasd')
+#2 D:\src\yii-1.1.12.b600af\framework\web\CWebApplication.php(142): CWebApplication->runController('site/asdfasd')
+#3 D:\src\yii-1.1.12.b600af\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\WWW\blog\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/blog/site/asdfasd
+---
