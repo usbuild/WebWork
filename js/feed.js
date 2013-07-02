@@ -9,6 +9,9 @@ $(document).ready(function () {
         });
     };
 
+    var nullFeedDiv = $("<div class='null-feed'>没有可供显示的博文</div>");
+
+
     $('#feed_zone').scrollPagination({
         'contentPage':baseUrl + $('#fetch_url').val(),
         'contentData':function () {
@@ -17,6 +20,9 @@ $(document).ready(function () {
         'scrollTarget':$(window),
         'heightOffset':50,
         'beforeLoad':function () {
+            if ($(".null-feed").length > 0) {
+                $(".null-feed").remove();
+            }
             $('#loading_more').fadeIn();
         },
         'afterLoad':function (elementsLoaded) {
@@ -29,6 +35,10 @@ $(document).ready(function () {
             elementsLoaded.find('.music-input').each(function (i, item) {
                 renderMusic($(item));
             });
+
+            if ($("#feed_zone .feed").length == 0) {
+                $("#feed_zone").before(nullFeedDiv);
+            }
         }
     });
 

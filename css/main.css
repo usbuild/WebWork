@@ -1106,6 +1106,11 @@ a.blog-avatar:active {
     border: solid 1px #ccc;
 }
 
+.null-feed {
+    text-align: center;
+    font-size: 16px;
+}
+
 .cmt-submit {
     background: url('../images/btn24.png') no-repeat 999px 999px;
     width: 104px;
