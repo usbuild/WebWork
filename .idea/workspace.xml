@@ -2,31 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a703a8d-d239-4036-8db1-238188e42274" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/feed.js" afterPath="$PROJECT_DIR$/js/feed.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/link.js" afterPath="$PROJECT_DIR$/js/post/link.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/post/video.js" afterPath="$PROJECT_DIR$/js/post/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/blog/view.php" afterPath="$PROJECT_DIR$/protected/views/blog/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/post/getposts.php" afterPath="$PROJECT_DIR$/protected/views/post/getposts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/post.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371718328224" ignored="false" />
-    <file path="/blog.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371718064904" ignored="false" />
-    <file path="/a.dummy" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371718040251" ignored="false" />
-    <file path="/feed.js" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371716751231" ignored="false" />
-    <file path="/SiteController.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371716388952" ignored="false" />
-    <file path="/main.css" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371717848582" ignored="false" />
-    <file path="/dummy.xml" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371714451443" ignored="false" />
-    <file path="/view.css" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371718287823" ignored="false" />
-    <file path="/tagposts.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371717499522" ignored="false" />
-    <file path="/main.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371712803829" ignored="false" />
-    <file path="/sidebar.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371712966708" ignored="false" />
-    <file path="/global.js" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371717075972" ignored="false" />
-    <file path="/index.js" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371717157406" ignored="false" />
-    <file path="/index.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371718210132" ignored="false" />
-    <file path="/Controller.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371629046858" ignored="false" />
     <file path="/Dummy.txt" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371691862176" ignored="false" />
+    <file path="/Controller.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371629046858" ignored="false" />
+    <file path="/index.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371718210132" ignored="false" />
+    <file path="/index.js" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371717157406" ignored="false" />
+    <file path="/global.js" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371717075972" ignored="false" />
+    <file path="/sidebar.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371712966708" ignored="false" />
+    <file path="/main.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371712803829" ignored="false" />
+    <file path="/tagposts.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371717499522" ignored="false" />
+    <file path="/view.css" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371718287823" ignored="false" />
+    <file path="/dummy.xml" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371714451443" ignored="false" />
+    <file path="/main.css" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371717848582" ignored="false" />
+    <file path="/SiteController.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371716388952" ignored="false" />
+    <file path="/feed.js" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371716751231" ignored="false" />
+    <file path="/a.dummy" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371718040251" ignored="false" />
+    <file path="/blog.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371718064904" ignored="false" />
+    <file path="/post.php" changelist="1a703a8d-d239-4036-8db1-238188e42274" time="1371718328224" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
       <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="33" selection-start="4498" selection-end="4498" vertical-scroll-proportion="-3.2592592">
+            <state line="111" column="33" selection-start="4498" selection-end="4498" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -58,7 +56,7 @@
       <file leaf-file-name="error.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/error.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="31" selection-start="353" selection-end="353" vertical-scroll-proportion="-10.0">
+            <state line="15" column="31" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -67,7 +65,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/setting/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="63" selection-start="571" selection-end="571" vertical-scroll-proportion="-10.666667">
+            <state line="16" column="63" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,7 +74,7 @@
       <file leaf-file-name="feed.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/feed.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="405" column="11" selection-start="15377" selection-end="15377" vertical-scroll-proportion="0.33047944">
+            <state line="208" column="18" selection-start="7689" selection-end="7689" vertical-scroll-proportion="0.49373883">
               <folding />
             </state>
           </provider>
@@ -94,7 +92,7 @@
       <file leaf-file-name="getposts.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/post/getposts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="43" selection-start="547" selection-end="547" vertical-scroll-proportion="-5.3333335">
+            <state line="11" column="43" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -207,6 +205,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,50 +297,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="post" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -351,18 +315,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="post" />
+              <option name="myItemId" value="site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -372,12 +326,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -419,14 +373,14 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="2">
@@ -461,7 +415,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -470,7 +424,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16284074" sideWeight="0.34362417" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17348485" sideWeight="0.6750663" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17348485" sideWeight="0.6750663" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26040268" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261745" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -542,101 +496,78 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/protected/views/setting/blog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="10" selection-start="1804" selection-end="1804" vertical-scroll-proportion="-11.777778">
-          <folding />
-        </state>
+        <state line="56" column="10" selection-start="1804" selection-end="1804" vertical-scroll-proportion="-11.777778" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/global.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/site/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="20" selection-start="2898" selection-end="2898" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="77" column="20" selection-start="2898" selection-end="2898" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/autosize/jquery.autosize-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1371718499000" expanded="false" signature="284:524" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/apprise/apprise-1.5.full.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="38" selection-start="3941" selection-end="3941" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="103" column="38" selection-start="3941" selection-end="3941" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="33" selection-start="4498" selection-end="4498" vertical-scroll-proportion="-3.2592592">
+        <state line="111" column="33" selection-start="4498" selection-end="4498" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/error.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="353" selection-end="353" vertical-scroll-proportion="-10.0">
+        <state line="15" column="31" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/setting/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="63" selection-start="571" selection-end="571" vertical-scroll-proportion="-10.666667">
+        <state line="16" column="63" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/post/repost.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7487437">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7487437" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/post/video.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="95" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="63" column="95" selection-start="2068" selection-end="2068" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/blog/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="52" selection-start="165" selection-end="165" vertical-scroll-proportion="0.8888889">
-          <folding />
-        </state>
+        <state line="2" column="52" selection-start="165" selection-end="165" vertical-scroll-proportion="0.8888889" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="114" selection-end="162" vertical-scroll-proportion="-1.3333334">
-          <folding />
-        </state>
+        <state line="2" column="4" selection-start="114" selection-end="162" vertical-scroll-proportion="-1.3333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/post/link.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="29" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="29" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/post/getposts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="547" selection-end="547" vertical-scroll-proportion="-5.3333335">
+        <state line="11" column="43" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -650,7 +581,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/feed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="405" column="11" selection-start="15377" selection-end="15377" vertical-scroll-proportion="0.33047944">
+        <state line="208" column="18" selection-start="7689" selection-end="7689" vertical-scroll-proportion="0.49373883">
           <folding />
         </state>
       </provider>
